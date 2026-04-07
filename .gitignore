@@ -1,0 +1,15 @@
+# Ignore everything
+/*
+
+# But do not ignore the .gitignore file itself
+!.gitignore
+!.github/
+!.github/*.*
+
+# Do not ignore wp-content and everything inside it
+!wp-content/
+!wp-content/themes/**/*
+
+wp-content/themes/twenty*/**
+wp-content/themes/index.php
+wp-content/plugins/index.php

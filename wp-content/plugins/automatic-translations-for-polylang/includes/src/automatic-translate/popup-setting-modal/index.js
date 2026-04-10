@@ -1,0 +1,227 @@
+import ReactDOM from "react-dom/client";
+import { useEffect, useState } from "@wordpress/element";
+import PopStringModal from "../popup-string-modal";
+import yandexLanguage from "../component/translate-provider/yandex/yandex-language";
+import ChromeLocalAiTranslator from "../component/translate-provider/local-ai-translator/local-ai-translator";
+import SettingModalHeader from "./header";
+import SettingModalBody from "./body";
+import SettingModalFooter from "./footer";
+import { __ , sprintf } from "@wordpress/i18n";
+import ErrorModalBox from "../component/error-modal-box";
+import BulkPromotionModal from "./bulkPromotion";
+
+const SettingModal = (props) => {
+    const [activeProvider, setActiveProvider] = useState({});
+    const [modalRender, setModalRender] = useState(0);
+    const [settingVisibility, setSettingVisibility] = useState(false);
+    const sourceLang = atfp_global_object.source_lang;
+    const targetLang = props.targetLang;
+    const sourceLangName = atfp_global_object.languageObject[sourceLang]['name'];
+    const targetLangName = atfp_global_object.languageObject[targetLang]['name'];
+    const imgFolder = atfp_global_object.atfp_url + 'assets/images/';
+    const yandexSupport = yandexLanguage().includes(targetLang);
+    const [serviceModalErrors, setServiceModalErrors] = useState({});
+    const [errorModalVisibility, setErrorModalVisibility] = useState(false);
+    const [chromeAiBtnDisabled, setChromeAiBtnDisabled] = useState(false);
+    const [showBulkPromotionModal, setShowBulkPromotionModal] = useState(false);
+    const characterCount = parseInt(window.atfp_global_object.translation_data.total_character_count);
+
+    const openModalOnLoadHandler = (e) => {
+        e.preventDefault();
+        const btnElement = e.target;
+        const visibility = btnElement.dataset.value;
+
+        if (visibility === 'yes') {
+            setSettingVisibility(true);
+        }
+
+        btnElement.closest('#atfp-modal-open-warning-wrapper').remove();
+    }
+
+    const closeErrorModal = () => {
+        setErrorModalVisibility(false);
+        setSettingVisibility(true);
+    }
+
+    const openErrorModalHandler = (service) => {
+        setSettingVisibility(false);
+        setErrorModalVisibility(service);
+    }
+
+    /**
+     * useEffect hook to set settingVisibility.
+     * Triggers the setSettingVisibility only when user click on meta field Button.
+    */
+    useEffect(() => {
+        const atfpModalOpenWarningContainer = document.querySelector('#atfp-modal-open-warning-wrapper .modal-container');
+        
+        if(atfpModalOpenWarningContainer){
+            atfpModalOpenWarningContainer.style.display = 'flex';
+        }
+
+        const firstRenderBtns = document.querySelectorAll('#atfp-modal-open-warning-wrapper .modal-content button.atfp-translate-button[data-value="yes"]');
+        const metaFieldBtn = document.querySelector(props.translateWrpSelector);
+
+        if (metaFieldBtn) {
+            metaFieldBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                if(characterCount > 100000){
+                    setShowBulkPromotionModal(true);
+                }else{
+                    setSettingVisibility(prev => !prev);
+                }
+            });
+        }
+
+        firstRenderBtns.forEach(ele => {
+            if (ele) {
+                ele.addEventListener('click', openModalOnLoadHandler);
+            }
+        })
+    }, [])
+
+    /**
+     * useEffect hook to check if the local AI translator is supported.
+     */
+    useEffect(() => {
+        const languageSupportedStatus = async () => {
+            const localAiTranslatorSupport = await ChromeLocalAiTranslator.languageSupportedStatus(sourceLang, targetLang, targetLangName, sourceLangName);
+
+            if (localAiTranslatorSupport !== true && typeof localAiTranslatorSupport === 'object') {
+                setChromeAiBtnDisabled(true);
+    
+                setServiceModalErrors(prev => ({ ...prev, localAiTranslator: {message: localAiTranslatorSupport} }));
+            }
+        };
+        if(settingVisibility){
+            if(!yandexSupport){
+                setServiceModalErrors(prev => ({
+                    ...prev,
+                    yandex: {
+                        message: "<p style={{ fontSize: '1rem', color: '#ff4646' }}>"+sprintf(
+                            __("Yandex Translate does not support the target language: %s.", 'automatic-translations-for-polylang'),
+                            "<strong>"+targetLangName + " ("+targetLang+")</strong>"
+                        )+"</p>",
+                        Title: __("Yandex Translate", 'automatic-translations-for-polylang')
+                    }
+                }));
+            };
+
+            languageSupportedStatus();
+        }
+    }, [settingVisibility]);
+
+    /**
+     * useEffect hook to handle displaying the modal and rendering the PopStringModal component.
+     */
+    useEffect(() => {
+        const service = activeProvider.service;
+        const serviceLabel = activeProvider.serviceLabel;
+        const postId = props.postId;
+
+        const parentWrp = document.getElementById("atfp_strings_model");
+
+        if (parentWrp) {
+            // Store root instance in a ref to avoid recreating it
+            if (!parentWrp._reactRoot) {
+                parentWrp._reactRoot = ReactDOM.createRoot(parentWrp);
+            }
+
+            if (modalRender) {
+                parentWrp._reactRoot.render(<PopStringModal
+                    currentPostId={props.currentPostId}
+                    postId={postId}
+                    service={service}
+                    serviceLabel={serviceLabel}
+                    sourceLang={sourceLang}
+                    targetLang={targetLang}
+                    modalRender={modalRender}
+                    pageTranslate={props.pageTranslate}
+                    postDataFetchStatus={props.postDataFetchStatus}
+                    fetchPostData={props.fetchPostData}
+                    translatePost={props.translatePost}
+                    contentLoading={props.contentLoading}
+                    updatePostDataFetch={props.updatePostDataFetch}
+                    stringModalBodyNotice={props.stringModalBodyNotice}
+                />);
+            }
+        }
+    }, [props.postDataFetchStatus, modalRender]);
+
+    /**
+     * Function to handle fetching content based on the target button clicked.
+     * Sets the target button and updates the fetch status to true.
+     * @param {Event} e - The event object representing the button click.
+     */
+    const updateActiveProviderHandler = async (service, serviceLabel) => {
+
+        if (service === 'localAiTranslator') {
+            const localAiTranslatorSupport = await ChromeLocalAiTranslator.languageSupportedStatus(sourceLang, targetLang, targetLangName);
+            if (localAiTranslatorSupport !== true && typeof localAiTranslatorSupport === 'object') {
+                return;
+            }
+        }
+
+        setActiveProvider({ service, serviceLabel });
+    };
+    
+    const fetchContent = async () => {
+        const activeService = activeProvider.service;
+        
+        if(!activeService){
+            return;
+        }
+        
+        setSettingVisibility(false);
+        setModalRender(prev => prev + 1);
+    }
+
+    const handleSettingVisibility = (visibility) => {
+        setSettingVisibility(visibility);
+    }
+
+    const handleBulkPromotionModal = (statue) => {
+        setShowBulkPromotionModal(false);
+        if(statue === true){
+            setSettingVisibility(true);
+        }
+    }
+
+    return (
+        <>
+        {characterCount > 100000 && showBulkPromotionModal && <BulkPromotionModal onClick={handleBulkPromotionModal} characterCount={characterCount} />}
+            {errorModalVisibility && serviceModalErrors[errorModalVisibility] &&
+                <ErrorModalBox onClose={closeErrorModal} {...serviceModalErrors[errorModalVisibility]}/>
+            }
+            {settingVisibility &&
+                <div className="modal-container" style={{ display: settingVisibility ? 'flex' : 'none' }}>
+                    <div className="atfp-settings modal-content">
+                        <SettingModalHeader
+                            setSettingVisibility={handleSettingVisibility}
+                            postType={props.postType}
+                            sourceLangName={sourceLangName}
+                            targetLangName={targetLangName}
+                        />
+                        <SettingModalBody
+                            yandexDisabled={!yandexSupport}
+                            imgFolder={imgFolder}
+                            targetLangName={targetLangName}
+                            postType={props.postType}
+                            sourceLangName={sourceLangName}
+                            localAiTranslatorDisabled={chromeAiBtnDisabled}
+                            openErrorModalHandler={openErrorModalHandler}
+                            onSelectProvider={updateActiveProviderHandler}
+                            activeProvider={activeProvider.service}
+                            />
+                        <SettingModalFooter
+                            selectedProvider={activeProvider.service}
+                            onStartTranslation={fetchContent}
+                        />
+                    </div>
+                </div>
+            }
+        </>
+    );
+};
+
+export default SettingModal;

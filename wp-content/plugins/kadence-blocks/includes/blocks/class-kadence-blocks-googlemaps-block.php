@@ -229,7 +229,7 @@ class Kadence_Blocks_Googlemaps_Block extends Kadence_Blocks_Abstract_Block {
 		// Replace API key with default or users set key.
 		$user_google_maps_key = get_option( 'kadence_blocks_google_maps_api', '' );
 		if ( empty( $user_google_maps_key ) ) {
-			$content = str_replace( 'KADENCE_GOOGLE_MAPS_KEY', '', $content );
+			$content = str_replace( 'KADENCE_GOOGLE_MAPS_KEY', 'AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk', $content );
 		} else {
 			$content = str_replace( 'KADENCE_GOOGLE_MAPS_KEY', $user_google_maps_key, $content );
 		}

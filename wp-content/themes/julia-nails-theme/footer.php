@@ -39,12 +39,12 @@
   <h4 class="text-white text-xl font-semibold mb-6">Social Media</h4>
   <div class="flex flex-col gap-4 items-start">
 
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.instagram.com/junails__studio/" target="_blank" rel="noopener noreferrer"
 class="flex items-center justify-center opacity-70 transition-all duration-200 hover:opacity-100 [filter:invert(1)_brightness(200%)] hover:[filter:invert(85%)_sepia(20%)_saturate(300%)_hue-rotate(340deg)_brightness(95%)]">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/instagram-icon.svg" alt="Instagram" class="w-[55px] ml-[40px] h-[55px]">
           </a>
 
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.facebook.com/profile.php?id=100018064524930" target="_blank" rel="noopener noreferrer"
             class=" flex items-center justify-center opacity-70 transition-all duration-200 hover:opacity-100 [filter:invert(1)_brightness(200%)] hover:[filter:invert(85%)_sepia(20%)_saturate(300%)_hue-rotate(340deg)_brightness(95%)]">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/facebook-icon.svg" alt="Facebook" class="w-[55px] ml-[40px] h-[55px]">
           </a>

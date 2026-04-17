@@ -13,3 +13,9 @@ function add_typekit_fonts() {
     );
 }
 add_action('wp_enqueue_scripts', 'add_typekit_fonts');
+function julia_nails_register_menus() {
+    register_nav_menus( array(
+        'primary-menu' => __( 'Primary Menu', 'julia-nails' ),
+    ) );
+}
+add_action( 'init', 'julia_nails_register_menus' );

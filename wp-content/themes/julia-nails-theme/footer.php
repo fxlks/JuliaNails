@@ -1,4 +1,4 @@
-<footer class="bg-[#0D0D0D]">
+<footer class="bg-[#000000]">
   <div class="max-w-7xl mx-auto px-8 py-8">
 
     <!-- Top Grid -->

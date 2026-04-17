@@ -32,6 +32,15 @@ body {
     display: flex;
     justify-content: center; /* Centers the menu between logo and button */
 }
+.main-navigation ul {
+    display: flex !important;          /* Forces items to stay on one line */
+    flex-direction: row !important;    /* Ensures they go left-to-right */
+    list-style-type: none !important;  /* Double-check bullets are gone */
+    margin: 0;
+    padding: 0;
+    gap: 30px;                         /* Space between the words */
+    align-items: center;
+}
 
 .nav-links {
     list-style: none; /* Removes the bullet points */

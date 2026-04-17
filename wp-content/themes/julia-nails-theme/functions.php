@@ -20,6 +20,11 @@ function julia_nails_register_menus() {
         'primary-menu' => __( 'Primary Menu', 'julia-nails' ),
     ) );
 }
+function julia_nails_theme_setup() {
+    // This explicitly tells WordPress to show the 'Menus' UI
+    add_theme_support( 'menus' );
+}
+add_action( 'after_setup_theme', 'julia_nails_theme_setup' );
 add_action( 'init', 'julia_nails_register_menus' );
 function julia_nails_scripts() {
     // This links the styles.css file inside your assets/css folder

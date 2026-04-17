@@ -7,5 +7,8 @@ if ( have_posts() ) :
     endwhile; 
 endif; 
 
+
+
 get_footer(); // Loads footer.php
 ?>
+

@@ -1,33 +1,52 @@
 body {
-    font-family: "your-font-name", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif; /* Standard font - change to your specific font name later */
 }
+
 /* Header Layout */
 .main-header {
-    background-color: #000; /* Black background */
-    padding: 15px 5%;
-    color: #fff;
+    background-color: #000; /* Deep black background */
+    width: 100%;
+    padding: 10px 0;
 }
 
 .navbar-flex {
+    max-width: 1400px; /* Limits width on ultra-wide screens */
+    margin: 0 auto;
+    padding: 0 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Menu Links */
-.nav-links {
-    list-style: none;
+/* Logo Styling */
+.site-logo img {
+    max-height: 50px; /* Adjust based on your logo height */
+    display: block;
+}
+
+/* Menu Links Navigation */
+.main-navigation {
+    flex-grow: 1;
     display: flex;
-    gap: 30px;
+    justify-content: center; /* Centers the menu between logo and button */
+}
+
+.nav-links {
+    list-style: none; /* Removes the bullet points */
+    display: flex;
+    gap: 40px; /* Spacing between menu items */
     margin: 0;
     padding: 0;
 }
 
 .nav-links li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
-    font-style: italic; /* Matches your prototype */
-    font-weight: bold;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1.1rem;
     text-transform: capitalize;
     transition: color 0.3s ease;
 }
@@ -35,20 +54,29 @@ body {
 /* Hover State - Gold Contrast */
 .nav-links li a:hover, 
 .nav-links li.current-menu-item a {
-    color: #C5A059; /* Gold color from your image */
+    color: #C5A059; /* The gold color from your prototype */
 }
 
 /* Book Now Button */
 .btn-book {
-    background-color: #A68B5B; /* Muted gold button */
-    color: #fff;
-    padding: 10px 25px;
+    background-color: #A68B5B; /* Muted gold/brass button */
+    color: #ffffff !important;
+    padding: 12px 28px;
     text-decoration: none;
-    border-radius: 12px;
+    border-radius: 20px; /* Rounded pill shape */
     font-weight: bold;
-    transition: opacity 0.3s;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
 }
 
 .btn-book:hover {
-    opacity: 0.9;
+    background-color: #C5A059;
+    transform: translateY(-1px); /* Slight lift on hover */
+}
+
+/* WordPress Admin Bar Fix (Optional) */
+.admin-bar .main-header {
+    top: 32px;
 }

@@ -19,3 +19,11 @@ function julia_nails_register_menus() {
     ) );
 }
 add_action( 'init', 'julia_nails_register_menus' );
+function julia_nails_scripts() {
+    // This links the styles.css file inside your assets/css folder
+    wp_enqueue_style( 'julia-nails-custom', get_template_directory_uri() . '/assets/css/styles.css', array(), '1.0' );
+    
+    // This links the main style.css in your root folder (if you use it)
+    wp_enqueue_style( 'julia-nails-main', get_stylesheet_uri() );
+}
+add_action( 'wp_enqueue_scripts', 'julia_nails_scripts' );

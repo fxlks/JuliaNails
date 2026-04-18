@@ -1,0 +1,50 @@
+{
+  "name": "ssa/booking",
+  "d4Shortcode": "ssa_divi_booking_module",
+  "title": "SSA Appointment Booking",
+  "titles": "SSA Appointment Bookings",
+  "moduleIcon": "calendar-alt",
+  "category": "module",
+  "attributes": {
+    "type": {
+      "type": "string",
+      "default": ""
+    },
+    "module": {
+      "type": "object",
+      "default": {
+        "innerContent": {
+          "appointmentType": ""
+        }
+      },
+      "settings": {
+        "innerContent": {},
+        "meta": {},
+        "advanced": {},
+        "decoration": {
+          "background": {},
+          "border": {},
+          "spacing": {}
+        }
+      }
+    }
+  },
+  "settings": {
+    "content": "custom",
+    "design": "auto",
+    "advanced": "auto",
+    "groups": {
+      "contentText": {
+        "panel": "content",
+        "priority": 10,
+        "groupName": "text",
+        "component": {
+          "name": "divi/composite",
+          "props": {
+            "groupLabel": "Settings"
+          }
+        }
+      }
+    }
+  }
+}

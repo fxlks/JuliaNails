@@ -1,0 +1,46 @@
+{
+  "advanced": {
+    "admin_label": "module.meta.adminLabel",
+    "animation": "module.decoration.animation",
+    "background": "module.decoration.background",
+    "disabled_on": "module.decoration.disabledOn",
+    "module": "module.advanced.htmlAttributes",
+    "overflow": "module.decoration.overflow",
+    "position_fields": "module.decoration.position",
+    "scroll": "module.decoration.scroll",
+    "sticky": "module.decoration.sticky",
+    "text": "module.advanced.text",
+    "transform": "module.decoration.transform",
+    "transition": "module.decoration.transition",
+    "z_index": "module.decoration.zIndex",
+    "margin_padding": "module.decoration.spacing",
+    "max_width": "module.decoration.sizing",
+    "height": "module.decoration.sizing",
+    "link_options": "module.advanced.link",
+    "text_shadow": {
+      "default": "module.advanced.text.textShadow"
+    },
+    "box_shadow": {
+      "default": "module.decoration.boxShadow"
+    },
+    "borders": {
+      "default": "module.decoration.border"
+    },
+    "filters": {
+      "default": "module.decoration.filters"
+    }
+  },
+  "css": {
+    "after": "css.*.after",
+    "before": "css.*.before",
+    "main_element": "css.*.mainElement"
+  },
+  "module": {
+    "appointment_type": "module.innerContent.appointmentType",
+    "accent_color": "module.advanced.customColors.accentColor",
+    "background_color": "module.advanced.customColors.backgroundColor",
+    "font_family": "module.advanced.typography.fontFamily",
+    "padding": "module.decoration.spacing.padding",
+    "padding_css_unit": "module.decoration.spacing.paddingUnit"
+  }
+}

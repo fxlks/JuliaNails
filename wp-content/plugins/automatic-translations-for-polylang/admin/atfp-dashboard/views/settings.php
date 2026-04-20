@@ -118,6 +118,11 @@ if(!current_user_can('manage_options')){
     ?>
 
     <form method="post">
+        <div class="atfp-dashboard-settings-pro-features">
+        <a href="<?php echo esc_url('https://coolplugins.net/product/autopoly-ai-translation-for-polylang/?'.sanitize_text_field($atfp_utm_parameters).'&utm_medium=inside&utm_campaign=get_pro&utm_content=settings'); ?>" class='atfp-dashboard-btn' target="_blank">
+            <img src="<?php echo esc_url(ATFP_URL . 'admin/atfp-dashboard/images/upgrade-now.svg'); ?>" alt="<?php esc_attr_e('Upgrade Now', 'automatic-translations-for-polylang'); ?>">
+            <?php echo esc_html__('Unlock Pro Features', 'automatic-translations-for-polylang'); ?>
+        </a>
         <div class="atfp-dashboard-api-settings-container">
             <?php wp_nonce_field('atfp_save_optin_settings', 'atfp_optin_nonce'); ?>
             <h2 class="atfp-section-title atfp-section-title-with-icon">
@@ -286,7 +291,7 @@ if(!current_user_can('manage_options')){
                 </div>
             </div>
             </div>
-
+            </div>
             <?php if (get_option('cpfm_opt_in_choice_cool_translations')) : ?>
                 <h3 class="atfp-section-title">
                     <?php esc_html_e('Usage Data Sharing', 'automatic-translations-for-polylang'); ?>

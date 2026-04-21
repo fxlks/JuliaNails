@@ -1,0 +1,316 @@
+{
+  "name": "divi5-amelia/stepbooking",
+  "d4Shortcode": "divi_step_booking",
+  "title": "Amelia - Step Booking",
+  "titles": "Amelia Step Bookings",
+  "category": "module",
+  "moduleClassName": "divi5_amelia_booking",
+  "moduleOrderClassName": "divi5_amelia_booking",
+  "moduleIcon": "amelia/step-booking",
+  "attributes": {
+    "module": {
+      "type": "object",
+      "selector": "{{selector}}",
+      "default": {
+        "meta": {
+          "adminLabel": {
+            "desktop": {
+              "value": "Amelia Booking"
+            }
+          }
+        }
+      },
+      "settings": {
+        "meta": {
+          "adminLabel": {}
+        },
+        "decoration": {
+          "background": {},
+          "sizing": {},
+          "spacing": {},
+          "border": {},
+          "boxShadow": {},
+          "filters": {},
+          "transform": {},
+          "animation": {},
+          "overflow": {},
+          "disabledOn": {},
+          "transition": {},
+          "position": {},
+          "zIndex": {},
+          "scroll": {},
+          "sticky": {}
+        }
+      }
+    },
+    "parameters": {
+      "type": "object",
+      "selector": "{{selector}} .amelia-booking-wrapper",
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 10,
+            "render": true,
+            "attrName": "parameters.innerContent",
+            "label": "Preselect Booking Parameters",
+            "description": "Enable to preselect booking parameters",
+            "component": {
+              "name": "divi/toggle",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "trigger": {
+      "type": "object",
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 15,
+            "render": true,
+            "attrName": "trigger.innerContent",
+            "label": "Trigger Element Selector",
+            "description": "CSS selector for the element that will trigger the booking form",
+            "component": {
+              "name": "divi/text",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "type": {
+      "type": "object",
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 16,
+            "render": true,
+            "attrName": "type.innerContent",
+            "label": "Show Type",
+            "description": "Filter by booking type",
+            "component": {
+              "name": "divi/select",
+              "type": "field",
+              "props": {
+                "options": [
+                  { "value": "0", "label": "Show All" },
+                  { "value": "services", "label": "Services" },
+                  { "value": "packages", "label": "Packages" }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "categories": {
+      "type": "object",
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 20,
+            "render": true,
+            "attrName": "categories.innerContent",
+            "label": "Select Categories",
+            "description": "Preselect categories (multiple selection)",
+            "component": {
+              "name": "divi/select",
+              "type": "field",
+              "props": {
+                "multiple": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "services": {
+      "type": "object",
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 30,
+            "render": true,
+            "attrName": "services.innerContent",
+            "label": "Select Services",
+            "description": "Preselect services (multiple selection)",
+            "component": {
+              "name": "divi/select",
+              "type": "field",
+              "props": {
+                "multiple": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "employees": {
+      "type": "object",
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 40,
+            "render": true,
+            "attrName": "employees.innerContent",
+            "label": "Select Employees",
+            "description": "Preselect employees (multiple selection)",
+            "component": {
+              "name": "divi/select",
+              "type": "field",
+              "props": {
+                "multiple": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "locations": {
+      "type": "object",
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 50,
+            "render": true,
+            "attrName": "locations.innerContent",
+            "label": "Select Locations",
+            "description": "Preselect locations (multiple selection)",
+            "component": {
+              "name": "divi/select",
+              "type": "field",
+              "props": {
+                "multiple": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "packages": {
+      "type": "object",
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 60,
+            "render": true,
+            "attrName": "packages.innerContent",
+            "label": "Select Packages",
+            "description": "Preselect packages (multiple selection)",
+            "component": {
+              "name": "divi/select",
+              "type": "field",
+              "props": {
+                "multiple": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "layout": {
+      "type": "object",
+      "default": {
+        "innerContent": {
+          "desktop": {
+            "value": "1"
+          }
+        }
+      },
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 70,
+            "render": true,
+            "attrName": "layout.innerContent",
+            "label": "Layout Type",
+            "description": "Select layout type (dropdown or list)",
+            "component": {
+              "name": "divi/select",
+              "type": "field",
+              "props": {
+                "options": [
+                  { "value": "1", "label": "Dropdown Layout" },
+                  { "value": "2", "label": "List Layout" }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "trigger_type": {
+      "type": "object",
+      "default": {
+        "innerContent": {
+          "desktop": {
+            "value": "id"
+          }
+        }
+      },
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 80,
+            "render": true,
+            "attrName": "trigger_type.innerContent",
+            "label": "Trigger Type",
+            "description": "Element selector type",
+            "component": {
+              "name": "divi/select",
+              "type": "field",
+              "props": {
+                "options": [
+                  { "value": "id", "label": "ID" },
+                  { "value": "class", "label": "Class" }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "in_dialog": {
+      "type": "object",
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 90,
+            "render": true,
+            "attrName": "in_dialog.innerContent",
+            "label": "Show in Dialog",
+            "description": "Display booking in a modal dialog",
+            "component": {
+              "name": "divi/toggle",
+              "type": "field"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "name": "divi5-amelia/customerpanel",
+  "d4Shortcode": "divi_customer",
+  "title": "Amelia - Customer Panel",
+  "titles": "Amelia - Customer Panels",
+  "category": "module",
+  "moduleClassName": "divi5_amelia_customer_panel",
+  "moduleOrderClassName": "divi5_amelia_customer_panel",
+  "moduleIcon": "amelia/step-booking",
+  "attributes": {
+    "module": {
+      "type": "object",
+      "selector": "{{selector}}",
+      "default": {
+        "meta": {
+          "adminLabel": {
+            "desktop": {
+              "value": "Amelia Customer Panel"
+            }
+          }
+        }
+      },
+      "settings": {
+        "meta": {
+          "adminLabel": {}
+        },
+        "decoration": {
+          "background": {},
+          "sizing": {},
+          "spacing": {},
+          "border": {},
+          "boxShadow": {},
+          "filters": {},
+          "transform": {},
+          "animation": {},
+          "overflow": {},
+          "disabledOn": {},
+          "transition": {},
+          "position": {},
+          "zIndex": {},
+          "scroll": {},
+          "sticky": {}
+        }
+      }
+    },
+    "appointments": {
+      "type": "object",
+      "default": {
+        "innerContent": {
+          "desktop": {
+            "value": "on"
+          }
+        }
+      },
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 5,
+            "render": true,
+            "attrName": "appointments.innerContent",
+            "label": "Show Appointments",
+            "description": "Display appointments in customer panel",
+            "component": {
+              "name": "divi/toggle",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "events": {
+      "type": "object",
+      "default": {
+        "innerContent": {
+          "desktop": {
+            "value": "on"
+          }
+        }
+      },
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 10,
+            "render": true,
+            "attrName": "events.innerContent",
+            "label": "Show Events",
+            "description": "Display events in customer panel",
+            "component": {
+              "name": "divi/toggle",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "trigger": {
+      "type": "object",
+      "default": {
+        "innerContent": {
+          "desktop": {
+            "value": ""
+          }
+        }
+      },
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 15,
+            "render": true,
+            "attrName": "trigger.innerContent",
+            "label": "Trigger Element Selector",
+            "description": "CSS selector for manually loading the panel",
+            "component": {
+              "name": "divi/text",
+              "type": "field"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "_comment": "!!! THIS IS AN AUTOMATICALLY GENERATED FILE - DO NOT EDIT !!!",
+  "fieldsMap": {
+    "catalog": {
+      "d5Path": "catalog_view.innerContent",
+      "valueExpansionMap": {}
+    },
+    "categories": {
+      "d5Path": "categories_catalog.innerContent",
+      "valueExpansionMap": {}
+    },
+    "services": {
+      "d5Path": "services_catalog.innerContent",
+      "valueExpansionMap": {}
+    },
+    "packages": {
+      "d5Path": "packages_catalog.innerContent",
+      "valueExpansionMap": {}
+    },
+    "type": {
+      "d5Path": "type.innerContent",
+      "valueExpansionMap": {}
+    },
+    "trigger": {
+      "d5Path": "trigger.innerContent",
+      "valueExpansionMap": {}
+    }
+  }
+}

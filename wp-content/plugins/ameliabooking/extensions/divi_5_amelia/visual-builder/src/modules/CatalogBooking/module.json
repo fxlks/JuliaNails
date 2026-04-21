@@ -1,0 +1,301 @@
+{
+  "name": "divi5-amelia/catalogbooking",
+  "d4Shortcode": "divi_catalog_booking",
+  "title": "Amelia - Catalog Booking",
+  "titles": "Amelia - Catalog Bookings",
+  "category": "module",
+  "moduleClassName": "divi5_amelia_catalog_booking",
+  "moduleOrderClassName": "divi5_amelia_catalog_booking",
+  "moduleIcon": "amelia/step-booking",
+  "attributes": {
+    "module": {
+      "type": "object",
+      "selector": "{{selector}}",
+      "default": {
+        "meta": {
+          "adminLabel": {
+            "desktop": {
+              "value": "Amelia Catalog Booking"
+            }
+          }
+        }
+      },
+      "settings": {
+        "meta": {
+          "adminLabel": {}
+        },
+        "decoration": {
+          "background": {},
+          "sizing": {},
+          "spacing": {},
+          "border": {},
+          "boxShadow": {},
+          "filters": {},
+          "transform": {},
+          "animation": {},
+          "overflow": {},
+          "disabledOn": {},
+          "transition": {},
+          "position": {},
+          "zIndex": {},
+          "scroll": {},
+          "sticky": {}
+        }
+      }
+    },
+    "catalog_view": {
+      "type": "object",
+      "default": {
+        "innerContent": {
+          "desktop": {
+            "value": "0"
+          }
+        }
+      },
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 5,
+            "render": true,
+            "attrName": "catalog_view.innerContent",
+            "label": "Catalog View",
+            "description": "Select what to display in the catalog",
+            "component": {
+              "name": "divi/select",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "categories_catalog": {
+      "type": "object",
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 10,
+            "render": true,
+            "attrName": "categories_catalog.innerContent",
+            "label": "Select Categories",
+            "description": "Select categories to display (multi-select)",
+            "component": {
+              "name": "divi/select",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "services_catalog": {
+      "type": "object",
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 15,
+            "render": true,
+            "attrName": "services_catalog.innerContent",
+            "label": "Select Services",
+            "description": "Select services to display (multi-select)",
+            "component": {
+              "name": "divi/select",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "packages_catalog": {
+      "type": "object",
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 20,
+            "render": true,
+            "attrName": "packages_catalog.innerContent",
+            "label": "Select Packages",
+            "description": "Select packages to display (multi-select)",
+            "component": {
+              "name": "divi/select",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "filter_params": {
+      "type": "object",
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 25,
+            "render": true,
+            "attrName": "filter_params.innerContent",
+            "label": "Enable Filters",
+            "description": "Show employee and location filters",
+            "component": {
+              "name": "divi/toggle",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "type": {
+      "type": "object",
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 30,
+            "render": true,
+            "attrName": "type.innerContent",
+            "label": "Show Type",
+            "description": "Filter by booking type",
+            "component": {
+              "name": "divi/select",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "employees": {
+      "type": "object",
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 35,
+            "render": true,
+            "attrName": "employees.innerContent",
+            "label": "Select Employees",
+            "description": "Filter by employees (multi-select)",
+            "component": {
+              "name": "divi/select",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "locations": {
+      "type": "object",
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 40,
+            "render": true,
+            "attrName": "locations.innerContent",
+            "label": "Select Locations",
+            "description": "Filter by locations (multi-select)",
+            "component": {
+              "name": "divi/select",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "skip_categories": {
+      "type": "object",
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 45,
+            "render": true,
+            "attrName": "skip_categories.innerContent",
+            "label": "Skip Categories Selection",
+            "description": "Hide categories selection step",
+            "component": {
+              "name": "divi/toggle",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "trigger": {
+      "type": "object",
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 50,
+            "render": true,
+            "attrName": "trigger.innerContent",
+            "label": "Trigger Element Selector",
+            "description": "CSS selector for the element that will trigger the catalog",
+            "component": {
+              "name": "divi/text",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "trigger_type": {
+      "type": "object",
+      "default": {
+        "innerContent": {
+          "desktop": {
+            "value": "id"
+          }
+        }
+      },
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 55,
+            "render": true,
+            "attrName": "trigger_type.innerContent",
+            "label": "Trigger Type",
+            "description": "Element selector type",
+            "component": {
+              "name": "divi/select",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "in_dialog": {
+      "type": "object",
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 60,
+            "render": true,
+            "attrName": "in_dialog.innerContent",
+            "label": "Show in Dialog",
+            "description": "Display catalog in a modal dialog",
+            "component": {
+              "name": "divi/toggle",
+              "type": "field"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "name": "divi5-amelia/eventscalendar",
+  "d4Shortcode": "divi_events_calendar_booking",
+  "title": "Amelia - Events Calendar",
+  "titles": "Amelia - Events Calendars",
+  "category": "module",
+  "moduleClassName": "divi5_amelia_events_calendar",
+  "moduleOrderClassName": "divi5_amelia_events_calendar",
+  "moduleIcon": "amelia/step-booking",
+  "attributes": {
+    "module": {
+      "type": "object",
+      "selector": "{{selector}}",
+      "default": {
+        "meta": {
+          "adminLabel": {
+            "desktop": {
+              "value": "Amelia Events Calendar"
+            }
+          }
+        }
+      },
+      "settings": {
+        "meta": {
+          "adminLabel": {}
+        },
+        "decoration": {
+          "background": {},
+          "sizing": {},
+          "spacing": {},
+          "border": {},
+          "boxShadow": {},
+          "filters": {},
+          "transform": {},
+          "animation": {},
+          "overflow": {},
+          "disabledOn": {},
+          "transition": {},
+          "position": {},
+          "zIndex": {},
+          "scroll": {},
+          "sticky": {}
+        }
+      }
+    },
+    "booking_params": {
+      "type": "object",
+      "default": {
+        "innerContent": {
+          "desktop": {
+            "value": false
+          }
+        }
+      },
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 5,
+            "render": true,
+            "attrName": "booking_params.innerContent",
+            "label": "Enable Filters",
+            "description": "Show event filtering options",
+            "component": {
+              "name": "divi/toggle",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "events": {
+      "type": "object",
+      "default": {
+        "innerContent": {
+          "desktop": {
+            "value": []
+          }
+        }
+      },
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 10,
+            "render": true,
+            "attrName": "events.innerContent",
+            "label": "Select Events",
+            "description": "Select specific events to display (multi-select)",
+            "component": {
+              "name": "divi/select",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "tags": {
+      "type": "object",
+      "default": {
+        "innerContent": {
+          "desktop": {
+            "value": []
+          }
+        }
+      },
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 15,
+            "render": true,
+            "attrName": "tags.innerContent",
+            "label": "Select Tags",
+            "description": "Filter events by tags",
+            "component": {
+              "name": "divi/select",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "recurring": {
+      "type": "object",
+      "default": {
+        "innerContent": {
+          "desktop": {
+            "value": false
+          }
+        }
+      },
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 20,
+            "render": true,
+            "attrName": "recurring.innerContent",
+            "label": "Show Recurring Events",
+            "description": "Display recurring events only",
+            "component": {
+              "name": "divi/toggle",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "locations": {
+      "type": "object",
+      "default": {
+        "innerContent": {
+          "desktop": {
+            "value": []
+          }
+        }
+      },
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 25,
+            "render": true,
+            "attrName": "locations.innerContent",
+            "label": "Select Locations",
+            "description": "Filter events by locations (multi-select)",
+            "component": {
+              "name": "divi/select",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "trigger": {
+      "type": "object",
+      "default": {
+        "innerContent": {
+          "desktop": {
+            "value": ""
+          }
+        }
+      },
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 30,
+            "render": true,
+            "attrName": "trigger.innerContent",
+            "label": "Trigger Element Selector",
+            "description": "CSS selector for the element that will trigger the events calendar",
+            "component": {
+              "name": "divi/text",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "trigger_type": {
+      "type": "object",
+      "default": {
+        "innerContent": {
+          "desktop": {
+            "value": "id"
+          }
+        }
+      },
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 35,
+            "render": true,
+            "attrName": "trigger_type.innerContent",
+            "label": "Trigger Type",
+            "description": "Type of CSS selector for the trigger element",
+            "component": {
+              "name": "divi/select",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "in_dialog": {
+      "type": "object",
+      "default": {
+        "innerContent": {
+          "desktop": {
+            "value": false
+          }
+        }
+      },
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 40,
+            "render": true,
+            "attrName": "in_dialog.innerContent",
+            "label": "Show in Dialog",
+            "description": "Display the events calendar in a dialog/modal",
+            "component": {
+              "name": "divi/toggle",
+              "type": "field"
+            }
+          }
+        }
+      }
+    }
+  }
+}

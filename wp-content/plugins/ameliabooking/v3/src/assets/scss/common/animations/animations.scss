@@ -1,0 +1,33 @@
+@keyframes am-animation-slide-up {
+  0%{transform:translate3d(0, 40px, 0) ;opacity:0}
+  75%{transform:translate3d(0, -5px, 0) ;opacity:0.7}
+  100%{transform:translate3d(0, 0, 0) ;opacity:1}
+}
+
+@keyframes am-animation-slide-right {
+  0%{transform:translate3d(-40px, 0, 0) ;opacity:0}
+  75%{transform:translate3d(5px, 0, 0) ;opacity:0.7}
+  100%{transform:translate3d(0, 0, 0) ;opacity:1}
+}
+
+/*@keyframes am-animation-collapse-open {
+  0%{max-height: 0;}
+  100%{max-height: fit-content;}
+}
+
+@keyframes am-animation-collapse-close {
+  0%{max-height: fit-content;}
+  100%{max-height: 0; display: none;}
+}*/
+
+@keyframes sidebar-step-check-state {
+  0% {transform: scale(0);}
+  50% {transform: scale(1.2);}
+  100% {transform: scale(1);}
+}
+
+@keyframes sidebar-step-selection {
+  0% {opacity: 0; transform: translateX(-100%);}
+  50% {transform: translateX(10%);}
+  100% {opacity: 1; transform: translateX(0);}
+}

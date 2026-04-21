@@ -1,0 +1,17 @@
+#adminmenu #toplevel_page_amelia a[href="admin.php?page=wpamelia-upgrade"] {
+    font-weight: 600;
+    background-color: #9663FF;
+    color: #ffffff;
+    margin: 3px 10px 0;
+    display: block;
+    text-align: center;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+#adminmenu #toplevel_page_amelia a[href="admin.php?page=wpamelia-upgrade"]:hover,
+#adminmenu #toplevel_page_amelia a[href="admin.php?page=wpamelia-upgrade"]:focus {
+    background-color: #7b4fd9;
+    color: #ffffff;
+    box-shadow: none;
+}

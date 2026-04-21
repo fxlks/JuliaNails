@@ -1,0 +1,194 @@
+{
+  "name": "divi5-amelia/events",
+  "d4Shortcode": "divi_events",
+  "title": "Amelia - Events (Legacy)",
+  "titles": "Amelia Events",
+  "category": "module",
+  "moduleClassName": "divi5_amelia_events",
+  "moduleOrderClassName": "divi5_amelia_events",
+  "moduleIcon": "amelia/step-booking",
+  "attributes": {
+    "module": {
+      "type": "object",
+      "selector": "{{selector}}",
+      "default": {
+        "meta": {
+          "adminLabel": {
+            "desktop": {
+              "value": "Amelia Events"
+            }
+          }
+        }
+      },
+      "settings": {
+        "meta": {
+          "adminLabel": {}
+        },
+        "decoration": {
+          "background": {},
+          "sizing": {},
+          "spacing": {},
+          "border": {},
+          "boxShadow": {},
+          "filters": {},
+          "transform": {},
+          "animation": {},
+          "overflow": {},
+          "disabledOn": {},
+          "transition": {},
+          "position": {},
+          "zIndex": {},
+          "scroll": {},
+          "sticky": {}
+        }
+      }
+    },
+    "type": {
+      "type": "object",
+      "default": {
+        "innerContent": {
+          "desktop": {
+            "value": "list"
+          }
+        }
+      },
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 5,
+            "render": true,
+            "attrName": "type.innerContent",
+            "label": "Event View Type",
+            "description": "Select how to display events",
+            "component": {
+              "name": "divi/select",
+              "type": "field",
+              "props": {
+                "options": [
+                  { "value": "list", "label": "List View" },
+                  { "value": "calendar", "label": "Calendar View" }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "booking_params": {
+      "type": "object",
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 10,
+            "render": true,
+            "attrName": "booking_params.innerContent",
+            "label": "Enable Filters",
+            "description": "Enable event filters",
+            "component": {
+              "name": "divi/toggle",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "events": {
+      "type": "object",
+      "default": {
+        "innerContent": {
+          "desktop": {
+            "value": "0"
+          }
+        }
+      },
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 20,
+            "render": true,
+            "attrName": "events.innerContent",
+            "label": "Select Event",
+            "description": "Select a specific event",
+            "component": {
+              "name": "divi/select",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "tags": {
+      "type": "object",
+      "default": {
+        "innerContent": {
+          "desktop": {
+            "value": "0"
+          }
+        }
+      },
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 30,
+            "render": true,
+            "attrName": "tags.innerContent",
+            "label": "Select Tag",
+            "description": "Filter by tag",
+            "component": {
+              "name": "divi/select",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "recurring": {
+      "type": "object",
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 40,
+            "render": true,
+            "attrName": "recurring.innerContent",
+            "label": "Recurring Event",
+            "description": "Show recurring events",
+            "component": {
+              "name": "divi/toggle",
+              "type": "field"
+            }
+          }
+        }
+      }
+    },
+    "trigger": {
+      "type": "object",
+      "settings": {
+        "innerContent": {
+          "groupType": "group-item",
+          "item": {
+            "groupName": "mainContent",
+            "priority": 50,
+            "render": true,
+            "attrName": "trigger.innerContent",
+            "label": "Trigger Element Selector",
+            "description": "CSS selector for the element that will trigger events",
+            "component": {
+              "name": "divi/text",
+              "type": "field"
+            }
+          }
+        }
+      }
+    }
+  }
+}

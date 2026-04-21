@@ -1,0 +1,17 @@
+.amelia-date-picker-wrapper {
+  width: 100%;
+}
+.amelia-date-picker-input {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+.amelia-date-picker-input:focus {
+  outline: none;
+  border-color: #2ea3f2;
+}

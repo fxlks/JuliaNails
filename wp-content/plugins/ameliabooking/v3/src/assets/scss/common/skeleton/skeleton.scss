@@ -1,0 +1,12 @@
+
+.amelia-v2-booking {
+  #amelia-container {
+    .el-skeleton, am-skeleton-slots {
+      &__h3, &__text, &-item, &__circle {
+        --el-skeleton-to-color: var(--am-c-skeleton-op60);
+        --el-skeleton-color: var(--am-c-skeleton-op20);
+
+      }
+    }
+  }
+}

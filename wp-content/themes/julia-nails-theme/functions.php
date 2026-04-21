@@ -29,17 +29,3 @@ add_action('after_setup_theme', 'julia_nails_theme_setup');
 add_action('init', 'julia_nails_register_menus');
 
 
-function load_amelia_assets() {
-    wp_enqueue_style(
-        'amelia-booking',
-        plugins_url('ameliabooking/public/css/frontend/amelia-booking.css'),
-    );
-    wp_enqueue_script(
-        'amelia-booking',
-        plugins_url('ameliabooking/public/js/frontend/amelia-booking.js'),
-        ['jquery'],
-        null,
-        true
-    );
-}
-add_action('wp_enqueue_scripts', 'load_amelia_assets');

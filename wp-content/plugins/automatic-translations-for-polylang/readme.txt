@@ -4,7 +4,7 @@ Tags: Polylang, AI Translation, Content Translation, Translate
 Requires at least: 5.0
 Tested up to: 6.9
 Requires PHP: 5.6
-Stable tag: 1.4.9
+Stable tag: 1.4.10
 Author URI: https://coolplugins.net/?utm_source=atfp_plugin&utm_medium=readme&utm_campaign=author_page&utm_content=plugins_list
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -43,13 +43,10 @@ Whether you're using **Elementor** or **Gutenberg**, this addon makes the transl
 * ✅ **Chrome Built-in AI Translation Support:** Available
 * ✅ **API Key Required:** Not Required (Yandex Widget & Chrome Built-in AI)
 * ✅ **Gutenberg Block Compatibility**
-* ✅ **Classic Editor Page Translation**
-* ✅ **Divi 5 Page Translation**
-* ✅ **Re Translation:** Available
-* ✅ **Bulk Translation:** Available
-* ✅ **Taxonomy Translation:** Available
 * ✅ **Inline Translation**
+* ❌ **Taxonomy Translation:** Not Available
 * ❌ **Classic Editor Translation:** Not Available
+* ❌ **Divi 5 Page Translation:** Not Available
 * ❌ **Google Translate Widget Support:** Not Available
 * ❌ **OpenAI Translation Support:** Not Available
 * ❌ **Gemini Translation Support:** Not Available
@@ -225,6 +222,11 @@ Yes, this plugin supports automatic translations for content created with the Cl
 You can report security bugs through the Patchstack Vulnerability Disclosure Program. The Patchstack team help validate, triage and handle any security vulnerabilities.[Report a security vulnerability](https://patchstack.com/database/wordpress/plugin/automatic-translations-for-polylang/vdp)
 
 == Changelog ==
+
+= Version 1.4.10 | 20 April 2026 =
+* **Fixed:** Fixed yandex translation not working.
+* **Improved:** Improve Dashboard and Provider modal UI improvements.
+* **Tweaks:** Removed beta text from Chrome Local AI provider.
 
 = Version 1.4.9 | 03 April 2026 =
 * **Added:** Chrome Local AI configuration notice and setup guide in AutoPoly settings dashboard.

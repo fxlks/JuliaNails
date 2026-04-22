@@ -1,8 +1,8 @@
 <?php
 function jn_load_resources() {
-    wp_enqueue_style('style', get_stylesheet_directory_uri() . '/assets/css/style.css');
+    wp_enqueue_style('julia-nails-custom', get_template_directory_uri() . '/assets/css/styles.css', array(), '1.0');
+    wp_enqueue_style('julia-nails-main', get_stylesheet_uri());
     wp_enqueue_script('tailwind', 'https://cdn.tailwindcss.com', array(), null, false);
-
 }
 add_action('wp_enqueue_scripts', 'jn_load_resources');
 
@@ -15,22 +15,17 @@ function add_typekit_fonts() {
     );
 }
 add_action('wp_enqueue_scripts', 'add_typekit_fonts');
+
 function julia_nails_register_menus() {
-    register_nav_menus( array(
-        'primary-menu' => __( 'Primary Menu', 'julia-nails' ),
-    ) );
+    register_nav_menus(array(
+        'primary-menu' => __('Primary Menu', 'julia-nails'),
+    ));
 }
+
 function julia_nails_theme_setup() {
-    // This explicitly tells WordPress to show the 'Menus' UI
-    add_theme_support( 'menus' );
+    add_theme_support('menus');
 }
-add_action( 'after_setup_theme', 'julia_nails_theme_setup' );
-add_action( 'init', 'julia_nails_register_menus' );
-function julia_nails_scripts() {
-    // This links the styles.css file inside your assets/css folder
-    wp_enqueue_style( 'julia-nails-custom', get_template_directory_uri() . '/assets/css/styles.css', array(), '1.0' );
-    
-    // This links the main style.css in your root folder (if you use it)
-    wp_enqueue_style( 'julia-nails-main', get_stylesheet_uri() );
-}
-add_action( 'wp_enqueue_scripts', 'julia_nails_scripts' );
+add_action('after_setup_theme', 'julia_nails_theme_setup');
+add_action('init', 'julia_nails_register_menus');
+
+

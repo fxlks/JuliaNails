@@ -28,9 +28,9 @@
         <h4 class="text text-xl font-semibold mb-6">Quick Links</h4>
         <ul class="space-y-3 text-lg italic">
           <li><a href="/" class="text-[#F2F2F2] transition-colors duration-200 hover:text-[#D9BBA9]">Home</a></li>
-          <li><a href="/services" class="text-[#F2F2F2] transition-colors duration-200 hover:text-[#D9BBA9]">Services</a></li>
-          <li><a href="/gallery" class="text-[#F2F2F2] transition-colors duration-200 hover:text-[#D9BBA9]">Gallery</a></li>
           <li><a href="/about" class="text-[#F2F2F2] transition-colors duration-200 hover:text-[#D9BBA9]">About us</a></li>
+          <li><a href="/pricing" class="text-[#F2F2F2] transition-colors duration-200 hover:text-[#D9BBA9]">Pricing</a></li>
+          <li><a href="/gallery" class="text-[#F2F2F2] transition-colors duration-200 hover:text-[#D9BBA9]">Gallery</a></li>
         </ul>
       </div>
 

@@ -1,6 +1,7 @@
 <?php
 function jn_load_resources() {
     wp_enqueue_style('julia-nails-custom', get_template_directory_uri() . '/assets/css/styles.css', array(), '1.0');
+    wp_enqueue_style('bookly', get_template_directory_uri() . '/assets/css/bookly.css', array(), '1.0');
     wp_enqueue_style('julia-nails-main', get_stylesheet_uri());
     wp_enqueue_script('tailwind', 'https://cdn.tailwindcss.com', array(), null, false);
 }

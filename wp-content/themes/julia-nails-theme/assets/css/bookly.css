@@ -1,4 +1,175 @@
- .bookly-form {
-padding: 50px;
+/* ========================================================= */
+/* 1. Service Selection */
+/* ========================================================= */
 
+
+
+/* Constrain the Bookly form width */
+.bookly-form {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.bookly-box.bookly-bold {
+    color: #D9BBA9;
+    font-size: 20px;
+}
+
+
+/* Bookly select dropdown text color */
+.bookly-form select,
+.bookly-form select option {
+  color: #D9BBA9; 
+  border-color: #D9BBA9 !important; /* Ensure the border color is applied */
+  font-size: 19px !important; /* Adjust the font size as needed */
+  font-weight: 500;
+}
+
+.bookly-form select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath fill='%23D9BBA9' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 34px; /* increase this to make it bigger */
+  padding-right: 48px;
+}
+
+.bookly-progress-tracker > div {
+    padding-left: 4px;
+    white-space: nowrap;
+    color: #f2f2f2;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    font-size: 21px;
+    overflow: hidden;
+    border-color: #D9BBA9;
+}
+
+.bookly-label-error {
+    font-size: 16px !important;
+}
+
+.bookly-form .bookly-form-group > label {
+    display: none;
+}
+
+.bookly-form input[type="text"]:not(.iti__tel-input) {
+    display: none;
+}
+
+
+/* Next button default state */
+.bookly-form .bookly-next-step,
+.bookly-form button[type="submit"] {
+   background-color: #D9BBA9; /* The signature "Nude" color from Pic 2 */
+   color: #1a1a1a !important; /* Dark text on the light button for contrast */
+   width: 200px !important;
+    padding: 10px 25px !important;
+    text-decoration: none !important;
+    border-radius: 12px !important;    /* Softened rectangle, NOT a full pill shape */
+    transition: all 0.3s ease !important;
+    display: inline-block !important;
+    border: 2px solid transparent !important;
+}
+
+/* Hover state - inverts colors */
+.bookly-form .bookly-next-step:hover,
+.bookly-form button[type="submit"]:hover {
+     background-color: #000000 !important;
+    color: #D9BBA9 !important;
+    border: 2px solid #D9BBA9 !important /* Reveals a nude border on black background */
+}
+
+
+
+/* Next button text */
+.ladda-button[data-style=zoom-in] .ladda-label {
+    color: #1a1a1a !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    letter-spacing: 0.5px !important;
+     /* Ensure the text color is applied to the loading state */
+}
+
+.ladda-button[data-style=zoom-in]:hover .ladda-label {
+    color: #D9BBA9 !important; /* Ensure the text color is applied to the loading state */
+}
+
+.bookly-service-step .bookly-time-range select {
+    display: none;
+}
+
+.bookly-service-step .bookly-week-days > div{
+    display: none;
+}
+
+/* ========================================================= */
+/* 2. Date and Time Selection */
+/* ========================================================= */
+
+
+.bookly-box {
+    color: #f2f2f2;
+    font-size: 20px;
+}
+
+.bookly-css-root b {
+    font-size: 20px;
+}
+
+.bookly-back-step.bookly-js-back-step.bookly-btn.ladda-button {
+   background-color: #D9BBA9; /* The signature "Nude" color from Pic 2 */
+   color: #1a1a1a !important; /* Dark text on the light button for contrast */
+   width: 120px !important;
+    padding: 10px 25px !important;
+    text-decoration: none !important;
+    border-radius: 12px !important;    /* Softened rectangle, NOT a full pill shape */
+    transition: all 0.3s ease !important;
+    display: inline-block !important;
+    border: 2px solid transparent !important;
+}
+
+.bookly-back-step.bookly-js-back-step.bookly-btn.ladda-button:hover {
+  background-color: #000000 !important;
+    color: #D9BBA9 !important;
+    border: 2px solid #D9BBA9 !important 
+}
+
+.bookly-time-next.bookly-btn.bookly-left.ladda-button {
+    background-color: #D9BBA9; /* The signature "Nude" color from Pic 2 */
+    color: #1a1a1a !important; /* Dark text on the light button for contrast */
+    width: 70px !important;
+    text-decoration: none !important;
+    border-radius: 12px !important;    /* Softened rectangle, NOT a full pill shape */
+    transition: all 0.3s ease !important;
+    display: inline-block !important;
+    border: 2px solid transparent !important;
+}
+
+
+
+.bookly-time-next.bookly-btn.bookly-left.ladda-button:hover {
+    background-color: #000000 !important;
+    color: #D9BBA9 !important;
+    border: 2px solid #D9BBA9 !important 
+}
+
+
+.bookly-time-prev.bookly-btn.bookly-left.ladda-button {
+    background-color: #D9BBA9; /* The signature "Nude" color from Pic 2 */
+    color: #1a1a1a !important; /* Dark text on the light button for contrast */
+    width: 70px !important;
+    text-decoration: none !important;
+    border-radius: 12px !important;    /* Softened rectangle, NOT a full pill shape */
+    transition: all 0.3s ease !important;
+    display: inline-block !important;
+    border: 2px solid transparent !important;
+}
+
+.bookly-time-prev.bookly-btn.bookly-left.ladda-button:hover {
+    background-color: #000000 !important;
+    color: #D9BBA9 !important;
+    border: 2px solid #D9BBA9 !important 
 }

@@ -1,0 +1,17 @@
+#bookly-tbs #bookly-shop .card {
+    min-width: 532px;
+    max-width: 532px;
+}
+
+@media (max-width: 616px) {
+    #bookly-tbs #bookly-shop .card {
+        width: 100%;
+        min-width: 280px;
+    }
+}
+
+@media (min-width: 1000px) {
+    #bookly-tbs #bookly-shop {
+        margin-right: -1.5rem;
+    }
+}

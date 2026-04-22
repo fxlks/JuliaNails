@@ -1,0 +1,13 @@
+<?php
+namespace Bookly\Backend\Components\Dialogs\Service\Edit\Proxy;
+
+use Bookly\Lib;
+
+/**
+ * @method static void renderSubForm( array $service, array $simple_services )
+ * @method static void renderAdvancedSubForm( array $service )
+ */
+abstract class Packages extends Lib\Base\Proxy
+{
+
+}

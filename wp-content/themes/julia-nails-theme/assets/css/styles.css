@@ -8,6 +8,7 @@ body {
     margin: 0 !important;
     padding: 0 !important; 
     font-family: 'Montserrat', sans-serif;
+    background-color: #161413; /* Clean white background for that luxury feel */
 }
 
 /* --- Header & Layout --- */

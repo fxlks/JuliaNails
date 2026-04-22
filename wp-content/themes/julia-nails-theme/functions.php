@@ -28,4 +28,3 @@ function julia_nails_theme_setup() {
 add_action('after_setup_theme', 'julia_nails_theme_setup');
 add_action('init', 'julia_nails_register_menus');
 
-

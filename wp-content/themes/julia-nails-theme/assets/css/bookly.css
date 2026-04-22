@@ -52,7 +52,7 @@
 }
 
 .bookly-form .bookly-form-group > label {
-    display: none;
+   font-size: 18px;
 }
 
 .bookly-form input[type="text"]:not(.iti__tel-input) {

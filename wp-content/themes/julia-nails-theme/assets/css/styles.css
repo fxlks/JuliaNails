@@ -100,3 +100,66 @@ body {
     color: #D9BBA9 !important;
     border: 2px solid #D9BBA9; /* Reveals a nude border on black background */
 }
+
+/* Hide mobile elements on desktop */
+.nav-toggle, .nav-toggle-label, .mobile-cta { display: none; }
+
+@media screen and (max-width: 768px) {
+    .desktop-only { display: none; }
+    .mobile-cta { display: inline-block; margin-top: 20px; }
+
+    /* The Hamburger Trigger */
+    .nav-toggle-label {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 1001;
+    }
+
+    .nav-toggle-label span, 
+    .nav-toggle-label span::before, 
+    .nav-toggle-label span::after {
+        display: block;
+        background: #D9BBA9;
+        height: 2px;
+        width: 25px;
+        position: relative;
+        transition: all 0.3s;
+    }
+
+    .nav-toggle-label span::before { content: ''; position: absolute; top: -8px; width: 100%; }
+    .nav-toggle-label span::after { content: ''; position: absolute; top: 8px; width: 100%; }
+
+    /* The Hidden Menu */
+    .main-navigation {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Off-screen */
+        width: 80%;
+        height: 100vh;
+        background: #161413;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.4s cubic-bezier(1,0,0,1);
+        z-index: 1000;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    /* Open State */
+    .nav-toggle:checked ~ .main-navigation {
+        right: 0;
+    }
+
+    /* Icon Animation to X */
+    .nav-toggle:checked + .nav-toggle-label span { background: transparent; }
+    .nav-toggle:checked + .nav-toggle-label span::before { transform: rotate(45deg); top: 0; }
+    .nav-toggle:checked + .nav-toggle-label span::after { transform: rotate(-45deg); top: 0; }
+}

@@ -2,8 +2,8 @@
   <div class="max-w-7xl mx-auto px-8 py-8">
 
     <!-- Top Grid -->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
-
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
+      
       <!-- Contact -->
       <div style="font-family: 'Montserrat', sans-serif;">
         <h4 class="text text-[#D9BBA9] text-2xl font-semibold mb-6">Contact</h4>

@@ -120,6 +120,8 @@ jQuery(function ($) {
     /**
      * Init table columns.
      */
+    const table = 'appointments';
+
     $.each(BooklyL10n.datatables.appointments.settings.columns, function (column, show) {
         switch (column) {
             case 'customer_full_name':
@@ -155,7 +157,7 @@ jQuery(function ($) {
                     render: function (data, type, row, meta) {
                         data = BooklyDatatables.escapeHtml(data);
                         if (row.service.extras.length) {
-                            var extras = '<ul class="bookly-list list-dots">';
+                            var extras = '<ul class="bookly-list list-dots bookly:m-0">';
                             $.each(row.service.extras, function (key, item) {
                                 extras += '<li><nobr>' + item.title + '</nobr></li>';
                             });
@@ -202,7 +204,7 @@ jQuery(function ($) {
                         if (row.rating_comment == null) {
                             return row.rating;
                         } else {
-                            return '<a href="#" data-toggle="bookly-popover" data-trigger="hover" data-placement="bottom" data-content="' + BooklyDatatables.escapeHtml(row.rating_comment) + '" data-container="#bookly-appointments-datatables">' + $.fn.dataTable.render.text().display(row.rating) + '</a>';
+                            return '<a href="#" data-toggle="bookly-popover" data-trigger="hover" data-placement="bottom" data-content="' + BooklyDatatables.escapeHtml(row.rating_comment) + '" data-container="#bookly-appointments-datatables">' + BooklyDatatables.escapeHtml(row.rating) + '</a>';
                         }
                     },
                 });
@@ -226,6 +228,8 @@ jQuery(function ($) {
                                 return '<a class="badge badge-primary" href="' + BooklyDatatables.escapeHtml(row.online_meeting_start_url) + '" target="_blank"><i class="fas fa-video fa-fw"></i> Jitsi Meet <i class="fas fa-external-link-alt fa-fw"></i></a>';
                             case 'bbb':
                                 return '<a class="badge badge-primary" href="' + BooklyDatatables.escapeHtml(row.online_meeting_start_url) + '" target="_blank"><i class="fas fa-video fa-fw"></i> BigBlueButton <i class="fas fa-external-link-alt fa-fw"></i></a>';
+                            case 'teams':
+                                return '<a class="badge badge-primary" href="' + BooklyDatatables.escapeHtml(row.online_meeting_start_url) + '" target="_blank"><i class="fas fa-video fa-fw"></i> Microsoft Teams <i class="fas fa-external-link-alt fa-fw"></i></a>';
                             default:
                                 return '';
                         }
@@ -247,12 +251,11 @@ jQuery(function ($) {
                 }
                 break;
         }
-        columns[columns.length - 1].title = BooklyL10n.datatables.appointments.titles[column] || column;
+        columns[columns.length - 1].title = BooklyL10n.datatables[table].titles[column] || column;
         columns[columns.length - 1].name = column;
         columns[columns.length - 1].show = show;
     });
 
-    let table = 'appointments';
     let options = {
         ajax: {
             url: ajaxurl,
@@ -273,7 +276,8 @@ jQuery(function ($) {
             }
         },
         columns: columns,
-        rows: BooklyL10n.datatables.appointments.settings.page_length || 25,
+        rows: BooklyL10n.datatables[table].settings.page_length || 25,
+        order: BooklyL10n.datatables[table].settings.order,
         l10n: {
             zeroRecords: BooklyL10n.zeroRecords,
             emptyTable: BooklyL10n.emptyTable,
@@ -309,7 +313,7 @@ jQuery(function ($) {
             );
         },
         filters: {
-            'id': 'bookly-appointments-datatables-filters',
+            'id': 'bookly-' + table + '-datatables-filters',
             'selected': function () {
                 let filters = {};
                 if ($idFilter.val() !== '') {
@@ -413,6 +417,7 @@ jQuery(function ($) {
         },
         topToolbar: [
             {
+                id: 'bookly-new-appointment',
                 click: function () {
                     BooklyAppointmentDialog.showDialog(
                         null,
@@ -477,7 +482,7 @@ jQuery(function ($) {
             });
         });
 
-    $($exportDialog)
+    $exportDialog
         .on('change', '.bookly-js-columns input', function () {
             $exportSelectAll.prop('checked', $('.bookly-js-columns input:checked', $exportDialog).length == $('.bookly-js-columns input', $exportDialog).length);
         });
@@ -509,7 +514,7 @@ jQuery(function ($) {
             });
         });
 
-    $($printDialog)
+    $printDialog
         .on('change', '.bookly-js-columns input', function () {
             $printSelectAll.prop('checked', $('.bookly-js-columns input:checked', $printDialog).length == $('.bookly-js-columns input', $printDialog).length);
         });

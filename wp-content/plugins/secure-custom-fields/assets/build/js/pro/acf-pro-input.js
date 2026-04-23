@@ -660,7 +660,8 @@
         field_key: this.get('key'),
         i: $layout.index(),
         layout: $layout.data('layout'),
-        value: acf.serialize($layout, prefix)
+        value: acf.serialize($layout, prefix),
+        nonce: this.get('nonce')
       };
 
       // ajax
@@ -2252,7 +2253,8 @@
         field_name: this.get('orig_name'),
         rows_per_page: parseInt(this.get('per_page')),
         refresh: clearChanged,
-        nonce: this.get('nonce')
+        nonce: this.get('nonce'),
+        options_page_slug: acf.get('options_page_slug') || ''
       });
       $.ajax({
         url: ajaxurl,

@@ -145,6 +145,7 @@ class UserBookingData
         'coupon_code',
         'gift_code',
         'deposit_full',
+        'tips',
         // Cart item keys being edited
         'edit_cart_keys',
         'repeated',

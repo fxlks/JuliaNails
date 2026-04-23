@@ -118,16 +118,6 @@ const plus = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)
 
 /***/ }),
 
-/***/ "@wordpress/components":
-/*!************************************!*\
-  !*** external ["wp","components"] ***!
-  \************************************/
-/***/ ((module) => {
-
-module.exports = window["wp"]["components"];
-
-/***/ }),
-
 /***/ "@wordpress/data":
 /*!******************************!*\
   !*** external ["wp","data"] ***!
@@ -135,16 +125,6 @@ module.exports = window["wp"]["components"];
 /***/ ((module) => {
 
 module.exports = window["wp"]["data"];
-
-/***/ }),
-
-/***/ "@wordpress/element":
-/*!*********************************!*\
-  !*** external ["wp","element"] ***!
-  \*********************************/
-/***/ ((module) => {
-
-module.exports = window["wp"]["element"];
 
 /***/ }),
 
@@ -265,26 +245,19 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/data */ "@wordpress/data");
-/* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_data__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _wordpress_url__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/url */ "@wordpress/url");
-/* harmony import */ var _wordpress_url__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_url__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/edit.js");
-/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/page.js");
-/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/plus.js");
+/* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/data */ "@wordpress/data");
+/* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_data__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_url__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/url */ "@wordpress/url");
+/* harmony import */ var _wordpress_url__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_url__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/edit.js");
+/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/page.js");
+/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/plus.js");
 /**
  * Custom Post Type Commands
  *
  * Dynamic commands for user-created custom post types in Secure Custom Fields.
  * This file generates navigation commands for each registered post type that
  * the current user has access to, creating "View All", "Add New", and "Edit" commands.
- *
- * Post type data is provided via acf.data.customPostTypes, which is populated
- * by the PHP side after capability checks ensure the user has appropriate access.
  *
  * @since SCF 6.5.0
  */
@@ -297,69 +270,60 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
 /**
  * Register custom post type commands
  */
-const registerPostTypeCommands = () => {
-  // Only proceed when WordPress commands API and there are custom post types accessible
-  if (!(0,_wordpress_data__WEBPACK_IMPORTED_MODULE_3__.dispatch)('core/commands') || !window.acf?.data?.customPostTypes?.length) {
+const registerPostTypeCommands = async () => {
+  if (!(0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.resolveSelect)('core') || !(0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.dispatch)('core/commands')) {
     return;
   }
-  const commandStore = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_3__.dispatch)('core/commands');
-  const adminUrl = window.acf.data.admin_url || '';
-  const postTypes = window.acf.data.customPostTypes;
-
-  // WordPress 6.9+ adds Command Palette commands for all admin menu items.
-  const wpVersion = window.acf.data.wp_version;
-  const isWp69Plus = wpVersion.localeCompare('6.9', undefined, {
-    numeric: true
-  }) >= 0;
-  postTypes.forEach(postType => {
-    // Skip invalid post types or those missing required labels
-    if (!postType?.name || !postType?.all_items || !postType?.add_new_item) {
+  const postTypes = await (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.resolveSelect)('core').getPostTypes({
+    per_page: -1,
+    source: 'scf'
+  });
+  const commandStore = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.dispatch)('core/commands');
+  const registeredCommands = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.select)('core/commands').getCommands();
+  postTypes.forEach(async postType => {
+    if (!postType?.visibility?.show_ui) {
       return;
     }
+    const viewAllCommandUrl = (0,_wordpress_url__WEBPACK_IMPORTED_MODULE_2__.addQueryArgs)('edit.php', {
+      post_type: postType.slug
+    });
 
-    // Navigation commands are already included in WP 6.9+.
-    if (!isWp69Plus) {
+    // WordPress stores destination URLs in the command *name*, appended to
+    // the menu slug (which is also a relative URL), resulting in somewhat
+    // peculiar naming, e.g.
+    // edit.php?post_type=movie-post-new.php?post_type=movie
+    if (!registeredCommands.some(cmd => cmd.name.endsWith(viewAllCommandUrl)) && (await (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.resolveSelect)('core').canUser('read', postType.rest_base))) {
       // Register "View All" command for this post type
       commandStore.registerCommand({
-        name: `scf/cpt-${postType.name}`,
-        label: postType.all_items,
-        icon: (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Icon, {
-          icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_6__["default"]
-        }),
-        context: 'admin',
-        description: postType.all_items,
-        keywords: ['post type', 'content', 'cpt', postType.name, postType.label].filter(Boolean),
+        name: `scf/cpt-${postType.slug}`,
+        label: postType.labels.all_items,
+        icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_4__["default"],
+        keywords: ['post type', 'content', 'cpt', postType.slug, postType.name].filter(Boolean),
         callback: ({
           close
         }) => {
-          document.location = (0,_wordpress_url__WEBPACK_IMPORTED_MODULE_4__.addQueryArgs)(adminUrl + 'edit.php', {
-            post_type: postType.name
-          });
+          document.location = viewAllCommandUrl;
           close();
         }
       });
-
+    }
+    const addNewCommandUrl = (0,_wordpress_url__WEBPACK_IMPORTED_MODULE_2__.addQueryArgs)('post-new.php', {
+      post_type: postType.slug
+    });
+    if (!registeredCommands.some(cmd => cmd.name.endsWith(addNewCommandUrl)) && (await (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.resolveSelect)('core').canUser('create', postType.rest_base))) {
       // Register "Add New" command for this post type
       commandStore.registerCommand({
-        name: `scf/new-${postType.name}`,
-        label: postType.add_new_item,
-        icon: (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Icon, {
-          icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_7__["default"]
-        }),
-        context: 'admin',
-        description: postType.add_new_item,
-        keywords: ['add', 'new', 'create', 'content', postType.name, postType.label],
+        name: `scf/new-${postType.slug}`,
+        label: postType.labels.add_new_item,
+        icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_5__["default"],
+        keywords: ['add', 'new', 'create', 'content', postType.slug, postType.name],
         callback: ({
           close
         }) => {
-          document.location = (0,_wordpress_url__WEBPACK_IMPORTED_MODULE_4__.addQueryArgs)(adminUrl + 'post-new.php', {
-            post_type: postType.name
-          });
+          document.location = addNewCommandUrl;
           close();
         }
       });
@@ -367,21 +331,16 @@ const registerPostTypeCommands = () => {
 
     // Register "Edit Post Type" command
     commandStore.registerCommand({
-      name: `scf/edit-${postType.name}`,
+      name: `scf/edit-${postType.slug}`,
       label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.sprintf)(/* translators: %s: post type label */
-      (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Edit post type: %s', 'secure-custom-fields'), postType.label),
-      icon: (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Icon, {
-        icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_5__["default"]
-      }),
-      context: 'admin',
-      description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.sprintf)(/* translators: %s: post type label */
-      (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Edit the %s post type settings', 'secure-custom-fields'), postType.label),
-      keywords: ['edit', 'modify', 'post type', 'cpt', 'settings', postType.name, postType.label],
+      (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Edit post type: %s', 'secure-custom-fields'), postType.name),
+      icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_3__["default"],
+      keywords: ['edit', 'modify', 'post type', 'cpt', 'settings', postType.slug, postType.name],
       callback: ({
         close
       }) => {
-        document.location = (0,_wordpress_url__WEBPACK_IMPORTED_MODULE_4__.addQueryArgs)(adminUrl + 'post.php', {
-          post: postType.id,
+        document.location = (0,_wordpress_url__WEBPACK_IMPORTED_MODULE_2__.addQueryArgs)('post.php', {
+          post: postType.scf_post_id,
           action: 'edit'
         });
         close();

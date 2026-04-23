@@ -254,16 +254,6 @@ const upload = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.js
 
 /***/ }),
 
-/***/ "@wordpress/components":
-/*!************************************!*\
-  !*** external ["wp","components"] ***!
-  \************************************/
-/***/ ((module) => {
-
-module.exports = window["wp"]["components"];
-
-/***/ }),
-
 /***/ "@wordpress/data":
 /*!******************************!*\
   !*** external ["wp","data"] ***!
@@ -271,16 +261,6 @@ module.exports = window["wp"]["components"];
 /***/ ((module) => {
 
 module.exports = window["wp"]["data"];
-
-/***/ }),
-
-/***/ "@wordpress/element":
-/*!*********************************!*\
-  !*** external ["wp","element"] ***!
-  \*********************************/
-/***/ ((module) => {
-
-module.exports = window["wp"]["element"];
 
 /***/ }),
 
@@ -401,22 +381,18 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/data */ "@wordpress/data");
-/* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_data__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _wordpress_url__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/url */ "@wordpress/url");
-/* harmony import */ var _wordpress_url__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_url__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/category.js");
-/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/download.js");
-/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/layout.js");
-/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/plus.js");
-/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/post-list.js");
-/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/settings.js");
-/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/tool.js");
-/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/upload.js");
+/* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/data */ "@wordpress/data");
+/* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_data__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_url__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/url */ "@wordpress/url");
+/* harmony import */ var _wordpress_url__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_url__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/category.js");
+/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/download.js");
+/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/layout.js");
+/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/plus.js");
+/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/post-list.js");
+/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/settings.js");
+/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/tool.js");
+/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/upload.js");
 /**
  * Admin Commands
  *
@@ -435,17 +411,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
 /**
  * Register admin commands for SCF
  */
 const registerAdminCommands = () => {
-  if (!(0,_wordpress_data__WEBPACK_IMPORTED_MODULE_3__.dispatch)('core/commands') || !window.acf?.data) {
+  if (!(0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.select)('core/commands') || !(0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.dispatch)('core/commands')) {
     return;
   }
-  const commandStore = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_3__.dispatch)('core/commands');
-  const adminUrl = window.acf?.data?.admin_url || '';
+  const registeredCommands = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.select)('core/commands').getCommands();
+  const commandStore = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.dispatch)('core/commands');
   const viewCommands = [{
     name: 'field-groups',
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Field Groups', 'secure-custom-fields'),
@@ -453,8 +427,7 @@ const registerAdminCommands = () => {
     urlArgs: {
       post_type: 'acf-field-group'
     },
-    icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_7__["default"],
-    description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('SCF: View and manage custom field groups', 'secure-custom-fields'),
+    icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_5__["default"],
     keywords: ['acf', 'custom fields', 'field editor', 'manage fields']
   }, {
     name: 'post-types',
@@ -463,8 +436,7 @@ const registerAdminCommands = () => {
     urlArgs: {
       post_type: 'acf-post-type'
     },
-    icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_9__["default"],
-    description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('SCF: Manage custom post types', 'secure-custom-fields'),
+    icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_7__["default"],
     keywords: ['cpt', 'content types', 'manage post types']
   }, {
     name: 'taxonomies',
@@ -473,8 +445,7 @@ const registerAdminCommands = () => {
     urlArgs: {
       post_type: 'acf-taxonomy'
     },
-    icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_5__["default"],
-    description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('SCF: Manage custom taxonomies for organizing content', 'secure-custom-fields'),
+    icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_3__["default"],
     keywords: ['categories', 'tags', 'terms', 'custom taxonomies']
   }, {
     name: 'options-pages',
@@ -483,8 +454,7 @@ const registerAdminCommands = () => {
     urlArgs: {
       post_type: 'acf-ui-options-page'
     },
-    icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_10__["default"],
-    description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('SCF: Manage custom options pages for global settings', 'secure-custom-fields'),
+    icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_8__["default"],
     keywords: ['settings', 'global options', 'site options']
   }, {
     name: 'tools',
@@ -493,8 +463,7 @@ const registerAdminCommands = () => {
     urlArgs: {
       page: 'acf-tools'
     },
-    icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_11__["default"],
-    description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('SCF: Access SCF utility tools', 'secure-custom-fields'),
+    icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_9__["default"],
     keywords: ['utilities', 'import export', 'json']
   }, {
     name: 'import',
@@ -504,8 +473,7 @@ const registerAdminCommands = () => {
       page: 'acf-tools',
       tool: 'import'
     },
-    icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_12__["default"],
-    description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('SCF: Import field groups, post types, taxonomies, and options pages', 'secure-custom-fields'),
+    icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_10__["default"],
     keywords: ['upload', 'json', 'migration', 'transfer']
   }, {
     name: 'export',
@@ -515,8 +483,7 @@ const registerAdminCommands = () => {
       page: 'acf-tools',
       tool: 'export'
     },
-    icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_6__["default"],
-    description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('SCF: Export field groups, post types, taxonomies, and options pages', 'secure-custom-fields'),
+    icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_4__["default"],
     keywords: ['download', 'json', 'backup', 'migration']
   }];
 
@@ -528,8 +495,7 @@ const registerAdminCommands = () => {
     urlArgs: {
       post_type: 'acf-field-group'
     },
-    icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_8__["default"],
-    description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('SCF: Create a new field group to organize custom fields', 'secure-custom-fields'),
+    icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_6__["default"],
     keywords: ['add', 'new', 'create', 'field group', 'custom fields']
   }, {
     name: 'new-post-type',
@@ -538,8 +504,7 @@ const registerAdminCommands = () => {
     urlArgs: {
       post_type: 'acf-post-type'
     },
-    icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_8__["default"],
-    description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('SCF: Create a new custom post type', 'secure-custom-fields'),
+    icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_6__["default"],
     keywords: ['add', 'new', 'create', 'cpt', 'content type']
   }, {
     name: 'new-taxonomy',
@@ -548,8 +513,7 @@ const registerAdminCommands = () => {
     urlArgs: {
       post_type: 'acf-taxonomy'
     },
-    icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_8__["default"],
-    description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('SCF: Create a new custom taxonomy', 'secure-custom-fields'),
+    icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_6__["default"],
     keywords: ['add', 'new', 'create', 'taxonomy', 'categories', 'tags']
   }, {
     name: 'new-options-page',
@@ -558,37 +522,41 @@ const registerAdminCommands = () => {
     urlArgs: {
       post_type: 'acf-ui-options-page'
     },
-    icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_8__["default"],
-    description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('SCF: Create a new custom options page', 'secure-custom-fields'),
+    icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_6__["default"],
     keywords: ['add', 'new', 'create', 'options', 'settings page']
   }];
   const registerCommand = command => {
     commandStore.registerCommand({
       name: 'scf/' + command.name,
       label: command.label,
-      icon: (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Icon, {
-        icon: command.icon
-      }),
-      context: 'admin',
-      description: command.description,
+      icon: command.icon,
       keywords: command.keywords,
       callback: ({
         close
       }) => {
-        document.location = command.urlArgs ? (0,_wordpress_url__WEBPACK_IMPORTED_MODULE_4__.addQueryArgs)(adminUrl + command.url, command.urlArgs) : adminUrl + command.url;
+        document.location = (0,_wordpress_url__WEBPACK_IMPORTED_MODULE_2__.addQueryArgs)(command.url, command.urlArgs);
         close();
       }
     });
   };
 
   // WordPress 6.9+ adds Command Palette commands for all admin menu items.
-  const wpVersion = window.acf.data.wp_version;
-  const isWp69Plus = wpVersion.localeCompare('6.9', undefined, {
-    numeric: true
-  }) >= 0;
-  if (!isWp69Plus) {
-    viewCommands.forEach(registerCommand);
-  }
+  // For older versions, we need to register them manually. The most reliable way to
+  // detect this is to check if the commands are already registered.
+  viewCommands.forEach(command => {
+    const commandUrl = (0,_wordpress_url__WEBPACK_IMPORTED_MODULE_2__.addQueryArgs)(command.url, command.urlArgs);
+    // WordPress stores destination URLs in the command *name*, appended to
+    // the menu slug (which is also a relative URL), resulting in somewhat
+    // peculiar naming, e.g.
+    // edit.php?post_type=acf-field-group-edit.php?post_type=acf-ui-options-page
+    if (registeredCommands.some(cmd => cmd.name.endsWith(commandUrl))) {
+      return;
+    }
+    registerCommand(command);
+  });
+
+  // "Create New" commands are not automatically registered by WordPress,
+  // so we always register them.
   createCommands.forEach(registerCommand);
 };
 if ('requestIdleCallback' in window) {

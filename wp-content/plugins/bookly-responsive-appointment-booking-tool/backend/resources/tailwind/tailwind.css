@@ -275,6 +275,9 @@
 .bookly-css-root .bookly\:inset-y-0 {
   inset-block: calc(var(--bookly-spacing) * 0) !important;
 }
+.bookly-css-root .bookly\:inset-y-2 {
+  inset-block: calc(var(--bookly-spacing) * 2) !important;
+}
 .bookly-css-root .bookly\:start-0 {
   inset-inline-start: calc(var(--bookly-spacing) * 0) !important;
 }
@@ -403,6 +406,9 @@
 }
 .bookly-css-root .bookly\:my-4 {
   margin-block: calc(var(--bookly-spacing) * 4) !important;
+}
+.bookly-css-root .bookly\:my-auto {
+  margin-block: auto !important;
 }
 .bookly-css-root .bookly\:ms-0 {
   margin-inline-start: calc(var(--bookly-spacing) * 0) !important;
@@ -605,14 +611,14 @@
 .bookly-css-root .bookly\:max-w-48 {
   max-width: calc(var(--bookly-spacing) * 48) !important;
 }
-.bookly-css-root .bookly\:max-w-80 {
-  max-width: calc(var(--bookly-spacing) * 80) !important;
-}
 .bookly-css-root .bookly\:max-w-96 {
   max-width: calc(var(--bookly-spacing) * 96) !important;
 }
 .bookly-css-root .bookly\:max-w-128 {
   max-width: calc(var(--bookly-spacing) * 128) !important;
+}
+.bookly-css-root .bookly\:max-w-196 {
+  max-width: calc(var(--bookly-spacing) * 196) !important;
 }
 .bookly-css-root .bookly\:max-w-full {
   max-width: 100% !important;
@@ -632,8 +638,14 @@
 .bookly-css-root .bookly\:min-w-6 {
   min-width: calc(var(--bookly-spacing) * 6) !important;
 }
+.bookly-css-root .bookly\:min-w-8 {
+  min-width: calc(var(--bookly-spacing) * 8) !important;
+}
 .bookly-css-root .bookly\:min-w-80 {
   min-width: calc(var(--bookly-spacing) * 80) !important;
+}
+.bookly-css-root .bookly\:min-w-196 {
+  min-width: calc(var(--bookly-spacing) * 196) !important;
 }
 .bookly-css-root .bookly\:min-w-\[200px\] {
   min-width: 200px !important;
@@ -700,6 +712,9 @@
 }
 .bookly-css-root .bookly\:table-auto {
   table-layout: auto !important;
+}
+.bookly-css-root .bookly\:table-fixed {
+  table-layout: fixed !important;
 }
 .bookly-css-root .bookly\:-translate-x-1\/2 {
   --tw-translate-x: calc(calc(1 / 2 * 100%) * -1) !important;
@@ -1208,6 +1223,9 @@
 .bookly-css-root .bookly\:text-nowrap {
   text-wrap: nowrap !important;
 }
+.bookly-css-root .bookly\:text-wrap {
+  text-wrap: wrap !important;
+}
 .bookly-css-root .bookly\:break-words {
   overflow-wrap: break-word !important;
 }
@@ -1346,6 +1364,14 @@
 .bookly-css-root .bookly\:outline-none {
   --tw-outline-style: none !important;
   outline-style: none !important;
+}
+.bookly-css-root .bookly\:not-hover\:max-h-16:not(*:hover) {
+  max-height: calc(var(--bookly-spacing) * 16) !important;
+}
+@media not (hover: hover) {
+  .bookly-css-root .bookly\:not-hover\:max-h-16 {
+    max-height: calc(var(--bookly-spacing) * 16) !important;
+  }
 }
 .bookly-css-root .bookly\:not-hover\:bg-gray-200:not(*:hover) {
   background-color: var(--bookly-color-gray-200) !important;
@@ -2529,6 +2555,11 @@
     background-color: var(--bookly-color-slate-100) !important;
   }
 }
+@media (hover: hover) {
+  .bookly\:btn.bookly\:btn-white:hover {
+    color: var(--bookly-color-slate-900) !important;
+  }
+}
 
 .bookly\:btn.bookly\:btn-outline {
   background-color: transparent !important;
@@ -2906,12 +2937,259 @@
 }
 
 input[type=checkbox].bookly\:checkbox {
+  min-height: auto !important;
   appearance: none !important;
   border-radius: var(--bookly-radius-sm) !important;
   border-style: var(--tw-border-style) !important;
   border-width: 1px !important;
   border-color: var(--bookly-color-slate-300) !important;
   background-color: var(--bookly-color-white) !important;
+}
+
+img.bookly\:datatable-thumb {
+  aspect-ratio: 1/1 !important;
+  height: calc(var(--bookly-spacing) * 6) !important;
+  width: calc(var(--bookly-spacing) * 6) !important;
+  border-radius: 0.25rem !important;
+  object-fit: cover !important;
+}
+
+input.bookly\:input {
+  height: calc(var(--bookly-spacing) * 8) !important;
+  min-height: auto !important;
+  border-radius: 0.25rem !important;
+  border-style: var(--tw-border-style) !important;
+  border-width: 1px !important;
+  border-color: var(--bookly-color-slate-300) !important;
+  background-color: var(--bookly-color-white) !important;
+  padding-inline: calc(var(--bookly-spacing) * 2) !important;
+  padding-block: calc(var(--bookly-spacing) * 1) !important;
+  font-size: var(--bookly-text-sm) !important;
+  line-height: var(--tw-leading, var(--bookly-text-sm--line-height)) !important;
+}
+input.bookly\:input:focus {
+  border-color: var(--bookly-color-blue-500) !important;
+}
+input.bookly\:input:focus {
+  --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor) !important;
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow) !important;
+}
+input.bookly\:input:focus {
+  --tw-ring-color: var(--bookly-color-blue-500) !important;
+}
+input.bookly\:input:focus {
+  --tw-outline-style: none !important;
+  outline-style: none !important;
+}
+
+.bookly\:card {
+  min-height: auto !important;
+  border-radius: 0.25rem !important;
+  border-style: var(--tw-border-style) !important;
+  border-width: 1px !important;
+  border-color: var(--bookly-color-slate-200) !important;
+  background-color: var(--bookly-color-white) !important;
+  --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1)) !important;
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow) !important;
+}
+
+.bookly\:card-body {
+  padding: calc(var(--bookly-spacing) * 4) !important;
+  font-size: var(--bookly-text-sm) !important;
+  line-height: var(--tw-leading, var(--bookly-text-sm--line-height)) !important;
+  color: var(--bookly-color-slate-900) !important;
+}
+
+.bookly\:card-header {
+  display: flex !important;
+  align-items: center !important;
+  border-bottom-style: var(--tw-border-style) !important;
+  border-bottom-width: 1px !important;
+  border-color: var(--bookly-color-slate-200) !important;
+  padding-inline: calc(var(--bookly-spacing) * 4) !important;
+  padding-block: calc(var(--bookly-spacing) * 3) !important;
+  font-size: var(--bookly-text-base) !important;
+  line-height: var(--tw-leading, var(--bookly-text-base--line-height)) !important;
+  color: var(--bookly-color-slate-900) !important;
+}
+
+.bookly\:nav {
+  position: relative !important;
+  margin: calc(var(--bookly-spacing) * 0);
+  min-height: auto !important;
+  list-style-type: none !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: calc(var(--bookly-spacing) * 0) !important;
+  --tw-border-style: none !important;
+  border-style: none !important;
+  padding: calc(var(--bookly-spacing) * 0) !important;
+  font-size: var(--bookly-text-sm) !important;
+  line-height: var(--tw-leading, var(--bookly-text-sm--line-height)) !important;
+  --tw-font-weight: var(--bookly-font-weight-medium) !important;
+  font-weight: var(--bookly-font-weight-medium) !important;
+  color: var(--bookly-color-slate-500) !important;
+}
+.bookly\:nav::before {
+  content: var(--tw-content);
+  position: absolute !important;
+}
+.bookly\:nav::before {
+  content: var(--tw-content);
+  bottom: calc(var(--bookly-spacing) * 0) !important;
+}
+.bookly\:nav::before {
+  content: var(--tw-content);
+  height: calc(var(--bookly-spacing) * 1) !important;
+}
+.bookly\:nav::before {
+  content: var(--tw-content);
+  width: 100% !important;
+}
+.bookly\:nav::before {
+  content: var(--tw-content);
+  border-radius: 0.25rem;
+}
+@media (width >= 48rem) {
+  .bookly\:nav {
+    display: flex !important;
+  }
+}
+@media (width >= 48rem) {
+  .bookly\:nav {
+    justify-content: flex-start !important;
+  }
+}
+.bookly\:nav::before {
+  content: var(--tw-content);
+}
+@media (width >= 48rem) {
+  .bookly\:nav::before {
+    background-color: var(--bookly-color-slate-200) !important;
+  }
+}
+.bookly\:nav .bookly\:nav-item {
+  z-index: 1 !important;
+  min-height: auto !important;
+  cursor: pointer !important;
+  border-bottom-style: var(--tw-border-style) !important;
+  border-bottom-width: 4px !important;
+  border-color: var(--bookly-color-slate-200) !important;
+  padding: calc(var(--bookly-spacing) * 2) !important;
+  font-size: var(--bookly-text-sm) !important;
+  line-height: var(--tw-leading, var(--bookly-text-sm--line-height)) !important;
+}
+@media (hover: hover) {
+  .bookly\:nav .bookly\:nav-item:hover {
+    border-color: var(--bookly-color-gray-400) !important;
+  }
+}
+@media (width < 48rem) {
+  .bookly\:nav .bookly\:nav-item {
+    text-align: center !important;
+  }
+}
+.bookly\:nav .bookly\:nav-item:has(.bookly\:active) {
+  border-bottom-style: var(--tw-border-style) !important;
+  border-bottom-width: 4px !important;
+  border-color: var(--bookly-color-gray-600) !important;
+}
+.bookly\:nav .bookly\:nav-item .bookly\:nav-link {
+  padding: calc(var(--bookly-spacing) * 2) !important;
+  color: var(--bookly-color-slate-500) !important;
+  text-decoration-line: none !important;
+}
+@media (hover: hover) {
+  .bookly\:nav .bookly\:nav-item .bookly\:nav-link:hover {
+    color: var(--bookly-color-slate-800) !important;
+  }
+}
+.bookly\:nav .bookly\:nav-item .bookly\:active {
+  color: var(--bookly-color-slate-800) !important;
+}
+@media (hover: hover) {
+  .bookly\:nav .bookly\:nav-item .bookly\:active:hover {
+    color: var(--bookly-color-slate-700) !important;
+  }
+}
+
+.bookly\:nav2 {
+  position: relative !important;
+  margin: calc(var(--bookly-spacing) * 0);
+  display: flex !important;
+  min-height: auto !important;
+  list-style-type: none !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: calc(var(--bookly-spacing) * 2) !important;
+  border-radius: 0.25rem !important;
+  border-style: var(--tw-border-style) !important;
+  border-width: 2px !important;
+  border-color: var(--bookly-color-slate-200) !important;
+  padding: calc(var(--bookly-spacing) * 0.75) !important;
+  font-size: var(--bookly-text-sm) !important;
+  line-height: var(--tw-leading, var(--bookly-text-sm--line-height)) !important;
+  --tw-font-weight: var(--bookly-font-weight-medium) !important;
+  font-weight: var(--bookly-font-weight-medium) !important;
+  color: var(--bookly-color-slate-500) !important;
+}
+.bookly\:nav2::before {
+  content: var(--tw-content);
+  position: absolute !important;
+}
+.bookly\:nav2::before {
+  content: var(--tw-content);
+  inset: calc(var(--bookly-spacing) * 0.5) !important;
+}
+.bookly\:nav2::before {
+  content: var(--tw-content);
+  border-radius: 0.25rem;
+}
+.bookly\:nav2::before {
+  content: var(--tw-content);
+  background-color: var(--bookly-color-slate-200) !important;
+}
+.bookly\:nav2 .bookly\:nav-item {
+  z-index: 1 !important;
+  min-height: auto !important;
+  border-radius: 0.25rem !important;
+  padding: calc(var(--bookly-spacing) * 2) !important;
+  font-size: var(--bookly-text-sm) !important;
+  line-height: var(--tw-leading, var(--bookly-text-sm--line-height)) !important;
+}
+.bookly\:nav2 .bookly\:nav-item:has(.active) {
+  border-radius: 0.25rem !important;
+  background-color: var(--bookly-color-gray-600) !important;
+}
+.bookly\:nav2 .bookly\:nav-item .bookly\:nav-link {
+  padding: calc(var(--bookly-spacing) * 2) !important;
+  color: var(--bookly-color-slate-600) !important;
+  text-decoration-line: none !important;
+}
+@media (hover: hover) {
+  .bookly\:nav2 .bookly\:nav-item .bookly\:nav-link:hover {
+    color: var(--bookly-color-slate-800) !important;
+  }
+}
+.bookly\:nav2 .bookly\:nav-item .active {
+  color: var(--bookly-color-white) !important;
+}
+@media (hover: hover) {
+  .bookly\:nav2 .bookly\:nav-item .active:hover {
+    color: var(--bookly-color-slate-200) !important;
+  }
+}
+
+.bookly\:tab-pane {
+  display: none !important;
+}
+.bookly\:tab-pane.bookly\:active {
+  display: block !important;
+}
+
+.iti__selected-country-primary {
+  padding: 0 var(--iti-arrow-padding) 0 var(--iti-spacer-horizontal);
 }
 
 @property --tw-translate-x {

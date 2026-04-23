@@ -274,6 +274,29 @@
 /* 4. Payment Step */
 /* ========================================================= */
 
+/* Hide default radio and style custom one */
+.bookly-form input[type="radio"] {
+  accent-color: #D9BBA9 !important;
+  
+}
 
 
+/* Label text next to it */
+.bookly-form input[type="radio"] + label,
+.bookly-form .bookly-payment-step label {
+  color: #f2f2f2 !important;
+  font-size: 15px !important;
+}
 
+
+/* ========================================================= */
+/* 5. Done Step */
+/* ========================================================= */
+
+
+.ladda-button[data-style=zoom-in]:hover {
+     background-color: #000000 !important;
+    color: #D9BBA9 !important;
+    border: 1px solid #D9BBA9 !important
+
+}

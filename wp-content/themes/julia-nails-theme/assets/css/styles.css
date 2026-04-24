@@ -163,3 +163,10 @@ body {
     .nav-toggle:checked + .nav-toggle-label span::before { transform: rotate(45deg); top: 0; }
     .nav-toggle:checked + .nav-toggle-label span::after { transform: rotate(-45deg); top: 0; }
 }
+
+.ea-bootstrap, 
+.ea-app {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}

@@ -1,1 +1,0 @@
-<div id="ea-admin-tools" class="easy-appointments"></div>

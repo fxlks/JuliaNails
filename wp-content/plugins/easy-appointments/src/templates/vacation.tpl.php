@@ -1,1 +1,0 @@
-<div id="ea-admin-vacation" class="easy-appointments"></div>

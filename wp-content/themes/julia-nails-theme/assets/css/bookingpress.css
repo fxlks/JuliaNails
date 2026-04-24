@@ -1,0 +1,55 @@
+
+.bpa-front-tabs .bpa-front-module--service-item .bpa-front-si-card .bpa-front-si__card-body .bpa-front-si-cb__specs .bpa-front-si-cb__specs-item p strong {
+font-weight: 500 !important;
+}
+
+.bpa-front-module--category .bpa-front-cat-items .bpa-front-ci-pill.el-tag {
+   border-radius: 14px !important;
+}
+
+.bpa-front-tabs .bpa-front-module-heading {
+    color: #D9BBA9 !important;
+}
+
+.bpa-front-form-label {
+    font-size: 16px !important;
+}
+
+/* BookingPress — Next/Continue button */
+.el-button.bpa-front-btn.bpa-front-btn__medium.bpa-front-btn--primary.bpa_focusable.el-button--default {
+    background-color: #D9BBA9 !important;
+    border: 2px solid transparent !important;
+    border-radius: 12px !important;
+    font-weight: 500 !important;
+    font-size: 15px !important;
+    letter-spacing: 0.5px !important;
+    transition: all 0.3s ease !important;
+}
+
+.el-button.bpa-front-btn.bpa-front-btn__medium.bpa-front-btn--primary.bpa_focusable.el-button--default:hover {
+    background-color: #000000 !important;
+    color: #D9BBA9 !important;
+    border: 2px solid #D9BBA9 !important;
+}
+
+.el-button.bpa-front-btn.bpa-front-btn__medium.bpa-front-btn--primary.bpa_focusable.el-button--default:hover,
+.el-button.bpa-front-btn.bpa-front-btn__medium.bpa-front-btn--primary.bpa_focusable.el-button--default:hover * {
+    color: #D9BBA9 !important;
+}
+
+.bpa-front-tabs--foot .bpa-front-btn.bpa-front-btn--primary>span svg {
+    display: none !important;
+}
+
+.bpa-front-thankyou-module-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.bpa-front-tmc__head svg {
+    margin: 0 auto;
+    margin-bottom: 45px;
+    }

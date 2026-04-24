@@ -1,2 +1,0 @@
-import './view';
-import './frontend';

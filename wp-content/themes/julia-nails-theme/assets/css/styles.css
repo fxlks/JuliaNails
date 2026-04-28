@@ -96,7 +96,7 @@ body {
 
 /* The Hover Effect from your previous image */
 .btn-book:hover {
-    background-color: #000000;
+    background-color: #0F0F0F;
     color: #D9BBA9 !important;
     border: 2px solid #D9BBA9; /* Reveals a nude border on black background */
 }

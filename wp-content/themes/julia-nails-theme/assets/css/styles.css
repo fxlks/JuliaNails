@@ -13,7 +13,7 @@ body {
 
 /* --- Header & Layout --- */
 .main-header {
-    background-color: #000; 
+    background-color: #0F0F0F; 
     width: 100%;
     padding: 15px 0; /* Slightly more vertical breathing room */
     justify-content: center;

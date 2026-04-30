@@ -53,3 +53,15 @@ font-weight: 500 !important;
     margin: 0 auto;
     margin-bottom: 45px;
     }
+
+
+.bpa-front-tabs--vertical-left .bpa-front-tab-menu {
+    box-shadow: none !important;
+}
+
+
+@media (max-width: 768px) {
+    .bpa-front-tabs.bpa-front-tabs--vertical-left.bpa-front-tabs--left {
+        padding: 20px;
+    }
+}

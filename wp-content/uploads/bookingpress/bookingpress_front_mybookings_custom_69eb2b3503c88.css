@@ -13,17 +13,17 @@
                         .bpa-front-data-empty-view--my-bookings .bpa-front-dev__form-bg{
                             fill:#211F1C !important;
                         }
-                       /*  .bpa-cp-ma-table.el-table--striped .el-table__body tr.el-table__row--striped td.el-table__cell,
+                        .bpa-cp-ma-table.el-table--striped .el-table__body tr.el-table__row--striped td.el-table__cell,
                         .bpa-front-toast-notification.--bpa-error,
                         .bpa-front-toast-notification.--bpa-success,
                         .bpa-front-ma--pagination-wrapper.__bpa-is-sticky,
                         .el-year-table td.disabled .cell,
                         .el-month-table td.disabled .cell{
                             background-color:  !important;
-                        } */
-                       /*  .bpa-front-data-empty-view--my-bookings .bpa-front-dev__panel-bg{
+                        }
+                        .bpa-front-data-empty-view--my-bookings .bpa-front-dev__panel-bg{
                             fill:  !important;
-                        } */
+                        }
                         .bpa-front-cp-top-navbar,
                         .bpa-front-cp-card,
                         .bpa-front-form-control input,

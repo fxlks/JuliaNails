@@ -65,3 +65,17 @@ font-weight: 500 !important;
         padding: 20px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .bw_timeslot_wrapper, .bookingpress-timeslot-container {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bookingpress-appointment-col {
+        flex-direction: column !important;
+    }
+}

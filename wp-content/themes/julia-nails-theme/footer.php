@@ -35,18 +35,18 @@
       </div>
 
 <!-- Social Media -->
-<div style="font-family: 'Montserrat', sans-serif;">
+<div class="text-center" style="font-family: 'Montserrat', sans-serif;">
   <h4 class="text-[#D9BBA9] text-2xl font-semibold mb-6">Social Media</h4>
-  <div class="flex flex-col gap-2 items-start">
+  <div class="flex flex-col gap-2 items-center">
     <a href="https://www.instagram.com/junails__studio/" target="_blank" rel="noopener noreferrer"
       class="flex items-center justify-center opacity-100 transition-all duration-200 group">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/instagram-icon-rosegold.svg" alt="Instagram"
-        class="w-[60px] ml-[40px] h-[60px] transition-all duration-100 group-hover:brightness-0 group-hover:invert">
+        class="w-[60px] h-[60px] transition-all duration-100 group-hover:brightness-0 group-hover:invert">
     </a>
     <a href="https://www.facebook.com/profile.php?id=100018064524930" target="_blank" rel="noopener noreferrer"
       class="flex items-center justify-center opacity-100 transition-all duration-200 group">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/facebook-icon-rosegold.svg" alt="Facebook"
-        class="w-[60px] ml-[40px] h-[60px] transition-all duration-100 group-hover:brightness-0 group-hover:invert">
+        class="w-[60px] h-[60px] transition-all duration-100 group-hover:brightness-0 group-hover:invert">
     </a>
   </div>
 </div>

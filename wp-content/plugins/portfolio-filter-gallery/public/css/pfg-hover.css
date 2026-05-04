@@ -1,0 +1,282 @@
+/**
+ * Portfolio Filter Gallery - Hover Effects
+ *
+ * @package Portfolio_Filter_Gallery
+ */
+
+/* ==========================================================================
+   Base Transitions
+   ========================================================================== */
+
+/* Base .pfg-item transition removed - controlled by JavaScript for FLIP animation */
+/* Hover effects apply to .pfg-item-image and specific hover classes instead */
+
+.pfg-item-image {
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                opacity 0.4s ease,
+                filter 0.4s ease;
+}
+
+.pfg-item-link {
+    position: relative;
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   None - No Effect
+   ========================================================================== */
+
+.pfg-item-hover--none .pfg-item-image {
+    transition: none;
+}
+
+/* ==========================================================================
+   Zoom Effect
+   ========================================================================== */
+
+.pfg-item-hover--zoom .pfg-item-image {
+    transform: scale(1);
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.pfg-item-hover--zoom:hover .pfg-item-image {
+    transform: scale(1.1);
+}
+
+/* ==========================================================================
+   Fade Effect
+   ========================================================================== */
+
+.pfg-item-hover--fade .pfg-item-image {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.pfg-item-hover--fade:hover .pfg-item-image {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+/* Fade effect overlay - smooth transition */
+.pfg-item-hover--fade .pfg-item-overlay,
+.pfg-item-hover--fade .pfg-item-caption--overlay {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pfg-item-hover--fade:hover .pfg-item-overlay,
+.pfg-item-hover--fade:hover .pfg-item-caption--overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ==========================================================================
+   Slide Up Effect - Applies to entire card
+   ========================================================================== */
+
+.pfg-item-hover--slide-up {
+    position: relative;
+    transform: translateY(0);
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.pfg-item-hover--slide-up:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================================================================
+   Blur Effect
+   ========================================================================== */
+
+.pfg-item-hover--blur .pfg-item-image {
+    filter: blur(0);
+    transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.pfg-item-hover--blur:hover .pfg-item-image {
+    filter: blur(3px);
+    transform: scale(1.02);
+}
+
+/* Make overlay more visible on blur */
+.pfg-item-hover--blur .pfg-item-overlay,
+.pfg-item-hover--blur .pfg-item-caption--overlay {
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+        background 0.35s ease;
+}
+
+.pfg-item-hover--blur:hover .pfg-item-overlay,
+.pfg-item-hover--blur:hover .pfg-item-caption--overlay {
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ==========================================================================
+   Grayscale Effect
+   ========================================================================== */
+
+.pfg-item-hover--grayscale .pfg-item-image {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+.pfg-item-hover--grayscale:hover .pfg-item-image {
+    filter: grayscale(0%);
+}
+
+/* ==========================================================================
+   Shine Effect
+   ========================================================================== */
+
+.pfg-item-hover--shine .pfg-item-link {
+    position: relative;
+    overflow: hidden;
+}
+
+.pfg-item-hover--shine .pfg-item-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.1) 20%,
+        rgba(255, 255, 255, 0.4) 50%,
+        rgba(255, 255, 255, 0.1) 80%,
+        transparent 100%
+    );
+    transform: skewX(-25deg);
+    z-index: 5;
+    pointer-events: none;
+    transition: left 0s;
+}
+
+.pfg-item-hover--shine:hover .pfg-item-link::before {
+    left: 150%;
+    transition: left 0.8s ease;
+}
+
+/* ==========================================================================
+   3D Tilt Effect - Applies to entire card
+   ========================================================================== */
+
+.pfg-item-hover--3d-tilt {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.pfg-item-hover--3d-tilt:hover {
+    transform: perspective(1000px) rotateY(6deg) rotateX(4deg) scale(1.02);
+    box-shadow: -8px 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================================================================
+   Lift Effect
+   ========================================================================== */
+
+.pfg-item-hover--lift {
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.pfg-item-hover--lift:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================================================================
+   Grow Shadow Effect (Legacy)
+   ========================================================================== */
+
+.pfg-item-hover--hvr-grow-shadow,
+.pfg-item-hover--grow-shadow {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.pfg-item-hover--hvr-grow-shadow:hover,
+.pfg-item-hover--grow-shadow:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================================================================
+   Float Shadow Effect (Legacy)
+   ========================================================================== */
+
+.pfg-item-hover--hvr-float-shadow,
+.pfg-item-hover--float-shadow {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.pfg-item-hover--hvr-float-shadow:hover,
+.pfg-item-hover--float-shadow:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================================================================
+   Glow Effect (Legacy)
+   ========================================================================== */
+
+.pfg-item-hover--hvr-glow,
+.pfg-item-hover--glow {
+    transition: box-shadow 0.4s ease;
+}
+
+.pfg-item-hover--hvr-glow:hover,
+.pfg-item-hover--glow:hover {
+    box-shadow: 0 0 25px rgba(56, 88, 233, 0.5);
+}
+
+/* ==========================================================================
+   Box Shadow Effects (Legacy)
+   ========================================================================== */
+
+.pfg-item-hover--hvr-box-shadow-outset,
+.pfg-item-hover--box-shadow-outset {
+    transition: box-shadow 0.3s ease;
+}
+
+.pfg-item-hover--hvr-box-shadow-outset:hover,
+.pfg-item-hover--box-shadow-outset:hover {
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.pfg-item-hover--hvr-box-shadow-inset,
+.pfg-item-hover--box-shadow-inset {
+    transition: box-shadow 0.3s ease;
+}
+
+.pfg-item-hover--hvr-box-shadow-inset:hover,
+.pfg-item-hover--box-shadow-inset:hover {
+    box-shadow: inset 0 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================================================================
+   Scale Overlay Effect
+   ========================================================================== */
+
+.pfg-item-hover--scale-overlay .pfg-item-overlay {
+    opacity: 0;
+    transform: scale(0.85);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.pfg-item-hover--scale-overlay:hover .pfg-item-overlay {
+    opacity: 1;
+    transform: scale(1);
+}

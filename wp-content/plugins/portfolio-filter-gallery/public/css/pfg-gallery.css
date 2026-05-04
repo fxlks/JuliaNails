@@ -1,0 +1,1708 @@
+/**
+ * Portfolio Filter Gallery - Core Styles
+ * Lightweight replacement for Bootstrap grid
+ * 
+ * @package Portfolio_Filter_Gallery
+ * @version 2.0.0
+ */
+
+/* ==========================================================================
+   CSS Variables & Defaults
+   ========================================================================== */
+
+.pfg-gallery-wrapper {
+  --pfg-cols-xl: 4;
+  --pfg-cols-lg: 3;
+  --pfg-cols-md: 2;
+  --pfg-cols-sm: 1;
+  --pfg-gap: 20px;
+  --pfg-border-width: 0px;
+  --pfg-border-color: #ffffff;
+  --pfg-border-radius: 0px;
+  --pfg-filter-bg: #3858e9;
+  --pfg-filter-text: #ffffff;
+  --pfg-overlay-bg: rgba(0, 0, 0, 0.6);
+  --pfg-transition: 0.3s ease;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+.pfg-gallery-wrapper *,
+.pfg-gallery-wrapper *::before,
+.pfg-gallery-wrapper *::after {
+  box-sizing: inherit;
+}
+
+/* ==========================================================================
+   Gallery Preloader
+   ========================================================================== */
+
+.pfg-gallery-wrapper.pfg-loading {
+  position: relative;
+  min-height: 300px;
+}
+
+.pfg-gallery-wrapper.pfg-loading .pfg-grid {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.pfg-preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.pfg-preloader-spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #e2e8f0;
+  border-top-color: var(--pfg-filter-bg, #3858e9);
+  border-radius: 50%;
+  animation: pfg-spin 0.8s linear infinite;
+}
+
+.pfg-preloader-text {
+  font-size: 14px;
+  color: #64748b;
+}
+
+@keyframes pfg-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* CSS-only fallback: hide preloader after 3s animation delay */
+@keyframes pfg-fade-out {
+  0%, 90% { opacity: 1; visibility: visible; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
+.pfg-preloader {
+  animation: pfg-fade-out 3.5s forwards;
+}
+
+.pfg-gallery-wrapper.pfg-loaded .pfg-preloader {
+  display: none;
+  animation: none;
+}
+
+.pfg-gallery-wrapper.pfg-loaded .pfg-grid {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease;
+}
+
+/* ==========================================================================
+   Filter Buttons
+   ========================================================================== */
+
+.pfg-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.pfg-filters--top {
+  justify-content: flex-start;
+}
+
+.pfg-filters--center {
+  justify-content: center;
+}
+
+.pfg-filters--right {
+  justify-content: flex-end;
+}
+
+/* ==========================================================================
+   Sidebar Layout
+   ========================================================================== */
+
+.pfg-gallery-wrapper--sidebar {
+  display: flex;
+  gap: 30px;
+  overflow: visible;
+}
+
+.pfg-gallery-wrapper--sidebar-right {
+  flex-direction: row-reverse;
+}
+
+.pfg-gallery-wrapper--sidebar .pfg-filters {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  width: 240px;
+  margin-bottom: 0;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 12px;
+  align-self: flex-start;
+  position: sticky;
+  top: 20px;
+  max-height: calc(100vh - 40px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  gap: 6px;
+}
+
+/* Custom scrollbar for sidebar */
+.pfg-gallery-wrapper--sidebar .pfg-filters::-webkit-scrollbar {
+  width: 4px;
+}
+
+.pfg-gallery-wrapper--sidebar .pfg-filters::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.pfg-gallery-wrapper--sidebar .pfg-filters::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.pfg-gallery-wrapper--sidebar .pfg-gallery-main {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Sidebar filter buttons - vertical style */
+.pfg-gallery-wrapper--sidebar .pfg-filter {
+  width: 100%;
+  justify-content: flex-start;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 14px;
+  background: var(--pfg-filter-bg, #3858e9);
+  color: var(--pfg-filter-text, #fff);
+  position: relative;
+  overflow: visible;
+}
+
+.pfg-gallery-wrapper--sidebar .pfg-filter:hover {
+  background: var(--pfg-filter-active-bg, var(--pfg-filter-bg, #3858e9));
+  color: var(--pfg-filter-active-text, var(--pfg-filter-text, #fff));
+}
+
+.pfg-gallery-wrapper--sidebar .pfg-filter--active {
+  background: var(--pfg-filter-active-bg, var(--pfg-filter-bg, #3858e9));
+  color: var(--pfg-filter-active-text, var(--pfg-filter-text, #fff));
+}
+
+/* Color dot in sidebar - inline with text */
+.pfg-gallery-wrapper--sidebar .pfg-filter-color {
+  flex-shrink: 0;
+}
+
+/* On hover, add a subtle ring/glow around the color dot using its own color */
+.pfg-gallery-wrapper--sidebar .pfg-filter:hover .pfg-filter-color {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.6);
+  transform: scale(1.2);
+  transition: all 0.2s ease;
+}
+
+/* CRITICAL: Override hierarchical filter styles for sidebar */
+.pfg-gallery-wrapper--sidebar .pfg-filter-group {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  margin-bottom: 4px;
+}
+
+.pfg-gallery-wrapper--sidebar .pfg-filter--parent {
+  width: 100% !important;
+}
+
+.pfg-gallery-wrapper--sidebar .pfg-filter-children {
+  margin-left: 0;
+  margin-top: 4px;
+  padding-left: 20px;
+  border-left: 2px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.pfg-gallery-wrapper--sidebar .pfg-filter-children .pfg-filter {
+  padding: 8px 12px;
+  font-size: 13px;
+  width: 100%;
+}
+
+/* Sidebar: Override hierarchical orphan filter white background */
+.pfg-gallery-wrapper--sidebar .pfg-filters--hierarchical > .pfg-filter:not(.pfg-filter--parent):not(.pfg-filter--child) {
+  background: var(--pfg-filter-bg, #3858e9);
+  color: var(--pfg-filter-text, #fff);
+  border: none;
+}
+
+.pfg-gallery-wrapper--sidebar .pfg-filters--hierarchical > .pfg-filter:not(.pfg-filter--parent):not(.pfg-filter--child):hover {
+  background: var(--pfg-filter-active-bg, var(--pfg-filter-bg, #3858e9));
+}
+
+/* Sidebar filter count badge - inline style (not tooltip) */
+.pfg-gallery-wrapper--sidebar .pfg-filter-count {
+  position: static;
+  margin-left: auto;
+  background: #e2e8f0;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  color: #64748b;
+  opacity: 1;
+  transform: none;
+  box-shadow: none;
+  pointer-events: auto;
+  max-width: none;
+  overflow: visible;
+  display: inline-block;
+}
+
+.pfg-gallery-wrapper--sidebar .pfg-filter--active .pfg-filter-count {
+  background: rgba(255, 255, 255, 0.2);
+  color: inherit;
+}
+
+/* Maintain active count styling on hover */
+.pfg-gallery-wrapper--sidebar .pfg-filter--active:hover .pfg-filter-count {
+  background: rgba(255, 255, 255, 0.3);
+  color: inherit;
+}
+
+/* Reset hover tooltip style for sidebar */
+.pfg-gallery-wrapper--sidebar.pfg-filters--count-hover .pfg-filter-count {
+  position: static;
+  opacity: 1;
+  transform: none;
+  top: auto;
+  right: auto;
+}
+
+/* Responsive sidebar - collapse on mobile */
+@media (max-width: 768px) {
+  .pfg-gallery-wrapper--sidebar {
+    flex-direction: column;
+  }
+
+  .pfg-gallery-wrapper--sidebar .pfg-filters {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px;
+    position: static;
+    max-height: none;
+  }
+
+  .pfg-gallery-wrapper--sidebar .pfg-filter {
+    width: auto;
+    padding: 8px 16px;
+  }
+
+  .pfg-gallery-wrapper--sidebar .pfg-filter-children {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.pfg-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border: none;
+  background: var(--pfg-filter-bg, #3858e9);
+  color: var(--pfg-filter-text, #ffffff);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease, opacity 0.2s ease;
+}
+
+.pfg-filter-color {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.pfg-filter:hover,
+.pfg-filter:focus {
+  background: var(--pfg-filter-active-bg, var(--pfg-filter-bg, #3858e9));
+  color: var(--pfg-filter-active-text, var(--pfg-filter-text, #ffffff));
+  outline: none;
+}
+
+.pfg-filter--active {
+  background: var(--pfg-filter-active-bg, var(--pfg-filter-bg));
+  color: var(--pfg-filter-active-text, var(--pfg-filter-text));
+}
+
+.pfg-filter--active:hover,
+.pfg-filter--active:focus {
+  background: var(--pfg-filter-active-bg, var(--pfg-filter-bg));
+  color: var(--pfg-filter-active-text, var(--pfg-filter-text));
+  opacity: 0.9;
+}
+
+.pfg-filter-count {
+  opacity: 0.7;
+  font-size: 0.85em;
+  margin-left: 2px;
+}
+
+/* Hover-only count display - Tooltip style badge */
+.pfg-filters--count-hover .pfg-filter {
+  position: relative;
+}
+
+.pfg-filters--count-hover .pfg-filter-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--pfg-filter-active-bg, #333);
+  color: #fff;
+  font-size: 0.7em;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 10px;
+  min-width: 18px;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.5) translateY(5px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin-left: 0;
+}
+
+.pfg-filters--count-hover .pfg-filter:hover .pfg-filter-count {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+/* ==========================================================================
+   Filter Style Variations
+   ========================================================================== */
+
+/* Buttons (Default) - Already styled above */
+.pfg-filters--buttons .pfg-filter {
+  border-radius: 6px;
+}
+
+/* Pills - Fully rounded */
+.pfg-filters--pills .pfg-filter {
+  border-radius: 50px;
+  padding: 10px 24px;
+}
+
+/* Minimal - Text only, no background, no border */
+.pfg-filters--minimal .pfg-filter {
+  background: transparent !important;
+  border: none !important;
+  padding: 8px 16px;
+  color: #64748b;
+  font-weight: 500;
+  border-radius: 0;
+  box-shadow: none;
+  transition: color 0.25s ease, opacity 0.2s ease;
+}
+
+.pfg-filters--minimal .pfg-filter:hover {
+  background: transparent !important;
+  color: #1e293b;
+}
+
+.pfg-filters--minimal .pfg-filter--active {
+  background: transparent !important;
+  color: var(--pfg-filter-active-bg, var(--pfg-filter-bg)) !important;
+  font-weight: 600;
+}
+
+.pfg-filters--minimal .pfg-filter--active:hover {
+  background: transparent !important;
+  color: var(--pfg-filter-active-bg, var(--pfg-filter-bg)) !important;
+  opacity: 0.8;
+}
+
+.pfg-filters--minimal .pfg-filter--selected {
+  background: transparent !important;
+  color: var(--pfg-filter-active-bg, var(--pfg-filter-bg)) !important;
+  font-weight: 600;
+}
+
+/* Outline - Bordered */
+.pfg-filters--outline .pfg-filter {
+  background: transparent;
+  border: 2px solid #e2e8f0;
+  color: #64748b;
+  padding: 8px 18px;
+  border-radius: 6px;
+  transition: border-color 0.25s ease, color 0.25s ease, opacity 0.2s ease;
+}
+
+.pfg-filters--outline .pfg-filter:hover {
+  background: transparent;
+  border-color: #94a3b8;
+  color: #475569;
+}
+
+.pfg-filters--outline .pfg-filter--active {
+  background: transparent;
+  border-color: var(--pfg-filter-active-bg, var(--pfg-filter-bg));
+  color: var(--pfg-filter-active-bg, var(--pfg-filter-bg));
+}
+
+.pfg-filters--outline .pfg-filter--active:hover {
+  opacity: 0.8;
+}
+
+.pfg-filters--outline .pfg-filter--selected {
+  background: transparent !important;
+  border-color: var(--pfg-filter-active-bg, var(--pfg-filter-bg));
+  color: var(--pfg-filter-active-bg, var(--pfg-filter-bg));
+}
+
+/* Underline - Only bottom border on active, no other borders */
+.pfg-filters--underline .pfg-filter {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 2px solid transparent !important;
+  padding: 10px 16px;
+  color: #64748b;
+  font-weight: 500;
+  border-radius: 0;
+  box-shadow: none;
+  transition: color 0.25s ease, border-color 0.25s ease, opacity 0.2s ease;
+}
+
+.pfg-filters--underline .pfg-filter:hover {
+  background: transparent !important;
+  color: #1e293b;
+  border-bottom-color: #e2e8f0 !important;
+}
+
+.pfg-filters--underline .pfg-filter--active {
+  background: transparent !important;
+  color: var(--pfg-filter-active-bg, var(--pfg-filter-bg)) !important;
+  border-bottom-color: var(
+    --pfg-filter-active-bg,
+    var(--pfg-filter-bg)
+  ) !important;
+  font-weight: 600;
+}
+
+.pfg-filters--underline .pfg-filter--active:hover {
+  background: transparent !important;
+  color: var(--pfg-filter-active-bg, var(--pfg-filter-bg)) !important;
+  opacity: 0.9;
+}
+
+.pfg-filters--underline .pfg-filter--selected {
+  background: transparent !important;
+  color: var(--pfg-filter-active-bg, var(--pfg-filter-bg)) !important;
+  border-bottom-color: var(
+    --pfg-filter-active-bg,
+    var(--pfg-filter-bg)
+  ) !important;
+  font-weight: 600;
+}
+
+/* Flat - Rectangular buttons, no border-radius, uses theme colors */
+.pfg-filters--flat .pfg-filter {
+  background: var(--pfg-filter-bg, #3858e9);
+  color: var(--pfg-filter-text, #ffffff);
+  border: none;
+  border-radius: 0;
+  padding: 10px 22px;
+  font-weight: 500;
+  box-shadow: none;
+}
+
+.pfg-filters--flat .pfg-filter--active {
+  background: var(--pfg-filter-active-bg, var(--pfg-filter-bg));
+  color: var(--pfg-filter-active-text, var(--pfg-filter-text));
+}
+
+.pfg-filters--flat .pfg-filter--selected {
+  background: var(--pfg-filter-active-bg, var(--pfg-filter-bg));
+  color: var(--pfg-filter-active-text, var(--pfg-filter-text));
+}
+
+/* Multi-select mode - selected filters */
+.pfg-filters--multi .pfg-filter--selected {
+  background: var(--pfg-filter-active-bg, var(--pfg-filter-bg));
+  color: var(--pfg-filter-active-text, var(--pfg-filter-text));
+  position: relative;
+  padding-right: 32px; /* Make room for checkmark */
+}
+
+.pfg-filters--multi .pfg-filter--selected::after {
+  content: "✓";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+/* AND/OR Logic Toggle - More prominent styling */
+.pfg-logic-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  margin-left: auto;
+  border: 2px solid var(--pfg-filter-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.pfg-logic-btn {
+  padding: 10px 18px;
+  border: none;
+  background: transparent;
+  color: var(--pfg-filter-bg);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pfg-logic-btn:hover {
+  background: rgba(56, 88, 233, 0.1);
+}
+
+.pfg-logic-btn--active {
+  background: var(--pfg-filter-bg);
+  color: var(--pfg-filter-text);
+}
+
+.pfg-logic-btn--active:hover {
+  background: var(--pfg-filter-bg);
+  opacity: 0.9;
+}
+
+/* Hierarchical Filters - Inline groups with children below parent */
+.pfg-filters--hierarchical {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.pfg-filter-group {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.pfg-filter--parent {
+  font-weight: 600;
+  background: var(--pfg-filter-bg, #3858e9);
+  color: var(--pfg-filter-text, #fff);
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.pfg-filter--parent:hover {
+  background: var(--pfg-filter-active-bg, var(--pfg-filter-bg, #3858e9));
+  color: var(--pfg-filter-active-text, var(--pfg-filter-text, #fff));
+}
+
+.pfg-filter--parent.pfg-filter--active,
+.pfg-filter--parent.pfg-filter--selected {
+  background: var(--pfg-filter-active-bg, var(--pfg-filter-bg));
+  color: var(--pfg-filter-active-text, var(--pfg-filter-text));
+}
+
+.pfg-filter-children {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-left: 10px;
+  margin-left: 4px;
+  border-left: 3px solid var(--pfg-filter-bg);
+  align-items: center;
+}
+
+/* Nested children (3rd level and beyond) */
+.pfg-filter-children .pfg-filter-group {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.pfg-filter-children .pfg-filter-children {
+  padding-left: 8px;
+  margin-left: 3px;
+  border-left-width: 2px;
+}
+
+.pfg-filter--child {
+  font-size: 13px;
+  padding: 6px 12px;
+  background: var(--pfg-filter-bg, #3858e9);
+  color: var(--pfg-filter-text, #ffffff);
+  border: none;
+  border-radius: 6px;
+}
+
+.pfg-filter--child:hover {
+  background: var(--pfg-filter-active-bg, var(--pfg-filter-bg, #3858e9));
+}
+
+.pfg-filter--child.pfg-filter--active,
+.pfg-filter--child.pfg-filter--selected {
+  background: var(--pfg-filter-active-bg, var(--pfg-filter-bg));
+  color: var(--pfg-filter-active-text, var(--pfg-filter-text));
+  border-color: var(--pfg-filter-active-bg, var(--pfg-filter-bg));
+}
+
+/* Orphan filters - use primary color like standard filters */
+.pfg-filters--hierarchical
+  > .pfg-filter:not(.pfg-filter--parent):not(.pfg-filter--child) {
+  background: var(--pfg-filter-bg, #3858e9);
+  color: var(--pfg-filter-text, #ffffff);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  align-self: center;
+  font-size: 14px;
+}
+
+.pfg-filters--hierarchical
+  > .pfg-filter:not(.pfg-filter--parent):not(.pfg-filter--child):hover {
+  background: var(--pfg-filter-active-bg, var(--pfg-filter-bg, #3858e9));
+}
+
+/* Active state for orphan filters (All button, standalone filters) */
+.pfg-filters--hierarchical
+  > .pfg-filter:not(.pfg-filter--parent):not(
+    .pfg-filter--child
+  ).pfg-filter--active,
+.pfg-filters--hierarchical
+  > .pfg-filter:not(.pfg-filter--parent):not(
+    .pfg-filter--child
+  ).pfg-filter--selected {
+  background: var(--pfg-filter-active-bg, var(--pfg-filter-bg));
+  color: var(--pfg-filter-active-text, var(--pfg-filter-text));
+  border-color: var(--pfg-filter-active-bg, var(--pfg-filter-bg));
+}
+
+/* Mobile responsive styles for hierarchical filters */
+@media (max-width: 768px) {
+  /* Stack filter groups vertically on mobile */
+  .pfg-filters--hierarchical {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  
+  .pfg-filter-group {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+  
+  /* Parent filters - make them stand out more on mobile */
+  .pfg-filters--hierarchical .pfg-filter--parent {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  /* Add visual indicator arrow for parent filters */
+  .pfg-filters--hierarchical .pfg-filter--parent::before {
+    content: "▶";
+    font-size: 10px;
+    margin-right: 8px;
+    opacity: 0.7;
+  }
+  
+  /* Children container - clear indentation on mobile */
+  .pfg-filters--hierarchical .pfg-filter-children {
+    margin-left: 0;
+    margin-top: 4px;
+    padding-left: 16px;
+    border-left: 3px solid rgba(56, 88, 233, 0.3);
+    background: rgba(56, 88, 233, 0.02);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  /* Child filters - lighter styling to show subordination */
+  .pfg-filters--hierarchical .pfg-filter--child {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    background: #f8fafc;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+  }
+  
+  .pfg-filters--hierarchical .pfg-filter--child:hover {
+    background: #f1f5f9;
+    border-color: var(--pfg-filter-bg, #3858e9);
+    color: #334155;
+    opacity: 1;
+  }
+  
+  .pfg-filters--hierarchical .pfg-filter--child.pfg-filter--active,
+  .pfg-filters--hierarchical .pfg-filter--child.pfg-filter--selected {
+    background: var(--pfg-filter-active-bg, var(--pfg-filter-bg));
+    color: var(--pfg-filter-text, #fff);
+    border-color: var(--pfg-filter-active-bg, var(--pfg-filter-bg));
+    font-weight: 600;
+  }
+  
+  /* Orphan/standalone filters on mobile */
+  .pfg-filters--hierarchical > .pfg-filter:not(.pfg-filter--parent):not(.pfg-filter--child) {
+    width: 100%;
+    padding: 12px 16px;
+  }
+}
+/* Dropdown style filters */
+.pfg-filters--dropdown {
+  position: relative;
+}
+
+.pfg-filters--dropdown select {
+  padding: 12px 40px 12px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #fff
+    url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"%3E%3Cpath fill="%23475569" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/%3E%3C/svg%3E')
+    right 12px center no-repeat;
+  background-size: 16px;
+  cursor: pointer;
+  min-width: 200px;
+  appearance: none;
+}
+
+/* Cascading Dropdowns Container */
+.pfg-cascading-dropdowns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.pfg-dropdown-wrap {
+  position: relative;
+}
+
+.pfg-filter-select {
+  padding: 12px 40px 12px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  background: #fff
+    url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"%3E%3Cpath fill="%23475569" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/%3E%3C/svg%3E')
+    right 12px center no-repeat;
+  background-size: 16px;
+  cursor: pointer;
+  min-width: 200px;
+  appearance: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  color: #334155;
+}
+
+.pfg-filter-select:hover {
+  border-color: #94a3b8;
+}
+
+.pfg-filter-select:focus {
+  outline: none;
+  border-color: var(--pfg-filter-active-bg, #3858e9);
+  box-shadow: 0 0 0 3px rgba(56, 88, 233, 0.15);
+}
+
+/* Disabled dropdown state */
+.pfg-filter-select:disabled {
+  background-color: #f1f5f9;
+  color: #94a3b8;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Responsive cascading dropdowns */
+@media (max-width: 576px) {
+  .pfg-cascading-dropdowns {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+  
+  .pfg-dropdown-wrap {
+    width: 100%;
+  }
+  
+  .pfg-filter-select {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+/* ==========================================================================
+   Search Box
+   ========================================================================== */
+
+.pfg-search {
+  margin-bottom: 20px;
+}
+
+.pfg-search-input {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color var(--pfg-transition);
+}
+
+.pfg-search-input:focus {
+  outline: none;
+  border-color: var(--pfg-filter-bg);
+  box-shadow: 0 0 0 3px rgba(56, 88, 233, 0.1);
+}
+
+/* ==========================================================================
+   Gallery Grid
+   ========================================================================== */
+
+.pfg-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--pfg-cols-sm), 1fr);
+  gap: var(--pfg-gap);
+}
+
+/* Base item styles for all layouts */
+/* NOTE: Transitions are controlled by JavaScript to prevent double-animation issues */
+.pfg-item {
+  will-change: transform, opacity;
+}
+
+/* Visible items - full opacity and scale */
+.pfg-item.pfg-item--visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Phase 1: HIDING - Fade out animation (stays in layout for smooth exit) */
+.pfg-item.pfg-item--hiding {
+  opacity: 0;
+  transform: scale(0.9);
+  pointer-events: none;
+  transition: transform 0.25s cubic-bezier(0.33, 1, 0.68, 1),
+    opacity 0.2s ease-out;
+}
+
+/* Phase 2: HIDDEN - Fully collapsed (after animation completes) */
+.pfg-item.pfg-item--hidden {
+  opacity: 0;
+  transform: scale(0.9);
+  pointer-events: none;
+  /* Now collapse from layout */
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  visibility: hidden;
+}
+
+@media (min-width: 576px) {
+  .pfg-grid {
+    grid-template-columns: repeat(var(--pfg-cols-sm), 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .pfg-grid {
+    grid-template-columns: repeat(var(--pfg-cols-md), 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .pfg-grid {
+    grid-template-columns: repeat(var(--pfg-cols-lg), 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .pfg-grid {
+    grid-template-columns: repeat(var(--pfg-cols-xl), 1fr);
+  }
+}
+
+/* Masonry layout - JS-powered absolute positioning (horizontal ordering) */
+.pfg-grid--masonry {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pfg-grid--masonry .pfg-item {
+  position: absolute;
+  border-radius: var(--pfg-radius, 8px);
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  opacity: 1;
+  transform: scale(1);
+  /* Smooth position transitions for filtering */
+  transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    top 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.25s ease-out,
+    transform 0.25s ease-out;
+}
+
+/* Items waiting for JS positioning */
+.pfg-grid--masonry .pfg-item:not(.pfg-item--positioned) {
+  opacity: 0;
+}
+
+/* Items positioned by JS */
+.pfg-grid--masonry .pfg-item.pfg-item--positioned {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Phase 1: HIDING in masonry - fade out + scale down */
+.pfg-grid--masonry .pfg-item.pfg-item--hiding {
+  opacity: 0;
+  transform: scale(0.9);
+  pointer-events: none;
+}
+
+/* Phase 2: HIDDEN in masonry - remove from layout */
+.pfg-grid--masonry .pfg-item.pfg-item--hidden {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  left: -9999px !important;
+  top: -9999px !important;
+  width: 0;
+  height: 0;
+}
+
+/* ==========================================================================
+   Grid Layout - Fixed Height Images (non-masonry)
+   ========================================================================== */
+
+/* Fixed-height grid: crops images to same aspect ratio */
+.pfg-grid--fixed-height .pfg-item {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.pfg-grid--fixed-height .pfg-item-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.pfg-grid--fixed-height .pfg-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Grid with cards/captions: fixed aspect ratio image, caption below */
+.pfg-grid--grid .pfg-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.pfg-grid--grid .pfg-item-link {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.pfg-grid--grid .pfg-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.pfg-grid--grid .pfg-item-caption {
+  width: 100%;
+  padding-top: 10px;
+  flex-grow: 1;
+  /* Below-image captions stretch to fill card height */
+}
+
+/* Grayscale effect */
+.pfg-grid--grayscale .pfg-item-image {
+  filter: grayscale(100%);
+  transition: filter var(--pfg-transition);
+}
+
+.pfg-grid--grayscale .pfg-item:hover .pfg-item-image {
+  filter: grayscale(0%);
+}
+
+/* RTL support */
+.pfg-grid[dir="rtl"] {
+  direction: rtl;
+}
+
+/* Creative Agency template - top-only border radius (no bottom corners) */
+.pfg-template-creative-agency .pfg-item {
+  border-radius: var(--pfg-border-radius) var(--pfg-border-radius) 0 0;
+}
+
+
+
+/* ==========================================================================
+   Gallery Items
+   ========================================================================== */
+
+.pfg-item {
+  position: relative;
+  border-radius: var(--pfg-border-radius);
+  border: var(--pfg-border-width) solid var(--pfg-border-color);
+  background: #f8fafc;
+  overflow: hidden; /* Clips children to rounded corners */
+  /* Smooth animation properties - using cubic-bezier for natural motion */
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+/* Hiding state - fade out before removing */
+.pfg-item--hiding {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+/* Hidden state - completely remove from layout */
+.pfg-item--hidden {
+  display: none !important;
+}
+
+/* Visible items - JavaScript controls the animation */
+.pfg-item--visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Staggered animation delay with natural easing */
+.pfg-item[data-delay="1"] {
+  transition-delay: 0.02s;
+}
+.pfg-item[data-delay="2"] {
+  transition-delay: 0.04s;
+}
+.pfg-item[data-delay="3"] {
+  transition-delay: 0.06s;
+}
+.pfg-item[data-delay="4"] {
+  transition-delay: 0.08s;
+}
+.pfg-item[data-delay="5"] {
+  transition-delay: 0.1s;
+}
+.pfg-item[data-delay="6"] {
+  transition-delay: 0.12s;
+}
+
+.pfg-item-link {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+}
+
+.pfg-item-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform var(--pfg-transition);
+}
+
+/* ==========================================================================
+   Item Overlays
+   ========================================================================== */
+
+/* Legacy overlay class (for backwards compatibility) */
+.pfg-item-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: var(--pfg-overlay-color, rgba(0, 0, 0, 0.7));
+  color: #fff;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* New overlay caption class */
+.pfg-item-caption--overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 50px 15px 15px;
+  background: linear-gradient(
+    to top,
+    var(--pfg-overlay-color, rgba(0, 0, 0, 0.7)) 0%,
+    transparent 100%
+  );
+  color: #fff;
+  opacity: 0;
+  transform: translateY(10px);
+  z-index: 5;
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pfg-item:hover .pfg-item-overlay,
+.pfg-item:hover .pfg-item-caption--overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Overlay text colors */
+.pfg-item-overlay .pfg-item-title,
+.pfg-item-caption--overlay .pfg-item-title {
+  color: var(--pfg-caption-text, #fff);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.pfg-item-overlay .pfg-item-categories,
+.pfg-item-caption--overlay .pfg-item-categories {
+  color: var(--pfg-primary-color, #3858e9);
+  font-size: 0.85em;
+  margin-top: 4px;
+}
+
+.pfg-item-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.pfg-item-number {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: var(--pfg-filter-bg);
+  color: var(--pfg-filter-text);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+/* ==========================================================================
+   Type Indicator Icons (Video/Link in corner)
+   ========================================================================== */
+
+.pfg-item-type-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.pfg-item-type-icon svg {
+  display: block;
+}
+
+.pfg-item:hover .pfg-item-type-icon {
+  background: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+}
+
+.pfg-item-type-icon--video {
+  background: rgba(220, 38, 38, 0.85); /* YouTube red */
+}
+
+.pfg-item:hover .pfg-item-type-icon--video {
+  background: rgba(220, 38, 38, 1);
+}
+
+/* Vimeo blue color variant */
+.pfg-item-type-icon--vimeo {
+  background: rgba(26, 183, 234, 0.85); /* Vimeo blue #1ab7ea */
+}
+
+.pfg-item:hover .pfg-item-type-icon--vimeo {
+  background: rgba(26, 183, 234, 1);
+}
+
+.pfg-item-type-icon--link {
+  background: var(--pfg-primary-color, rgba(59, 130, 246, 0.85));
+}
+
+.pfg-item:hover .pfg-item-type-icon--link {
+  background: var(--pfg-primary-color, rgba(59, 130, 246, 1));
+}
+
+/* ==========================================================================
+   Card Caption (title below image) - NOT overlay captions
+   ========================================================================== */
+
+.pfg-item-caption:not(.pfg-item-caption--overlay) {
+  padding: 14px 16px;
+  background: var(--pfg-caption-bg, #ffffff);
+  /* Border radius is inherited from parent via overflow:hidden */
+}
+
+.pfg-item-caption:not(.pfg-item-caption--overlay) .pfg-item-title {
+  margin: 0 0 4px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--pfg-caption-text, #1e293b);
+  line-height: 1.4;
+}
+
+.pfg-item-caption:not(.pfg-item-caption--overlay) .pfg-item-description {
+  margin: 6px 0 8px 0;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--pfg-caption-text, #64748b);
+  line-height: 1.6;
+}
+
+.pfg-item-caption:not(.pfg-item-caption--overlay) .pfg-item-categories {
+  font-size: 13px;
+  color: var(--pfg-filter-bg, #3858e9);
+  font-weight: 500;
+}
+
+.pfg-item-caption:not(.pfg-item-caption--overlay) .pfg-item-number {
+  margin-bottom: 8px;
+  color: var(--pfg-caption-text, #1e293b);
+}
+
+/* ==========================================================================
+   Dual Action Icons (link + lightbox)
+   ========================================================================== */
+
+.pfg-item-link--dual {
+  display: block;
+  position: relative;
+  cursor: default;
+}
+
+.pfg-item-actions {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 16px;
+  opacity: 0;
+  z-index: 10;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pfg-item:hover .pfg-item-actions {
+  opacity: 1;
+}
+
+.pfg-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.95);
+  color: #1e293b;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.25s ease;
+}
+
+.pfg-action-btn svg {
+  width: 22px;
+  height: 22px;
+}
+
+.pfg-action-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  color: var(--pfg-filter-bg, #3858e9);
+}
+
+.pfg-action-btn:active {
+  transform: scale(1.05);
+}
+
+/* Background overlay when dual icons are shown */
+.pfg-item-link--dual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 5;
+  pointer-events: none;
+}
+
+.pfg-item:hover .pfg-item-link--dual::before {
+  opacity: 1;
+}
+
+/* Video play button */
+.pfg-video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--pfg-transition), background var(--pfg-transition);
+}
+
+.pfg-video-play svg {
+  width: 24px;
+  height: 24px;
+  margin-left: 3px;
+}
+
+.pfg-item:hover .pfg-video-play {
+  transform: translate(-50%, -50%) scale(1.1);
+  background: #fff;
+}
+
+/* ==========================================================================
+   Hover Effects
+   ========================================================================== */
+
+/* Fade */
+.pfg-item-hover--fade:hover .pfg-item-image {
+  opacity: 0.85;
+}
+
+/* Zoom */
+.pfg-item-hover--zoom:hover .pfg-item-image {
+  transform: scale(1.08);
+}
+
+/* Lift */
+.pfg-item-hover--lift {
+  transition: transform var(--pfg-transition), box-shadow var(--pfg-transition);
+}
+
+.pfg-item-hover--lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Overlay */
+.pfg-item-hover--overlay .pfg-item-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--pfg-overlay-bg);
+  opacity: 0;
+  transition: opacity var(--pfg-transition);
+}
+
+.pfg-item-hover--overlay:hover .pfg-item-link::after {
+  opacity: 1;
+}
+
+/* Slide up */
+.pfg-item-hover--slide-up .pfg-item-overlay {
+  transform: translateY(100%);
+  opacity: 1;
+}
+
+.pfg-item-hover--slide-up:hover .pfg-item-overlay {
+  transform: translateY(0);
+}
+
+/* Dark overlay */
+.pfg-item-hover--dark-overlay .pfg-item-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity var(--pfg-transition);
+}
+
+.pfg-item-hover--dark-overlay:hover .pfg-item-link::after {
+  opacity: 1;
+}
+
+/* Color reveal (for grayscale galleries) */
+.pfg-item-hover--color-reveal .pfg-item-image {
+  filter: grayscale(100%);
+}
+
+.pfg-item-hover--color-reveal:hover .pfg-item-image {
+  filter: grayscale(0%);
+}
+
+/* Subtle */
+.pfg-item-hover--subtle:hover .pfg-item-image {
+  transform: scale(1.02);
+}
+
+/* Overlay zoom */
+.pfg-item-hover--overlay-zoom .pfg-item-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--pfg-overlay-bg);
+  opacity: 0;
+  transition: opacity var(--pfg-transition);
+}
+
+.pfg-item-hover--overlay-zoom:hover .pfg-item-link::after {
+  opacity: 1;
+}
+
+.pfg-item-hover--overlay-zoom:hover .pfg-item-image {
+  transform: scale(1.1);
+}
+
+/* Slide in */
+.pfg-item-hover--slide-in .pfg-item-overlay {
+  transform: translateX(-100%);
+  opacity: 1;
+  background: var(--pfg-overlay-bg);
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pfg-item-hover--slide-in:hover .pfg-item-overlay {
+  transform: translateX(0);
+}
+
+/* ==========================================================================
+   Error & Empty States
+   ========================================================================== */
+
+.pfg-error,
+.pfg-empty {
+  padding: 40px 20px;
+  text-align: center;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  color: #dc2626;
+}
+
+.pfg-empty {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+  color: #64748b;
+}
+
+/* ==========================================================================
+   Animation for filtering - Removed CSS animations, now controlled by JavaScript
+   ========================================================================== */
+
+/* ==========================================================================
+   Accessibility
+   ========================================================================== */
+
+.pfg-filter:focus-visible,
+.pfg-item-link:focus-visible {
+  outline: 2px solid var(--pfg-filter-bg);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pfg-item,
+  .pfg-item-image,
+  .pfg-item-overlay,
+  .pfg-filter,
+  .pfg-video-play {
+    transition: none;
+    animation: none;
+  }
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+  .pfg-filters,
+  .pfg-search,
+  .pfg-item-overlay,
+  .pfg-video-play {
+    display: none;
+  }
+
+  .pfg-grid {
+    display: block;
+  }
+
+  .pfg-item {
+    page-break-inside: avoid;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+/* ==========================================================================
+   Watermark Overlay
+   ========================================================================== */
+
+.pfg-watermark {
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  padding: 8px 12px;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Watermark text styling */
+.pfg-watermark-text {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Watermark image styling */
+.pfg-watermark-image {
+  max-width: 80px;
+  max-height: 40px;
+  width: auto;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+/* Position variants */
+.pfg-watermark--top-left {
+  top: 10px;
+  left: 10px;
+}
+
+.pfg-watermark--top-center {
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pfg-watermark--top-right {
+  top: 10px;
+  right: 10px;
+}
+
+.pfg-watermark--center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pfg-watermark--bottom-left {
+  bottom: 10px;
+  left: 10px;
+}
+
+.pfg-watermark--bottom-center {
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pfg-watermark--bottom-right {
+  bottom: 10px;
+  right: 10px;
+}
+
+/* Ensure proper positioning context for watermark */
+.pfg-item-link {
+  position: relative;
+}
+
+.pfg-item-link--dual {
+  position: relative;
+}
+
+/* Description below image */
+.pfg-item-description {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--pfg-caption-text, #64748b);
+  line-height: 1.5;
+  padding: 0 4px;
+}
+

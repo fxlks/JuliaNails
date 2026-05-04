@@ -1,0 +1,1788 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: Portfolio Filter Gallery\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-17 13:01+0530\n"
+"PO-Revision-Date: 2021-12-18 19:22+0100\n"
+"Last-Translator: Jacobo Feijóo\n"
+"Language-Team: Spanish\n"
+"Language: spa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Eazy Po 0.9.5.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:36
+msgid "ADD IMAGES"
+msgstr "AÑADIR IMÁGENES"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:47
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:72
+msgid "Photos"
+msgstr "Fotos"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:50
+msgid "Layouts"
+msgstr "Diseños"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:53
+msgid "Config"
+msgstr "Configuración"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:56
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:174
+msgid "Filters"
+msgstr "Filtros"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:59
+msgid "LightBox"
+msgstr "LightBox"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:62
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1353
+msgid "Load More"
+msgstr "Cargar más"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:65
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1454
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1459
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:610
+#: ultimate-responsive-image-slider/settings.php:633
+msgid "Custom CSS"
+msgstr "CSS personalizado"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:74
+msgid "Delete All Images"
+msgstr "Borrar todas las imágenes"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:78
+msgid "Sorting"
+msgstr "Ordenar"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:81
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:318
+#: ultimate-responsive-image-slider/settings.php:373
+msgid "Ascending"
+msgstr "Ascendente"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:83
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:319
+#: ultimate-responsive-image-slider/settings.php:374
+msgid "Descending"
+msgstr "Descendente"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:85
+msgid "By Title"
+msgstr "Por título"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:92
+msgid "First add filters for images by click on"
+msgstr "Añadir primero filtros para las imágenes haciendo click"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:92
+msgid "FILTERS"
+msgstr "FILTROS"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:92
+msgid "menu link."
+msgstr "link de menu."
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:93
+msgid "Please do not repeat images."
+msgstr "Por favor, no repetir imágenes."
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:131
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:295
+msgid "Image"
+msgstr "Imagen"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:132
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:296
+msgid "Video"
+msgstr "Vídeo"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:136
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:299
+msgid "Image Alt"
+msgstr "Atributo ALT en imagen"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:203
+msgid "Choose Gallery Layout Type"
+msgstr "Elegir tipo de diseño de la galería"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:219
+msgid "Configuration"
+msgstr "Configuración"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:226
+msgid "Gallery Thumbnail Resolution Size"
+msgstr "Tamaño de resolución de las miniaturas de la galería"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:227
+msgid "Choose resolution size for gallery thumbnails"
+msgstr "Elegir tamaño de resolución para las miniaturas de la galería"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:234
+msgid "Thumbnail - 150 x 150"
+msgstr "Minuatura - 150 x 150"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:235
+msgid "Medium - 300 x 169"
+msgstr "Medio - 300 x 169"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:236
+msgid "Large - 840 x 473"
+msgstr "Grande - 840 x 473"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:237
+msgid "Full Size - 1280 x 720"
+msgstr "Tamaño completo - 1280 x 720"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:238
+msgid "Custom Thumbnail - 300 x 300"
+msgstr "Miniatura personalizada - 300 x 300"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:239
+msgid "Custom Thumbnail - 500 x 500"
+msgstr "Miniatura personalizada - 500 x 500"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:245
+msgid "Columns Settings"
+msgstr "Ajustes de columnas"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:249
+msgid "Columns On Desktops"
+msgstr "Columnas en escritorio"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:250
+msgid "Set columns for desktop"
+msgstr "Definir columnas para escritorio"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:258
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:281
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:304
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:326
+msgid "1 Column"
+msgstr "1 columna"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:259
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:282
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:305
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:327
+msgid "2 Column"
+msgstr "2 columnas"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:260
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:283
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:306
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:328
+msgid "3 Column"
+msgstr "3 columnas"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:261
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:284
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:307
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:329
+msgid "4 Column"
+msgstr "4 columnas"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:262
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:285
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:308
+msgid "6 Column"
+msgstr "6 columnas"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:263
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:286
+msgid "12 Column"
+msgstr "12 columnas"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:272
+msgid "Columns On Tablet"
+msgstr "Columnas en tableta"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:273
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:296
+msgid "Set columns for tablet"
+msgstr "Definir columnas para tableta"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:295
+msgid "Columns On Mobile (Landscape)"
+msgstr "Columnas en móvil (horizontal)"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:317
+msgid "Columns On Mobile (Portrait)"
+msgstr "Columnas en móvil (vertical)"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:318
+msgid "Set columns for phone"
+msgstr "Definir columnas para teléfono"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:340
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:341
+msgid "Gallery Direction"
+msgstr "Dirección de la galería"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:349
+msgid "RTL"
+msgstr "Dcha. a izq."
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:351
+msgid "LTR"
+msgstr "Izq. a dcha."
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:362
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:433
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:453
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:489
+msgid "Image Hover Effects"
+msgstr "Efectos de desplazamiento de imagen"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:363
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:434
+msgid "Choose Image Hover Effects"
+msgstr "Cambiar efectos desplazamiento de imagen"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:372
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:444
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1328
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1340
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1371
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:459
+#: ultimate-responsive-image-slider/settings.php:507
+msgid "None"
+msgstr "Nada"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:374
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:446
+msgid "2D Transitions"
+msgstr "Transiciones 2D"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:376
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:419
+msgid "Overlay Zoom"
+msgstr "Zoom"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:420
+msgid "Image with title & caption on hover"
+msgstr "Imagen con título y captura en el desplazamiento"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:421
+msgid "Image with title and slide in icon on hover"
+msgstr "Imagen con título y slide en el icono de desplazamiento"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:448
+msgid "Shadow & Glow"
+msgstr "Sombra y brillo"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:457
+msgid "Grow"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:458
+msgid "Shrink"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:459
+msgid "Pulse"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:460
+msgid "Pulse Grow"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:461
+msgid "Pulse Shrink"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:462
+msgid "Push"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:463
+msgid "Pop"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:464
+msgid "Bounce In"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:465
+msgid "Bounce Out"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:466
+msgid "Rotate"
+msgstr "Rotar"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:467
+msgid "Grow Rotate"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:468
+msgid "Float"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:469
+msgid "Sink"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:470
+msgid "Bob"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:471
+msgid "Hang"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:472
+msgid "Skew"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:473
+msgid "Skew Forward"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:474
+msgid "Skew Backward"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:475
+msgid "Wobble Horizontal"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:476
+msgid "Wobble Vertical"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:477
+msgid "Wobble to Bottom Right"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:478
+msgid "Wobble to Top Right"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:479
+msgid "Wobble Top"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:480
+msgid "Wobble Bottom"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:481
+msgid "Wobble Skew"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:482
+msgid "Buzz"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:483
+msgid "Buzz Out"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:493
+msgid "Grow Shadow"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:494
+msgid "Float Shadow"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:495
+msgid "Glow"
+msgstr "Brillo"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:496
+msgid "Box Shadow Outset"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:497
+msgid "Box Shadow Inset"
+msgstr ""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:509
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:510
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:731
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:732
+msgid "Title & description On Thumbnail"
+msgstr "Título y descripción en miniatura"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:518
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:582
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:632
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:740
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:821
+msgid "Show"
+msgstr "Mostrar"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:520
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:584
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:634
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:742
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:823
+msgid "Hide"
+msgstr "Esconder"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:529
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:530
+msgid "Title & description Color"
+msgstr "Color del título y descripción"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:543
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:544
+msgid "Title & description Background Color"
+msgstr "Color del título y descripción del fondo"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:557
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:558
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:795
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:796
+msgid "Title Font Size"
+msgstr "Tamaño de la fuente del título"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:573
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:574
+msgid "Read More"
+msgstr "Leer más"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:590
+msgid "Link on image"
+msgstr "Enlace en la imagen"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:591
+msgid "Option for link on image"
+msgstr "Opción de enlace en la imagen"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:599
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:682
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:869
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:888
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:910
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:929
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:967
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:986
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1005
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1024
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1048
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1069
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1103
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1169
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1207
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1228
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1249
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1270
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:269
+#: ultimate-responsive-image-slider/settings.php:321
+msgid "Yes"
+msgstr "Sí"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:601
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:684
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:871
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:890
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:912
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:931
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:969
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:988
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1007
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1026
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1050
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1071
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1105
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1171
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1209
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1230
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1251
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1272
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:271
+#: ultimate-responsive-image-slider/settings.php:323
+msgid "No"
+msgstr "No"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:609
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:610
+msgid "Change Read More Text"
+msgstr "Cambiar el texto de Leer más"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:623
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:624
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:812
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:813
+msgid "Thumbnails Custom Border Setting"
+msgstr "Ajustes personalizados de borde de miniaturas"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:643
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:644
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:831
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:832
+msgid "Image Border Size"
+msgstr "Tamaño del borde de la imagen"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:658
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:659
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:846
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:847
+msgid "Image Border Color"
+msgstr "Color del borde de la imagen"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:673
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:674
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:860
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:861
+msgid "Show Numbering On Thumbnails"
+msgstr "Mostrar numeración en miniaturas"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:692
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:693
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:713
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:714
+msgid "Thumbnails Spacing"
+msgstr "Espacio de miniaturas"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:752
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:753
+msgid "Title Color"
+msgstr "Color del título"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:766
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:767
+msgid "Title Background Color"
+msgstr "Color del fondo del título"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:780
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:781
+msgid "Title Background Color Opacity"
+msgstr "Opacidad del color del fondo del título"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:879
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:880
+msgid "Hide Thumbnails Spacing"
+msgstr "Ocultar espacio de miniaturas"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:901
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:902
+msgid "Image Gray Scale"
+msgstr "Escala de grises de la imagen"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:920
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:921
+msgid "Video Auto-Play In Lightbox"
+msgstr "Auto-Play de vídeo en Lightbox"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:939
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:940
+msgid "Open Image Link URL"
+msgstr "Abrir el link de la URL de la imagen"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:948
+msgid "Into New Tab"
+msgstr "En nueva pestaña"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:950
+msgid "Into Same Tab"
+msgstr "En la misma pestaña"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:958
+msgid "Link Nofollow"
+msgstr "Link Nofollow"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:959
+msgid "Link Attribute Nofollow"
+msgstr "Link atributo Nofollow"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:977
+msgid "Link Noopener"
+msgstr "Link Noopener"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:978
+msgid "Link Attribute Noopener"
+msgstr "Link atributo Noopener"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:996
+msgid "Link Noreferrer"
+msgstr "Link Noreferrer"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:997
+msgid "Link Attribute Noreferrer"
+msgstr "Link atributo Noreferrer"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1015
+msgid "Disable Bootstrap JS For Output"
+msgstr "Deshabilitar la salida de Bootstrap JS"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1016
+msgid "You can disable bootstrap js for ourput if you have problem with it."
+msgstr "Se puede deshabilitar la salida bootstrap js si da problemas."
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1034
+msgid "Filters And Sorting controls Settings"
+msgstr "Ajustes de los controles de filtro y ordenar"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1039
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1040
+msgid "Hide filters"
+msgstr "Ocultar filtros"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1059
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1060
+msgid "Hide 'All' Button"
+msgstr "Ocultar botón \"todos\""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1079
+msgid "Text For \"All\" Filter"
+msgstr "Texto para el filtro \"Todo\""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1080
+msgid "Text for \"All\" filter"
+msgstr "Texto para el filtro \"Todo\""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1093
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1094
+msgid "Sort Filter In Alphabatic Order"
+msgstr "Filtros por orden alfabético"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1113
+msgid "Filters Style"
+msgstr "Estilo de los filtros"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1114
+msgid "Choose Filters Style"
+msgstr "Elegir estilo de los filtros"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1122
+msgid "Style 1"
+msgstr "Estilo 1"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1123
+msgid "Style 2"
+msgstr "Estilo 2"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1124
+msgid "Style 3"
+msgstr "Estilo 3"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1125
+msgid "Style 4"
+msgstr "Estilo 4"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1140
+msgid "Filters Position"
+msgstr "Posición de los filtros"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1141
+msgid "Choose Filters Position"
+msgstr "Posición de los filtros"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1148
+msgid "Right"
+msgstr "Derecha"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1149
+msgid "Center"
+msgstr "Centro"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1150
+msgid "Left"
+msgstr "Izquierda"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1160
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1161
+msgid "Multi-Filters Enable"
+msgstr "Activar multi-filtros"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1179
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1180
+msgid "Multi-Filters Logic"
+msgstr "Lógica multi-filtros"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1188
+msgid "And"
+msgstr "Y"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1190
+msgid "Or"
+msgstr "O"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1198
+msgid "Ascending Button"
+msgstr "Botón ascendente"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1199
+msgid "Show ascending"
+msgstr "Mostrar ascendente"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1219
+msgid "Descending Button"
+msgstr "Botón descendente"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1220
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1241
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1262
+msgid "Show descending"
+msgstr "Mostrar descendente"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1240
+msgid "Shuffle Button"
+msgstr "Botón de barajar"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1261
+msgid "Search Box"
+msgstr "Caja de buscar"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1283
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1284
+msgid "Filter Title Color"
+msgstr "Color del título y filtro"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1297
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1298
+msgid "Filter hover & active Color"
+msgstr "Filtro de desplazamiento y color activo"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1312
+msgid "LightBox Configuration"
+msgstr "Configuración LightBox "
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1318
+msgid "Enable Lightbox"
+msgstr "Activar Lightbox"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1319
+msgid "Enable or desable lightbox for gallery"
+msgstr "Habilitar o deshabilitar lightbox en la galería"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1329
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1341
+msgid "1. LD Light Box ( Lightbox works with filtered images group )"
+msgstr "1. LD Light Box ( Lightbox trabaja con grupo de imágenes filtrada)"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1330
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1342
+msgid "2. Swipebox Light Box ( Lightbox works with filtered images group )"
+msgstr "2. Swipebox Light Box ( Lightbox funciona con grupo de imágenes filtradas )"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1331
+msgid "3. Viewer Light Box ( Not work with load more )"
+msgstr "3. Visor Light Box ( no funciona con más cargas )"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1332
+msgid "4. Bootstrap  Light Box"
+msgstr "4. Bootstrap Light Box"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1343
+msgid "3. Pop Trox Light Box"
+msgstr "3. Pop Trox Light Box"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1344
+msgid "4. Viewer Light Box ( Not work with load more )"
+msgstr "4. Visor Light Box ( no funciona con más cargas )"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1345
+msgid "5. Bootstrap Light Box"
+msgstr "5. Bootstrap Light Box"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1358
+msgid "Load More On Gallery"
+msgstr "Cargar más en la galería"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1359
+msgid "Apply load more on gallery"
+msgstr "Aplicar cargar más en la galería"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1367
+msgid "Load On Button"
+msgstr "Botón cargar"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1369
+msgid "Load On Scroll"
+msgstr "Cargar scroll"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1380
+msgid "Image Limit For Load More / Scroll Load"
+msgstr "Límite de imagen para Cargar / Scroll"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1381
+msgid "Image limit for load more or scroll load"
+msgstr "Límite de imagen para cargar o scroll"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1394
+msgid "Load More Button Color / Scroll Loader"
+msgstr "Color del botón Cargar / Scroll"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1395
+msgid "Text for load more button or scroll loader"
+msgstr "Texto para el botón cargar más o scroll"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1410
+msgid "Text For Load More Button"
+msgstr "Texto del botón Cargar más"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1411
+msgid "Text for load more button"
+msgstr "Texto del botón Cargar más"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1425
+msgid "Load More Icon Color"
+msgstr "Color del icono Cargar más"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1426
+msgid "Load more icon color"
+msgstr "Color del icono Cargar más"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1439
+msgid "Text For \"No More Images\""
+msgstr "Texto para \"No más imagenes\""
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1440
+msgid "Text for no more images"
+msgstr "Texto para no más imagenes"
+
+#: portfolio-filter-gallery-premium/filter-gallery-settings.php:1460
+msgid "Apply your own custom CSS. Don not use style tag"
+msgstr "Aplicar CSS personalizado. No usar etiquetas de estilo"
+
+#: portfolio-filter-gallery-premium/filters.php:31
+msgid "Add New Category"
+msgstr "Añadir nueva categoría"
+
+#: portfolio-filter-gallery-premium/filters.php:60
+#: portfolio-filter-gallery-premium/filters.php:265
+#: portfolio-filter-gallery-premium/filters.php:347
+msgid "Category Name"
+msgstr "Nombre de la categoría"
+
+#: portfolio-filter-gallery-premium/filters.php:61
+#: portfolio-filter-gallery-premium/filters.php:266
+#: portfolio-filter-gallery-premium/filters.php:348
+msgid "Action"
+msgstr "Acción"
+
+#: portfolio-filter-gallery-premium/filters.php:317
+msgid "Edit Category"
+msgstr "Editar categoría"
+
+#: portfolio-filter-gallery-premium/filtring/filters-sorting-control.php:64
+msgid "Filter"
+msgstr "Filtro"
+
+#: portfolio-filter-gallery-premium/filtring/filters-sorting-control.php:93
+msgid "Sort"
+msgstr "Ordenar"
+
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:26
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:182
+msgid "Portfolio Filter Gallery Premium"
+msgstr "Portfolio Filter Gallery Premium"
+
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:108
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:109
+msgid "Duplicate"
+msgstr "Duplicar"
+
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:172
+msgid "Update Old Settings"
+msgstr "Actualizar configuración antigua"
+
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:175
+msgid "Docs"
+msgstr "Documentos"
+
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:183
+msgid "Portfolio Filter"
+msgstr "Filtro Portfolio"
+
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:184
+msgid "Parent Item:"
+msgstr "Item principal:"
+
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:185
+msgid "All Gallery"
+msgstr "Toda la galería"
+
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:186
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:187
+msgid "Add New Gallery"
+msgstr "Añadir nueva galería"
+
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:188
+msgid "New Portfolio Filter Gallery"
+msgstr "Nuevo Portfolio Filter Gallery"
+
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:189
+msgid "Edit Portfolio Filter Gallery"
+msgstr "Editar Portfolio Filter Gallery"
+
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:190
+msgid "Update Portfolio Filter Gallery"
+msgstr "Actualizar Portfolio Filter Gallery"
+
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:191
+msgid "Search Portfolio Filter Gallery"
+msgstr "Buscar Portfolio Filter Gallery"
+
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:192
+msgid "Portfolio Filter Gallery Not found"
+msgstr "No se encuentra Portfolio Filter Gallery "
+
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:193
+msgid "Portfolio Filter Gallery Not found in Trash"
+msgstr "No se encuentra Portfolio Filter Gallery en la basura"
+
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:196
+msgid "Portfolio Filter Gallery"
+msgstr "Portfolio Filter Gallery"
+
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:197
+msgid "Custom Post Type For Portfolio Filter Gallery"
+msgstr "Tipo de post personalizado para Portfolio Filter Gallery"
+
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:219
+msgid "Add Portfolio Filter Gallery"
+msgstr "Añadir Portfolio Filter Gallery"
+
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:220
+msgid "Copy Shortcode"
+msgstr "Copiar Shortcode"
+
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:246
+msgid "Shortcode copied to clipboard!"
+msgstr "¡Shortcode copiado al portapapeles!"
+
+#: portfolio-filter-gallery-premium/portfolio-filter-gallery-premium.php:247
+msgid ""
+"Copy & Embed shortcode into any Page/ Post / Text Widget to display your "
+"image gallery on site."
+msgstr ""
+"Copiar e incrustar shortcode en cualquier página/entrada/widget de texto "
+"para mostrar la imagen de tu galería."
+
+#: portfolio-filter-gallery-premium/portfolio-gallery.php:57
+msgid "Sorry! No image gallery found "
+msgstr "¡Lo siento! No encuentro la imagen"
+
+#: ultimate-responsive-image-slider-3.3.9/tooltip.php:33
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:347
+msgid "Sliding Arrow"
+msgstr "Flecha del slider"
+
+#: ultimate-responsive-image-slider-3.3.9/tooltip.php:38
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:360
+#: ultimate-responsive-image-slider/settings.php:403
+#: ultimate-responsive-image-slider/tooltip.php:93
+msgid "Show Thumbnail"
+msgstr "Mostrar miniaturas"
+
+#: ultimate-responsive-image-slider-3.3.9/tooltip.php:43
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:410
+#: ultimate-responsive-image-slider/settings.php:559
+#: ultimate-responsive-image-slider/tooltip.php:140
+msgid "Show Navigation Bullets"
+msgstr "Mostrar viñetas de navegación"
+
+#: ultimate-responsive-image-slider-3.3.9/tooltip.php:48
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:423
+#: ultimate-responsive-image-slider/settings.php:468
+#: ultimate-responsive-image-slider/tooltip.php:118
+msgid "Slider Width"
+msgstr "Ancho slider"
+
+#: ultimate-responsive-image-slider-3.3.9/tooltip.php:53
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:439
+#: ultimate-responsive-image-slider/settings.php:484
+#: ultimate-responsive-image-slider/tooltip.php:123
+msgid "Slider Height"
+msgstr "Altura slider"
+
+#: ultimate-responsive-image-slider-3.3.9/tooltip.php:58
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:328
+msgid "Slide Distance"
+msgstr "Distancia slide"
+
+#: ultimate-responsive-image-slider-3.3.9/tooltip.php:63
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:516
+#: ultimate-responsive-image-slider/settings.php:257
+#: ultimate-responsive-image-slider/tooltip.php:61
+msgid "Slide Title Color"
+msgstr "Color del título del slide"
+
+#: ultimate-responsive-image-slider-3.3.9/tooltip.php:68
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:528
+#: ultimate-responsive-image-slider/settings.php:269
+#: ultimate-responsive-image-slider/tooltip.php:66
+msgid "Slide Title Background Color"
+msgstr "Color del fondo del título del slide"
+
+#: ultimate-responsive-image-slider-3.3.9/tooltip.php:73
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:540
+#: ultimate-responsive-image-slider/settings.php:294
+#: ultimate-responsive-image-slider/tooltip.php:76
+msgid "Slide Description Color"
+msgstr "Color de la descripción del slide"
+
+#: ultimate-responsive-image-slider-3.3.9/tooltip.php:78
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:552
+#: ultimate-responsive-image-slider/settings.php:306
+#: ultimate-responsive-image-slider/tooltip.php:81
+msgid "Slide Description Background Color"
+msgstr "Color del fondo de la descripción del slide"
+
+#: ultimate-responsive-image-slider-3.3.9/tooltip.php:83
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:564
+#: ultimate-responsive-image-slider/settings.php:547
+#: ultimate-responsive-image-slider/tooltip.php:135
+msgid "Navigation Color"
+msgstr "Color navegación"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:231
+msgid "Set Slide Title As"
+msgstr "Fijar el título del slide como"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:238
+msgid "Select Custom/File option to set slide title as above slider"
+msgstr "Seleccionar opción Personalizada/Archivo para fijar el título del slide sobre el slide"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:244
+msgid "Display Slider Title"
+msgstr "Mostrar el título del slide"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:250
+#: ultimate-responsive-image-slider/settings.php:237
+msgid "Select Yes/No option to show/hide slide title above slider"
+msgstr "Seleccionar la opción Sí/No para mostrar u ocultar el título del slide sobre el slide"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:256
+msgid "Slide Title Alignment"
+msgstr "Alineamiento del título del slide"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:266
+#: ultimate-responsive-image-slider/settings.php:318
+msgid "Auto Play Slide Show"
+msgstr "Mostrar auto play del slide"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:270
+#: ultimate-responsive-image-slider/settings.php:322
+msgid "Yes with Stop on Mouse Hover"
+msgstr "Sí con parar al pasar el ratón"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:273
+msgid "Select Yes/No option to auto slide enable or disable into slider"
+msgstr "Seleccionar la opción Sí/No para habilitar o deshabilitar automático"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:278
+#: ultimate-responsive-image-slider/settings.php:331
+msgid "Slide Transition"
+msgstr "Transición de slide"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:284
+msgid "Select a transition effect you want to apply on slides"
+msgstr "Seleccionar un efecto de transición para aplicar en los slides"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:289
+msgid "Autoplay Slider Speed"
+msgstr "Velocidad autoplay del slider"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:295
+msgid "Set your desired slider speed of slides. Default speed is 5 Second"
+msgstr "Definir la velocidad deseada de los slides. Por defecto son 5 segundos"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:315
+#: ultimate-responsive-image-slider/settings.php:370
+msgid "Slide Order"
+msgstr "Orden de slide"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:320
+#: ultimate-responsive-image-slider/settings.php:375
+msgid "Random"
+msgstr "Aleatorio"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:322
+#: ultimate-responsive-image-slider/settings.php:377
+msgid "Select a slide order you want to apply on slides"
+msgstr "Seleccione un orden de slide que desee aplicar a las slides"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:340
+msgid "Set a gap between all slides. Range 0 to 25"
+msgstr "Fijar un espacio entre todas las slides. Rango de 0 a 25"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:341
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:354
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:367
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:417
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:433
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:448
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:522
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:534
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:546
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:558
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:570
+#: ultimate-responsive-image-slider/settings.php:238
+#: ultimate-responsive-image-slider/settings.php:251
+#: ultimate-responsive-image-slider/settings.php:263
+#: ultimate-responsive-image-slider/settings.php:275
+#: ultimate-responsive-image-slider/settings.php:288
+#: ultimate-responsive-image-slider/settings.php:300
+#: ultimate-responsive-image-slider/settings.php:312
+#: ultimate-responsive-image-slider/settings.php:326
+#: ultimate-responsive-image-slider/settings.php:338
+#: ultimate-responsive-image-slider/settings.php:350
+#: ultimate-responsive-image-slider/settings.php:378
+#: ultimate-responsive-image-slider/settings.php:397
+#: ultimate-responsive-image-slider/settings.php:410
+#: ultimate-responsive-image-slider/settings.php:423
+#: ultimate-responsive-image-slider/settings.php:436
+#: ultimate-responsive-image-slider/settings.php:448
+#: ultimate-responsive-image-slider/settings.php:462
+#: ultimate-responsive-image-slider/settings.php:478
+#: ultimate-responsive-image-slider/settings.php:493
+#: ultimate-responsive-image-slider/settings.php:515
+#: ultimate-responsive-image-slider/settings.php:528
+#: ultimate-responsive-image-slider/settings.php:541
+#: ultimate-responsive-image-slider/settings.php:553
+#: ultimate-responsive-image-slider/settings.php:566
+#: ultimate-responsive-image-slider/settings.php:578
+#: ultimate-responsive-image-slider/settings.php:591
+#: ultimate-responsive-image-slider/settings.php:626
+msgid "Preview"
+msgstr "Vista previa"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:353
+msgid "Select Yes/No option to show or hide arrows on mouse hover on slide"
+msgstr "Seleccionar la opción Sí/No para mostrar u ocultar las flechas al pasar el ratón sobre el slide"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:366
+msgid ""
+"Select Yes/No option to show or hide thumbnail based navigation under slides"
+msgstr ""
+"Seleccionar la opción Sí/No para mostrar u ocultar minuaturas basadas en la "
+"navegación bajo los slides"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:373
+#: ultimate-responsive-image-slider/settings.php:416
+#: ultimate-responsive-image-slider/tooltip.php:98
+msgid "Thumbnail Position"
+msgstr "Posición de las miniaturas"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:376
+#: ultimate-responsive-image-slider/settings.php:419
+msgid "Top"
+msgstr "Arriba"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:377
+#: ultimate-responsive-image-slider/settings.php:420
+msgid "Bottom"
+msgstr "Abajo"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:379
+msgid "Select a thumbnail position to show above or below the slider"
+msgstr "Seleccionar una posición de viñeta para mostrar encima o debajo del slider"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:385
+msgid "Thumbnail Style"
+msgstr "Estilo de las miniaturas"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:388
+#: ultimate-responsive-image-slider/settings.php:432
+msgid "Border"
+msgstr "Borde"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:389
+#: ultimate-responsive-image-slider/settings.php:433
+msgid "Pointer"
+msgstr ""
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:391
+msgid "Select a thumbnail style to apply on thumbnails"
+msgstr "Seleccionar un estilo de miniatura para aplicar a miniaturas"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:397
+#: ultimate-responsive-image-slider/settings.php:454
+#: ultimate-responsive-image-slider/tooltip.php:113
+msgid "Thumbnail Resize"
+msgstr "Redimensionar miniaturas"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:401
+#: ultimate-responsive-image-slider/settings.php:458
+msgid "Width"
+msgstr "Ancho"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:402
+#: ultimate-responsive-image-slider/settings.php:459
+msgid "Height"
+msgstr "Alto"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:404
+msgid "Set custom thumbnail height & width according to you"
+msgstr "Definir alto y ancho de la miniatura personalizada"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:416
+msgid ""
+"Select Yes/No option to show or hide slider navigation buttons under image "
+"slider"
+msgstr ""
+"Seleccionar la opción Sí/No para mostrar u ocultar botones de navegación "
+"bajo la imagen de slider"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:427
+#: ultimate-responsive-image-slider/settings.php:472
+msgid "100% Width"
+msgstr "100% ancho"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:428
+#: ultimate-responsive-image-slider/settings.php:473
+msgid "Full Width"
+msgstr "Anchura total"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:429
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:444
+#: ultimate-responsive-image-slider/settings.php:474
+#: ultimate-responsive-image-slider/settings.php:489
+msgid "Custom"
+msgstr "Personalizar"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:432
+msgid "Enter your desired width for slider. Default width is 1000px"
+msgstr "Introduzca su ancho preferido para el slider. Ancho por defecto es 1000px"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:443
+#: ultimate-responsive-image-slider/settings.php:488
+msgid "Auto Height"
+msgstr "Altura automática"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:447
+msgid "Enter your desired height for slider. Default height is 500px"
+msgstr "Introducir altura deseada para el slider. Altura por defecto es 500px"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:454
+#: ultimate-responsive-image-slider/settings.php:499
+msgid "Slide Scale Mode"
+msgstr "Modo escala de slide"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:460
+#: ultimate-responsive-image-slider/settings.php:506
+msgid "Exact"
+msgstr "Exacto"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:461
+#: ultimate-responsive-image-slider/settings.php:505
+msgid "Contain"
+msgstr "Contiene"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:462
+#: ultimate-responsive-image-slider/settings.php:504
+msgid "Cover"
+msgstr ""
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:466
+msgid "Select a slide scale mode for slide frame"
+msgstr "Seleccionar un modo de escalado de slide para el frame del slide"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:472
+msgid "Slide Auto Scale"
+msgstr "Autoescalado de slide"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:478
+msgid "Select Yes/No option for slide auto scale"
+msgstr "Seleccionar opción Sí/No para el autoescalado de slide"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:484
+msgid "Font Style"
+msgstr "Estilo de la fuente"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:511
+msgid "Choose a caption font style"
+msgstr "Elegir un estilo de fuente de captura"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:521
+msgid "Select a color to set slide title color"
+msgstr "Seleccionar un color para fijar el color del titulo del slide"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:533
+msgid "Select a color to set slide title background color"
+msgstr "Seleccionar un color para fijar el color del fondo del título del slide"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:545
+msgid "Select a color to set slide description color"
+msgstr "Seleccionar un color para fijar el color de la descripción del slide"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:557
+msgid "Select a color to set slide description background color"
+msgstr "Seleccionar un color para fijar el color del fondo de la descripción del slide"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:569
+msgid "Select a color to set navigation arrow and fullscreen icon color"
+msgstr "Seleccionar un color para fijar el color de la flecha de navegación y el color del icono de pantalla completa"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:576
+#: ultimate-responsive-image-slider/settings.php:572
+#: ultimate-responsive-image-slider/tooltip.php:145
+msgid "Navigation Bullets Color"
+msgstr "Color de las viñetas de navegación"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:581
+msgid "Select a color to set navigation bullets color"
+msgstr "Seleccionar un color para definir el color de las viñetas de navegación"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:587
+msgid "Navigation Pointer Color"
+msgstr ""
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:592
+msgid "Select a color to set navigation pointer color"
+msgstr ""
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:598
+#: ultimate-responsive-image-slider/settings.php:584
+#: ultimate-responsive-image-slider/tooltip.php:150
+msgid "Full Screen Slide Show"
+msgstr "Mostrar slide página completa"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:604
+msgid "Select Yes/No option for full screen slide show"
+msgstr "Seleccionar opción Sí/No para mostrar el slide a página completa"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider-settings-meta-box.php:615
+msgid ""
+"Enter any custom css you want to apply on this slider into textarea filed"
+msgstr ""
+"Introducir cualquier CSS personalizado en la caja de texto archivada para "
+"usar en este slider"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:145
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:146
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:184
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:185
+msgid "Add New Slider"
+msgstr "Añadir nuevo slider"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:147
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:186
+msgid "Edit Slider"
+msgstr "Editar slider"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:148
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:187
+msgid "New Slider"
+msgstr "Nuevo slider"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:149
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:188
+msgid "View Slider"
+msgstr "Ver slider"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:150
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:189
+msgid "Search Slider"
+msgstr "Buscar slider"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:151
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:190
+msgid "No Slider found"
+msgstr "No se ha encontrado slider"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:152
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:191
+msgid "No Slider Found in Trash"
+msgstr "No se ha encontrado slider en papelera"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:153
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:192
+msgid "Parent Slider:"
+msgstr "Slider principal:"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:154
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:193
+msgid "All Sliders"
+msgstr "Todos los sliders"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:185
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:222
+msgid "UR Image Slider Title"
+msgstr "Título de la imagen UR del slider"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:186
+msgid "UR Image Slider Shortcode"
+msgstr "Shortcode de la imagen UR Image del slider "
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:187
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:224
+msgid "Date"
+msgstr "Fecha"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:204
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:242
+msgid "Add Slides"
+msgstr "Añadir slides"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:205
+msgid "Upgrade To Pro Plugin"
+msgstr "Mejorar a plugin Pro"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:206
+msgid "Apply Setting On Ultimate Responsive Image Slider"
+msgstr "Aplicar ajustes en Ultimate Responsive Image Slider"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:207
+msgid "Copy Slider Shortcode"
+msgstr "Copy shortcode slider"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:299
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:445
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:344
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:541
+msgid "Slide Title"
+msgstr "Título slide"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:300
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:347
+msgid "Enter Slide Title"
+msgstr "Introduzca título de slide"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:303
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:350
+msgid "Slide Descriptions"
+msgstr "Descripciopones de slide"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:304
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:351
+msgid "Enter Slide Description"
+msgstr "Introducir descripción slide"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:305
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:451
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:352
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:549
+msgid "Use Rich Text Editor"
+msgstr "Usar editor de texto enriquecido"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:353
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:404
+msgid "Add New Slide"
+msgstr "Añadir nueva slide"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:357
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:422
+msgid "Delete All Slides"
+msgstr "Borrar todos los slides"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:424
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:508
+msgid "Use below shortcode in any Page/Post to publish your slider"
+msgstr "Usar el shortcode de abajo en cualquier página/post para publicar tu slider"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:446
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:544
+msgid "Enter Slide Title Here"
+msgstr "Introduzca un título de slide aquí"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:449
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:547
+msgid "Slide Description"
+msgstr "Descripción de slide"
+
+#: ultimate-responsive-image-slider-3.3.9/ultimate-responsive-image-slider.php:450
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:548
+msgid "Enter Slide Description Here"
+msgstr "Introducir aquí la descripción del slide"
+
+#: ultimate-responsive-image-slider-3.3.9/uris-feature-admin-notice.php:13
+msgid "Ultimate Responsive Image Slider Pro Features"
+msgstr "Características de Ultimate Responsive Image Slider Pro"
+
+#: ultimate-responsive-image-slider-3.3.9/uris-feature-admin-notice.php:15
+msgid "5 Slider Layouts"
+msgstr "5 diseños de slider"
+
+#: ultimate-responsive-image-slider-3.3.9/uris-feature-admin-notice.php:16
+msgid "Double Lightbox Effects"
+msgstr "Efectos doble Lightbox "
+
+#: ultimate-responsive-image-slider-3.3.9/uris-feature-admin-notice.php:17
+msgid "500 Plus Google Fonts"
+msgstr "500 fuentes más de Google"
+
+#: ultimate-responsive-image-slider-3.3.9/uris-feature-admin-notice.php:18
+msgid "Link Slide"
+msgstr "Enlace slide"
+
+#: ultimate-responsive-image-slider-3.3.9/uris-feature-admin-notice.php:19
+msgid "Multiple Image Uploader"
+msgstr "Subir varias imágenes"
+
+#: ultimate-responsive-image-slider-3.3.9/uris-feature-admin-notice.php:20
+msgid "Hide or Show Gallery Title and Description"
+msgstr "Mostrar u ocultar título y descripción de la galería"
+
+#: ultimate-responsive-image-slider-3.3.9/uris-feature-admin-notice.php:21
+msgid "Brand Slider Integrated"
+msgstr "Slider de marca integrado"
+
+#: ultimate-responsive-image-slider-3.3.9/uris-feature-admin-notice.php:22
+msgid "Drag and Drop Slide Image Control"
+msgstr "Copiar y pegar control de imagen de slide"
+
+#: ultimate-responsive-image-slider-3.3.9/uris-feature-admin-notice.php:23
+msgid "Widget Slider Utility"
+msgstr "Utilidad Widget Slider"
+
+#: ultimate-responsive-image-slider-3.3.9/uris-feature-admin-notice.php:26
+msgid "View Demo"
+msgstr "Ver demo"
+
+#: ultimate-responsive-image-slider-3.3.9/uris-feature-admin-notice.php:27
+msgid "Buy Now"
+msgstr "Comprar ahora"
+
+#: ultimate-responsive-image-slider-3.3.9/uris-feature-admin-notice.php:30
+msgid "Version"
+msgstr "Versión"
+
+#: ultimate-responsive-image-slider-3.3.9/uris-layout.php:344
+msgid "Loading image..."
+msgstr "Cargando imagen..."
+
+#: ultimate-responsive-image-slider/settings.php:231
+#: ultimate-responsive-image-slider/tooltip.php:51
+msgid "Display Slider Post Title"
+msgstr "Mostrar el título del post del slide"
+
+#: ultimate-responsive-image-slider/settings.php:244
+#: ultimate-responsive-image-slider/tooltip.php:56
+msgid "Display Slide Title"
+msgstr "Mostrar título del slide"
+
+#: ultimate-responsive-image-slider/settings.php:250
+msgid "Select Yes/No option to show/hide slide title over slides."
+msgstr "Seleccionar la opción Sí/No para mostrar u ocultar el título sobre los slides."
+
+#: ultimate-responsive-image-slider/settings.php:262
+msgid "Select a color to set slide title color."
+msgstr "Seleccione un color para definir el color del título del slide."
+
+#: ultimate-responsive-image-slider/settings.php:274
+msgid "Select a color to set slide title background color."
+msgstr "Seleccione un color para definir el color de fondo del título del slide."
+
+#: ultimate-responsive-image-slider/settings.php:281
+#: ultimate-responsive-image-slider/tooltip.php:71
+msgid "Display Slide Description"
+msgstr "Muestre descripción del slide"
+
+#: ultimate-responsive-image-slider/settings.php:287
+msgid "Select Yes/No option to show/hide slide description over slides."
+msgstr "Seleccionar la opción Sí/No para mostrar u ocultar la descripción sobre los slides."
+
+#: ultimate-responsive-image-slider/settings.php:299
+msgid "Select a color to set slide description color."
+msgstr "Seleccionar un color para definir la descripción del slide."
+
+#: ultimate-responsive-image-slider/settings.php:311
+msgid "Select a color to set slide description background color."
+msgstr "Seleccionar un color para fijar el color de fondo de la descripción del slide."
+
+#: ultimate-responsive-image-slider/settings.php:325
+msgid "Select Yes/No option to auto slide enable or disable into slider."
+msgstr "Seleccionar la opción Sí/No para habilitar o deshabilitar el auto slide."
+
+#: ultimate-responsive-image-slider/settings.php:337
+msgid "Select a transition effect you want to apply on slides."
+msgstr "Seleccionar el efecto de transición que se desea aplciar en los slides."
+
+#: ultimate-responsive-image-slider/settings.php:343
+msgid "Auto play Slider Speed"
+msgstr "Auto play velocidad del slider"
+
+#: ultimate-responsive-image-slider/settings.php:349
+msgid "Set your desired slider speed of slides. Default speed is 5 Second."
+msgstr "Definir la velocidad de los slides. Por defecto son 5 segundos"
+
+#: ultimate-responsive-image-slider/settings.php:384
+#: ultimate-responsive-image-slider/tooltip.php:88
+msgid "Distance Between Slide"
+msgstr "Distancia entre slide"
+
+#: ultimate-responsive-image-slider/settings.php:396
+msgid ""
+"Set a gap between all slides. Range 0 to 25. Works when Slide Transition "
+"setting selected to Slide."
+msgstr ""
+"Definir espacio entre todos los slides. Rango de 0 a 25. Funciona cuando el "
+"ajuste de transacción de slide está seleccionado en slide."
+
+#: ultimate-responsive-image-slider/settings.php:409
+msgid ""
+"Select Yes/No option to show or hide thumbnail based navigation under slides."
+msgstr ""
+"Seleccionar opción Sí/No para mostrar u ocultar bajo los slides la miniatura "
+"basada en la navegación."
+
+#: ultimate-responsive-image-slider/settings.php:422
+msgid "Select a thumbnail position to show above or below the slider."
+msgstr "Seleccionar la posición de miniatura para mostrar sobre o debajo del slide."
+
+#: ultimate-responsive-image-slider/settings.php:429
+#: ultimate-responsive-image-slider/tooltip.php:103
+msgid "Selected Thumbnail Style"
+msgstr "Estilo de miniatura seleccionado"
+
+#: ultimate-responsive-image-slider/settings.php:435
+msgid "Select a style to apply on select thumbnails."
+msgstr "Seleccionar un estilo para aplicar en las miniaturas seleccionadas"
+
+#: ultimate-responsive-image-slider/settings.php:442
+#: ultimate-responsive-image-slider/tooltip.php:108
+msgid "Selected Thumbnail Style Color"
+msgstr "Estilo de color de la miniatura seleccionado"
+
+#: ultimate-responsive-image-slider/settings.php:447
+msgid "Select a color to set on selected thumbnail style color."
+msgstr "Seleccionar un color para fijar el estilo de color seleccionado de la miniatura."
+
+#: ultimate-responsive-image-slider/settings.php:461
+msgid "Set custom height and width for thumbnails."
+msgstr "Fijar altura y anchura personalizada para las miniaturas."
+
+#: ultimate-responsive-image-slider/settings.php:477
+msgid "Enter your desired width for slider. Default width is 1000px."
+msgstr "Introducir el ancho deseado para el slide. Por defecto son 1000px."
+
+#: ultimate-responsive-image-slider/settings.php:492
+msgid "Enter your desired height for slider. Default height is 500px."
+msgstr "Introducir la altura deseada para el slide. Por defecto son 500px."
+
+#: ultimate-responsive-image-slider/settings.php:511
+msgid "COVER will scale and crop the image so that it fills the entire slide."
+msgstr ""
+
+#: ultimate-responsive-image-slider/settings.php:512
+msgid "CONTAIN will keep the entire image visible inside the slide."
+msgstr "CONTENIDO mantendrá la imagen completa visible dentro del slide."
+
+#: ultimate-responsive-image-slider/settings.php:513
+msgid "EXACT will match the size of the image to the size of the slide."
+msgstr "EXACTO ajustará el tamaño de la imagen al tamaño del slide."
+
+#: ultimate-responsive-image-slider/settings.php:514
+msgid "NONE will leave the image to its original size."
+msgstr "NADA dejará la imagen en su tamaño original."
+
+#: ultimate-responsive-image-slider/settings.php:521
+msgid "Slide Auto Scale Up"
+msgstr "Auto escalado Slide"
+
+#: ultimate-responsive-image-slider/settings.php:527
+msgid "If the slide can be scaled up more than its original size."
+msgstr "Si el slide puede escalarse más que su tamaño original"
+
+#: ultimate-responsive-image-slider/settings.php:534
+#: ultimate-responsive-image-slider/tooltip.php:130
+msgid "Show Navigation Arrow"
+msgstr "Mostrar flecha de navegación"
+
+#: ultimate-responsive-image-slider/settings.php:540
+msgid "Select Yes/No option to show or hide arrows on mouse hover on slide."
+msgstr "Seleccionar opción Sí/No para mostrar u ocultar flechas del ratón sobre el slide."
+
+#: ultimate-responsive-image-slider/settings.php:552
+msgid "Select a color to set navigation arrow and full screen icon color."
+msgstr "Seleccionar un color para fijar el color de la flecha de navegación y de la pantalla completa."
+
+#: ultimate-responsive-image-slider/settings.php:565
+msgid ""
+"Select Yes/No option to show or hide slider navigation buttons under image "
+"slider."
+msgstr ""
+"Seleccionar la opción Sí/No para mostrar u ocultar los botones de navegación "
+"del slider bajo la imagen del slider."
+
+#: ultimate-responsive-image-slider/settings.php:577
+msgid "Select a color to set navigation bullets color."
+msgstr "Seleccionar un color para fijar los colores de las viñetas de navegación."
+
+#: ultimate-responsive-image-slider/settings.php:590
+msgid "Select Yes/No option for full screen slide show."
+msgstr "Seleccionar opción sí/no para mostrar slide a página completa."
+
+#: ultimate-responsive-image-slider/settings.php:597
+#: ultimate-responsive-image-slider/tooltip.php:155
+msgid "Fonts"
+msgstr "Fuentes"
+
+#: ultimate-responsive-image-slider/settings.php:625
+msgid "Choose a font to apply on slide title and description."
+msgstr "Elegir una fuente para aplicar en el título y descripción del slide."
+
+#: ultimate-responsive-image-slider/settings.php:638
+msgid ""
+"Enter any custom CSS you want to apply on this slider into text area filed."
+msgstr ""
+"Ingresar cualquier CSS personalizado que desee aplicar en este slider en el "
+"área de texto archivada."
+
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:223
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:245
+msgid "Slider Shortcode"
+msgstr "Shortcode Slider "
+
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:243
+msgid "Configure Settings"
+msgstr "Configurar ajustes"
+
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:246
+msgid "Try My New Slider Plugin"
+msgstr "Probar mi nuevo Slider Plugin"
+
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:355
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:552
+msgid "Slide Alt Text"
+msgstr "Texto ALT del slide"
+
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:356
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:553
+msgid "Max Length 125 Characters"
+msgstr "Longitud máxima 125 caracteres"
+
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:408
+msgid "Sort Ascending"
+msgstr "Ordenar ascendentemente"
+
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:412
+msgid "Sort Descending"
+msgstr "Ordenar descendentemente"
+
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:417
+msgid "Clone Slider (beta)"
+msgstr "Clonador slide (beta)"
+
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:426
+msgid "Slider clone created successfully."
+msgstr "Clon de slider creado con éxito."
+
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:426
+msgid "Go to"
+msgstr "Ir a"
+
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:426
+msgid "All Slider"
+msgstr "Todos los slider"
+
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:426
+msgid "page to edit cloned slider."
+msgstr ""
+
+#: ultimate-responsive-image-slider/ultimate-responsive-image-slider.php:511
+msgid "To embed slider in any custom theme template"
+msgstr "Incrustar slider en cualquier plantilla personalizada del tema"

@@ -6,7 +6,6 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'ACF\\Blocks\\Bindings' => $baseDir . '/includes/Blocks/Bindings.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'JsonSchema\\Constraints\\BaseConstraint' => $vendorDir . '/justinrainbow/json-schema/src/JsonSchema/Constraints/BaseConstraint.php',
     'JsonSchema\\Constraints\\CollectionConstraint' => $vendorDir . '/justinrainbow/json-schema/src/JsonSchema/Constraints/CollectionConstraint.php',
@@ -51,6 +50,22 @@ return array(
     'JsonSchema\\Uri\\UriResolver' => $vendorDir . '/justinrainbow/json-schema/src/JsonSchema/Uri/UriResolver.php',
     'JsonSchema\\Uri\\UriRetriever' => $vendorDir . '/justinrainbow/json-schema/src/JsonSchema/Uri/UriRetriever.php',
     'JsonSchema\\Validator' => $vendorDir . '/justinrainbow/json-schema/src/JsonSchema/Validator.php',
+    'SCF\\AI\\AI' => $baseDir . '/src/AI/AI.php',
+    'SCF\\AI\\Abilities\\Abilities' => $baseDir . '/src/AI/Abilities/Abilities.php',
+    'SCF\\AI\\Abilities\\AbstractAbilityGroup' => $baseDir . '/src/AI/Abilities/AbstractAbilityGroup.php',
+    'SCF\\AI\\Abilities\\FieldGroup' => $baseDir . '/src/AI/Abilities/FieldGroup.php',
+    'SCF\\AI\\Abilities\\PostType' => $baseDir . '/src/AI/Abilities/PostType.php',
+    'SCF\\AI\\Abilities\\SCF_REST_Ability' => $baseDir . '/src/AI/Abilities/SCF_REST_Ability.php',
+    'SCF\\AI\\Abilities\\Taxonomy' => $baseDir . '/src/AI/Abilities/Taxonomy.php',
+    'SCF\\AI\\GEO\\FieldSettings' => $baseDir . '/src/AI/GEO/FieldSettings.php',
+    'SCF\\AI\\GEO\\GEO' => $baseDir . '/src/AI/GEO/GEO.php',
+    'SCF\\AI\\GEO\\Outputs\\Blocks' => $baseDir . '/src/AI/GEO/Outputs/Blocks.php',
+    'SCF\\AI\\GEO\\Outputs\\Posts' => $baseDir . '/src/AI/GEO/Outputs/Posts.php',
+    'SCF\\AI\\GEO\\Schema' => $baseDir . '/src/AI/GEO/Schema.php',
+    'SCF\\AI\\GEO\\SchemaData' => $baseDir . '/src/AI/GEO/SchemaData.php',
+    'SCF\\Blocks\\Bindings' => $baseDir . '/includes/Blocks/Bindings.php',
+    'SCF\\CLI\\CLI' => $baseDir . '/src/CLI/CLI.php',
+    'SCF\\CLI\\JsonCommand' => $baseDir . '/src/CLI/JsonCommand.php',
     'SCF\\Fields\\FlexibleContent\\Layout' => $baseDir . '/includes/fields/FlexibleContent/Layout.php',
     'SCF\\Fields\\FlexibleContent\\Render' => $baseDir . '/includes/fields/FlexibleContent/Render.php',
     'SCF\\Forms\\WC_Order' => $baseDir . '/includes/forms/WC_Order.php',
@@ -61,4 +76,6 @@ return array(
     'SCF\\Meta\\Term' => $baseDir . '/includes/Meta/Term.php',
     'SCF\\Meta\\User' => $baseDir . '/includes/Meta/User.php',
     'SCF\\Meta\\WooOrder' => $baseDir . '/includes/Meta/WooOrder.php',
+    'SCF\\Site_Health\\AI_Usage' => $baseDir . '/src/Site_Health/AI_Usage.php',
+    'SCF\\Site_Health\\Site_Health' => $baseDir . '/src/Site_Health/Site_Health.php',
 );

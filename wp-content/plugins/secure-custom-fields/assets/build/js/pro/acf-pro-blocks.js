@@ -5,21 +5,26 @@
 /*!*********************************************!*\
   !*** ./assets/src/js/pro/_acf-blocks-v3.js ***!
   \*********************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _blocks_v3_utils_post_locking__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./blocks-v3/utils/post-locking */ "./assets/src/js/pro/blocks-v3/utils/post-locking.js");
+/* harmony import */ var _blocks_v3_components_jsx_parser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./blocks-v3/components/jsx-parser */ "./assets/src/js/pro/blocks-v3/components/jsx-parser.js");
+/* harmony import */ var _blocks_v3_register_block_type_v3__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks-v3/register-block-type-v3 */ "./assets/src/js/pro/blocks-v3/register-block-type-v3.js");
 /**
  * ACF Blocks Version 3 - Entry Point
  * Imports all modules and initializes the block system
  */
 
-// Import utilities
-// import './blocks-v3/utils/post-locking';
+// Import utilities.
 
-// Import JSX parser and expose on acf global
-// import './blocks-v3/components/jsx-parser';
 
-// Import block registration (initializes automatically via acf.addAction)
-// import './blocks-v3/register-block-type-v3';
+// Import JSX parser and expose on acf global.
+
+
+// Import block registration (initializes automatically via acf.addAction).
+
 
 /***/ }),
 
@@ -27,3088 +32,1909 @@
 /*!******************************************!*\
   !*** ./assets/src/js/pro/_acf-blocks.js ***!
   \******************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-(() => {
-  var e = {
-      20: (e, t, n) => {
-        'use strict';
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 
-        var r = n(540),
-          o = Symbol.for('react.element'),
-          i = Symbol.for('react.fragment'),
-          a = Object.prototype.hasOwnProperty,
-          s = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-          l = {
-            key: !0,
-            ref: !0,
-            __self: !0,
-            __source: !0
-          };
-        function c(e, t, n) {
-          var r,
-            i = {},
-            c = null,
-            d = null;
-          for (r in void 0 !== n && (c = '' + n), void 0 !== t.key && (c = '' + t.key), void 0 !== t.ref && (d = t.ref), t) a.call(t, r) && !l.hasOwnProperty(r) && (i[r] = t[r]);
-          if (e && e.defaultProps) for (r in t = e.defaultProps) void 0 === i[r] && (i[r] = t[r]);
-          return {
-            $$typeof: o,
-            type: e,
-            key: c,
-            ref: d,
-            props: i,
-            _owner: s.current
-          };
-        }
-        t.Fragment = i, t.jsx = c, t.jsxs = c;
-      },
-      138: () => {
-        jQuery, acf.jsxNameReplacements = {
-          'accent-height': 'accentHeight',
-          accentheight: 'accentHeight',
-          'accept-charset': 'acceptCharset',
-          acceptcharset: 'acceptCharset',
-          accesskey: 'accessKey',
-          'alignment-baseline': 'alignmentBaseline',
-          alignmentbaseline: 'alignmentBaseline',
-          allowedblocks: 'allowedBlocks',
-          allowfullscreen: 'allowFullScreen',
-          allowreorder: 'allowReorder',
-          'arabic-form': 'arabicForm',
-          arabicform: 'arabicForm',
-          attributename: 'attributeName',
-          attributetype: 'attributeType',
-          autocapitalize: 'autoCapitalize',
-          autocomplete: 'autoComplete',
-          autocorrect: 'autoCorrect',
-          autofocus: 'autoFocus',
-          autoplay: 'autoPlay',
-          autoreverse: 'autoReverse',
-          autosave: 'autoSave',
-          basefrequency: 'baseFrequency',
-          'baseline-shift': 'baselineShift',
-          baselineshift: 'baselineShift',
-          baseprofile: 'baseProfile',
-          calcmode: 'calcMode',
-          'cap-height': 'capHeight',
-          capheight: 'capHeight',
-          cellpadding: 'cellPadding',
-          cellspacing: 'cellSpacing',
-          charset: 'charSet',
-          class: 'className',
-          classid: 'classID',
-          classname: 'className',
-          'clip-path': 'clipPath',
-          'clip-rule': 'clipRule',
-          clippath: 'clipPath',
-          clippathunits: 'clipPathUnits',
-          cliprule: 'clipRule',
-          'color-interpolation': 'colorInterpolation',
-          'color-interpolation-filters': 'colorInterpolationFilters',
-          'color-profile': 'colorProfile',
-          'color-rendering': 'colorRendering',
-          colorinterpolation: 'colorInterpolation',
-          colorinterpolationfilters: 'colorInterpolationFilters',
-          colorprofile: 'colorProfile',
-          colorrendering: 'colorRendering',
-          colspan: 'colSpan',
-          contenteditable: 'contentEditable',
-          contentscripttype: 'contentScriptType',
-          contentstyletype: 'contentStyleType',
-          contextmenu: 'contextMenu',
-          controlslist: 'controlsList',
-          crossorigin: 'crossOrigin',
-          dangerouslysetinnerhtml: 'dangerouslySetInnerHTML',
-          datetime: 'dateTime',
-          defaultchecked: 'defaultChecked',
-          defaultvalue: 'defaultValue',
-          diffuseconstant: 'diffuseConstant',
-          disablepictureinpicture: 'disablePictureInPicture',
-          disableremoteplayback: 'disableRemotePlayback',
-          'dominant-baseline': 'dominantBaseline',
-          dominantbaseline: 'dominantBaseline',
-          edgemode: 'edgeMode',
-          'enable-background': 'enableBackground',
-          enablebackground: 'enableBackground',
-          enctype: 'encType',
-          enterkeyhint: 'enterKeyHint',
-          externalresourcesrequired: 'externalResourcesRequired',
-          'fill-opacity': 'fillOpacity',
-          'fill-rule': 'fillRule',
-          fillopacity: 'fillOpacity',
-          fillrule: 'fillRule',
-          filterres: 'filterRes',
-          filterunits: 'filterUnits',
-          'flood-color': 'floodColor',
-          'flood-opacity': 'floodOpacity',
-          floodcolor: 'floodColor',
-          floodopacity: 'floodOpacity',
-          'font-family': 'fontFamily',
-          'font-size': 'fontSize',
-          'font-size-adjust': 'fontSizeAdjust',
-          'font-stretch': 'fontStretch',
-          'font-style': 'fontStyle',
-          'font-variant': 'fontVariant',
-          'font-weight': 'fontWeight',
-          fontfamily: 'fontFamily',
-          fontsize: 'fontSize',
-          fontsizeadjust: 'fontSizeAdjust',
-          fontstretch: 'fontStretch',
-          fontstyle: 'fontStyle',
-          fontvariant: 'fontVariant',
-          fontweight: 'fontWeight',
-          for: 'htmlFor',
-          foreignobject: 'foreignObject',
-          formaction: 'formAction',
-          formenctype: 'formEncType',
-          formmethod: 'formMethod',
-          formnovalidate: 'formNoValidate',
-          formtarget: 'formTarget',
-          frameborder: 'frameBorder',
-          'glyph-name': 'glyphName',
-          'glyph-orientation-horizontal': 'glyphOrientationHorizontal',
-          'glyph-orientation-vertical': 'glyphOrientationVertical',
-          glyphname: 'glyphName',
-          glyphorientationhorizontal: 'glyphOrientationHorizontal',
-          glyphorientationvertical: 'glyphOrientationVertical',
-          glyphref: 'glyphRef',
-          gradienttransform: 'gradientTransform',
-          gradientunits: 'gradientUnits',
-          'horiz-adv-x': 'horizAdvX',
-          'horiz-origin-x': 'horizOriginX',
-          horizadvx: 'horizAdvX',
-          horizoriginx: 'horizOriginX',
-          hreflang: 'hrefLang',
-          htmlfor: 'htmlFor',
-          'http-equiv': 'httpEquiv',
-          httpequiv: 'httpEquiv',
-          'image-rendering': 'imageRendering',
-          imagerendering: 'imageRendering',
-          innerhtml: 'innerHTML',
-          inputmode: 'inputMode',
-          itemid: 'itemID',
-          itemprop: 'itemProp',
-          itemref: 'itemRef',
-          itemscope: 'itemScope',
-          itemtype: 'itemType',
-          kernelmatrix: 'kernelMatrix',
-          kernelunitlength: 'kernelUnitLength',
-          keyparams: 'keyParams',
-          keypoints: 'keyPoints',
-          keysplines: 'keySplines',
-          keytimes: 'keyTimes',
-          keytype: 'keyType',
-          lengthadjust: 'lengthAdjust',
-          'letter-spacing': 'letterSpacing',
-          letterspacing: 'letterSpacing',
-          'lighting-color': 'lightingColor',
-          lightingcolor: 'lightingColor',
-          limitingconeangle: 'limitingConeAngle',
-          marginheight: 'marginHeight',
-          marginwidth: 'marginWidth',
-          'marker-end': 'markerEnd',
-          'marker-mid': 'markerMid',
-          'marker-start': 'markerStart',
-          markerend: 'markerEnd',
-          markerheight: 'markerHeight',
-          markermid: 'markerMid',
-          markerstart: 'markerStart',
-          markerunits: 'markerUnits',
-          markerwidth: 'markerWidth',
-          maskcontentunits: 'maskContentUnits',
-          maskunits: 'maskUnits',
-          maxlength: 'maxLength',
-          mediagroup: 'mediaGroup',
-          minlength: 'minLength',
-          nomodule: 'noModule',
-          novalidate: 'noValidate',
-          numoctaves: 'numOctaves',
-          'overline-position': 'overlinePosition',
-          'overline-thickness': 'overlineThickness',
-          overlineposition: 'overlinePosition',
-          overlinethickness: 'overlineThickness',
-          'paint-order': 'paintOrder',
-          paintorder: 'paintOrder',
-          'panose-1': 'panose1',
-          pathlength: 'pathLength',
-          patterncontentunits: 'patternContentUnits',
-          patterntransform: 'patternTransform',
-          patternunits: 'patternUnits',
-          playsinline: 'playsInline',
-          'pointer-events': 'pointerEvents',
-          pointerevents: 'pointerEvents',
-          pointsatx: 'pointsAtX',
-          pointsaty: 'pointsAtY',
-          pointsatz: 'pointsAtZ',
-          preservealpha: 'preserveAlpha',
-          preserveaspectratio: 'preserveAspectRatio',
-          primitiveunits: 'primitiveUnits',
-          radiogroup: 'radioGroup',
-          readonly: 'readOnly',
-          referrerpolicy: 'referrerPolicy',
-          refx: 'refX',
-          refy: 'refY',
-          'rendering-intent': 'renderingIntent',
-          renderingintent: 'renderingIntent',
-          repeatcount: 'repeatCount',
-          repeatdur: 'repeatDur',
-          requiredextensions: 'requiredExtensions',
-          requiredfeatures: 'requiredFeatures',
-          rowspan: 'rowSpan',
-          'shape-rendering': 'shapeRendering',
-          shaperendering: 'shapeRendering',
-          specularconstant: 'specularConstant',
-          specularexponent: 'specularExponent',
-          spellcheck: 'spellCheck',
-          spreadmethod: 'spreadMethod',
-          srcdoc: 'srcDoc',
-          srclang: 'srcLang',
-          srcset: 'srcSet',
-          startoffset: 'startOffset',
-          stddeviation: 'stdDeviation',
-          stitchtiles: 'stitchTiles',
-          'stop-color': 'stopColor',
-          'stop-opacity': 'stopOpacity',
-          stopcolor: 'stopColor',
-          stopopacity: 'stopOpacity',
-          'strikethrough-position': 'strikethroughPosition',
-          'strikethrough-thickness': 'strikethroughThickness',
-          strikethroughposition: 'strikethroughPosition',
-          strikethroughthickness: 'strikethroughThickness',
-          'stroke-dasharray': 'strokeDasharray',
-          'stroke-dashoffset': 'strokeDashoffset',
-          'stroke-linecap': 'strokeLinecap',
-          'stroke-linejoin': 'strokeLinejoin',
-          'stroke-miterlimit': 'strokeMiterlimit',
-          'stroke-opacity': 'strokeOpacity',
-          'stroke-width': 'strokeWidth',
-          strokedasharray: 'strokeDasharray',
-          strokedashoffset: 'strokeDashoffset',
-          strokelinecap: 'strokeLinecap',
-          strokelinejoin: 'strokeLinejoin',
-          strokemiterlimit: 'strokeMiterlimit',
-          strokeopacity: 'strokeOpacity',
-          strokewidth: 'strokeWidth',
-          suppresscontenteditablewarning: 'suppressContentEditableWarning',
-          suppresshydrationwarning: 'suppressHydrationWarning',
-          surfacescale: 'surfaceScale',
-          systemlanguage: 'systemLanguage',
-          tabindex: 'tabIndex',
-          tablevalues: 'tableValues',
-          targetx: 'targetX',
-          targety: 'targetY',
-          templatelock: 'templateLock',
-          'text-anchor': 'textAnchor',
-          'text-decoration': 'textDecoration',
-          'text-rendering': 'textRendering',
-          textanchor: 'textAnchor',
-          textdecoration: 'textDecoration',
-          textlength: 'textLength',
-          textrendering: 'textRendering',
-          'underline-position': 'underlinePosition',
-          'underline-thickness': 'underlineThickness',
-          underlineposition: 'underlinePosition',
-          underlinethickness: 'underlineThickness',
-          'unicode-bidi': 'unicodeBidi',
-          'unicode-range': 'unicodeRange',
-          unicodebidi: 'unicodeBidi',
-          unicoderange: 'unicodeRange',
-          'units-per-em': 'unitsPerEm',
-          unitsperem: 'unitsPerEm',
-          usemap: 'useMap',
-          'v-alphabetic': 'vAlphabetic',
-          'v-hanging': 'vHanging',
-          'v-ideographic': 'vIdeographic',
-          'v-mathematical': 'vMathematical',
-          valphabetic: 'vAlphabetic',
-          'vector-effect': 'vectorEffect',
-          vectoreffect: 'vectorEffect',
-          'vert-adv-y': 'vertAdvY',
-          'vert-origin-x': 'vertOriginX',
-          'vert-origin-y': 'vertOriginY',
-          vertadvy: 'vertAdvY',
-          vertoriginx: 'vertOriginX',
-          vertoriginy: 'vertOriginY',
-          vhanging: 'vHanging',
-          videographic: 'vIdeographic',
-          viewbox: 'viewBox',
-          viewtarget: 'viewTarget',
-          vmathematical: 'vMathematical',
-          'word-spacing': 'wordSpacing',
-          wordspacing: 'wordSpacing',
-          'writing-mode': 'writingMode',
-          writingmode: 'writingMode',
-          'x-height': 'xHeight',
-          xchannelselector: 'xChannelSelector',
-          xheight: 'xHeight',
-          'xlink:actuate': 'xlinkActuate',
-          'xlink:arcrole': 'xlinkArcrole',
-          'xlink:href': 'xlinkHref',
-          'xlink:role': 'xlinkRole',
-          'xlink:show': 'xlinkShow',
-          'xlink:title': 'xlinkTitle',
-          'xlink:type': 'xlinkType',
-          xlinkactuate: 'xlinkActuate',
-          xlinkarcrole: 'xlinkArcrole',
-          xlinkhref: 'xlinkHref',
-          xlinkrole: 'xlinkRole',
-          xlinkshow: 'xlinkShow',
-          xlinktitle: 'xlinkTitle',
-          xlinktype: 'xlinkType',
-          'xml:base': 'xmlBase',
-          'xml:lang': 'xmlLang',
-          'xml:space': 'xmlSpace',
-          xmlbase: 'xmlBase',
-          xmllang: 'xmlLang',
-          'xmlns:xlink': 'xmlnsXlink',
-          xmlnsxlink: 'xmlnsXlink',
-          xmlspace: 'xmlSpace',
-          ychannelselector: 'yChannelSelector',
-          zoomandpan: 'zoomAndPan'
-        };
-      },
-      151: e => {
-        var t = {
-          utf8: {
-            stringToBytes: function (e) {
-              return t.bin.stringToBytes(unescape(encodeURIComponent(e)));
-            },
-            bytesToString: function (e) {
-              return decodeURIComponent(escape(t.bin.bytesToString(e)));
-            }
-          },
-          bin: {
-            stringToBytes: function (e) {
-              for (var t = [], n = 0; n < e.length; n++) t.push(255 & e.charCodeAt(n));
-              return t;
-            },
-            bytesToString: function (e) {
-              for (var t = [], n = 0; n < e.length; n++) t.push(String.fromCharCode(e[n]));
-              return t.join('');
-            }
-          }
-        };
-        e.exports = t;
-      },
-      206: e => {
-        function t(e) {
-          return !!e.constructor && 'function' == typeof e.constructor.isBuffer && e.constructor.isBuffer(e);
-        }
-        e.exports = function (e) {
-          return null != e && (t(e) || function (e) {
-            return 'function' == typeof e.readFloatLE && 'function' == typeof e.slice && t(e.slice(0, 0));
-          }(e) || !!e._isBuffer);
-        };
-      },
-      287: (e, t) => {
-        'use strict';
+const md5 = __webpack_require__(/*! md5 */ "./node_modules/md5/md5.js");
+(($, undefined) => {
+  // Dependencies.
+  const {
+    BlockControls,
+    InspectorControls,
+    InnerBlocks,
+    useBlockProps,
+    AlignmentToolbar,
+    BlockVerticalAlignmentToolbar
+  } = wp.blockEditor;
+  const {
+    ToolbarGroup,
+    ToolbarButton,
+    Placeholder,
+    Spinner
+  } = wp.components;
+  const {
+    Fragment
+  } = wp.element;
+  const {
+    Component
+  } = React;
+  const {
+    useSelect
+  } = wp.data;
+  const {
+    createHigherOrderComponent
+  } = wp.compose;
 
-        var n = Symbol.for('react.element'),
-          r = Symbol.for('react.portal'),
-          o = Symbol.for('react.fragment'),
-          i = Symbol.for('react.strict_mode'),
-          a = Symbol.for('react.profiler'),
-          s = Symbol.for('react.provider'),
-          l = Symbol.for('react.context'),
-          c = Symbol.for('react.forward_ref'),
-          d = Symbol.for('react.suspense'),
-          u = Symbol.for('react.memo'),
-          p = Symbol.for('react.lazy'),
-          f = Symbol.iterator,
-          h = {
-            isMounted: function () {
-              return !1;
-            },
-            enqueueForceUpdate: function () {},
-            enqueueReplaceState: function () {},
-            enqueueSetState: function () {}
-          },
-          m = Object.assign,
-          b = {};
-        function g(e, t, n) {
-          this.props = e, this.context = t, this.refs = b, this.updater = n || h;
-        }
-        function k() {}
-        function v(e, t, n) {
-          this.props = e, this.context = t, this.refs = b, this.updater = n || h;
-        }
-        g.prototype.isReactComponent = {}, g.prototype.setState = function (e, t) {
-          if ('object' != typeof e && 'function' != typeof e && null != e) throw Error('setState(...): takes an object of state variables to update or a function which returns an object of state variables.');
-          this.updater.enqueueSetState(this, e, t, 'setState');
-        }, g.prototype.forceUpdate = function (e) {
-          this.updater.enqueueForceUpdate(this, e, 'forceUpdate');
-        }, k.prototype = g.prototype;
-        var y = v.prototype = new k();
-        y.constructor = v, m(y, g.prototype), y.isPureReactComponent = !0;
-        var x = Array.isArray,
-          w = Object.prototype.hasOwnProperty,
-          E = {
-            current: null
-          },
-          _ = {
-            key: !0,
-            ref: !0,
-            __self: !0,
-            __source: !0
-          };
-        function C(e, t, r) {
-          var o,
-            i = {},
-            a = null,
-            s = null;
-          if (null != t) for (o in void 0 !== t.ref && (s = t.ref), void 0 !== t.key && (a = '' + t.key), t) w.call(t, o) && !_.hasOwnProperty(o) && (i[o] = t[o]);
-          var l = arguments.length - 2;
-          if (1 === l) i.children = r;else if (1 < l) {
-            for (var c = Array(l), d = 0; d < l; d++) c[d] = arguments[d + 2];
-            i.children = c;
-          }
-          if (e && e.defaultProps) for (o in l = e.defaultProps) void 0 === i[o] && (i[o] = l[o]);
-          return {
-            $$typeof: n,
-            type: e,
-            key: a,
-            ref: s,
-            props: i,
-            _owner: E.current
-          };
-        }
-        function j(e) {
-          return 'object' == typeof e && null !== e && e.$$typeof === n;
-        }
-        var I = /\/+/g;
-        function S(e, t) {
-          return 'object' == typeof e && null !== e && null != e.key ? function (e) {
-            var t = {
-              '=': '=0',
-              ':': '=2'
-            };
-            return '$' + e.replace(/[=:]/g, function (e) {
-              return t[e];
-            });
-          }('' + e.key) : t.toString(36);
-        }
-        function A(e, t, o, i, a) {
-          var s = typeof e;
-          'undefined' !== s && 'boolean' !== s || (e = null);
-          var l = !1;
-          if (null === e) l = !0;else switch (s) {
-            case 'string':
-            case 'number':
-              l = !0;
-              break;
-            case 'object':
-              switch (e.$$typeof) {
-                case n:
-                case r:
-                  l = !0;
-              }
-          }
-          if (l) return a = a(l = e), e = '' === i ? '.' + S(l, 0) : i, x(a) ? (o = '', null != e && (o = e.replace(I, '$&/') + '/'), A(a, t, o, '', function (e) {
-            return e;
-          })) : null != a && (j(a) && (a = function (e, t) {
-            return {
-              $$typeof: n,
-              type: e.type,
-              key: t,
-              ref: e.ref,
-              props: e.props,
-              _owner: e._owner
-            };
-          }(a, o + (!a.key || l && l.key === a.key ? '' : ('' + a.key).replace(I, '$&/') + '/') + e)), t.push(a)), 1;
-          if (l = 0, i = '' === i ? '.' : i + ':', x(e)) for (var c = 0; c < e.length; c++) {
-            var d = i + S(s = e[c], c);
-            l += A(s, t, o, d, a);
-          } else if (d = function (e) {
-            return null === e || 'object' != typeof e ? null : 'function' == typeof (e = f && e[f] || e['@@iterator']) ? e : null;
-          }(e), 'function' == typeof d) for (e = d.call(e), c = 0; !(s = e.next()).done;) l += A(s = s.value, t, o, d = i + S(s, c++), a);else if ('object' === s) throw t = String(e), Error('Objects are not valid as a React child (found: ' + ('[object Object]' === t ? 'object with keys {' + Object.keys(e).join(', ') + '}' : t) + '). If you meant to render a collection of children, use an array instead.');
-          return l;
-        }
-        function T(e, t, n) {
-          if (null == e) return e;
-          var r = [],
-            o = 0;
-          return A(e, r, '', '', function (e) {
-            return t.call(n, e, o++);
-          }), r;
-        }
-        function B(e) {
-          if (-1 === e._status) {
-            var t = e._result;
-            (t = t()).then(function (t) {
-              0 !== e._status && -1 !== e._status || (e._status = 1, e._result = t);
-            }, function (t) {
-              0 !== e._status && -1 !== e._status || (e._status = 2, e._result = t);
-            }), -1 === e._status && (e._status = 0, e._result = t);
-          }
-          if (1 === e._status) return e._result.default;
-          throw e._result;
-        }
-        var F = {
-            current: null
-          },
-          O = {
-            transition: null
-          },
-          N = {
-            ReactCurrentDispatcher: F,
-            ReactCurrentBatchConfig: O,
-            ReactCurrentOwner: E
-          };
-        function R() {
-          throw Error('act(...) is not supported in production builds of React.');
-        }
-        t.Children = {
-          map: T,
-          forEach: function (e, t, n) {
-            T(e, function () {
-              t.apply(this, arguments);
-            }, n);
-          },
-          count: function (e) {
-            var t = 0;
-            return T(e, function () {
-              t++;
-            }), t;
-          },
-          toArray: function (e) {
-            return T(e, function (e) {
-              return e;
-            }) || [];
-          },
-          only: function (e) {
-            if (!j(e)) throw Error('React.Children.only expected to receive a single React element child.');
-            return e;
-          }
-        }, t.Component = g, t.Fragment = o, t.Profiler = a, t.PureComponent = v, t.StrictMode = i, t.Suspense = d, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = N, t.act = R, t.cloneElement = function (e, t, r) {
-          if (null == e) throw Error('React.cloneElement(...): The argument must be a React element, but you passed ' + e + '.');
-          var o = m({}, e.props),
-            i = e.key,
-            a = e.ref,
-            s = e._owner;
-          if (null != t) {
-            if (void 0 !== t.ref && (a = t.ref, s = E.current), void 0 !== t.key && (i = '' + t.key), e.type && e.type.defaultProps) var l = e.type.defaultProps;
-            for (c in t) w.call(t, c) && !_.hasOwnProperty(c) && (o[c] = void 0 === t[c] && void 0 !== l ? l[c] : t[c]);
-          }
-          var c = arguments.length - 2;
-          if (1 === c) o.children = r;else if (1 < c) {
-            l = Array(c);
-            for (var d = 0; d < c; d++) l[d] = arguments[d + 2];
-            o.children = l;
-          }
-          return {
-            $$typeof: n,
-            type: e.type,
-            key: i,
-            ref: a,
-            props: o,
-            _owner: s
-          };
-        }, t.createContext = function (e) {
-          return (e = {
-            $$typeof: l,
-            _currentValue: e,
-            _currentValue2: e,
-            _threadCount: 0,
-            Provider: null,
-            Consumer: null,
-            _defaultValue: null,
-            _globalName: null
-          }).Provider = {
-            $$typeof: s,
-            _context: e
-          }, e.Consumer = e;
-        }, t.createElement = C, t.createFactory = function (e) {
-          var t = C.bind(null, e);
-          return t.type = e, t;
-        }, t.createRef = function () {
-          return {
-            current: null
-          };
-        }, t.forwardRef = function (e) {
-          return {
-            $$typeof: c,
-            render: e
-          };
-        }, t.isValidElement = j, t.lazy = function (e) {
-          return {
-            $$typeof: p,
-            _payload: {
-              _status: -1,
-              _result: e
-            },
-            _init: B
-          };
-        }, t.memo = function (e, t) {
-          return {
-            $$typeof: u,
-            type: e,
-            compare: void 0 === t ? null : t
-          };
-        }, t.startTransition = function (e) {
-          var t = O.transition;
-          O.transition = {};
-          try {
-            e();
-          } finally {
-            O.transition = t;
-          }
-        }, t.unstable_act = R, t.useCallback = function (e, t) {
-          return F.current.useCallback(e, t);
-        }, t.useContext = function (e) {
-          return F.current.useContext(e);
-        }, t.useDebugValue = function () {}, t.useDeferredValue = function (e) {
-          return F.current.useDeferredValue(e);
-        }, t.useEffect = function (e, t) {
-          return F.current.useEffect(e, t);
-        }, t.useId = function () {
-          return F.current.useId();
-        }, t.useImperativeHandle = function (e, t, n) {
-          return F.current.useImperativeHandle(e, t, n);
-        }, t.useInsertionEffect = function (e, t) {
-          return F.current.useInsertionEffect(e, t);
-        }, t.useLayoutEffect = function (e, t) {
-          return F.current.useLayoutEffect(e, t);
-        }, t.useMemo = function (e, t) {
-          return F.current.useMemo(e, t);
-        }, t.useReducer = function (e, t, n) {
-          return F.current.useReducer(e, t, n);
-        }, t.useRef = function (e) {
-          return F.current.useRef(e);
-        }, t.useState = function (e) {
-          return F.current.useState(e);
-        }, t.useSyncExternalStore = function (e, t, n) {
-          return F.current.useSyncExternalStore(e, t, n);
-        }, t.useTransition = function () {
-          return F.current.useTransition();
-        }, t.version = '18.3.1';
-      },
-      503: (e, t, n) => {
-        var r, o, i, a, s;
-        r = n(939), o = n(151).utf8, i = n(206), a = n(151).bin, (s = function (e, t) {
-          e.constructor == String ? e = t && 'binary' === t.encoding ? a.stringToBytes(e) : o.stringToBytes(e) : i(e) ? e = Array.prototype.slice.call(e, 0) : Array.isArray(e) || e.constructor === Uint8Array || (e = e.toString());
-          for (var n = r.bytesToWords(e), l = 8 * e.length, c = 1732584193, d = -271733879, u = -1732584194, p = 271733878, f = 0; f < n.length; f++) n[f] = 16711935 & (n[f] << 8 | n[f] >>> 24) | 4278255360 & (n[f] << 24 | n[f] >>> 8);
-          n[l >>> 5] |= 128 << l % 32, n[14 + (l + 64 >>> 9 << 4)] = l;
-          var h = s._ff,
-            m = s._gg,
-            b = s._hh,
-            g = s._ii;
-          for (f = 0; f < n.length; f += 16) {
-            var k = c,
-              v = d,
-              y = u,
-              x = p;
-            c = h(c, d, u, p, n[f + 0], 7, -680876936), p = h(p, c, d, u, n[f + 1], 12, -389564586), u = h(u, p, c, d, n[f + 2], 17, 606105819), d = h(d, u, p, c, n[f + 3], 22, -1044525330), c = h(c, d, u, p, n[f + 4], 7, -176418897), p = h(p, c, d, u, n[f + 5], 12, 1200080426), u = h(u, p, c, d, n[f + 6], 17, -1473231341), d = h(d, u, p, c, n[f + 7], 22, -45705983), c = h(c, d, u, p, n[f + 8], 7, 1770035416), p = h(p, c, d, u, n[f + 9], 12, -1958414417), u = h(u, p, c, d, n[f + 10], 17, -42063), d = h(d, u, p, c, n[f + 11], 22, -1990404162), c = h(c, d, u, p, n[f + 12], 7, 1804603682), p = h(p, c, d, u, n[f + 13], 12, -40341101), u = h(u, p, c, d, n[f + 14], 17, -1502002290), c = m(c, d = h(d, u, p, c, n[f + 15], 22, 1236535329), u, p, n[f + 1], 5, -165796510), p = m(p, c, d, u, n[f + 6], 9, -1069501632), u = m(u, p, c, d, n[f + 11], 14, 643717713), d = m(d, u, p, c, n[f + 0], 20, -373897302), c = m(c, d, u, p, n[f + 5], 5, -701558691), p = m(p, c, d, u, n[f + 10], 9, 38016083), u = m(u, p, c, d, n[f + 15], 14, -660478335), d = m(d, u, p, c, n[f + 4], 20, -405537848), c = m(c, d, u, p, n[f + 9], 5, 568446438), p = m(p, c, d, u, n[f + 14], 9, -1019803690), u = m(u, p, c, d, n[f + 3], 14, -187363961), d = m(d, u, p, c, n[f + 8], 20, 1163531501), c = m(c, d, u, p, n[f + 13], 5, -1444681467), p = m(p, c, d, u, n[f + 2], 9, -51403784), u = m(u, p, c, d, n[f + 7], 14, 1735328473), c = b(c, d = m(d, u, p, c, n[f + 12], 20, -1926607734), u, p, n[f + 5], 4, -378558), p = b(p, c, d, u, n[f + 8], 11, -2022574463), u = b(u, p, c, d, n[f + 11], 16, 1839030562), d = b(d, u, p, c, n[f + 14], 23, -35309556), c = b(c, d, u, p, n[f + 1], 4, -1530992060), p = b(p, c, d, u, n[f + 4], 11, 1272893353), u = b(u, p, c, d, n[f + 7], 16, -155497632), d = b(d, u, p, c, n[f + 10], 23, -1094730640), c = b(c, d, u, p, n[f + 13], 4, 681279174), p = b(p, c, d, u, n[f + 0], 11, -358537222), u = b(u, p, c, d, n[f + 3], 16, -722521979), d = b(d, u, p, c, n[f + 6], 23, 76029189), c = b(c, d, u, p, n[f + 9], 4, -640364487), p = b(p, c, d, u, n[f + 12], 11, -421815835), u = b(u, p, c, d, n[f + 15], 16, 530742520), c = g(c, d = b(d, u, p, c, n[f + 2], 23, -995338651), u, p, n[f + 0], 6, -198630844), p = g(p, c, d, u, n[f + 7], 10, 1126891415), u = g(u, p, c, d, n[f + 14], 15, -1416354905), d = g(d, u, p, c, n[f + 5], 21, -57434055), c = g(c, d, u, p, n[f + 12], 6, 1700485571), p = g(p, c, d, u, n[f + 3], 10, -1894986606), u = g(u, p, c, d, n[f + 10], 15, -1051523), d = g(d, u, p, c, n[f + 1], 21, -2054922799), c = g(c, d, u, p, n[f + 8], 6, 1873313359), p = g(p, c, d, u, n[f + 15], 10, -30611744), u = g(u, p, c, d, n[f + 6], 15, -1560198380), d = g(d, u, p, c, n[f + 13], 21, 1309151649), c = g(c, d, u, p, n[f + 4], 6, -145523070), p = g(p, c, d, u, n[f + 11], 10, -1120210379), u = g(u, p, c, d, n[f + 2], 15, 718787259), d = g(d, u, p, c, n[f + 9], 21, -343485551), c = c + k >>> 0, d = d + v >>> 0, u = u + y >>> 0, p = p + x >>> 0;
-          }
-          return r.endian([c, d, u, p]);
-        })._ff = function (e, t, n, r, o, i, a) {
-          var s = e + (t & n | ~t & r) + (o >>> 0) + a;
-          return (s << i | s >>> 32 - i) + t;
-        }, s._gg = function (e, t, n, r, o, i, a) {
-          var s = e + (t & r | n & ~r) + (o >>> 0) + a;
-          return (s << i | s >>> 32 - i) + t;
-        }, s._hh = function (e, t, n, r, o, i, a) {
-          var s = e + (t ^ n ^ r) + (o >>> 0) + a;
-          return (s << i | s >>> 32 - i) + t;
-        }, s._ii = function (e, t, n, r, o, i, a) {
-          var s = e + (n ^ (t | ~r)) + (o >>> 0) + a;
-          return (s << i | s >>> 32 - i) + t;
-        }, s._blocksize = 16, s._digestsize = 16, e.exports = function (e, t) {
-          if (null == e) throw new Error('Illegal argument ' + e);
-          var n = r.wordsToBytes(s(e, t));
-          return t && t.asBytes ? n : t && t.asString ? a.bytesToString(n) : r.bytesToHex(n);
-        };
-      },
-      540: (e, t, n) => {
-        'use strict';
+  // Potentially experimental dependencies.
+  const BlockAlignmentMatrixToolbar = wp.blockEditor.__experimentalBlockAlignmentMatrixToolbar || wp.blockEditor.BlockAlignmentMatrixToolbar;
+  // Gutenberg v10.x begins transition from Toolbar components to Control components.
+  const BlockAlignmentMatrixControl = wp.blockEditor.__experimentalBlockAlignmentMatrixControl || wp.blockEditor.BlockAlignmentMatrixControl;
+  const BlockFullHeightAlignmentControl = wp.blockEditor.__experimentalBlockFullHeightAligmentControl || wp.blockEditor.__experimentalBlockFullHeightAlignmentControl || wp.blockEditor.BlockFullHeightAlignmentControl;
+  const useInnerBlocksProps = wp.blockEditor.__experimentalUseInnerBlocksProps || wp.blockEditor.useInnerBlocksProps;
 
-        e.exports = n(287);
-      },
-      848: (e, t, n) => {
-        'use strict';
+  /**
+   * Storage for registered block types.
+   *
+   * @since ACF 5.8.0
+   * @var object
+   */
+  const blockTypes = {};
 
-        e.exports = n(20);
-      },
-      939: e => {
-        var t, n;
-        t = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/', n = {
-          rotl: function (e, t) {
-            return e << t | e >>> 32 - t;
-          },
-          rotr: function (e, t) {
-            return e << 32 - t | e >>> t;
-          },
-          endian: function (e) {
-            if (e.constructor == Number) return 16711935 & n.rotl(e, 8) | 4278255360 & n.rotl(e, 24);
-            for (var t = 0; t < e.length; t++) e[t] = n.endian(e[t]);
-            return e;
-          },
-          randomBytes: function (e) {
-            for (var t = []; e > 0; e--) t.push(Math.floor(256 * Math.random()));
-            return t;
-          },
-          bytesToWords: function (e) {
-            for (var t = [], n = 0, r = 0; n < e.length; n++, r += 8) t[r >>> 5] |= e[n] << 24 - r % 32;
-            return t;
-          },
-          wordsToBytes: function (e) {
-            for (var t = [], n = 0; n < 32 * e.length; n += 8) t.push(e[n >>> 5] >>> 24 - n % 32 & 255);
-            return t;
-          },
-          bytesToHex: function (e) {
-            for (var t = [], n = 0; n < e.length; n++) t.push((e[n] >>> 4).toString(16)), t.push((15 & e[n]).toString(16));
-            return t.join('');
-          },
-          hexToBytes: function (e) {
-            for (var t = [], n = 0; n < e.length; n += 2) t.push(parseInt(e.substr(n, 2), 16));
-            return t;
-          },
-          bytesToBase64: function (e) {
-            for (var n = [], r = 0; r < e.length; r += 3) for (var o = e[r] << 16 | e[r + 1] << 8 | e[r + 2], i = 0; i < 4; i++) 8 * r + 6 * i <= 8 * e.length ? n.push(t.charAt(o >>> 6 * (3 - i) & 63)) : n.push('=');
-            return n.join('');
-          },
-          base64ToBytes: function (e) {
-            e = e.replace(/[^A-Z0-9+\/]/gi, '');
-            for (var n = [], r = 0, o = 0; r < e.length; o = ++r % 4) 0 != o && n.push((t.indexOf(e.charAt(r - 1)) & Math.pow(2, -2 * o + 8) - 1) << 2 * o | t.indexOf(e.charAt(r)) >>> 6 - 2 * o);
-            return n;
-          }
-        }, e.exports = n;
-      }
-    },
-    t = {};
-  function n(r) {
-    var o = t[r];
-    if (void 0 !== o) return o.exports;
-    var i = t[r] = {
-      exports: {}
-    };
-    return e[r](i, i.exports, n), i.exports;
+  /**
+   * Data storage for Block Instances and their DynamicHTML components.
+   * This is temporarily stored on the ACF object, but this will be replaced later.
+   * Developers should not rely on reading or using any aspect of acf.blockInstances.
+   *
+   * @since ACF 6.3
+   */
+  acf.blockInstances = {};
+
+  /**
+   * Returns a block type for the given name.
+   *
+   * @date	20/2/19
+   * @since	ACF 5.8.0
+   *
+   * @param	string name The block name.
+   * @return	(object|false)
+   */
+  function getBlockType(name) {
+    return blockTypes[name] || false;
   }
-  (() => {
-    'use strict';
 
-    n(138);
-    var e = n(848);
-    const t = n(503);
-    ((n, r) => {
+  /**
+   * Returns a block version for a given block name
+   *
+   * @date 8/6/22
+   * @since ACF 6.0
+   *
+   * @param string name The block name
+   * @return int
+   */
+  function getBlockVersion(name) {
+    const blockType = getBlockType(name);
+    return blockType.acf_block_version || 1;
+  }
+
+  /**
+   * Returns a block's validate property. Default true.
+   *
+   * @since ACF 6.3
+   *
+   * @param string name The block name
+   * @return boolean
+   */
+  function blockSupportsValidation(name) {
+    const blockType = getBlockType(name);
+    return blockType.validate;
+  }
+
+  /**
+   * Returns true if a block (identified by client ID) is nested in a query loop block.
+   *
+   * @date 17/1/22
+   * @since ACF 5.12
+   *
+   * @param {string} clientId A block client ID
+   * @return boolean
+   */
+  function isBlockInQueryLoop(clientId) {
+    const parents = wp.data.select('core/block-editor').getBlockParents(clientId);
+    const parentsData = wp.data.select('core/block-editor').getBlocksByClientId(parents);
+    return parentsData.filter(block => block.name === 'core/query').length;
+  }
+
+  /**
+   * Returns true if we're currently inside the WP 5.9+ site editor.
+   *
+   * @date 08/02/22
+   * @since ACF 5.12
+   *
+   * @return boolean
+   */
+  function isSiteEditor() {
+    return document.querySelectorAll('iframe[name="editor-canvas"]').length > 0;
+  }
+
+  /**
+   * Returns true if the block editor is currently showing the desktop device type preview.
+   *
+   * This function will always return true in the site editor as it uses the
+   * edit-post store rather than the edit-site store.
+   *
+   * @date 15/02/22
+   * @since ACF 5.12
+   *
+   * @return boolean
+   */
+  function isDesktopPreviewDeviceType() {
+    const editPostStore = select('core/edit-post');
+
+    // Return true if the edit post store isn't available (such as in the widget editor)
+    if (!editPostStore) return true;
+
+    // Check if function exists (experimental or not) and return true if it's Desktop, or doesn't exist.
+    if (editPostStore.__experimentalGetPreviewDeviceType) {
+      return 'Desktop' === editPostStore.__experimentalGetPreviewDeviceType();
+    } else if (editPostStore.getPreviewDeviceType) {
+      return 'Desktop' === editPostStore.getPreviewDeviceType();
+    } else {
+      return true;
+    }
+  }
+
+  /**
+   * Returns true if the block editor is currently in template edit mode.
+   *
+   * @date 16/02/22
+   * @since ACF 5.12
+   *
+   * @return boolean
+   */
+  function isEditingTemplate() {
+    const editPostStore = select('core/edit-post');
+
+    // Return false if the edit post store isn't available (such as in the widget editor)
+    if (!editPostStore) return false;
+
+    // Return false if the function doesn't exist
+    if (!editPostStore.isEditingTemplate) return false;
+    return editPostStore.isEditingTemplate();
+  }
+
+  /**
+   * Returns true if we're currently inside an iFramed non-desktop device preview type (WP5.9+)
+   *
+   * @date 15/02/22
+   * @since ACF 5.12
+   *
+   * @return boolean
+   */
+  function isiFramedMobileDevicePreview() {
+    return $('iframe[name=editor-canvas]').length && !isDesktopPreviewDeviceType();
+  }
+
+  /**
+   * Registers a block type.
+   *
+   * @date	19/2/19
+   * @since	ACF 5.8.0
+   *
+   * @param	object blockType The block type settings localized from PHP.
+   * @return	object The result from wp.blocks.registerBlockType().
+   */
+  function registerBlockType(blockType) {
+    // Bail early if is excluded post_type.
+    const allowedTypes = blockType.post_types || [];
+    if (allowedTypes.length) {
+      // Always allow block to appear on "Edit reusable Block" screen.
+      allowedTypes.push('wp_block');
+
+      // Check post type.
+      const postType = acf.get('postType');
+      if (!allowedTypes.includes(postType)) {
+        return false;
+      }
+    }
+
+    // Handle svg HTML.
+    if (typeof blockType.icon === 'string' && blockType.icon.substr(0, 4) === '<svg') {
+      const iconHTML = blockType.icon;
+      blockType.icon = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Div, {
+        children: iconHTML
+      });
+    }
+
+    // Remove icon if empty to allow for default "block".
+    // Avoids JS error preventing block from being registered.
+    if (!blockType.icon) {
+      delete blockType.icon;
+    }
+
+    // Check category exists and fallback to "common".
+    const category = wp.blocks.getCategories().filter(({
+      slug
+    }) => slug === blockType.category).pop();
+    if (!category) {
+      //console.warn( `The block "${blockType.name}" is registered with an unknown category "${blockType.category}".` );
+      blockType.category = 'common';
+    }
+
+    // Merge in block settings before local additions.
+    blockType = acf.parseArgs(blockType, {
+      title: '',
+      name: '',
+      category: '',
+      api_version: 2,
+      acf_block_version: 1
+    });
+
+    // Remove all empty attribute defaults from PHP values to allow serialisation.
+    // https://github.com/WordPress/gutenberg/issues/7342
+    for (const key in blockType.attributes) {
+      if ('default' in blockType.attributes[key] && blockType.attributes[key].default.length === 0) {
+        delete blockType.attributes[key].default;
+      }
+    }
+
+    // Apply anchor supports to avoid block editor default writing to ID.
+    if (blockType.supports.anchor) {
+      blockType.attributes.anchor = {
+        type: 'string'
+      };
+    }
+
+    // Append edit and save functions.
+    let ThisBlockEdit = BlockEdit;
+    let ThisBlockSave = BlockSave;
+
+    // Apply alignText functionality.
+    if (blockType.supports.alignText || blockType.supports.align_text) {
+      blockType.attributes = addBackCompatAttribute(blockType.attributes, 'align_text', 'string');
+      ThisBlockEdit = withAlignTextComponent(ThisBlockEdit, blockType);
+    }
+
+    // Apply alignContent functionality.
+    if (blockType.supports.alignContent || blockType.supports.align_content) {
+      blockType.attributes = addBackCompatAttribute(blockType.attributes, 'align_content', 'string');
+      ThisBlockEdit = withAlignContentComponent(ThisBlockEdit, blockType);
+    }
+
+    // Apply fullHeight functionality.
+    if (blockType.supports.fullHeight || blockType.supports.full_height) {
+      blockType.attributes = addBackCompatAttribute(blockType.attributes, 'full_height', 'boolean');
+      ThisBlockEdit = withFullHeightComponent(ThisBlockEdit, blockType.blockType);
+    }
+
+    // Set edit and save functions.
+    blockType.edit = props => {
+      // Ensure we remove our save lock if a block is removed.
+      wp.element.useEffect(() => {
+        return () => {
+          if (!wp.data.dispatch('core/editor')) return;
+          wp.data.dispatch('core/editor').unlockPostSaving('acf/block/' + props.clientId);
+        };
+      }, []);
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ThisBlockEdit, {
+        ...props
+      });
+    };
+    blockType.save = () => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ThisBlockSave, {});
+
+    // Add to storage.
+    blockTypes[blockType.name] = blockType;
+
+    // Register with WP.
+    const result = wp.blocks.registerBlockType(blockType.name, blockType);
+
+    // Fix bug in 'core/anchor/attribute' filter overwriting attribute.
+    // Required for < WP5.9
+    // See https://github.com/WordPress/gutenberg/issues/15240
+    if (result.attributes.anchor) {
+      result.attributes.anchor = {
+        type: 'string'
+      };
+    }
+
+    // Return result.
+    return result;
+  }
+
+  /**
+   * Returns the wp.data.select() response with backwards compatibility.
+   *
+   * @date	17/06/2020
+   * @since	ACF 5.9.0
+   *
+   * @param	string selector The selector name.
+   * @return	mixed
+   */
+  function select(selector) {
+    if (selector === 'core/block-editor') {
+      return wp.data.select('core/block-editor') || wp.data.select('core/editor');
+    }
+    return wp.data.select(selector);
+  }
+
+  /**
+   * Returns the wp.data.dispatch() response with backwards compatibility.
+   *
+   * @date	17/06/2020
+   * @since	ACF 5.9.0
+   *
+   * @param	string selector The selector name.
+   * @return	mixed
+   */
+  function dispatch(selector) {
+    return wp.data.dispatch(selector);
+  }
+
+  /**
+   * Returns an array of all blocks for the given args.
+   *
+   * @date	27/2/19
+   * @since	ACF 5.7.13
+   *
+   * @param	{object} args An object of key=>value pairs used to filter results.
+   * @return	array.
+   */
+  function getBlocks(args) {
+    let blocks = [];
+
+    // Local function to recurse through all child blocks and add to the blocks array.
+    const recurseBlocks = block => {
+      blocks.push(block);
+      select('core/block-editor').getBlocks(block.clientId).forEach(recurseBlocks);
+    };
+
+    // Trigger initial recursion for parent level blocks.
+    select('core/block-editor').getBlocks().forEach(recurseBlocks);
+
+    // Loop over args and filter.
+    for (const k in args) {
+      blocks = blocks.filter(({
+        attributes
+      }) => attributes[k] === args[k]);
+    }
+
+    // Return results.
+    return blocks;
+  }
+
+  /**
+   * Storage for the AJAX queue.
+   *
+   * @const {array}
+   */
+  const ajaxQueue = {};
+
+  /**
+   * Storage for cached AJAX requests for block content.
+   *
+   * @since ACF 5.12
+   * @const {array}
+   */
+  const fetchCache = {};
+
+  /**
+   * Fetches a JSON result from the AJAX API.
+   *
+   * @date	28/2/19
+   * @since	ACF 5.7.13
+   *
+   * @param	object block The block props.
+   * @query	object The query args used in AJAX callback.
+   * @return	object The AJAX promise.
+   */
+  function fetchBlock(args) {
+    const {
+      attributes = {},
+      context = {},
+      query = {},
+      clientId = null,
+      delay = 0
+    } = args;
+
+    // Build a unique queue ID from block data, including the clientId for edit forms.
+    const queueId = md5(JSON.stringify({
+      ...attributes,
+      ...context,
+      ...query
+    }));
+    const data = ajaxQueue[queueId] || {
+      query: {},
+      timeout: false,
+      promise: $.Deferred(),
+      started: false
+    };
+
+    // Append query args to storage.
+    data.query = {
+      ...data.query,
+      ...query
+    };
+    if (data.started) return data.promise;
+
+    // Set fresh timeout.
+    clearTimeout(data.timeout);
+    data.timeout = setTimeout(() => {
+      data.started = true;
+      if (fetchCache[queueId]) {
+        ajaxQueue[queueId] = null;
+        data.promise.resolve.apply(fetchCache[queueId][0], fetchCache[queueId][1]);
+      } else {
+        $.ajax({
+          url: acf.get('ajaxurl'),
+          dataType: 'json',
+          type: 'post',
+          cache: false,
+          data: acf.prepareForAjax({
+            action: 'acf/ajax/fetch-block',
+            block: JSON.stringify(attributes),
+            clientId: clientId,
+            context: JSON.stringify(context),
+            query: data.query
+          })
+        }).always(() => {
+          // Clean up queue after AJAX request is complete.
+          ajaxQueue[queueId] = null;
+        }).done(function () {
+          fetchCache[queueId] = [this, arguments];
+          data.promise.resolve.apply(this, arguments);
+        }).fail(function () {
+          data.promise.reject.apply(this, arguments);
+        });
+      }
+    }, delay);
+
+    // Update storage.
+    ajaxQueue[queueId] = data;
+
+    // Return promise.
+    return data.promise;
+  }
+
+  /**
+   * Returns true if both object are the same.
+   *
+   * @date	19/05/2020
+   * @since	ACF 5.9.0
+   *
+   * @param	object obj1
+   * @param	object obj2
+   * @return	bool
+   */
+  function compareObjects(obj1, obj2) {
+    return JSON.stringify(obj1) === JSON.stringify(obj2);
+  }
+
+  /**
+   * Converts HTML into a React element.
+   *
+   * @date	19/05/2020
+   * @since	ACF 5.9.0
+   *
+   * @param	string html The HTML to convert.
+   * @param	int acfBlockVersion The ACF block version number.
+   * @return	object Result of React.createElement().
+   */
+  acf.parseJSX = (html, acfBlockVersion) => {
+    // Apply a temporary wrapper for the jQuery parse to prevent text nodes triggering errors.
+    html = '<div>' + html + '</div>';
+    // Correctly balance InnerBlocks tags for jQuery's initial parse.
+    html = html.replace(/<InnerBlocks([^>]+)?\/>/, '<InnerBlocks$1></InnerBlocks>');
+    return parseNode($(html)[0], acfBlockVersion, 0).props.children;
+  };
+
+  /**
+   * Converts a DOM node into a React element.
+   *
+   * @date	19/05/2020
+   * @since	ACF 5.9.0
+   *
+   * @param	DOM node The DOM node.
+   * @param	int acfBlockVersion The ACF block version number.
+   * @param	int level The recursion level.
+   * @return	object Result of React.createElement().
+   */
+  function parseNode(node, acfBlockVersion, level = 0) {
+    // Get node name.
+    const nodeName = parseNodeName(node.nodeName.toLowerCase(), acfBlockVersion);
+    if (!nodeName) {
+      return null;
+    }
+
+    // Get node attributes in React friendly format.
+    const nodeAttrs = {};
+    if (level === 1 && nodeName !== 'ACFInnerBlocks') {
+      // Top level (after stripping away the container div), create a ref for passing through to ACF's JS API.
+      nodeAttrs.ref = React.createRef();
+    }
+    acf.arrayArgs(node.attributes).map(parseNodeAttr).forEach(({
+      name,
+      value
+    }) => {
+      nodeAttrs[name] = value;
+    });
+    if ('ACFInnerBlocks' === nodeName) {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ACFInnerBlocks, {
+        ...nodeAttrs
+      });
+    }
+
+    // Define args for React.createElement().
+    const args = [nodeName, nodeAttrs];
+    acf.arrayArgs(node.childNodes).forEach(child => {
+      if (child instanceof Text) {
+        const text = child.textContent;
+        if (text) {
+          args.push(text);
+        }
+      } else {
+        args.push(parseNode(child, acfBlockVersion, level + 1));
+      }
+    });
+
+    // Return element.
+    return React.createElement.apply(this, args);
+  }
+
+  /**
+   * Converts a node or attribute name into it's JSX compliant name
+   *
+   * @date     05/07/2021
+   * @since    ACF 5.9.8
+   *
+   * @param    string name The node or attribute name.
+   * @return  string
+   */
+  function getJSXName(name) {
+    const replacement = acf.isget(acf, 'jsxNameReplacements', name);
+    if (replacement) return replacement;
+    return name;
+  }
+
+  /**
+   * A react Component for inline scripts.
+   *
+   * This Component uses a combination of React references and jQuery to append the
+   * inline <script> HTML each time the component is rendered.
+   *
+   * @date	29/05/2020
+   * @since	ACF 5.9.0
+   *
+   * @param	type Var Description.
+   * @return	type Description.
+   */
+  class Script extends Component {
+    render() {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        ref: el => this.el = el
+      });
+    }
+    setHTML(html) {
+      $(this.el).html(`<script>${html}</script>`);
+    }
+    componentDidUpdate() {
+      this.setHTML(this.props.children);
+    }
+    componentDidMount() {
+      this.setHTML(this.props.children);
+    }
+  }
+
+  /**
+   * Converts the given name into a React friendly name or component.
+   *
+   * @date	19/05/2020
+   * @since	ACF 5.9.0
+   *
+   * @param	string name The node name in lowercase.
+   * @param	int acfBlockVersion The ACF block version number.
+   * @return	mixed
+   */
+  function parseNodeName(name, acfBlockVersion) {
+    switch (name) {
+      case 'innerblocks':
+        if (acfBlockVersion < 2) {
+          return InnerBlocks;
+        }
+        return 'ACFInnerBlocks';
+      case 'script':
+        return Script;
+      case '#comment':
+        return null;
+      default:
+        // Replace names for JSX counterparts.
+        name = getJSXName(name);
+    }
+    return name;
+  }
+
+  /**
+   * Functional component for ACFInnerBlocks.
+   *
+   * @since ACF 6.0.0
+   *
+   * @param obj props element properties.
+   * @return DOM element
+   */
+  function ACFInnerBlocks(props) {
+    const {
+      className = 'acf-innerblocks-container'
+    } = props;
+    const innerBlockProps = useInnerBlocksProps({
+      className: className
+    }, props);
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+      ...innerBlockProps,
+      children: innerBlockProps.children
+    });
+  }
+
+  /**
+   * Converts the given attribute into a React friendly name and value object.
+   *
+   * @date	19/05/2020
+   * @since	ACF 5.9.0
+   *
+   * @param	obj nodeAttr The node attribute.
+   * @return	obj
+   */
+  function parseNodeAttr(nodeAttr) {
+    let name = nodeAttr.name;
+    let value = nodeAttr.value;
+
+    // Allow overrides for third party libraries who might use specific attributes.
+    let shortcut = acf.applyFilters('acf_blocks_parse_node_attr', false, nodeAttr);
+    if (shortcut) return shortcut;
+    switch (name) {
+      // Class.
+      case 'class':
+        name = 'className';
+        break;
+
+      // Style.
+      case 'style':
+        const css = {};
+        value.split(';').forEach(s => {
+          const pos = s.indexOf(':');
+          if (pos > 0) {
+            let ruleName = s.substr(0, pos).trim();
+            const ruleValue = s.substr(pos + 1).trim();
+
+            // Rename core properties, but not CSS variables.
+            if (ruleName.charAt(0) !== '-') {
+              ruleName = acf.strCamelCase(ruleName);
+            }
+            css[ruleName] = ruleValue;
+          }
+        });
+        value = css;
+        break;
+
+      // Default.
+      default:
+        // No formatting needed for "data-x" attributes.
+        if (name.indexOf('data-') === 0) {
+          break;
+        }
+
+        // Replace names for JSX counterparts.
+        name = getJSXName(name);
+
+        // Convert JSON values.
+        const c1 = value.charAt(0);
+        if (c1 === '[' || c1 === '{') {
+          value = JSON.parse(value);
+        }
+
+        // Convert bool values.
+        if (value === 'true' || value === 'false') {
+          value = value === 'true';
+        }
+        break;
+    }
+    return {
+      name,
+      value
+    };
+  }
+
+  /**
+   * Higher Order Component used to set default block attribute values.
+   *
+   * By modifying block attributes directly, instead of defining defaults in registerBlockType(),
+   * WordPress will include them always within the saved block serialized JSON.
+   *
+   * @date	31/07/2020
+   * @since	ACF 5.9.0
+   *
+   * @param	Component BlockListBlock The BlockListBlock Component.
+   * @return	Component
+   */
+  const withDefaultAttributes = createHigherOrderComponent(BlockListBlock => class WrappedBlockEdit extends Component {
+    constructor(props) {
+      super(props);
+
+      // Extract vars.
       const {
-          BlockControls: o,
-          InspectorControls: i,
-          InnerBlocks: a,
-          useBlockProps: s,
-          AlignmentToolbar: l,
-          BlockVerticalAlignmentToolbar: c
-        } = wp.blockEditor,
-        {
-          ToolbarGroup: d,
-          ToolbarButton: u,
-          Placeholder: p,
-          Spinner: f
-        } = wp.components,
-        {
-          Fragment: h
-        } = wp.element,
-        {
-          Component: m
-        } = React,
-        {
-          useSelect: b
-        } = wp.data,
-        {
-          createHigherOrderComponent: g
-        } = wp.compose,
-        k = wp.blockEditor.__experimentalBlockAlignmentMatrixToolbar || wp.blockEditor.BlockAlignmentMatrixToolbar,
-        v = wp.blockEditor.__experimentalBlockAlignmentMatrixControl || wp.blockEditor.BlockAlignmentMatrixControl,
-        y = wp.blockEditor.__experimentalBlockFullHeightAligmentControl || wp.blockEditor.__experimentalBlockFullHeightAlignmentControl || wp.blockEditor.BlockFullHeightAlignmentControl,
-        x = wp.blockEditor.__experimentalUseInnerBlocksProps || wp.blockEditor.useInnerBlocksProps,
-        w = {};
-      function E(e) {
-        return w[e] || !1;
+        name,
+        attributes
+      } = this.props;
+
+      // Only run on ACF Blocks.
+      const blockType = getBlockType(name);
+      if (!blockType) {
+        return;
       }
-      function _(e) {
-        return E(e).acf_block_version || 1;
-      }
-      function C(e) {
-        return E(e).validate;
-      }
-      function j(e) {
-        const t = wp.data.select('core/block-editor').getBlockParents(e);
-        return wp.data.select('core/block-editor').getBlocksByClientId(t).filter(e => 'core/query' === e.name).length;
-      }
-      function I() {
-        return document.querySelectorAll('iframe[name="editor-canvas"]').length > 0;
-      }
-      function S(t) {
-        const n = t.post_types || [];
-        if (n.length) {
-          n.push('wp_block');
-          const e = acf.get('postType');
-          if (!n.includes(e)) return !1;
+
+      // Check and remove any empty string attributes to match PHP behaviour.
+      Object.keys(attributes).forEach(key => {
+        if (attributes[key] === '') {
+          delete attributes[key];
         }
-        if ('string' == typeof t.icon && '<svg' === t.icon.substr(0, 4)) {
-          const n = t.icon;
-          t.icon = (0, e.jsx)($, {
-            children: n
-          });
+      });
+
+      // Backward compatibility attribute replacement.
+      const upgrades = {
+        full_height: 'fullHeight',
+        align_content: 'alignContent',
+        align_text: 'alignText'
+      };
+      Object.keys(upgrades).forEach(key => {
+        if (attributes[key] !== undefined) {
+          attributes[upgrades[key]] = attributes[key];
+        } else if (attributes[upgrades[key]] === undefined) {
+          //Check for a default
+          if (blockType[key] !== undefined) {
+            attributes[upgrades[key]] = blockType[key];
+          }
         }
-        t.icon || delete t.icon, wp.blocks.getCategories().filter(({
-          slug: e
-        }) => e === t.category).pop() || (t.category = 'common'), t = acf.parseArgs(t, {
-          title: '',
-          name: '',
-          category: '',
-          api_version: 2,
-          acf_block_version: 1
-        });
-        for (const e in t.attributes) 'default' in t.attributes[e] && 0 === t.attributes[e].default.length && delete t.attributes[e].default;
-        t.supports.anchor && (t.attributes.anchor = {
-          type: 'string'
-        });
-        let i = L,
-          a = H;
-        var s;
-        (t.supports.alignText || t.supports.align_text) && (t.attributes = Y(t.attributes, 'align_text', 'string'), i = function (t, n) {
-          const r = J;
-          return n.alignText = r(n.alignText), class extends m {
-            render() {
-              const {
-                  attributes: n,
-                  setAttributes: i
-                } = this.props,
-                {
-                  alignText: a
-                } = n;
-              return (0, e.jsxs)(h, {
-                children: [(0, e.jsx)(o, {
-                  group: 'block',
-                  children: (0, e.jsx)(l, {
-                    value: r(a),
-                    onChange: function (e) {
-                      i({
-                        alignText: r(e)
-                      });
-                    }
-                  })
-                }), (0, e.jsx)(t, {
-                  ...this.props
-                })]
-              });
-            }
-          };
-        }(i, t)), (t.supports.alignContent || t.supports.align_content) && (t.attributes = Y(t.attributes, 'align_content', 'string'), i = function (t, n) {
-          let i,
-            a,
-            s = n.supports.align_content || n.supports.alignContent;
-          return 'matrix' === s ? (i = v || k, a = X) : (i = c, a = W), i === r ? (console.warn(`The "${s}" alignment component was not found.`), t) : (n.alignContent = a(n.alignContent), class extends m {
-            render() {
-              const {
-                  attributes: n,
-                  setAttributes: r
-                } = this.props,
-                {
-                  alignContent: s
-                } = n;
-              return (0, e.jsxs)(h, {
-                children: [(0, e.jsx)(o, {
-                  group: 'block',
-                  children: (0, e.jsx)(i, {
-                    label: acf.__('Change content alignment'),
-                    value: a(s),
-                    onChange: function (e) {
-                      r({
-                        alignContent: a(e)
-                      });
-                    }
-                  })
-                }), (0, e.jsx)(t, {
-                  ...this.props
-                })]
-              });
-            }
-          });
-        }(i, t)), (t.supports.fullHeight || t.supports.full_height) && (t.attributes = Y(t.attributes, 'full_height', 'boolean'), s = i, t.blockType, i = y ? class extends m {
-          render() {
-            const {
-                attributes: t,
-                setAttributes: n
-              } = this.props,
-              {
-                fullHeight: r
-              } = t;
-            return (0, e.jsxs)(h, {
-              children: [(0, e.jsx)(o, {
-                group: 'block',
-                children: (0, e.jsx)(y, {
-                  isActive: r,
-                  onToggle: function (e) {
-                    n({
-                      fullHeight: e
-                    });
-                  }
-                })
-              }), (0, e.jsx)(s, {
-                ...this.props
-              })]
-            });
-          }
-        } : s), t.edit = t => (wp.element.useEffect(() => () => {
-          wp.data.dispatch('core/editor') && wp.data.dispatch('core/editor').unlockPostSaving('acf/block/' + t.clientId);
-        }, []), (0, e.jsx)(i, {
-          ...t
-        })), t.save = () => (0, e.jsx)(a, {}), w[t.name] = t;
-        const d = wp.blocks.registerBlockType(t.name, t);
-        return d.attributes.anchor && (d.attributes.anchor = {
-          type: 'string'
-        }), d;
+        delete blockType[key];
+        delete attributes[key];
+      });
+
+      // Set default attributes for those undefined.
+      for (let attribute in blockType.attributes) {
+        if (attributes[attribute] === undefined && blockType[attribute] !== undefined) {
+          attributes[attribute] = blockType[attribute];
+        }
       }
-      acf.blockInstances = {};
-      const A = {},
-        T = {};
-      function B(e) {
-        const {
-            attributes: r = {},
-            context: o = {},
-            query: i = {},
-            clientId: a = null,
-            delay: s = 0
-          } = e,
-          l = t(JSON.stringify({
-            ...r,
-            ...o,
-            ...i
-          })),
-          c = A[l] || {
-            query: {},
-            timeout: !1,
-            promise: n.Deferred(),
-            started: !1
-          };
-        return c.query = {
-          ...c.query,
-          ...i
-        }, c.started || (clearTimeout(c.timeout), c.timeout = setTimeout(() => {
-          c.started = !0, T[l] ? (A[l] = null, c.promise.resolve.apply(T[l][0], T[l][1])) : n.ajax({
-            url: acf.get('ajaxurl'),
-            dataType: 'json',
-            type: 'post',
-            cache: !1,
-            data: acf.prepareForAjax({
-              action: 'acf/ajax/fetch-block',
-              block: JSON.stringify(r),
-              clientId: a,
-              context: JSON.stringify(o),
-              query: c.query
-            })
-          }).always(() => {
-            A[l] = null;
-          }).done(function () {
-            T[l] = [this, arguments], c.promise.resolve.apply(this, arguments);
-          }).fail(function () {
-            c.promise.reject.apply(this, arguments);
-          });
-        }, s), A[l] = c), c.promise;
+    }
+    render() {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(BlockListBlock, {
+        ...this.props
+      });
+    }
+  }, 'withDefaultAttributes');
+  wp.hooks.addFilter('editor.BlockListBlock', 'acf/with-default-attributes', withDefaultAttributes);
+
+  /**
+   * The BlockSave functional component.
+   *
+   * @date	08/07/2020
+   * @since	ACF 5.9.0
+   */
+  function BlockSave() {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InnerBlocks.Content, {});
+  }
+
+  /**
+   * The BlockEdit component.
+   *
+   * @date	19/2/19
+   * @since	ACF 5.7.12
+   */
+  class BlockEdit extends Component {
+    constructor(props) {
+      super(props);
+      this.setup();
+    }
+    setup() {
+      const {
+        name,
+        attributes,
+        clientId
+      } = this.props;
+      const blockType = getBlockType(name);
+
+      // Restrict current mode.
+      function restrictMode(modes) {
+        if (!modes.includes(attributes.mode)) {
+          attributes.mode = modes[0];
+        }
       }
-      function F(e, t) {
-        return JSON.stringify(e) === JSON.stringify(t);
-      }
-      function O(t, n, r = 0) {
-        const o = function (e, t) {
-          switch (e) {
-            case 'innerblocks':
-              return t < 2 ? a : 'ACFInnerBlocks';
-            case 'script':
-              return q;
-            case '#comment':
-              return null;
-            default:
-              e = N(e);
-          }
-          return e;
-        }(t.nodeName.toLowerCase(), n);
-        if (!o) return null;
-        const i = {};
-        if (1 === r && 'ACFInnerBlocks' !== o && (i.ref = React.createRef()), acf.arrayArgs(t.attributes).map(P).forEach(({
-          name: e,
-          value: t
-        }) => {
-          i[e] = t;
-        }), 'ACFInnerBlocks' === o) return (0, e.jsx)(R, {
-          ...i
-        });
-        const s = [o, i];
-        return acf.arrayArgs(t.childNodes).forEach(e => {
-          if (e instanceof Text) {
-            const t = e.textContent;
-            t && s.push(t);
-          } else s.push(O(e, n, r + 1));
-        }), React.createElement.apply(this, s);
-      }
-      function N(e) {
-        return acf.isget(acf, 'jsxNameReplacements', e) || e;
-      }
-      function R(t) {
-        const {
-            className: n = 'acf-innerblocks-container'
-          } = t,
-          r = x({
-            className: n
-          }, t);
-        return (0, e.jsx)('div', {
-          ...r,
-          children: r.children
-        });
-      }
-      function P(e) {
-        let t = e.name,
-          n = e.value,
-          r = acf.applyFilters('acf_blocks_parse_node_attr', !1, e);
-        if (r) return r;
-        switch (t) {
-          case 'class':
-            t = 'className';
+      if (isBlockInQueryLoop(clientId) || isSiteEditor()) {
+        restrictMode(['preview']);
+      } else {
+        switch (blockType.mode) {
+          case 'edit':
+            restrictMode(['edit', 'preview']);
             break;
-          case 'style':
-            const e = {};
-            n.split(';').forEach(t => {
-              const n = t.indexOf(':');
-              if (n > 0) {
-                let r = t.substr(0, n).trim();
-                const o = t.substr(n + 1).trim();
-                '-' !== r.charAt(0) && (r = acf.strCamelCase(r)), e[r] = o;
-              }
-            }), n = e;
+          case 'preview':
+            restrictMode(['preview', 'edit']);
             break;
           default:
-            if (0 === t.indexOf('data-')) break;
-            t = N(t);
-            const r = n.charAt(0);
-            '[' !== r && '{' !== r || (n = JSON.parse(n)), 'true' !== n && 'false' !== n || (n = 'true' === n);
+            restrictMode(['auto']);
+            break;
         }
-        return {
-          name: t,
-          value: n
-        };
       }
-      acf.parseJSX = (e, t) => (e = (e = '<div>' + e + '</div>').replace(/<InnerBlocks([^>]+)?\/>/, '<InnerBlocks$1></InnerBlocks>'), O(n(e)[0], t, 0).props.children);
-      const M = g(t => class extends m {
-        constructor(e) {
-          super(e);
-          const {
-              name: t,
-              attributes: n
-            } = this.props,
-            o = E(t);
-          if (!o) return;
-          Object.keys(n).forEach(e => {
-            '' === n[e] && delete n[e];
-          });
-          const i = {
-            full_height: 'fullHeight',
-            align_content: 'alignContent',
-            align_text: 'alignText'
-          };
-          Object.keys(i).forEach(e => {
-            n[e] !== r ? n[i[e]] = n[e] : n[i[e]] === r && o[e] !== r && (n[i[e]] = o[e]), delete o[e], delete n[e];
-          });
-          for (let e in o.attributes) n[e] === r && o[e] !== r && (n[e] = o[e]);
-        }
-        render() {
-          return (0, e.jsx)(t, {
-            ...this.props
-          });
-        }
-      }, 'withDefaultAttributes');
-      function H() {
-        return (0, e.jsx)(a.Content, {});
+    }
+    render() {
+      const {
+        name,
+        attributes,
+        setAttributes,
+        clientId
+      } = this.props;
+      const blockType = getBlockType(name);
+      const forcePreview = isBlockInQueryLoop(clientId) || isSiteEditor();
+      let {
+        mode
+      } = attributes;
+      if (forcePreview) {
+        mode = 'preview';
       }
-      wp.hooks.addFilter('editor.BlockListBlock', 'acf/with-default-attributes', M);
-      class L extends m {
-        constructor(e) {
-          super(e), this.setup();
-        }
-        setup() {
-          const {
-              name: e,
-              attributes: t,
-              clientId: n
-            } = this.props,
-            r = E(e);
-          function o(e) {
-            e.includes(t.mode) || (t.mode = e[0]);
-          }
-          if (j(n) || I()) o(['preview']);else switch (r.mode) {
-            case 'edit':
-              o(['edit', 'preview']);
-              break;
-            case 'preview':
-              o(['preview', 'edit']);
-              break;
-            default:
-              o(['auto']);
-          }
-        }
-        render() {
-          const {
-              name: t,
-              attributes: n,
-              setAttributes: r,
-              clientId: a
-            } = this.props,
-            s = E(t),
-            l = j(a) || I();
-          let {
-            mode: c
-          } = n;
-          l && (c = 'preview');
-          let p = s.supports.mode;
-          ('auto' === c || l) && (p = !1);
-          const f = 'preview' === c ? acf.__('Switch to Edit') : acf.__('Switch to Preview'),
-            m = 'preview' === c ? 'edit' : 'welcome-view-site';
-          return (0, e.jsxs)(h, {
-            children: [(0, e.jsx)(o, {
-              children: p && (0, e.jsx)(d, {
-                children: (0, e.jsx)(u, {
-                  className: 'components-icon-button components-toolbar__control',
-                  label: f,
-                  icon: m,
-                  onClick: function () {
-                    r({
-                      mode: 'preview' === c ? 'edit' : 'preview'
-                    });
-                  }
-                })
-              })
-            }), (0, e.jsx)(i, {
-              children: 'preview' === c && (0, e.jsx)('div', {
-                className: 'acf-block-component acf-block-panel',
-                children: (0, e.jsx)(U, {
-                  ...this.props
-                })
-              })
-            }), (0, e.jsx)(D, {
+
+      // Show toggle only for edit/preview modes and for blocks not in a query loop/FSE.
+      let showToggle = blockType.supports.mode;
+      if (mode === 'auto' || forcePreview) {
+        showToggle = false;
+      }
+
+      // Configure toggle variables.
+      const toggleText = mode === 'preview' ? acf.__('Switch to Edit') : acf.__('Switch to Preview');
+      const toggleIcon = mode === 'preview' ? 'edit' : 'welcome-view-site';
+      function toggleMode() {
+        setAttributes({
+          mode: mode === 'preview' ? 'edit' : 'preview'
+        });
+      }
+
+      // Return template.
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Fragment, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(BlockControls, {
+          children: showToggle && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ToolbarGroup, {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(ToolbarButton, {
+              className: "components-icon-button components-toolbar__control",
+              label: toggleText,
+              icon: toggleIcon,
+              onClick: toggleMode
+            })
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(InspectorControls, {
+          children: mode === 'preview' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            className: "acf-block-component acf-block-panel",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(BlockForm, {
               ...this.props
-            })]
-          });
-        }
-      }
-      function D(t) {
-        const {
-            attributes: n,
-            isSelected: r,
-            name: o,
-            clientId: i
-          } = t,
-          {
-            mode: a
-          } = n,
-          l = b(e => {
-            const t = e('core/block-editor').getBlockRootClientId(i);
-            return e('core/block-editor').getBlockIndex(i, t);
-          });
-        let c = !0,
-          d = 'acf-block-component acf-block-body';
-        return ('auto' === a && !r || 'preview' === a) && (d += ' acf-block-preview', c = !1), i in acf.blockInstances || (acf.blockInstances[i] = {
-          validation_errors: !1,
-          mode: a
-        }), acf.blockInstances[i].mode = a, r || (C(o) && acf.blockInstances[i].validation_errors && (d += ' acf-block-has-validation-error'), acf.blockInstances[i].has_been_deselected = !0), _(o) > 1 ? (0, e.jsx)('div', {
-          ...s({
-            className: d
-          }),
-          children: c ? (0, e.jsx)(U, {
-            ...t,
-            index: l
-          }) : (0, e.jsx)(z, {
-            ...t,
-            index: l
-          })
-        }) : (0, e.jsx)('div', {
-          ...s(),
-          children: (0, e.jsx)('div', {
-            className: 'acf-block-component acf-block-body',
-            children: c ? (0, e.jsx)(U, {
-              ...t,
-              index: l
-            }) : (0, e.jsx)(z, {
-              ...t,
-              index: l
             })
           })
-        });
-      }
-      class $ extends m {
-        render() {
-          return (0, e.jsx)('div', {
-            dangerouslySetInnerHTML: {
-              __html: this.props.children
-            }
-          });
-        }
-      }
-      class q extends m {
-        render() {
-          return (0, e.jsx)('div', {
-            ref: e => this.el = e
-          });
-        }
-        setHTML(e) {
-          n(this.el).html(`<script>${e}<\/script>`);
-        }
-        componentDidUpdate() {
-          this.setHTML(this.props.children);
-        }
-        componentDidMount() {
-          this.setHTML(this.props.children);
-        }
-      }
-      class V extends m {
-        constructor(e) {
-          super(e), this.setRef = this.setRef.bind(this), this.id = '', this.el = !1, this.subscribed = !0, this.renderMethod = 'jQuery', this.passedValidation = !1, this.setup(e), this.loadState();
-        }
-        setup(e) {
-          const t = this.constructor.name,
-            n = e.clientId;
-          n in acf.blockInstances || (acf.blockInstances[n] = {
-            validation_errors: !1,
-            mode: e.mode
-          }), t in acf.blockInstances[n] || (acf.blockInstances[n][t] = {});
-        }
-        fetch() {}
-        maybePreload(e, t, n) {
-          if (acf.debug('Preload check', e, t, n), j(this.props.clientId)) return acf.debug('Preload failed: Block is in query loop.'), !1;
-          const r = acf.get('preloadedBlocks');
-          if (!r || !r[e]) return acf.debug('Preload failed: Block not preloaded.'), !1;
-          const o = {
-            ...r[e]
-          };
-          return n && !o.form || !n && o.form ? (acf.debug('Preload failed: Correct state not preloaded.', n ? 'form' : 'preview'), !1) : (o.html = o.html.replaceAll(e, t), o.validation && o.validation.errors && (o.validation.errors = o.validation.errors.map(n => (n.input = n.input.replaceAll(e, t), n))), acf.debug('Preload successful', o), o);
-        }
-        loadState() {
-          const e = acf.blockInstances[this.props.clientId] || {};
-          this.state = e[this.constructor.name] || {};
-        }
-        setState(e) {
-          acf.blockInstances[this.props.clientId][this.constructor.name] = {
-            ...this.state,
-            ...e
-          }, (this.subscribed || acf.get('StrictMode')) && super.setState(e), acf.debug('SetState', Object.assign({}, this), this.props.clientId, this.constructor.name, Object.assign({}, acf.blockInstances[this.props.clientId][this.constructor.name]));
-        }
-        setHtml(e) {
-          if ((e = e ? e.trim() : '') === this.state.html) return;
-          const t = {
-            html: e
-          };
-          if ('jsx' === this.renderMethod) {
-            if (t.jsx = acf.parseJSX(e, _(this.props.name)), t.jsx || (console.warn('Your ACF block template contains no valid HTML elements. Appending a empty div to prevent React JS errors.'), t.html += '<div></div>', t.jsx = acf.parseJSX(t.html, _(this.props.name))), Array.isArray(t.jsx)) {
-              let e = t.jsx.find(e => React.isValidElement(e));
-              t.ref = e.ref;
-            } else t.ref = t.jsx.ref;
-            t.$el = n(this.el);
-          } else t.$el = n(e);
-          this.setState(t);
-        }
-        setRef(e) {
-          this.el = e;
-        }
-        render() {
-          return this.state.jsx ? _(this.props.name) > 1 ? (this.setRef(this.state.jsx), this.state.jsx) : (0, e.jsx)('div', {
-            ref: this.setRef,
-            children: this.state.jsx
-          }) : (0, e.jsx)('div', {
-            ref: this.setRef,
-            children: (0, e.jsx)(p, {
-              children: (0, e.jsx)(f, {})
-            })
-          });
-        }
-        shouldComponentUpdate({
-          index: e
-        }, {
-          html: t
-        }) {
-          return e !== this.props.index && this.componentWillMove(), t !== this.state.html;
-        }
-        display(e) {
-          if ('jQuery' === this.renderMethod) {
-            const t = this.state.$el,
-              r = t.parent(),
-              o = n(this.el);
-            acf.get('StrictMode') && 'append' !== e && !this.subscribed || o.html(t), r.length && r[0] !== o[0] && r.html(t.clone());
-          }
-          switch (this.getValidationErrors() && this.isNotNewlyAdded() ? this.lockBlockForSaving() : this.unlockBlockForSaving(), e) {
-            case 'append':
-              this.componentDidAppend();
-              break;
-            case 'remount':
-              this.componentDidRemount();
-          }
-        }
-        validate() {}
-        componentDidMount() {
-          this.state.html === r ? this.fetch() : this.display('remount');
-        }
-        componentDidUpdate(e, t) {
-          this.display('append');
-        }
-        componentDidAppend() {
-          acf.doAction('append', this.state.$el);
-        }
-        componentWillUnmount() {
-          acf.get('StrictMode') && !this.subscribed || acf.doAction('unmount', this.state.$el), this.subscribed = !1;
-        }
-        componentDidRemount() {
-          this.subscribed = !0, setTimeout(() => {
-            acf.doAction('remount', this.state.$el);
-          });
-        }
-        componentWillMove() {
-          acf.doAction('unmount', this.state.$el), setTimeout(() => {
-            acf.doAction('remount', this.state.$el);
-          });
-        }
-        isNotNewlyAdded() {
-          return acf.blockInstances[this.props.clientId].has_been_deselected || !1;
-        }
-        hasShownValidation() {
-          return acf.blockInstances[this.props.clientId].shown_validation || !1;
-        }
-        setShownValidation() {
-          acf.blockInstances[this.props.clientId].shown_validation = !0;
-        }
-        setValidationErrors(e) {
-          acf.blockInstances[this.props.clientId].validation_errors = e;
-        }
-        getValidationErrors() {
-          return acf.blockInstances[this.props.clientId].validation_errors;
-        }
-        getMode() {
-          return acf.blockInstances[this.props.clientId].mode;
-        }
-        lockBlockForSaving() {
-          wp.data.dispatch('core/editor') && wp.data.dispatch('core/editor').lockPostSaving('acf/block/' + this.props.clientId);
-        }
-        unlockBlockForSaving() {
-          wp.data.dispatch('core/editor') && wp.data.dispatch('core/editor').unlockPostSaving('acf/block/' + this.props.clientId);
-        }
-        displayValidation(e) {
-          if (!C(this.props.name)) return void acf.debug('Block does not support validation');
-          if (!e || e.hasClass('acf-empty-block-fields')) return void acf.debug('There is no edit form available to validate.');
-          const t = this.getValidationErrors();
-          acf.debug('Starting handle validation', Object.assign({}, this), Object.assign({}, e), t), this.setShownValidation();
-          let n = acf.getBlockFormValidator(e);
-          n.clearErrors(), acf.doAction('blocks/validation/pre_apply', t), t ? (n.addErrors(t), n.showErrors('after'), this.lockBlockForSaving()) : (n.has('notice') && (n.get('notice').update({
-            type: 'success',
-            text: acf.__('Validation successful'),
-            timeout: 1e3
-          }), n.set('notice', null)), this.unlockBlockForSaving()), acf.doAction('blocks/validation/post_apply', t);
-        }
-      }
-      class U extends V {
-        setup(e) {
-          this.id = `BlockForm-${e.clientId}`, super.setup(e);
-        }
-        fetch(e = !1, t = !1) {
-          const {
-            context: n,
-            clientId: r,
-            name: o
-          } = this.props;
-          let {
-              attributes: i
-            } = this.props,
-            a = {
-              form: !0
-            };
-          e && (a = {
-            validate: !0
-          }, i.data = t);
-          const s = G(i, n);
-          acf.debug('BlockForm fetch', i, a);
-          const l = this.maybePreload(s, r, !0);
-          if (l) return this.setHtml(acf.applyFilters('blocks/form/render', l.html, !0)), void (l.validation && this.setValidationErrors(l.validation.errors));
-          C(o) || (a.validate = !1), B({
-            attributes: i,
-            context: n,
-            clientId: r,
-            query: a
-          }).done(({
-            data: e
-          }) => {
-            acf.debug('fetch block form promise'), e ? (e.form && this.setHtml(acf.applyFilters('blocks/form/render', e.form.replaceAll(e.clientId, r), !1)), e.validation && this.setValidationErrors(e.validation.errors), this.isNotNewlyAdded() && (acf.debug("Block has already shown it's invalid. The form needs to show validation errors"), this.validate())) : this.setHtml(`<div class="acf-block-fields acf-fields acf-empty-block-fields">${acf.__('Error loading block form')}</div>`);
-          });
-        }
-        validate(e = !0) {
-          e && this.loadState(), acf.debug('BlockForm calling validate with state', Object.assign({}, this)), super.displayValidation(this.state.$el);
-        }
-        shouldComponentUpdate(e, t) {
-          return C(this.props.name) && this.state.$el && this.isNotNewlyAdded() && !this.hasShownValidation() && this.validate(!1), super.shouldComponentUpdate(e, t);
-        }
-        componentWillUnmount() {
-          super.componentWillUnmount(), acf.debug('BlockForm Component did unmount');
-        }
-        componentDidRemount() {
-          super.componentDidRemount(), acf.debug('BlockForm component did remount');
-          const {
-            $el: e
-          } = this.state;
-          C(this.props.name) && this.isNotNewlyAdded() && (acf.debug("Block has already shown it's invalid. The form needs to show validation errors"), this.validate()), !0 !== e.data('acf-events-added') && this.componentDidAppend();
-        }
-        componentDidAppend() {
-          super.componentDidAppend(), acf.debug('BlockForm component did append');
-          const {
-              attributes: e,
-              setAttributes: t,
-              clientId: n,
-              name: r
-            } = this.props,
-            o = this,
-            {
-              $el: i
-            } = this.state;
-          function a(a = !1) {
-            const s = acf.serialize(i, `acf-block_${n}`);
-            a ? e.data = s : t({
-              data: s
-            }), C(r) && !a && 'edit' === o.getMode() && (acf.debug('No block preview currently available. Need to trigger a validation only fetch.'), o.fetch(!0, s));
-          }
-          let s = !1;
-          i.on('change keyup', () => {
-            clearTimeout(s), s = setTimeout(a, 300);
-          }), i.data('acf-events-added', !0), e.data || a(!0);
-        }
-      }
-      class z extends V {
-        setup(e) {
-          const t = E(e.name),
-            n = acf.isget(this.props, 'context', 'postId');
-          this.id = `BlockPreview-${e.clientId}`, super.setup(e), n && (this.id = `BlockPreview-${e.clientId}-${n}`), t.supports.jsx && (this.renderMethod = 'jsx');
-        }
-        fetch(e = {}) {
-          const {
-              attributes: t = this.props.attributes,
-              clientId: n = this.props.clientId,
-              context: r = this.props.context,
-              delay: o = 0
-            } = e,
-            {
-              name: i
-            } = this.props;
-          this.setState({
-            prevAttributes: t,
-            prevContext: r
-          });
-          const a = G(t, r);
-          let s = this.maybePreload(a, n, !1);
-          if (s) return 1 == _(i) && (s.html = '<div class="acf-block-preview">' + s.html + '</div>'), this.setHtml(acf.applyFilters('blocks/preview/render', s.html, !0)), void (s.validation && this.setValidationErrors(s.validation.errors));
-          let l = {
-            preview: !0
-          };
-          C(i) || (l.validate = !1), B({
-            attributes: t,
-            context: r,
-            clientId: n,
-            query: l,
-            delay: o
-          }).done(({
-            data: e
-          }) => {
-            if (!e) return void this.setHtml(`<div class="acf-block-fields acf-fields acf-empty-block-fields">${acf.__('Error previewing block')}</div>`);
-            let t = e.preview.replaceAll(e.clientId, n);
-            1 == _(i) && (t = '<div class="acf-block-preview">' + t + '</div>'), acf.debug('fetch block render promise'), this.setHtml(acf.applyFilters('blocks/preview/render', t, !1)), e.validation && this.setValidationErrors(e.validation.errors), this.isNotNewlyAdded() && this.validate();
-          });
-        }
-        validate() {
-          const e = (acf.blockInstances[this.props.clientId] || {}).BlockForm || !1;
-          e && super.displayValidation(e.$el);
-        }
-        componentDidAppend() {
-          super.componentDidAppend(), this.renderBlockPreviewEvent();
-        }
-        shouldComponentUpdate(e, t) {
-          const n = e.attributes,
-            r = this.props.attributes;
-          if (!F(n, r) || !F(e.context, this.props.context)) {
-            let t = 0;
-            n.className !== r.className && (t = 300), n.anchor !== r.anchor && (t = 300), acf.debug('Triggering fetch from block preview shouldComponentUpdate'), this.fetch({
-              attributes: n,
-              context: e.context,
-              delay: t
-            });
-          }
-          return super.shouldComponentUpdate(e, t);
-        }
-        renderBlockPreviewEvent() {
-          const {
-              attributes: e,
-              name: t
-            } = this.props,
-            {
-              $el: r,
-              ref: o
-            } = this.state;
-          var i;
-          const a = e.name.replace('acf/', '');
-          i = o && o.current ? n(o.current).parent() : 1 == _(t) ? r : r.parents('.acf-block-preview'), acf.doAction('render_block_preview', i, e), acf.doAction(`render_block_preview/type=${a}`, i, e);
-        }
-        componentDidRemount() {
-          super.componentDidRemount(), acf.debug('Checking if fetch is required in BlockPreview componentDidRemount', Object.assign({}, this.state.prevAttributes), Object.assign({}, this.props.attributes), Object.assign({}, this.state.prevContext), Object.assign({}, this.props.context)), F(this.state.prevAttributes, this.props.attributes) && F(this.state.prevContext, this.props.context) || (acf.debug('Triggering block preview fetch from componentDidRemount'), this.fetch()), this.renderBlockPreviewEvent();
-        }
-      }
-      function W(e) {
-        return ['top', 'center', 'bottom'].includes(e) ? e : 'top';
-      }
-      function J(e) {
-        const t = acf.get('rtl') ? 'right' : 'left';
-        return ['left', 'center', 'right'].includes(e) ? e : t;
-      }
-      function X(e) {
-        if (e) {
-          const [t, n] = e.split(' ');
-          return `${W(t)} ${J(n)}`;
-        }
-        return 'center center';
-      }
-      function Y(e, t, n) {
-        return e[t] = {
-          type: n
-        }, e;
-      }
-      function G(e, n) {
-        return e._acf_context = K(n), t(JSON.stringify(K(e)));
-      }
-      function K(e) {
-        return Object.keys(e).sort().reduce((t, n) => (t[n] = e[n], t), {});
-      }
-      acf.addAction('prepare', function () {
-        wp.blockEditor || (wp.blockEditor = wp.editor);
-        const e = acf.get('blockTypes');
-        e && e.forEach(e => {
-          parseInt(e.acf_block_version) <= 2 && S(e);
-        });
-      });
-    })(jQuery);
-    const r = e => {
-        wp.data.dispatch('core/editor') && wp.data.dispatch('core/editor').lockPostSaving('acf/block/' + e);
-      },
-      o = e => {
-        wp.data.dispatch('core/editor') && wp.data.dispatch('core/editor').unlockPostSaving('acf/block/' + e);
-      },
-      i = e => !!wp.data.dispatch('core/editor') && wp.data.select('core/editor').isPostSavingLocked(`acf/block/${e}`),
-      a = e => Object.keys(e).sort().reduce((t, n) => (t[n] = e[n], t), {}),
-      s = n(503),
-      l = (e, t) => {
-        const n = {
-          ...e
-        };
-        return delete n.hasAcfError, n._acf_context = a(t), s(JSON.stringify(a(n)));
-      },
-      {
-        InnerBlocks: c
-      } = wp.blockEditor,
-      d = wp.blockEditor.__experimentalUseInnerBlocksProps || wp.blockEditor.useInnerBlocksProps,
-      {
-        createRef: u,
-        createElement: p,
-        useEffect: f
-      } = wp.element,
-      h = (e, t, n, r, o, i) => m(i(e = (e = '<div>' + e + '</div>').replace(/<InnerBlocks([^>]+)?\/>/, '<InnerBlocks$1></InnerBlocks>'))[0], 0, t, n, r, o).props.children;
-    function m(t, n = 0, r, o, i, a) {
-      const s = function (e) {
-        switch (e) {
-          case 'innerblocks':
-            return 'ACFInnerBlocks';
-          case 'script':
-            return k;
-          case '#comment':
-            return null;
-          default:
-            e = b(e);
-        }
-        return e;
-      }(t.nodeName.toLowerCase());
-      if (!s) return null;
-      const l = {};
-      if (1 === n && 'ACFInnerBlocks' !== s && (l.ref = u()), acf.arrayArgs(t.attributes).map(v).forEach(({
-        name: e,
-        value: t
-      }) => {
-        l[e] = t;
-      }), t.hasAttribute('data-acf-inline-fields') && (l.style = {
-        ...y(t),
-        pointerEvents: 'all'
-      }, l.role = 'button', l.tabIndex = 0, l.onFocus = e => {
-        e.stopPropagation(), r(t.attributes.getNamedItem('data-acf-inline-fields-uid').value);
-      }, l.onMouseDown = e => e.stopPropagation(), l.onClick = e => {
-        e.stopPropagation();
-        const n = e.target.closest('a');
-        n && 'A' === n.tagName && (e.preventDefault(), acf.debug(`Navigation prevented for ${n.href}`)), e.target.hasAttribute('data-acf-inline-contenteditable') || r(t.attributes.getNamedItem('data-acf-inline-fields-uid').value);
-      }, l.onKeyDown = e => {
-        if ('Tab' === e.key && e.shiftKey) {
-          e.preventDefault();
-          const n = document.querySelector('.acf-inline-editing-toolbar').querySelector('button');
-          n && (n.focus(), r(t.attributes.getNamedItem('data-acf-inline-fields-uid').value));
-        }
-        if ('Enter' === e.key) {
-          e.stopPropagation();
-          const n = e.target.closest('a');
-          n && 'A' === n.tagName && (e.preventDefault(), acf.debug(`Navigation prevented for ${n.href}`)), r(t.attributes.getNamedItem('data-acf-inline-fields-uid').value);
-        }
-      }), t.hasAttribute('data-acf-inline-contenteditable')) {
-        const e = t.attributes.getNamedItem('data-acf-inline-contenteditable-field-slug').value;
-        (a ? a.filter(t => t.name === e && ('text' === t.type || 'textarea' === t.type)) : []).length > 0 ? (l.contentEditable = !0, l.suppressContentEditableWarning = !0, l.role = 'input', l.tabIndex = 0, l.onFocus = e => {
-          const n = e.target.closest('a');
-          n && 'A' === n.tagName && (e.preventDefault(), acf.debug(`Navigation prevented for ${n.href}`)), e.stopPropagation(), i(t.attributes.getNamedItem('data-acf-inline-contenteditable-field-slug').value), t.hasAttribute('data-acf-inline-fields') ? r(t.attributes.getNamedItem('data-acf-inline-fields-uid').value) : r(null);
-        }, l.onPaste = e => {
-          e.preventDefault();
-          const t = e.clipboardData.getData('text/plain');
-          e.currentTarget.textContent = e.currentTarget.textContent + t;
-        }) : (delete l['data-acf-inline-contenteditable-field-slug'], delete l['data-acf-inline-contenteditable']);
-      }
-      if (t.hasAttribute('data-acf-inline-fields') || t.hasAttribute('data-acf-inline-contenteditable') || (l.onClick = e => {
-        e.target === e.currentTarget && r(null);
-      }), 'ACFInnerBlocks' === s) return (0, e.jsx)(g, {
-        ...l
-      });
-      const c = [s, l];
-      return acf.arrayArgs(t.childNodes).forEach(e => {
-        if (e instanceof Text) {
-          const t = e.textContent;
-          t && c.push(t);
-        } else c.push(m(e, n + 1, r, o, i, a));
-      }), p.apply(this, c);
-    }
-    function b(e) {
-      return acf.isget(acf, 'jsxNameReplacements', e) || e;
-    }
-    function g(t) {
-      const {
-          className: n = 'acf-innerblocks-container'
-        } = t,
-        r = d({
-          className: n
-        }, t);
-      return (0, e.jsx)('div', {
-        ...r,
-        children: r.children
-      });
-    }
-    function k({
-      children: e
-    }) {
-      return f(() => {
-        const t = function () {
-            const e = document.querySelector('[name="editor-canvas"]');
-            return e ? e.contentDocument || e.contentWindow.document : document;
-          }(),
-          n = t.createElement('script');
-        return n.textContent = e, t.body.appendChild(n), () => {
-          n.remove();
-        };
-      }, [e]), null;
-    }
-    function v(e) {
-      let t = e.name,
-        n = e.value,
-        r = acf.applyFilters('acf_blocks_parse_node_attr', !1, e);
-      if (r) return r;
-      switch (t) {
-        case 'class':
-          t = 'className';
-          break;
-        case 'style':
-          const e = {};
-          n.split(';').forEach(t => {
-            const n = t.indexOf(':');
-            if (n > 0) {
-              let r = t.substr(0, n).trim();
-              const o = t.substr(n + 1).trim();
-              '-' !== r.charAt(0) && (r = acf.strCamelCase(r)), e[r] = o;
-            }
-          }), n = e;
-          break;
-        default:
-          if (0 === t.indexOf('data-')) break;
-          t = b(t);
-          const r = n.charAt(0);
-          '[' !== r && '{' !== r || (n = JSON.parse(n)), 'true' !== n && 'false' !== n || (n = 'true' === n);
-      }
-      return {
-        name: t,
-        value: n
-      };
-    }
-    function y(e) {
-      const t = JSON.parse(JSON.stringify(e.style)),
-        n = {},
-        r = Object.keys(t);
-      for (let e = 0; e < r.length; e++) {
-        const o = r[e];
-        if (Number.isInteger(parseInt(o))) continue;
-        const i = t[r[e]],
-          a = o.replace(/-([a-z])/g, e => e[1].toUpperCase());
-        i && (n[a] = i);
-      }
-      return n;
-    }
-    const {
-        useState: x,
-        useEffect: w
-      } = wp.element,
-      {
-        subscribe: E,
-        select: _
-      } = wp.data;
-    function C() {
-      return 'edit-post/block' === _('core/interface').getActiveComplementaryArea('core');
-    }
-    const {
-        useEffect: j
-      } = wp.element,
-      I = ({
-        inspectorBlockFormRef: t,
-        setCurrentBlockFormContainer: n
-      }) => (j(() => {
-        n(t.current);
-      }, []), (0, e.jsx)('div', {
-        ref: t
-      })),
-      {
-        useState: S,
-        useEffect: A,
-        useRef: T
-      } = wp.element,
-      B = ({
-        $: t,
-        clientId: n,
-        blockFormHtml: i,
-        onMount: a,
-        onChange: s,
-        validationErrors: l,
-        showValidationErrors: c,
-        acfFormRef: d,
-        userHasInteractedWithForm: u,
-        attributes: p,
-        hideFieldsInSidebar: f
-      }) => {
-        const [h, m] = S(!1),
-          [b, g] = S(i),
-          [k, v] = S(!1),
-          y = T(null),
-          [x, w] = S(!1);
-        return A(() => {
-          a();
-        }, []), A(() => {
-          k && (u || x) && (s(k), v(!1));
-        }, [k, u, v, s]), A(() => {
-          !b && i && g(i);
-        }, [i]), A(() => {
-          if (!d?.current) return;
-          const e = acf.getBlockFormValidator(t(d.current).find('.acf-block-fields'));
-          if (e.clearErrors(), e.set('notice', null), acf.doAction('blocks/validation/pre_apply', l), l) c && (r(n), e.$el.find('.acf-notice').remove(), e.addErrors(l), e.showErrors('after'));else {
-            if (e.$el.find('.acf-notice').length > 0 && c) {
-              e.$el.find('.acf-notice').remove(), e.addErrors([{
-                message: acf.__('Validation successful')
-              }]), e.showErrors('after'), e.get('notice').update({
-                type: 'success',
-                text: acf.__('Validation successful'),
-                timeout: 1e3
-              }), e.set('notice', null), setTimeout(() => {
-                e.$el.find('.acf-notice').remove();
-              }, 1001);
-              const i = wp.data.dispatch('core/notices');
-              function a(e) {
-                return new Promise(function (t) {
-                  return e.forEach(e => {
-                    if (e.innerBlocks.length > 0 && a(e.innerBlocks).then(e => {
-                      if (e) return t(!0);
-                    }), e.attributes.hasAcfError && e.clientId !== n) return t(!0);
-                  }), t(!1);
-                });
-              }
-              a(wp.data.select('core/block-editor').getBlocks()).then(e => {
-                e ? i.createErrorNotice(acf.__('An ACF Block on this page requires attention before you can save.'), {
-                  id: 'acf-blocks-validation',
-                  isDismissible: !0
-                }) : i.removeNotice('acf-blocks-validation');
-              });
-            }
-            o(n);
-          }
-          acf.doAction('blocks/validation/post_apply', l);
-        }, [l, n, c]), A(() => {
-          if (!d?.current || !b) return;
-          acf.debug('Remounting ACF Form');
-          const e = d.current,
-            n = t(e);
-          let r = !0;
-          acf.doAction('remount', n), h || (s(n), m(!0));
-          const o = () => {
-              s(n);
-            },
-            i = () => {
-              if (!r) return;
-              const t = e.querySelectorAll('input, textarea'),
-                i = e.querySelectorAll('select');
-              t.forEach(e => {
-                e.removeEventListener('input', o), e.addEventListener('input', o);
-              }), i.forEach(e => {
-                e.removeEventListener('change', o), e.addEventListener('change', o);
-              }), clearTimeout(y.current), y.current = setTimeout(() => {
-                r && v(n);
-              }, 300);
-            },
-            a = new MutationObserver(i),
-            l = new MutationObserver(() => {
-              r && (w(!0), i());
-            }),
-            c = {
-              attributes: !0,
-              childList: !0,
-              subtree: !0,
-              characterData: !0
-            };
-          return a.observe(e, c), [...e.querySelectorAll('iframe')].forEach(e => {
-            if (e && e.contentDocument) {
-              const t = e.contentDocument.body;
-              t && l.observe(t, c);
-            }
-          }), e.querySelectorAll('input, textarea').forEach(e => {
-            e.addEventListener('input', o);
-          }), e.querySelectorAll('select').forEach(e => {
-            e.addEventListener('change', o);
-          }), () => {
-            r = !1, a.disconnect(), l.disconnect(), clearTimeout(y.current), e && (e.querySelectorAll('input, textarea').forEach(e => {
-              e.removeEventListener('input', o);
-            }), e.querySelectorAll('select').forEach(e => {
-              e.removeEventListener('change', o);
-            }));
-          };
-        }, [d, p, b]), (0, e.jsx)('div', {
-          ref: d,
-          className: 'acf-block-component acf-block-panel',
-          style: {
-            display: f ? 'none' : null
-          },
-          dangerouslySetInnerHTML: {
-            __html: acf.applyFilters('blocks/form/render', b, !0)
-          }
-        });
-      };
-    var F = n(540);
-    const O = (0, F.createContext)(null),
-      N = {
-        didCatch: !1,
-        error: null
-      };
-    class R extends F.Component {
-      constructor(e) {
-        super(e), this.resetErrorBoundary = this.resetErrorBoundary.bind(this), this.state = N;
-      }
-      static getDerivedStateFromError(e) {
-        return {
-          didCatch: !0,
-          error: e
-        };
-      }
-      resetErrorBoundary() {
-        const {
-          error: e
-        } = this.state;
-        if (null !== e) {
-          for (var t, n, r = arguments.length, o = new Array(r), i = 0; i < r; i++) o[i] = arguments[i];
-          null === (t = (n = this.props).onReset) || void 0 === t || t.call(n, {
-            args: o,
-            reason: 'imperative-api'
-          }), this.setState(N);
-        }
-      }
-      componentDidCatch(e, t) {
-        var n, r;
-        null === (n = (r = this.props).onError) || void 0 === n || n.call(r, e, t);
-      }
-      componentDidUpdate(e, t) {
-        const {
-            didCatch: n
-          } = this.state,
-          {
-            resetKeys: r
-          } = this.props;
-        var o, i;
-        n && null !== t.error && function () {
-          let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
-            t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [];
-          return e.length !== t.length || e.some((e, n) => !Object.is(e, t[n]));
-        }(e.resetKeys, r) && (null === (o = (i = this.props).onReset) || void 0 === o || o.call(i, {
-          next: r,
-          prev: e.resetKeys,
-          reason: 'keys'
-        }), this.setState(N));
-      }
-      render() {
-        const {
-            children: e,
-            fallbackRender: t,
-            FallbackComponent: n,
-            fallback: r
-          } = this.props,
-          {
-            didCatch: o,
-            error: i
-          } = this.state;
-        let a = e;
-        if (o) {
-          const e = {
-            error: i,
-            resetErrorBoundary: this.resetErrorBoundary
-          };
-          if ('function' == typeof t) a = t(e);else if (n) a = (0, F.createElement)(n, e);else {
-            if (void 0 === r) throw i;
-            a = r;
-          }
-        }
-        return (0, F.createElement)(O.Provider, {
-          value: {
-            didCatch: o,
-            error: i,
-            resetErrorBoundary: this.resetErrorBoundary
-          }
-        }, a);
-      }
-    }
-    const {
-        Placeholder: P,
-        Button: M,
-        Icon: H
-      } = wp.components,
-      L = (0, e.jsx)('svg', {
-        xmlns: 'http://www.w3.org/2000/svg',
-        viewBox: '0 0 24 24',
-        width: '24',
-        height: '24',
-        'aria-hidden': 'true',
-        focusable: 'false',
-        children: (0, e.jsx)('path', {
-          d: 'M19 8h-1V6h-5v2h-2V6H6v2H5c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2zm.5 10c0 .3-.2.5-.5.5H5c-.3 0-.5-.2-.5-.5v-8c0-.3.2-.5.5-.5h14c.3 0 .5.2.5.5v8z'
-        })
-      }),
-      D = ({
-        setBlockFormModalOpen: t,
-        blockLabel: n,
-        error: r
-      }) => {
-        let o = null;
-        return r && (acf.debug('Block preview error:', r), o = acf.__('Error previewing block v3')), (0, e.jsx)(P, {
-          icon: (0, e.jsx)(H, {
-            icon: L
-          }),
-          label: n,
-          instructions: o,
-          children: (0, e.jsx)(M, {
-            variant: 'primary',
-            onClick: () => {
-              t(!0);
-            },
-            children: acf.__('Edit Block')
-          })
-        });
-      },
-      $ = ({
-        children: t,
-        blockPreviewHtml: n,
-        blockProps: r,
-        blockType: o,
-        setBlockFormModalOpen: i
-      }) => (0, e.jsx)('div', {
-        ...r,
-        children: (0, e.jsx)(R, {
-          fallbackRender: ({
-            error: t
-          }) => (0, e.jsx)(D, {
-            blockLabel: o?.title || acf.__('ACF Block'),
-            setBlockFormModalOpen: i,
-            error: t
-          }),
-          children: t
-        })
-      }, n),
-      {
-        useEffect: q,
-        useRef: V
-      } = wp.element,
-      {
-        Popover: U
-      } = wp.components,
-      z = ({
-        children: t,
-        className: n,
-        anchor: r,
-        placement: o,
-        onClose: i,
-        focusOnMount: a,
-        variant: s,
-        animate: l = !1,
-        gutenbergIframeOrDocument: c,
-        hidePrimaryBlockToolbar: d = !1
-      }) => {
-        const u = V();
-        return q(() => {
-          const e = e => {
-              'Escape' === e.key && i(e);
-            },
-            t = e => {
-              !r || e?.key || u?.current?.contains(e.target) || e.target === r || i(e) && (c.removeEventListener('mousedown', t), document.removeEventListener('mousedown', t));
-            };
-          return setTimeout(() => {
-            document.addEventListener('keydown', e), c.addEventListener('mousedown', t), document.addEventListener('mousedown', t);
-          }), () => {
-            document.removeEventListener('keydown', e), c.removeEventListener('mousedown', t), document.removeEventListener('mousedown', t);
-          };
-        }, []), (0, e.jsx)(e.Fragment, {
-          children: (0, e.jsxs)(U, {
-            ref: u,
-            style: {
-              position: 'absolute',
-              top: 200,
-              zIndex: 59899
-            },
-            className: n,
-            anchor: r,
-            focusOnMount: a,
-            placement: o,
-            variant: s,
-            animate: l,
-            children: [d && (0, e.jsx)('style', {
-              children: '\n\t\t\t\t\t.components-popover.block-editor-block-popover.block-editor-block-list__block-popover{\n\t\t\t\t\t\tdisplay: none!important;\n\t\t\t\t\t}\n\t\t\t\t'
-            }), t]
-          })
-        });
-      },
-      {
-        useState: W,
-        useRef: J
-      } = wp.element,
-      {
-        ToolbarGroup: X,
-        ToolbarButton: Y,
-        Modal: G
-      } = wp.components,
-      {
-        BlockControls: K
-      } = wp.blockEditor,
-      Q = ({
-        blockToolbarFields: t,
-        blockFieldInfo: n,
-        setCurrentBlockFormContainer: r,
-        gutenbergIframeOrDocument: o,
-        setBlockFormModalOpen: i,
-        blockFormModalOpen: a
-      }) => {
-        const [s, l] = W(null),
-          [c, d] = W(),
-          [u, p] = W(!0),
-          f = J();
-        function h(e) {
-          if (!e) return '';
-          if (!n) return '';
-          const t = n.find(t => t.name === e);
-          return t?.type.replace('_', '-');
-        }
-        function m(e) {
-          return e && n ? n.find(t => t.name === e) : '';
-        }
-        function b(e) {
-          if (!e) return '';
-          if (!n) return '';
-          const t = n.find(t => t.name === e);
-          return t ? t.label : '';
-        }
-        return (0, e.jsxs)(K, {
-          children: [(0, e.jsx)(X, {
-            children: (0, e.jsx)(Y, {
-              className: 'components-icon-button components-toolbar__control',
-              label: acf.__('Edit Block'),
-              icon: 'edit',
-              onClick: () => {
-                i(!0);
-              },
-              isPressed: a
-            })
-          }), t.length > 0 && (0, e.jsxs)(X, {
-            children: [function () {
-              let t = `[data-name="${s}"]{ display: block!important; }`;
-              return (0, e.jsx)('style', {
-                children: t
-              });
-            }(), t && t.map(t => {
-              let n = '',
-                r = null,
-                o = null;
-              return 'object' == typeof t ? (n = t.fieldName ? t.fieldName : index, r = t.fieldIcon ? window.atob(t.fieldIcon) : null, o = t.fieldLabel ? t.fieldLabel : n) : n = t, (0, e.jsx)(Y, {
-                icon: r ? (0, e.jsx)('i', {
-                  dangerouslySetInnerHTML: {
-                    __html: r
-                  }
-                }) : (0, e.jsx)('i', {
-                  className: `field-type-icon field-type-icon-${h(n)}`
-                }),
-                label: o || b(n),
-                isPressed: n === s,
-                ref: n === s ? d : null,
-                onMouseDown: () => {
-                  s === n ? l(null) : (l(null), setTimeout(() => {
-                    const e = m(n);
-                    'flexible_content' === e.type || 'repeater' === e.type ? p(!1) : p(!0), l(n);
-                  }));
-                }
-              }, n);
-            }), s && c && u && (0, e.jsx)(z, {
-              focusOnMount: !1,
-              className: 'acf-inline-fields-popover',
-              anchor: c,
-              animate: !0,
-              onClose: e => !('Escape' !== e.key && (e?.target.closest('.media-modal') || e?.target.closest('.acf-tooltip') || e?.target && f?.current && f?.current.contains(e.target) || c?.current && c?.current.contains(e?.target)) || (l(null), 0)),
-              variant: 'unstyled',
-              gutenbergIframeOrDocument: o,
-              children: (0, e.jsx)('div', {
-                ref: f,
-                children: (0, e.jsx)('div', {
-                  className: 'acf-inline-fields-popover-inner',
-                  style: {
-                    minWidth: '300px'
-                  },
-                  ref: r
-                })
-              })
-            }, c), s && c && !u && (0, e.jsx)(G, {
-              className: 'acf-block-form-modal',
-              isFullScreen: !0,
-              title: m(s).label,
-              onRequestClose: () => {
-                l(null);
-              },
-              children: (0, e.jsx)('div', {
-                ref: f,
-                children: (0, e.jsx)('div', {
-                  className: 'acf-inline-fields-popover-inner',
-                  style: {
-                    minWidth: '300px'
-                  },
-                  ref: r
-                })
-              })
-            })]
-          })]
-        });
-      },
-      {
-        useState: Z,
-        useEffect: ee,
-        useRef: te,
-        useMemo: ne
-      } = wp.element,
-      {
-        Toolbar: re,
-        ToolbarGroup: oe,
-        ToolbarButton: ie,
-        Modal: ae
-      } = wp.components,
-      se = ({
-        blockIcon: t,
-        blockFieldInfo: n,
-        setInlineEditingToolbarHasFocus: r,
-        currentContentEditableElement: o,
-        currentInlineEditingElement: i,
-        currentInlineEditingElementUid: a,
-        gutenbergIframeOrDocument: s,
-        setCurrentBlockFormContainer: l,
-        contentEditableChangeInProgress: c
-      }) => {
-        const [d, u] = Z(null),
-          [p, f] = Z(),
-          [h, m] = Z(),
-          [b, g] = Z(!0),
-          k = te(),
-          v = i ? i.getAttribute('data-acf-inline-fields') : null;
-        let y = [];
-        try {
-          y = JSON.parse(v);
-        } catch (e) {
-          acf.debug('Inline fields were not a properly formatted JSON array', v);
-        }
-        function x(e) {
-          if (!e) return '';
-          if (!n) return '';
-          const t = n.find(t => t.name === e);
-          return t?.type.replace('_', '-');
-        }
-        function w(e) {
-          if (!e) return '';
-          if (!n) return '';
-          const t = n.find(t => t.name === e);
-          return t ? t.label : '';
-        }
-        ee(() => {
-          u(null);
-        }, [c]);
-        const E = ne(() => function () {
-            let n = o && !i ? o.getAttribute('data-acf-toolbar-icon') : null;
-            if (!n && i && (n = i ? i.getAttribute('data-acf-toolbar-icon') : null), n && (n = (0, e.jsx)('i', {
-              dangerouslySetInnerHTML: {
-                __html: n
-              }
-            })), !n && o && !i) {
-              const t = o.getAttribute('data-acf-inline-contenteditable-field-slug');
-              n = (0, e.jsx)('i', {
-                className: `field-type-icon field-type-icon-${x(t)}`
-              });
-            }
-            return n || (n = React.isValidElement(t) ? t : (0, e.jsx)('span', {
-              className: `dashicon dashicons dashicons-${t}`
-            })), n;
-          }(), [n, o, i]),
-          _ = ne(() => function () {
-            let e;
-            if (o && !i) {
-              const t = o.getAttribute('data-acf-toolbar-title');
-              if (t) return t;
-              e = o.getAttribute('data-acf-inline-contenteditable-field-slug');
-            } else if (i) {
-              const t = i.getAttribute('data-acf-toolbar-title');
-              if (t) return t;
-              if (y.length > 1) return {
-                A: 'Link',
-                DIV: 'Division',
-                P: 'Paragraph',
-                SPAN: 'Span',
-                INPUT: 'Input',
-                BUTTON: 'Button',
-                IMG: 'Image',
-                UL: 'Unordered List',
-                OL: 'Ordered List',
-                LI: 'List Item',
-                H1: 'Heading 1',
-                H2: 'Heading 2',
-                H3: 'Heading 3',
-                H4: 'Heading 4',
-                H5: 'Heading 5',
-                H6: 'Heading 6',
-                TABLE: 'Table',
-                TR: 'Table Row',
-                TD: 'Table Cell',
-                TH: 'Table Header',
-                FORM: 'Form',
-                TEXTAREA: 'Text Area',
-                SELECT: 'Select',
-                OPTION: 'Option'
-              }[i.tagName];
-              e = 'object' == typeof y[0] ? y[0].fieldName : y[0];
-            }
-            return w(e);
-          }(), [n, o, i]);
-        return (0, e.jsxs)(e.Fragment, {
-          children: [d && h && b && a && (0, e.jsx)(z, {
-            focusOnMount: !1,
-            className: 'acf-inline-fields-popover',
-            anchor: h,
-            onClose: e => 'Escape' === e.key ? (u(null), !0) : !(e?.target && k?.current && k?.current.contains(e.target) || h?.current && h?.current.contains(e?.target)) && void 0,
-            variant: i ? 'toolbar' : 'unstyled',
-            gutenbergIframeOrDocument: s,
-            hidePrimaryBlockToolbar: !0,
-            animate: !0,
-            children: (0, e.jsx)('div', {
-              ref: k,
-              onClick: () => {
-                r(!0);
-              },
-              children: (0, e.jsx)('div', {
-                className: 'acf-inline-fields-popover-inner',
-                style: {
-                  minWidth: p?.popoverMinWidth ? p?.popoverMinWidth : '300px'
-                },
-                ref: l
-              })
-            })
-          }, d || null), d && h && !b && a && (0, e.jsx)(ae, {
-            className: 'acf-block-form-modal',
-            isFullScreen: !0,
-            title: (C = d, C && n ? n.find(e => e.name === C) : '').label,
-            onRequestClose: () => {
-              u(null);
-            },
-            children: (0, e.jsx)('div', {
-              ref: k,
-              onClick: () => {
-                r(!0);
-              },
-              children: (0, e.jsx)('div', {
-                className: 'acf-inline-fields-popover-inner',
-                style: {
-                  minWidth: p?.popoverMinWidth ? p?.popoverMinWidth : '300px'
-                },
-                ref: l
-              })
-            })
-          }), (0, e.jsx)(re, {
-            orientation: 'horizontal',
-            className: 'components-accessible-toolbar block-editor-block-contextual-toolbar',
-            style: {
-              width: 'max-content'
-            },
-            children: (0, e.jsxs)('div', {
-              className: 'block-editor-block-toolbar',
-              children: [(0, e.jsx)(oe, {
-                style: {
-                  alignItems: 'center'
-                },
-                children: (0, e.jsxs)('div', {
-                  className: 'acf-blocks-toolbar-icon components-toolbar-group block-editor-block-toolbar__block-controls',
-                  label: _,
-                  children: [E, (0, e.jsx)('span', {
-                    children: _
-                  })]
-                })
-              }), (0, e.jsx)(oe, {
-                children: function () {
-                  if (!y || 0 === y.length) return '';
-                  let t = [];
-                  return t = y.map((t, n) => {
-                    let o = '',
-                      i = null,
-                      a = null;
-                    return 'object' == typeof t ? (o = t.fieldName ? t.fieldName : n, i = t.fieldIcon ? (0, e.jsx)('i', {
-                      dangerouslySetInnerHTML: {
-                        __html: window.atob(t.fieldIcon)
-                      }
-                    }) : null, a = t.fieldLabel ? t.fieldLabel : o) : o = t, !i && t?.useExpandedEditor && (i = 'edit'), (0, e.jsx)(ie, {
-                      disabled: c,
-                      className: 'acf-toolbar-button',
-                      icon: i || (0, e.jsx)('i', {
-                        className: `field-type-icon field-type-icon-${x(o)}`
-                      }),
-                      label: a || w(o),
-                      isPressed: o === d,
-                      ref: o === d ? m : null,
-                      onClick: () => {
-                        r(!0), d === o ? u(null) : (g(!t?.useExpandedEditor), u(o), f(t));
-                      }
-                    }, o);
-                  }), t;
-                }()
-              })]
-            })
-          }), function () {
-            let t = `[data-name="${d}"]{ display: block!important; }`;
-            return (0, e.jsx)('style', {
-              children: t
-            });
-          }()]
-        });
-        // removed by dead control flow
- var C; 
-      },
-      {
-        useState: le,
-        useEffect: ce,
-        useRef: de,
-        createPortal: ue,
-        useMemo: pe
-      } = wp.element,
-      {
-        InspectorControls: fe,
-        useBlockProps: he,
-        useBlockEditContext: me
-      } = wp.blockEditor,
-      {
-        ToolbarGroup: be,
-        ToolbarButton: ge,
-        Placeholder: ke,
-        Spinner: ve,
-        Modal: ye,
-        Button: xe,
-        PanelBody: we
-      } = wp.components,
-      Ee = t => {
-        const {
-            attributes: n,
-            setAttributes: i,
-            context: a,
-            isSelected: s,
-            $: c,
-            blockType: d
-          } = t,
-          u = d.validate,
-          {
-            clientId: p
-          } = me(),
-          [f, h] = le(null),
-          [m, b] = le(''),
-          [g, k] = le(''),
-          v = pe(() => ue(l(n, a), p, s), []),
-          [y, _] = le(() => v?.html ? acf.applyFilters('blocks/preview/render', v.html, !0) : 'acf-block-preview-loading'),
-          [j, I] = le(() => {
-            var e;
-            return null !== (e = v?.validation?.errors) && void 0 !== e ? e : null;
-          }),
-          [S, A] = le(v?.fields ? v.fields : null),
-          [T, B] = le(null),
-          [F, O] = le(!1),
-          [N, R] = le(),
-          [P, M] = le(!1),
-          [H, L] = le(!1),
-          D = de(null),
-          $ = de(null),
-          [q, V] = le([]),
-          [U, z] = le(null),
-          [W, J] = le(null),
-          [X, Y] = le(null),
-          [G, K] = le(!1),
-          [Q, Z] = le(function () {
-            const e = document.querySelector('[name="editor-canvas"]');
-            return e ? e.contentDocument || e.contentWindow.document : document;
-          }()),
-          [ee, te] = le(),
-          [ne, re] = le(''),
-          oe = de(null),
-          ie = function () {
-            const [e, t] = x(() => C());
-            return w(() => {
-              const e = E(() => {
-                t(C());
-              });
-              return () => e();
-            }, []), e;
-          }();
-        ce(() => {
-          s || (J(null), z(null), Y(null), g && _(g));
-        }, [s]), ce(() => {
-          if (Q) {
-            let e = Q.getElementById('acf-dynamic-styles');
-            e || (e = document.createElement('style'), e.id = 'acf-dynamic-styles', Q.head.appendChild(e)), te(e);
-          }
-        }, [Q]);
-        const ae = pe(() => {
-          const {
-            hasAcfError: e,
-            ...t
-          } = n;
-          return t;
-        }, [n]);
-        function se(e, t) {
-          if (!D?.current || !t) return;
-          const n = D.current.querySelector(`[data-name=${t}]`);
-          if (!n) return;
-          const r = n.attributes.getNamedItem('data-key')?.value;
-          if (!r) return;
-          const o = D.current.querySelector(`[name="acf-block_${p}[${r}]"`);
-          if (!o) return;
-          e && L(!0), K(!1), o.value = e;
-          const i = c(D?.current),
-            a = acf.serialize(i, `acf-block_${p}`);
-          a ? h(JSON.stringify(a)) : L(!1);
-        }
-        function ue(e, t, n) {
-          if (n) return !1;
-          if (acf.debug('Preload check', e, t), (e => {
-            const t = wp.data.select('core/block-editor').getBlockParents(e);
-            return wp.data.select('core/block-editor').getBlocksByClientId(t).filter(e => 'core/query' === e.name).length;
-          })(t)) return !1;
-          const r = acf.get('preloadedBlocks');
-          return r && r[e] ? (r[e].html = r[e].html.replaceAll(e, t), r[e]?.validation && r[e]?.validation.errors && (r[e].validation.errors = r[e]?.validation.errors.map(n => (n.input = n.input.replaceAll(e, t), n))), acf.debug('Preload successful', r[e]), r[e]) : (acf.debug('Preload failed: not preloaded.'), !1);
-        }
-        function fe({
-          theAttributes: e,
-          theClientId: t,
-          theContext: n,
-          isSelected: i
-        }) {
-          if (!e) return;
-          N && N.abort();
-          const s = ue(l(e, a), t, i);
-          if (s) return X || (s.html ? _(acf.applyFilters('blocks/preview/render', s.html, !0)) : _(acf.applyFilters('blocks/preview/render', 'acf-block-preview-no-html', !0)), s?.blockToolbarFields && V(s?.blockToolbarFields), s?.fields && A(s.fields)), void (s?.validation && !s.validation.valid && s.validation.errors ? I(s.validation.errors) : I(null));
-          const d = {
-            preview: !0,
-            form: !0,
-            validate: !0
-          };
-          m || (d.validate = !1), u || (d.validate = !1);
-          const p = {
-            ...e
-          };
-          r('acf-fetching-block');
-          const f = c.ajax({
-            url: acf.get('ajaxurl'),
-            dataType: 'json',
-            type: 'post',
-            cache: !1,
-            data: acf.prepareForAjax({
-              action: 'acf/ajax/fetch-block',
-              block: JSON.stringify(p),
-              clientId: t,
-              context: JSON.stringify(n),
-              query: d
-            })
-          }).done(e => {
-            L(!1), o('acf-fetching-block'), A(e.data.fields), b(e.data.form);
-            const t = acf.applyFilters('blocks/preview/render', e.data.preview ? e.data.preview : 'acf-block-preview-no-html', !1);
-            k(t), e.data?.validation && !e.data.validation.valid && e.data.validation.errors ? I(e.data.validation.errors) : I(null), e.data?.blockToolbarFields && V(e.data?.blockToolbarFields), M(!0);
-          }).fail(function () {
-            M(!0), L(!1), o('acf-fetching-block');
-          });
-          R(f);
-        }
-        return ce(() => {
-          function e() {
-            O(!0), window.removeEventListener('click', e), window.removeEventListener('keydown', e);
-          }
-          return window.addEventListener('click', e), window.addEventListener('keydown', e), () => {
-            window.removeEventListener('click', e), window.removeEventListener('keydown', e);
-          };
-        }, []), ce(() => {
-          i(j ? {
-            hasAcfError: !0
-          } : {
-            hasAcfError: !1
-          });
-        }, [j, i]), ce(() => {
-          const e = e => {
-            p === e.detail.acfBlockWithValidationErrors && (r(p), B(!0), J(null));
-          };
-          return document.addEventListener('acf/block/has-error', e), () => {
-            document.removeEventListener('acf/block/has-error', e), o(p);
-          };
-        }, []), ce(() => (clearTimeout(oe.current), r('acf-fetching-block'), oe.current = setTimeout(() => {
-          !function () {
-            const e = JSON.parse(f);
-            if (!e) return fe({
-              theAttributes: ae,
-              theClientId: p,
-              theContext: a,
-              isSelected: s
-            }), void o('acf-fetching-block');
-            if (f === JSON.stringify(ae.data)) return fe({
-              theAttributes: ae,
-              theClientId: p,
-              theContext: a,
-              isSelected: s
-            }), void o('acf-fetching-block');
-            const t = {
-              ...n,
-              data: {
-                ...e
-              }
-            };
-            i(t);
-          }();
-        }, 200), () => {
-          clearTimeout(oe.current), o('acf-fetching-block');
-        }), [f, ae]), ce(() => {
-          if ($.current && y) {
-            const e = n.name.replace('acf/', ''),
-              t = c($.current);
-            if (acf.doAction('render_block_preview', t, n), acf.doAction(`render_block_preview/type=${e}`, t, n), W) {
-              const e = $?.current.querySelector(`[data-acf-inline-fields-uid="${W}"]`);
-              z(e);
-            }
-          }
-        }, [y]), ce(() => {
-          if (X && !G || !g) return;
-          const e = document.querySelector('.acf-inline-editing-toolbar');
-          e && e.style && e.style.cssText && re(e.style.cssText.replaceAll(';', '!important;')), setTimeout(() => {
-            _(g), setTimeout(() => {
-              re(null);
-            }, 0);
-          }, 0);
-        }, [g]), ce(() => {
-          const e = new MutationObserver(e => {
-            for (const t of e) if ('characterData' === t.type) {
-              let e = t.target.parentNode;
-              const n = e?.closest('[data-block]'),
-                r = n?.getAttribute('data-block');
-              if (!e || !n || r !== p) return;
-              if (e && !e.hasAttribute('data-acf-inline-contenteditable') && (e = e.closest('[data-acf-inline-contenteditable]')), e && e.hasAttribute('data-acf-inline-contenteditable')) {
-                const t = e.attributes.getNamedItem('data-acf-inline-contenteditable-field-slug').value;
-                let n = e.innerHTML.trim();
-                n || (n = ''), se(n, t);
-              }
-            } else {
-              const e = t.target.closest('[data-acf-inline-contenteditable]'),
-                n = e?.closest('[data-block]');
-              if (!e || !n || n.getAttribute('data-block') !== p) return;
-              if (e) {
-                const t = e.attributes.getNamedItem('data-acf-inline-contenteditable-field-slug').value;
-                let n = e.innerHTML.trim();
-                (!n || 0 === e.textContent.trim().length && 1 === e.children.length && e.firstElementChild && 'BR' === e.firstElementChild.nodeName) && (e.innerHTML = '', n = ''), se(n, t);
-              }
-            }
-          });
-          return e.observe(Q, {
-            attributes: !0,
-            childList: !0,
-            subtree: !0,
-            characterData: !0,
-            attributeFilter: ['data-acf-inline-contenteditable']
-          }), () => {
-            e.disconnect();
-          };
-        }, [y]), (0, e.jsx)(_e, {
-          ...t,
-          validationErrors: j,
-          showValidationErrors: T,
-          theSerializedAcfData: f,
-          setTheSerializedAcfData: h,
-          acfFormRef: D,
-          blockFormHtml: m,
-          blockPreviewHtml: y,
-          blockFetcher: fe,
-          userHasInteractedWithForm: F,
-          setUserHasInteractedWithForm: O,
-          previewRef: $,
-          setInlineEditingToolbarHasFocus: K,
-          currentContentEditableElement: X,
-          setCurrentContentEditableElement: Y,
-          currentInlineEditingElement: U,
-          setCurrentInlineEditingElement: z,
-          currentInlineEditingElementUid: W,
-          onNewInlineEditingElementSelected: function (e) {
-            setTimeout(() => {
-              J(e);
-              const t = $?.current.querySelector(`[data-acf-inline-fields-uid="${e}"]`);
-              z(t), t && t.scrollIntoView({
-                behavior: 'smooth',
-                block: 'nearest'
-              });
-            }, 1);
-          },
-          onContentEditableChange: se,
-          onNewContentEditableElementSelected: function (e) {
-            if (e) {
-              const t = $?.current.querySelector(`[data-acf-inline-contenteditable-field-slug="${e}"]`);
-              Y(t);
-            } else Y(null);
-          },
-          gutenbergIframeOrDocument: Q,
-          acfDynamicStylesElement: ee,
-          blockFieldInfo: S,
-          blockEditorInspectorSidebarOpen: ie,
-          blockToolbarFields: q,
-          hasFetchedOnce: P,
-          contentEditableChangeInProgress: H,
-          freezeInlineToolbarDuringReRender: ne
-        });
-      };
-    function _e(t) {
-      const {
-          $: n,
-          isSelected: r,
-          blockType: o,
-          attributes: a,
-          context: s,
-          validationErrors: l,
-          showValidationErrors: c,
-          theSerializedAcfData: d,
-          setTheSerializedAcfData: u,
-          acfFormRef: p,
-          blockFormHtml: f,
-          blockPreviewHtml: m,
-          blockFetcher: b,
-          userHasInteractedWithForm: g,
-          previewRef: k,
-          setInlineEditingToolbarHasFocus: v,
-          currentContentEditableElement: y,
-          setCurrentContentEditableElement: x,
-          currentInlineEditingElement: w,
-          currentInlineEditingElementUid: E,
-          setCurrentInlineEditingElement: _,
-          onNewInlineEditingElementSelected: C,
-          onContentEditableChange: j,
-          onNewContentEditableElementSelected: S,
-          gutenbergIframeOrDocument: A,
-          acfDynamicStylesElement: T,
-          blockFieldInfo: F,
-          blockEditorInspectorSidebarOpen: O,
-          blockToolbarFields: N,
-          hasFetchedOnce: R,
-          contentEditableChangeInProgress: P,
-          freezeInlineToolbarDuringReRender: M
-        } = t,
-        {
-          clientId: H
-        } = me(),
-        L = de(),
-        [q, V] = le(!1),
-        U = de(),
-        [W, J] = le(!1),
-        [X, Y] = le(),
-        [G, K] = le();
-      ce(() => {
-        let e = document.getElementById('invisible-acf-form-element');
-        e || (e = document.createElement('div'), e.id = 'invisible-acf-form-element', e.style.display = 'none', document.body.appendChild(e)), K(e);
-      }, [O]), ce(() => {
-        Y(W && U?.current ? U.current : O ? L.current : G);
-      }, [W, U]), ce(() => {
-        O ? W || Y(L.current) : Y(G);
-      }, [O, G]), ce(() => {
-        r && L?.current && L.current ? V(!0) : r && !L?.current && setTimeout(() => {
-          V(!0);
-        }, 1);
-      }, [r, L, L.current]), ce(() => {
-        r && l && c && o?.hide_fields_in_sidebar && J(!0);
-      }, [r, c, l, o]);
-      let Z = 'acf-block-component acf-block-body';
-      Z += ' acf-block-preview', l && c && (Z += ' acf-block-has-validation-error');
-      const ee = {
-        ...he({
-          className: Z,
-          ref: k
-        })
-      };
-      let te = O && L?.current ? L.current : G;
-      X && (te = X);
-      let ne = null;
-      return w && y && (ne = w), w && !y && (ne = w), !w && y && (ne = y), ne?.isConnected || (ne = null), (0, e.jsxs)(e.Fragment, {
-        children: [(0, e.jsx)(Q, {
-          blockToolbarFields: N,
-          blockFieldInfo: F,
-          setCurrentBlockFormContainer: Y,
-          gutenbergIframeOrDocument: A,
-          setBlockFormModalOpen: J,
-          blockFormModalOpen: W,
-          invisibleBlockFormContainer: G
-        }), (0, e.jsxs)(fe, {
-          children: [(0, e.jsx)(we, {
-            children: (0, e.jsx)(xe, {
-              icon: 'edit',
-              className: 'acf-blocks-open-expanded-editor-btn',
-              variant: 'secondary',
-              onClick: () => {
-                J(!0);
-              },
-              children: acf.__('Open Expanded Editor')
-            })
-          }), (0, e.jsx)(I, {
-            inspectorBlockFormRef: L,
-            setCurrentBlockFormContainer: Y
-          })]
-        }), te && q && ue((0, e.jsxs)(e.Fragment, {
-          children: [(0, e.jsx)(B, {
-            $: n,
-            clientId: H,
-            blockFormHtml: f,
-            onMount: () => {
-              R || b({
-                theAttributes: a,
-                theClientId: H,
-                theContext: s,
-                isSelected: r
-              });
-            },
-            onChange: function (e) {
-              const t = acf.serialize(e, `acf-block_${H}`);
-              t && u(JSON.stringify(t));
-            },
-            validationErrors: l,
-            showValidationErrors: c,
-            acfFormRef: p,
-            blockFormPortalElement: te,
-            theSerializedAcfData: d,
-            userHasInteractedWithForm: g,
-            attributes: a,
-            hideFieldsInSidebar: o?.auto_inline_editing && void 0 === o?.hide_fields_in_sidebar && L.current === X || o?.hide_fields_in_sidebar && L.current === X
-          }), M && (0, e.jsx)('style', {
-            children: `.acf-inline-editing-toolbar{${M}}`
-          })]
-        }), te), (0, e.jsxs)(e.Fragment, {
-          children: [T && E && ue((0, e.jsx)(e.Fragment, {
-            children: `\n\t\t\t\t[data-acf-inline-fields-uid="${E}"]{\n\t\t\t\t\toutline: 2px solid var( --wp-admin-theme-color );\n\t\t\t\t\toutline-offset: 2px;\n\t\t\t\t}\n\t\t\t`
-          }), T), W && (0, e.jsx)(ye, {
-            className: 'acf-block-form-modal',
-            isFullScreen: !0,
-            title: o.title,
-            onRequestClose: () => {
-              i('acf-fetching-block') || J(!1);
-            },
-            isDismissible: !1,
-            headerActions: [(0, e.jsx)(xe, {
-              variant: 'primary',
-              disabled: i('acf-fetching-block'),
-              onClick: () => {
-                Y(null), J(!1);
-              },
-              children: acf.__('Done')
-            }, 'done')],
-            children: (0, e.jsx)('div', {
-              className: 'acf-modal-block-form-container',
-              ref: U
-            })
-          })]
-        }), (0, e.jsxs)(e.Fragment, {
-          children: [ne && (0, e.jsx)(z, {
-            focusOnMount: (() => {
-              const e = document.activeElement;
-              return e && e.isContentEditable, !1;
-            })(),
-            variant: 'unstyled',
-            anchor: ne,
-            className: 'acf-inline-editing-toolbar block-editor-block-list__block-popover',
-            placement: 'top-start',
-            onClose: e => {
-              if ('Escape' !== e.key && e.target.closest('.acf-toolbar-button')) return !1;
-              if ('Escape' === e.key) return !document.querySelector('.acf-inline-fields-popover-inner') && !y && (w && w.focus(), x(null), _(null), !0);
-              if (e.target.getAttribute('data-acf-inline-contenteditable')) return !1;
-              const t = e.target.closest('.acf-inline-fields-popover-inner'),
-                n = e.target.closest('.components-modal__content');
-              return t || n || (x(null), _(null)), !0;
-            },
-            gutenbergIframeOrDocument: A,
-            hidePrimaryBlockToolbar: !0,
-            children: (0, e.jsx)(se, {
-              blockIcon: o.icon,
-              blockFieldInfo: F,
-              acfFormRef: p,
-              setInlineEditingToolbarHasFocus: v,
-              currentContentEditableElement: y,
-              currentInlineEditingElement: w,
-              currentInlineEditingElementUid: E,
-              gutenbergIframeOrDocument: A,
-              setCurrentBlockFormContainer: Y,
-              contentEditableChangeInProgress: P
-            }, E)
-          }, y), (0, e.jsxs)($, {
-            blockPreviewHtml: m,
-            blockProps: ee,
-            blockType: o,
-            setBlockFormModalOpen: J,
-            children: ['acf-block-preview-no-html' === m ? (0, e.jsx)(D, {
-              setBlockFormModalOpen: J,
-              blockLabel: o.title
-            }) : null, 'acf-block-preview-loading' === m && (0, e.jsx)(ke, {
-              children: (0, e.jsx)(ve, {})
-            }), 'acf-block-preview-loading' !== m && 'acf-block-preview-no-html' !== m && m && h(m, C, j, S, F, n)]
-          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(BlockBody, {
+          ...this.props
         })]
       });
     }
-    const Ce = (e, t, n) => (e[t] = {
-        type: n
-      }, e),
-      je = e => {
-        const t = acf.get('rtl') ? 'right' : 'left';
-        return ['left', 'center', 'right'].includes(e) ? e : t;
-      },
-      {
-        Fragment: Ie,
-        Component: Se
-      } = wp.element,
-      {
-        BlockControls: Ae,
-        AlignmentToolbar: Te
-      } = wp.blockEditor,
-      Be = (t, n) => {
-        const r = je;
-        return n.alignText = r(n.alignText), class extends Se {
-          render() {
-            const {
-                attributes: n,
-                setAttributes: o
-              } = this.props,
-              {
-                alignText: i
-              } = n;
-            return (0, e.jsxs)(Ie, {
-              children: [(0, e.jsx)(Ae, {
-                group: 'block',
-                children: (0, e.jsx)(Te, {
-                  value: r(i),
-                  onChange: function (e) {
-                    o({
-                      alignText: r(e)
-                    });
-                  }
-                })
-              }), (0, e.jsx)(t, {
-                ...this.props
-              })]
-            });
-          }
-        };
-      },
-      Fe = e => ['top', 'center', 'bottom'].includes(e) ? e : 'top',
-      Oe = e => {
-        if (e) {
-          const [t, n] = e.split(' ');
-          return `${Fe(t)} ${je(n)}`;
-        }
-        return 'center center';
-      },
-      {
-        Fragment: Ne,
-        Component: Re
-      } = wp.element,
-      {
-        BlockControls: Pe,
-        BlockVerticalAlignmentToolbar: Me
-      } = wp.blockEditor,
-      He = wp.blockEditor.__experimentalBlockAlignmentMatrixToolbar || wp.blockEditor.BlockAlignmentMatrixToolbar,
-      Le = wp.blockEditor.__experimentalBlockAlignmentMatrixControl || wp.blockEditor.BlockAlignmentMatrixControl,
-      De = (t, n) => {
-        let r, o;
-        return 'matrix' === (n.supports.align_content || n.supports.alignContent) ? (r = Le || He, o = Oe) : (r = Me, o = Fe), void 0 === r ? t : (n.alignContent = o(n.alignContent), class extends Re {
-          render() {
-            const {
-                attributes: n,
-                setAttributes: i
-              } = this.props,
-              {
-                alignContent: a
-              } = n;
-            return (0, e.jsxs)(Ne, {
-              children: [(0, e.jsx)(Pe, {
-                group: 'block',
-                children: (0, e.jsx)(r, {
-                  label: acf.__('Change content alignment'),
-                  value: o(a),
-                  onChange: function (e) {
-                    i({
-                      alignContent: o(e)
-                    });
-                  }
-                })
-              }), (0, e.jsx)(t, {
-                ...this.props
-              })]
-            });
-          }
-        });
-      },
-      {
-        Fragment: $e,
-        Component: qe
-      } = wp.element,
-      {
-        BlockControls: Ve
-      } = wp.blockEditor,
-      Ue = wp.blockEditor.__experimentalBlockFullHeightAligmentControl || wp.blockEditor.__experimentalBlockFullHeightAlignmentControl || wp.blockEditor.BlockFullHeightAlignmentControl,
-      ze = t => Ue ? class extends qe {
-        render() {
-          const {
-              attributes: n,
-              setAttributes: r
-            } = this.props,
-            {
-              fullHeight: o
-            } = n;
-          return (0, e.jsxs)($e, {
-            children: [(0, e.jsx)(Ve, {
-              group: 'block',
-              children: (0, e.jsx)(Ue, {
-                isActive: o,
-                onToggle: function (e) {
-                  r({
-                    fullHeight: e
-                  });
-                }
-              })
-            }), (0, e.jsx)(t, {
-              ...this.props
-            })]
-          });
-        }
-      } : t;
-    ((t, n) => {
-      const {
-          InnerBlocks: r
-        } = wp.blockEditor,
-        {
-          Component: o
-        } = wp.element,
-        {
-          createHigherOrderComponent: i
-        } = wp.compose,
-        a = {};
-      function s(n) {
-        const o = n.post_types || [];
-        if (o.length) {
-          o.push('wp_block');
-          const e = acf.get('postType');
-          if (!o.includes(e)) return !1;
-        }
-        if ('string' == typeof n.icon && '<svg' === n.icon.substr(0, 4)) {
-          const t = n.icon;
-          n.icon = (0, e.jsx)('div', {
-            dangerouslySetInnerHTML: {
-              __html: t
-            }
-          });
-        }
-        n.icon || delete n.icon, wp.blocks.getCategories().filter(({
-          slug: e
-        }) => e === n.category).pop() || (n.category = 'common'), n = acf.parseArgs(n, {
-          title: '',
-          name: '',
-          category: '',
-          api_version: 2,
-          acf_block_version: 3
-        });
-        for (const e in n.attributes) 'default' in n.attributes[e] && 0 === n.attributes[e].default.length && delete n.attributes[e].default;
-        n.supports.anchor && (n.attributes.anchor = {
-          type: 'string'
-        }), n.attributes.hasAcfError = {
-          type: 'boolean',
-          default: !1
-        };
-        let i = Ee;
-        (n.supports.alignText || n.supports.align_text) && (n.attributes = Ce(n.attributes, 'align_text', 'string'), i = Be(i, n)), (n.supports.alignContent || n.supports.align_content) && (n.attributes = Ce(n.attributes, 'align_content', 'string'), i = De(i, n)), (n.supports.fullHeight || n.supports.full_height) && (n.attributes = Ce(n.attributes, 'full_height', 'boolean'), i = ze(i)), n.edit = function (r) {
-          return (0, e.jsx)(i, {
-            ...r,
-            blockType: n,
-            $: t
-          });
-        }, n.save = () => (0, e.jsx)(r.Content, {}), a[n.name] = n;
-        const s = wp.blocks.registerBlockType(n.name, n);
-        return s.attributes.anchor && (s.attributes.anchor = {
-          type: 'string'
-        }), s;
+  }
+
+  /**
+   * The BlockBody functional component.
+   *
+   * @since	ACF 5.7.12
+   */
+  function BlockBody(props) {
+    const {
+      attributes,
+      isSelected,
+      name,
+      clientId
+    } = props;
+    const {
+      mode
+    } = attributes;
+    const index = useSelect(select => {
+      const rootClientId = select('core/block-editor').getBlockRootClientId(clientId);
+      return select('core/block-editor').getBlockIndex(clientId, rootClientId);
+    });
+    let showForm = true;
+    let additionalClasses = 'acf-block-component acf-block-body';
+    if (mode === 'auto' && !isSelected || mode === 'preview') {
+      additionalClasses += ' acf-block-preview';
+      showForm = false;
+    }
+
+    // Setup block cache if required, and update mode.
+    if (!(clientId in acf.blockInstances)) {
+      acf.blockInstances[clientId] = {
+        validation_errors: false,
+        mode: mode
+      };
+    }
+    acf.blockInstances[clientId].mode = mode;
+    if (!isSelected) {
+      if (blockSupportsValidation(name) && acf.blockInstances[clientId].validation_errors) {
+        additionalClasses += ' acf-block-has-validation-error';
       }
-      acf.addAction('prepare', function () {
-        wp.blockEditor || (wp.blockEditor = wp.editor);
-        const e = acf.get('blockTypes');
-        e && e.forEach(e => {
-          parseInt(e.acf_block_version) >= 3 && s(e);
-        });
+      acf.blockInstances[clientId].has_been_deselected = true;
+    }
+    if (getBlockVersion(name) > 1) {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        ...useBlockProps({
+          className: additionalClasses
+        }),
+        children: showForm ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(BlockForm, {
+          ...props,
+          index: index
+        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(BlockPreview, {
+          ...props,
+          index: index
+        })
       });
-      const l = i(t => class extends o {
-        constructor(e) {
-          super(e);
-          const {
-              name: t,
-              attributes: r
-            } = this.props,
-            o = function (e) {
-              return a[e] || !1;
-            }(t);
-          if (!o) return;
-          Object.keys(r).forEach(e => {
-            '' === r[e] && delete r[e];
-          });
-          const i = {
-            full_height: 'fullHeight',
-            align_content: 'alignContent',
-            align_text: 'alignText'
-          };
-          Object.keys(i).forEach(e => {
-            r[e] !== n ? r[i[e]] = r[e] : r[i[e]] === n && o[e] !== n && (r[i[e]] = o[e]), delete o[e], delete r[e];
-          });
-          for (let e in o.attributes) r[e] === n && o[e] !== n && (r[e] = o[e]);
+    } else {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        ...useBlockProps(),
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+          className: "acf-block-component acf-block-body",
+          children: showForm ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(BlockForm, {
+            ...props,
+            index: index
+          }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(BlockPreview, {
+            ...props,
+            index: index
+          })
+        })
+      });
+    }
+  }
+
+  /**
+   * A react component to append HTMl.
+   *
+   * @date	19/2/19
+   * @since	ACF 5.7.12
+   *
+   * @param	string children The html to insert.
+   * @return	void
+   */
+  class Div extends Component {
+    render() {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        dangerouslySetInnerHTML: {
+          __html: this.props.children
         }
-        render() {
-          return (0, e.jsx)(t, {
+      });
+    }
+  }
+
+  /**
+   * DynamicHTML Class.
+   *
+   * A react componenet to load and insert dynamic HTML.
+   *
+   * @date	19/2/19
+   * @since	ACF 5.7.12
+   *
+   * @param	void
+   * @return	void
+   */
+  class DynamicHTML extends Component {
+    constructor(props) {
+      super(props);
+
+      // Bind callbacks.
+      this.setRef = this.setRef.bind(this);
+
+      // Define default props and call setup().
+      this.id = '';
+      this.el = false;
+      this.subscribed = true;
+      this.renderMethod = 'jQuery';
+      this.passedValidation = false;
+      this.setup(props);
+
+      // Load state.
+      this.loadState();
+    }
+    setup(props) {
+      const constructor = this.constructor.name;
+      const clientId = props.clientId;
+      if (!(clientId in acf.blockInstances)) {
+        acf.blockInstances[clientId] = {
+          validation_errors: false,
+          mode: props.mode
+        };
+      }
+      if (!(constructor in acf.blockInstances[clientId])) {
+        acf.blockInstances[clientId][constructor] = {};
+      }
+    }
+    fetch() {
+      // Do nothing.
+    }
+    maybePreload(blockId, clientId, form) {
+      acf.debug('Preload check', blockId, clientId, form);
+
+      // Early return if block is in query loop.
+      if (isBlockInQueryLoop(this.props.clientId)) {
+        acf.debug('Preload failed: Block is in query loop.');
+        return false;
+      }
+      const preloadedBlocks = acf.get('preloadedBlocks');
+
+      // Early return if no preloaded blocks exist.
+      if (!preloadedBlocks || !preloadedBlocks[blockId]) {
+        acf.debug('Preload failed: Block not preloaded.');
+        return false;
+      }
+
+      // Create a copy to avoid mutating the original preloaded data.
+      const preloadedBlock = {
+        ...preloadedBlocks[blockId]
+      };
+
+      // Ensure we only preload the correct block state (form or preview).
+      if (form && !preloadedBlock.form || !form && preloadedBlock.form) {
+        acf.debug('Preload failed: Correct state not preloaded.', form ? 'form' : 'preview');
+        return false;
+      }
+
+      // Replace blockId with clientId in HTML.
+      preloadedBlock.html = preloadedBlock.html.replaceAll(blockId, clientId);
+
+      // Replace blockId in validation errors.
+      if (preloadedBlock.validation && preloadedBlock.validation.errors) {
+        preloadedBlock.validation.errors = preloadedBlock.validation.errors.map(error => {
+          error.input = error.input.replaceAll(blockId, clientId);
+          return error;
+        });
+      }
+
+      // Return preloaded object.
+      acf.debug('Preload successful', preloadedBlock);
+      return preloadedBlock;
+    }
+    loadState() {
+      const client = acf.blockInstances[this.props.clientId] || {};
+      this.state = client[this.constructor.name] || {};
+    }
+    setState(state) {
+      acf.blockInstances[this.props.clientId][this.constructor.name] = {
+        ...this.state,
+        ...state
+      };
+
+      // Update component state if subscribed.
+      // - Allows AJAX callback to update store without modifying state of an unmounted component.
+      if (this.subscribed || acf.get('StrictMode')) {
+        super.setState(state);
+      }
+      acf.debug('SetState', Object.assign({}, this), this.props.clientId, this.constructor.name, Object.assign({}, acf.blockInstances[this.props.clientId][this.constructor.name]));
+    }
+    setHtml(html) {
+      html = html ? html.trim() : '';
+
+      // Bail early if html has not changed.
+      if (html === this.state.html) {
+        return;
+      }
+
+      // Update state.
+      const state = {
+        html
+      };
+      if (this.renderMethod === 'jsx') {
+        state.jsx = acf.parseJSX(html, getBlockVersion(this.props.name));
+
+        // Handle templates which don't contain any valid JSX parsable elements.
+        if (!state.jsx) {
+          console.warn('Your ACF block template contains no valid HTML elements. Appending a empty div to prevent React JS errors.');
+          state.html += '<div></div>';
+          state.jsx = acf.parseJSX(state.html, getBlockVersion(this.props.name));
+        }
+
+        // If we've got an object (as an array) find the first valid React ref.
+        if (Array.isArray(state.jsx)) {
+          let refElement = state.jsx.find(element => React.isValidElement(element));
+          state.ref = refElement.ref;
+        } else {
+          state.ref = state.jsx.ref;
+        }
+        state.$el = $(this.el);
+      } else {
+        state.$el = $(html);
+      }
+      this.setState(state);
+    }
+    setRef(el) {
+      this.el = el;
+    }
+    render() {
+      // Render JSX.
+      if (this.state.jsx) {
+        // If we're a v2+ block, use the jsx element itself as our ref.
+        if (getBlockVersion(this.props.name) > 1) {
+          this.setRef(this.state.jsx);
+          return this.state.jsx;
+        } else {
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+            ref: this.setRef,
+            children: this.state.jsx
+          });
+        }
+      }
+
+      // Return HTML.
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+        ref: this.setRef,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Placeholder, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Spinner, {})
+        })
+      });
+    }
+    shouldComponentUpdate({
+      index
+    }, {
+      html
+    }) {
+      if (index !== this.props.index) {
+        this.componentWillMove();
+      }
+      return html !== this.state.html;
+    }
+    display(context) {
+      // This method is called after setting new HTML and the Component render.
+      // The jQuery render method simply needs to move $el into place.
+      if (this.renderMethod === 'jQuery') {
+        const $el = this.state.$el;
+        const $prevParent = $el.parent();
+        const $thisParent = $(this.el);
+
+        // Move $el into place.
+        // Skip this in StrictMode unless context is 'append' or component is subscribed.
+        if (!(acf.get('StrictMode') && context !== 'append' && !this.subscribed)) {
+          $thisParent.html($el);
+        }
+
+        // Special case for reusable blocks.
+        // Multiple instances of the same reusable block share the same block id.
+        // This causes all instances to share the same state (cool), which unfortunately
+        // pulls $el back and forth between the last rendered reusable block.
+        // This simple fix leaves a "clone" behind :)
+        if ($prevParent.length && $prevParent[0] !== $thisParent[0]) {
+          $prevParent.html($el.clone());
+        }
+      }
+
+      // Lock block if required.
+      if (this.getValidationErrors() && this.isNotNewlyAdded()) {
+        this.lockBlockForSaving();
+      } else {
+        this.unlockBlockForSaving();
+      }
+
+      // Call context specific method.
+      switch (context) {
+        case 'append':
+          this.componentDidAppend();
+          break;
+        case 'remount':
+          this.componentDidRemount();
+          break;
+      }
+    }
+    validate() {
+      // Do nothing.
+    }
+    componentDidMount() {
+      // Fetch on first load.
+      if (this.state.html === undefined) {
+        this.fetch();
+
+        // Or remount existing HTML.
+      } else {
+        this.display('remount');
+      }
+    }
+    componentDidUpdate(prevProps, prevState) {
+      // HTML has changed.
+      this.display('append');
+    }
+    componentDidAppend() {
+      acf.doAction('append', this.state.$el);
+    }
+    componentWillUnmount() {
+      // Only skip unmount action if in StrictMode AND component is not subscribed
+      if (!acf.get('StrictMode') || this.subscribed) {
+        acf.doAction('unmount', this.state.$el);
+      }
+
+      // Unsubscribe this component from state
+      this.subscribed = false;
+    }
+    componentDidRemount() {
+      this.subscribed = true;
+
+      // Use setTimeout to avoid incorrect timing of events.
+      // React will unmount and mount components in DOM order.
+      // This means a new component can be mounted before an old one is unmounted.
+      // ACF shares $el across new/old components which is un-React-like.
+      // This timout ensures that unmounting occurs before remounting.
+      setTimeout(() => {
+        acf.doAction('remount', this.state.$el);
+      });
+    }
+    componentWillMove() {
+      acf.doAction('unmount', this.state.$el);
+      setTimeout(() => {
+        acf.doAction('remount', this.state.$el);
+      });
+    }
+    isNotNewlyAdded() {
+      return acf.blockInstances[this.props.clientId].has_been_deselected || false;
+    }
+    hasShownValidation() {
+      return acf.blockInstances[this.props.clientId].shown_validation || false;
+    }
+    setShownValidation() {
+      acf.blockInstances[this.props.clientId].shown_validation = true;
+    }
+    setValidationErrors(errors) {
+      acf.blockInstances[this.props.clientId].validation_errors = errors;
+    }
+    getValidationErrors() {
+      return acf.blockInstances[this.props.clientId].validation_errors;
+    }
+    getMode() {
+      return acf.blockInstances[this.props.clientId].mode;
+    }
+    lockBlockForSaving() {
+      if (!wp.data.dispatch('core/editor')) return;
+      wp.data.dispatch('core/editor').lockPostSaving('acf/block/' + this.props.clientId);
+    }
+    unlockBlockForSaving() {
+      if (!wp.data.dispatch('core/editor')) return;
+      wp.data.dispatch('core/editor').unlockPostSaving('acf/block/' + this.props.clientId);
+    }
+    displayValidation($formEl) {
+      if (!blockSupportsValidation(this.props.name)) {
+        acf.debug('Block does not support validation');
+        return;
+      }
+      if (!$formEl || $formEl.hasClass('acf-empty-block-fields')) {
+        acf.debug('There is no edit form available to validate.');
+        return;
+      }
+      const errors = this.getValidationErrors();
+      acf.debug('Starting handle validation', Object.assign({}, this), Object.assign({}, $formEl), errors);
+      this.setShownValidation();
+      let validator = acf.getBlockFormValidator($formEl);
+      validator.clearErrors();
+      acf.doAction('blocks/validation/pre_apply', errors);
+      if (errors) {
+        validator.addErrors(errors);
+        validator.showErrors('after');
+        this.lockBlockForSaving();
+      } else {
+        // remove previous error message
+        if (validator.has('notice')) {
+          validator.get('notice').update({
+            type: 'success',
+            text: acf.__('Validation successful'),
+            timeout: 1000
+          });
+          validator.set('notice', null);
+        }
+        this.unlockBlockForSaving();
+      }
+      acf.doAction('blocks/validation/post_apply', errors);
+    }
+  }
+
+  /**
+   * BlockForm Class.
+   *
+   * A react componenet to handle the block form.
+   *
+   * @date	19/2/19
+   * @since	ACF 5.7.12
+   *
+   * @param	string id the block id.
+   * @return	void
+   */
+  class BlockForm extends DynamicHTML {
+    setup(props) {
+      this.id = `BlockForm-${props.clientId}`;
+      super.setup(props);
+    }
+    fetch(validate_only = false, data = false) {
+      // Extract props.
+      const {
+        context,
+        clientId,
+        name
+      } = this.props;
+      let {
+        attributes
+      } = this.props;
+      let query = {
+        form: true
+      };
+      if (validate_only) {
+        query = {
+          validate: true
+        };
+        attributes.data = data;
+      }
+      const hash = createBlockAttributesHash(attributes, context);
+      acf.debug('BlockForm fetch', attributes, query);
+
+      // Try preloaded data first.
+      const preloaded = this.maybePreload(hash, clientId, true);
+      if (preloaded) {
+        this.setHtml(acf.applyFilters('blocks/form/render', preloaded.html, true));
+        if (preloaded.validation) this.setValidationErrors(preloaded.validation.errors);
+        return;
+      }
+      if (!blockSupportsValidation(name)) {
+        query.validate = false;
+      }
+
+      // Request AJAX and update HTML on complete.
+      fetchBlock({
+        attributes,
+        context,
+        clientId,
+        query
+      }).done(({
+        data
+      }) => {
+        acf.debug('fetch block form promise');
+        if (!data) {
+          this.setHtml(`<div class="acf-block-fields acf-fields acf-empty-block-fields">${acf.__('Error loading block form')}</div>`);
+          return;
+        }
+        if (data.form) {
+          this.setHtml(acf.applyFilters('blocks/form/render', data.form.replaceAll(data.clientId, clientId), false));
+        }
+        if (data.validation) this.setValidationErrors(data.validation.errors);
+        if (this.isNotNewlyAdded()) {
+          acf.debug("Block has already shown it's invalid. The form needs to show validation errors");
+          this.validate();
+        }
+      });
+    }
+    validate(loadState = true) {
+      if (loadState) {
+        this.loadState();
+      }
+      acf.debug('BlockForm calling validate with state', Object.assign({}, this));
+      super.displayValidation(this.state.$el);
+    }
+    shouldComponentUpdate(nextProps, nextState) {
+      if (blockSupportsValidation(this.props.name) && this.state.$el && this.isNotNewlyAdded() && !this.hasShownValidation()) {
+        this.validate(false); // Shouldn't update state in shouldComponentUpdate.
+      }
+      return super.shouldComponentUpdate(nextProps, nextState);
+    }
+    componentWillUnmount() {
+      super.componentWillUnmount();
+
+      //TODO: either delete this, or clear validations here (if that's a sensible idea)
+
+      acf.debug('BlockForm Component did unmount');
+    }
+    componentDidRemount() {
+      super.componentDidRemount();
+      acf.debug('BlockForm component did remount');
+      const {
+        $el
+      } = this.state;
+      if (blockSupportsValidation(this.props.name) && this.isNotNewlyAdded()) {
+        acf.debug("Block has already shown it's invalid. The form needs to show validation errors");
+        this.validate();
+      }
+
+      // Make sure our on append events are registered.
+      if ($el.data('acf-events-added') !== true) {
+        this.componentDidAppend();
+      }
+    }
+    componentDidAppend() {
+      super.componentDidAppend();
+      acf.debug('BlockForm component did append');
+
+      // Extract props.
+      const {
+        attributes,
+        setAttributes,
+        clientId,
+        name
+      } = this.props;
+      const thisBlockForm = this;
+      const {
+        $el
+      } = this.state;
+
+      // Callback for updating block data and validation status if we're in an edit only mode.
+      function serializeData(silent = false) {
+        const data = acf.serialize($el, `acf-block_${clientId}`);
+        if (silent) {
+          attributes.data = data;
+        } else {
+          setAttributes({
+            data
+          });
+        }
+        if (blockSupportsValidation(name) && !silent && thisBlockForm.getMode() === 'edit') {
+          acf.debug('No block preview currently available. Need to trigger a validation only fetch.');
+          thisBlockForm.fetch(true, data);
+        }
+      }
+
+      // Add events.
+      let timeout = false;
+      $el.on('change keyup', () => {
+        clearTimeout(timeout);
+        timeout = setTimeout(serializeData, 300);
+      });
+
+      // Log initialization for remount check on the persistent element.
+      $el.data('acf-events-added', true);
+
+      // Ensure newly added block is saved with data.
+      // Do it silently to avoid triggering a preview render.
+      if (!attributes.data) {
+        serializeData(true);
+      }
+    }
+  }
+
+  /**
+   * BlockPreview Class.
+   *
+   * A react componenet to handle the block preview.
+   *
+   * @date	19/2/19
+   * @since	ACF 5.7.12
+   *
+   * @param	string id the block id.
+   * @return	void
+   */
+  class BlockPreview extends DynamicHTML {
+    setup(props) {
+      const blockType = getBlockType(props.name);
+      const contextPostId = acf.isget(this.props, 'context', 'postId');
+      this.id = `BlockPreview-${props.clientId}`;
+      super.setup(props);
+
+      // Apply the contextPostId to the ID if set to stop query loop ID duplication.
+      if (contextPostId) {
+        this.id = `BlockPreview-${props.clientId}-${contextPostId}`;
+      }
+      if (blockType.supports.jsx) {
+        this.renderMethod = 'jsx';
+      }
+    }
+    fetch(args = {}) {
+      const {
+        attributes = this.props.attributes,
+        clientId = this.props.clientId,
+        context = this.props.context,
+        delay = 0
+      } = args;
+      const {
+        name
+      } = this.props;
+
+      // Remember attributes used to fetch HTML.
+      this.setState({
+        prevAttributes: attributes,
+        prevContext: context
+      });
+      const hash = createBlockAttributesHash(attributes, context);
+
+      // Try preloaded data first.
+      let preloaded = this.maybePreload(hash, clientId, false);
+      if (preloaded) {
+        if (getBlockVersion(name) == 1) {
+          preloaded.html = '<div class="acf-block-preview">' + preloaded.html + '</div>';
+        }
+        this.setHtml(acf.applyFilters('blocks/preview/render', preloaded.html, true));
+        if (preloaded.validation) this.setValidationErrors(preloaded.validation.errors);
+        return;
+      }
+      let query = {
+        preview: true
+      };
+      if (!blockSupportsValidation(name)) {
+        query.validate = false;
+      }
+
+      // Request AJAX and update HTML on complete.
+      fetchBlock({
+        attributes,
+        context,
+        clientId,
+        query,
+        delay
+      }).done(({
+        data
+      }) => {
+        if (!data) {
+          this.setHtml(`<div class="acf-block-fields acf-fields acf-empty-block-fields">${acf.__('Error previewing block')}</div>`);
+          return;
+        }
+        let replaceHtml = data.preview.replaceAll(data.clientId, clientId);
+        if (getBlockVersion(name) == 1) {
+          replaceHtml = '<div class="acf-block-preview">' + replaceHtml + '</div>';
+        }
+        acf.debug('fetch block render promise');
+        this.setHtml(acf.applyFilters('blocks/preview/render', replaceHtml, false));
+        if (data.validation) {
+          this.setValidationErrors(data.validation.errors);
+        }
+        if (this.isNotNewlyAdded()) {
+          this.validate();
+        }
+      });
+    }
+    validate() {
+      // Check we've got a block form for this instance.
+      const client = acf.blockInstances[this.props.clientId] || {};
+      const blockFormState = client.BlockForm || false;
+      if (blockFormState) {
+        super.displayValidation(blockFormState.$el);
+      }
+    }
+    componentDidAppend() {
+      super.componentDidAppend();
+      this.renderBlockPreviewEvent();
+    }
+    shouldComponentUpdate(nextProps, nextState) {
+      const nextAttributes = nextProps.attributes;
+      const thisAttributes = this.props.attributes;
+
+      // Update preview if block data has changed.
+      if (!compareObjects(nextAttributes, thisAttributes) || !compareObjects(nextProps.context, this.props.context)) {
+        let delay = 0;
+
+        // Delay fetch when editing className or anchor to simulate consistent logic to custom fields.
+        if (nextAttributes.className !== thisAttributes.className) {
+          delay = 300;
+        }
+        if (nextAttributes.anchor !== thisAttributes.anchor) {
+          delay = 300;
+        }
+        acf.debug('Triggering fetch from block preview shouldComponentUpdate');
+        this.fetch({
+          attributes: nextAttributes,
+          context: nextProps.context,
+          delay
+        });
+      }
+      return super.shouldComponentUpdate(nextProps, nextState);
+    }
+    renderBlockPreviewEvent() {
+      // Extract props.
+      const {
+        attributes,
+        name
+      } = this.props;
+      const {
+        $el,
+        ref
+      } = this.state;
+      var blockElement;
+
+      // Generate action friendly type.
+      const type = attributes.name.replace('acf/', '');
+      if (ref && ref.current) {
+        // We've got a react ref from a JSX container. Use the parent as the blockElement
+        blockElement = $(ref.current).parent();
+      } else if (getBlockVersion(name) == 1) {
+        blockElement = $el;
+      } else {
+        blockElement = $el.parents('.acf-block-preview');
+      }
+
+      // Do action.
+      acf.doAction('render_block_preview', blockElement, attributes);
+      acf.doAction(`render_block_preview/type=${type}`, blockElement, attributes);
+    }
+    componentDidRemount() {
+      super.componentDidRemount();
+      acf.debug('Checking if fetch is required in BlockPreview componentDidRemount', Object.assign({}, this.state.prevAttributes), Object.assign({}, this.props.attributes), Object.assign({}, this.state.prevContext), Object.assign({}, this.props.context));
+
+      // Update preview if data has changed since last render (changing from "edit" to "preview").
+      if (!compareObjects(this.state.prevAttributes, this.props.attributes) || !compareObjects(this.state.prevContext, this.props.context)) {
+        acf.debug('Triggering block preview fetch from componentDidRemount');
+        this.fetch();
+      }
+
+      // Fire the block preview event so blocks can reinit JS elements.
+      // React reusing DOM elements covers any potential race condition from the above fetch.
+      this.renderBlockPreviewEvent();
+    }
+  }
+
+  /**
+   * Initializes ACF Blocks logic and registration.
+   *
+   * @since ACF 5.9.0
+   */
+  function initialize() {
+    // Add support for WordPress versions before 5.2.
+    if (!wp.blockEditor) {
+      wp.blockEditor = wp.editor;
+    }
+
+    // Register block types.
+    const blockTypes = acf.get('blockTypes');
+    if (blockTypes) {
+      // Only register blocks with version <= 2 (v3+ blocks are registered separately).
+      blockTypes.forEach(blockType => {
+        parseInt(blockType.acf_block_version) <= 2 && registerBlockType(blockType);
+      });
+    }
+  }
+
+  // Run the initialize callback during the "prepare" action.
+  // This ensures that all localized data is available and that blocks are registered before the WP editor has been instantiated.
+  acf.addAction('prepare', initialize);
+
+  /**
+   * Returns a valid vertical alignment.
+   *
+   * @date	07/08/2020
+   * @since	ACF 5.9.0
+   *
+   * @param	string align A vertical alignment.
+   * @return	string
+   */
+  function validateVerticalAlignment(align) {
+    const ALIGNMENTS = ['top', 'center', 'bottom'];
+    const DEFAULT = 'top';
+    return ALIGNMENTS.includes(align) ? align : DEFAULT;
+  }
+
+  /**
+   * Returns a valid horizontal alignment.
+   *
+   * @date	07/08/2020
+   * @since	ACF 5.9.0
+   *
+   * @param	string align A horizontal alignment.
+   * @return	string
+   */
+  function validateHorizontalAlignment(align) {
+    const ALIGNMENTS = ['left', 'center', 'right'];
+    const DEFAULT = acf.get('rtl') ? 'right' : 'left';
+    return ALIGNMENTS.includes(align) ? align : DEFAULT;
+  }
+
+  /**
+   * Returns a valid matrix alignment.
+   *
+   * Written for "upgrade-path" compatibility from vertical alignment to matrix alignment.
+   *
+   * @date	07/08/2020
+   * @since	ACF 5.9.0
+   *
+   * @param	string align A matrix alignment.
+   * @return	string
+   */
+  function validateMatrixAlignment(align) {
+    const DEFAULT = 'center center';
+    if (align) {
+      const [y, x] = align.split(' ');
+      return `${validateVerticalAlignment(y)} ${validateHorizontalAlignment(x)}`;
+    }
+    return DEFAULT;
+  }
+
+  /**
+   * A higher order component adding alignContent editing functionality.
+   *
+   * @date	08/07/2020
+   * @since	ACF 5.9.0
+   *
+   * @param	component OriginalBlockEdit The original BlockEdit component.
+   * @param	object blockType The block type settings.
+   * @return	component
+   */
+  function withAlignContentComponent(OriginalBlockEdit, blockType) {
+    // Determine alignment vars
+    let type = blockType.supports.align_content || blockType.supports.alignContent;
+    let AlignmentComponent;
+    let validateAlignment;
+    switch (type) {
+      case 'matrix':
+        AlignmentComponent = BlockAlignmentMatrixControl || BlockAlignmentMatrixToolbar;
+        validateAlignment = validateMatrixAlignment;
+        break;
+      default:
+        AlignmentComponent = BlockVerticalAlignmentToolbar;
+        validateAlignment = validateVerticalAlignment;
+        break;
+    }
+
+    // Ensure alignment component exists.
+    if (AlignmentComponent === undefined) {
+      console.warn(`The "${type}" alignment component was not found.`);
+      return OriginalBlockEdit;
+    }
+
+    // Ensure correct block attribute data is sent in intial preview AJAX request.
+    blockType.alignContent = validateAlignment(blockType.alignContent);
+
+    // Return wrapped component.
+    return class WrappedBlockEdit extends Component {
+      render() {
+        const {
+          attributes,
+          setAttributes
+        } = this.props;
+        const {
+          alignContent
+        } = attributes;
+        function onChangeAlignContent(alignContent) {
+          setAttributes({
+            alignContent: validateAlignment(alignContent)
+          });
+        }
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Fragment, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(BlockControls, {
+            group: "block",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(AlignmentComponent, {
+              label: acf.__('Change content alignment'),
+              value: validateAlignment(alignContent),
+              onChange: onChangeAlignContent
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(OriginalBlockEdit, {
             ...this.props
+          })]
+        });
+      }
+    };
+  }
+
+  /**
+   * A higher order component adding alignText editing functionality.
+   *
+   * @date	08/07/2020
+   * @since	ACF 5.9.0
+   *
+   * @param	component OriginalBlockEdit The original BlockEdit component.
+   * @param	object blockType The block type settings.
+   * @return	component
+   */
+  function withAlignTextComponent(OriginalBlockEdit, blockType) {
+    const validateAlignment = validateHorizontalAlignment;
+
+    // Ensure correct block attribute data is sent in intial preview AJAX request.
+    blockType.alignText = validateAlignment(blockType.alignText);
+
+    // Return wrapped component.
+    return class WrappedBlockEdit extends Component {
+      render() {
+        const {
+          attributes,
+          setAttributes
+        } = this.props;
+        const {
+          alignText
+        } = attributes;
+        function onChangeAlignText(alignText) {
+          setAttributes({
+            alignText: validateAlignment(alignText)
           });
         }
-      }, 'withDefaultAttributes');
-      wp.hooks.addFilter('editor.BlockListBlock', 'acf/with-default-attributes', l);
-    })(jQuery);
-  })();
-})();
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Fragment, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(BlockControls, {
+            group: "block",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(AlignmentToolbar, {
+              value: validateAlignment(alignText),
+              onChange: onChangeAlignText
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(OriginalBlockEdit, {
+            ...this.props
+          })]
+        });
+      }
+    };
+  }
+
+  /**
+   * A higher order component adding full height support.
+   *
+   * @date	19/07/2021
+   * @since	ACF 5.10.0
+   *
+   * @param	component OriginalBlockEdit The original BlockEdit component.
+   * @param	object blockType The block type settings.
+   * @return	component
+   */
+  function withFullHeightComponent(OriginalBlockEdit, blockType) {
+    if (!BlockFullHeightAlignmentControl) return OriginalBlockEdit;
+
+    // Return wrapped component.
+    return class WrappedBlockEdit extends Component {
+      render() {
+        const {
+          attributes,
+          setAttributes
+        } = this.props;
+        const {
+          fullHeight
+        } = attributes;
+        function onToggleFullHeight(fullHeight) {
+          setAttributes({
+            fullHeight
+          });
+        }
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Fragment, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(BlockControls, {
+            group: "block",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(BlockFullHeightAlignmentControl, {
+              isActive: fullHeight,
+              onToggle: onToggleFullHeight
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(OriginalBlockEdit, {
+            ...this.props
+          })]
+        });
+      }
+    };
+  }
+
+  /**
+   * Appends a backwards compatibility attribute for conversion.
+   *
+   * @since	ACF 6.0
+   *
+   * @param	object attributes The block type attributes.
+   * @return	object
+   */
+  function addBackCompatAttribute(attributes, new_attribute, type) {
+    attributes[new_attribute] = {
+      type: type
+    };
+    return attributes;
+  }
+
+  /**
+   * Create a block hash from attributes
+   *
+   * @since ACF 6.0
+   *
+   * @param object attributes The block type attributes.
+   * @param object context The current block context object.
+   * @return string
+   */
+  function createBlockAttributesHash(attributes, context) {
+    attributes['_acf_context'] = sortObjectByKey(context);
+    return md5(JSON.stringify(sortObjectByKey(attributes)));
+  }
+
+  /**
+   * Key sort an object
+   *
+   * @since ACF 6.3.1
+   *
+   * @param object toSort The object to be sorted
+   * @return object
+   */
+  function sortObjectByKey(toSort) {
+    return Object.keys(toSort).sort().reduce((acc, currValue) => {
+      acc[currValue] = toSort[currValue];
+      return acc;
+    }, {});
+  }
+})(jQuery);
 
 /***/ }),
 
@@ -3424,6 +2250,3606 @@
   };
 })(jQuery);
 
+/***/ }),
+
+/***/ "./assets/src/js/pro/blocks-v3/components/block-edit.js":
+/*!**************************************************************!*\
+  !*** ./assets/src/js/pro/blocks-v3/components/block-edit.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   BlockEdit: () => (/* binding */ BlockEdit)
+/* harmony export */ });
+/* harmony import */ var md5__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! md5 */ "./node_modules/md5/md5.js");
+/* harmony import */ var md5__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(md5__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _block_placeholder__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block-placeholder */ "./assets/src/js/pro/blocks-v3/components/block-placeholder.js");
+/* harmony import */ var _block_form__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./block-form */ "./assets/src/js/pro/blocks-v3/components/block-form.js");
+/* harmony import */ var _block_preview__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./block-preview */ "./assets/src/js/pro/blocks-v3/components/block-preview.js");
+/* harmony import */ var _error_boundary__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./error-boundary */ "./assets/src/js/pro/blocks-v3/components/error-boundary.js");
+/* harmony import */ var _block_toolbar_fields__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./block-toolbar-fields */ "./assets/src/js/pro/blocks-v3/components/block-toolbar-fields.js");
+/* harmony import */ var _inline_editing_toolbar__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./inline-editing-toolbar */ "./assets/src/js/pro/blocks-v3/components/inline-editing-toolbar.js");
+/* harmony import */ var _popover_wrapper__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./popover-wrapper */ "./assets/src/js/pro/blocks-v3/components/popover-wrapper.js");
+/* harmony import */ var _utils_post_locking__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../utils/post-locking */ "./assets/src/js/pro/blocks-v3/utils/post-locking.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__);
+/**
+ * BlockEdit Component
+ * Main component for editing ACF blocks in the Gutenberg editor
+ * Handles form fetching, validation, preview rendering, and user interactions
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * InspectorBlockFormContainer
+ * Small helper component that manages the inspector panel container ref
+ * Sets the current form container when the inspector panel is available
+ *
+ * @param {Object} props
+ * @param {React.RefObject} props.inspectorBlockFormRef - Ref to inspector container
+ * @param {Function} props.setCurrentBlockFormContainer - Setter for current container
+ */
+
+const InspectorBlockFormContainer = ({
+  inspectorBlockFormRef,
+  setCurrentBlockFormContainer
+}) => {
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+    setCurrentBlockFormContainer(inspectorBlockFormRef.current);
+  }, []);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+    ref: inspectorBlockFormRef
+  });
+};
+const isBlockEditorInspectorSidebarOpen = () => {
+  const interfaceStore = wp.data.select('core/interface');
+  return typeof interfaceStore?.getActiveComplementaryArea === 'function' && interfaceStore.getActiveComplementaryArea('core') === 'edit-post/block';
+};
+const useBlockEditorInspectorSidebarOpen = () => {
+  const [isOpen, setIsOpen] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)(() => isBlockEditorInspectorSidebarOpen());
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+    if (typeof wp.data.subscribe !== 'function') {
+      return;
+    }
+    const unsubscribe = wp.data.subscribe(() => {
+      setIsOpen(isBlockEditorInspectorSidebarOpen());
+    });
+    return () => {
+      unsubscribe();
+    };
+  }, []);
+  return isOpen;
+};
+
+/**
+ * Main BlockEdit component wrapper
+ * Manages block data fetching and initial setup
+ *
+ * @param {Object} props - Component props
+ * @param {Object} props.attributes - Block attributes
+ * @param {Function} props.setAttributes - Function to update block attributes
+ * @param {Object} props.context - Block context
+ * @param {boolean} props.isSelected - Whether block is currently selected
+ * @param {jQuery} props.$ - jQuery instance
+ * @param {Object} props.blockType - ACF block type configuration
+ * @returns {JSX.Element} - Rendered block editor
+ */
+const BlockEdit = props => {
+  const {
+    attributes,
+    setAttributes,
+    context,
+    isSelected,
+    $,
+    blockType
+  } = props;
+  const shouldValidate = blockType.validate;
+  const {
+    clientId
+  } = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockEditContext)();
+  const preloadedData = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useMemo)(() => {
+    return checkPreloadedData(generateAttributesHash(attributes, context), clientId, isSelected);
+  }, []);
+  const [validationErrors, setValidationErrors] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)(() => {
+    return preloadedData?.validation?.errors ?? null;
+  });
+  const [showValidationErrors, setShowValidationErrors] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)(null);
+  const [theSerializedAcfData, setTheSerializedAcfData] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)(null);
+  const [blockFormHtml, setBlockFormHtml] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)(() => preloadedData?.form ?? '');
+  const [blockPreviewHtml, setBlockPreviewHtml] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)(() => {
+    if (preloadedData?.html) {
+      return acf.applyFilters('blocks/preview/render', preloadedData.html, true);
+    }
+    return 'acf-block-preview-loading';
+  });
+  const [userHasInteractedWithForm, setUserHasInteractedWithForm] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
+  const [hasFetchedOnce, setHasFetchedOnce] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
+  const [ajaxRequest, setAjaxRequest] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)();
+  const [isFetchingBlock, setIsFetchingBlock] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
+
+  // New state for inline editing features
+  const [blockToolbarFields, setBlockToolbarFields] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)([]);
+  const [blockFieldInfo, setBlockFieldInfo] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)(() => preloadedData?.fields ?? null);
+  const [gutenbergIframeOrDocument, setGutenbergIframeOrDocument] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)(() => {
+    const iframe = document.querySelector('[name="editor-canvas"]');
+    return iframe ? iframe.contentDocument || iframe.contentWindow.document : document;
+  });
+  const [currentInlineEditingElement, setCurrentInlineEditingElement] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)(null);
+  const [currentInlineEditingElementUid, setCurrentInlineEditingElementUid] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)(null);
+  const [currentContentEditableElement, setCurrentContentEditableElement] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)(null);
+  const [inlineEditingToolbarHasFocus, setInlineEditingToolbarHasFocus] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
+  const [contentEditableChangeInProgress, setContentEditableChangeInProgress] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
+  const [acfDynamicStylesElement, setAcfDynamicStylesElement] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)(null);
+  const [freezeInlineToolbarDuringReRender, setFreezeInlineToolbarDuringReRender] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)('');
+  const blockEditorInspectorSidebarOpen = useBlockEditorInspectorSidebarOpen();
+  const acfFormRef = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useRef)(null);
+  const previewRef = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useRef)(null);
+  const debounceRef = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useRef)(null);
+
+  // Initialize acf.blockEdit namespace for jsx-parser to use
+  if (!acf.blockEdit) {
+    acf.blockEdit = {};
+  }
+  acf.blockEdit.setCurrentInlineEditingElementUid = setCurrentInlineEditingElementUid;
+  acf.blockEdit.setCurrentInlineEditingElement = setCurrentInlineEditingElement;
+  acf.blockEdit.setCurrentContentEditableElement = setCurrentContentEditableElement;
+  acf.blockEdit.getBlockFieldInfo = () => blockFieldInfo;
+  const attributesWithoutError = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useMemo)(() => {
+    const {
+      hasAcfError,
+      ...rest
+    } = attributes;
+    return rest;
+  }, [attributes]);
+
+  /**
+   * Fetches block data from server (form HTML, preview HTML, validation)
+   *
+   * @param {Object} params - Fetch parameters
+   * @param {Object} params.theAttributes - Block attributes to fetch for
+   * @param {string} params.theClientId - Block client ID
+   * @param {Object} params.theContext - Block context
+   * @param {boolean} params.isSelected - Whether block is selected
+   */
+  function fetchBlockData({
+    theAttributes,
+    theClientId,
+    theContext,
+    isSelected
+  }) {
+    if (!theAttributes) return;
+
+    // NEW: Abort any pending request
+    if (ajaxRequest) {
+      ajaxRequest.abort();
+    }
+
+    // Generate hash of attributes for preload cache lookup
+    const attributesHash = generateAttributesHash(theAttributes, context);
+
+    // Check for preloaded block data
+    const preloadedData = checkPreloadedData(attributesHash, theClientId, isSelected);
+    if (preloadedData) {
+      handlePreloadedData(preloadedData);
+      (0,_utils_post_locking__WEBPACK_IMPORTED_MODULE_11__.unlockPostSavingByName)('acf-fetching-block');
+      setIsFetchingBlock(false);
+      return;
+    }
+
+    // Prepare query options
+    const queryOptions = {
+      preview: true,
+      form: true,
+      validate: true
+    };
+    if (!blockFormHtml) {
+      queryOptions.validate = false;
+    }
+    if (!shouldValidate) {
+      queryOptions.validate = false;
+    }
+    const blockData = {
+      ...theAttributes
+    };
+    (0,_utils_post_locking__WEBPACK_IMPORTED_MODULE_11__.lockPostSavingByName)('acf-fetching-block');
+    setIsFetchingBlock(true);
+
+    // Fetch block data via AJAX
+    const request = $.ajax({
+      url: acf.get('ajaxurl'),
+      dataType: 'json',
+      type: 'post',
+      cache: false,
+      data: acf.prepareForAjax({
+        action: 'acf/ajax/fetch-block',
+        block: JSON.stringify(blockData),
+        clientId: theClientId,
+        context: JSON.stringify(theContext),
+        query: queryOptions
+      })
+    }).done(response => {
+      (0,_utils_post_locking__WEBPACK_IMPORTED_MODULE_11__.unlockPostSavingByName)('acf-fetching-block');
+      setIsFetchingBlock(false);
+      setBlockFormHtml(response.data.form);
+
+      // Handle new field metadata for inline editing
+      if (response.data.fields) {
+        setBlockFieldInfo(response.data.fields);
+      }
+
+      // Handle block toolbar fields configuration
+      if (response.data.blockToolbarFields) {
+        setBlockToolbarFields(response.data.blockToolbarFields);
+      }
+      if (response.data.preview) {
+        setBlockPreviewHtml(acf.applyFilters('blocks/preview/render', response.data.preview, false));
+      } else {
+        setBlockPreviewHtml(acf.applyFilters('blocks/preview/render', 'acf-block-preview-no-html', false));
+      }
+      if (response.data?.validation && !response.data.validation.valid && response.data.validation.errors) {
+        setValidationErrors(response.data.validation.errors);
+      } else {
+        setValidationErrors(null);
+      }
+      setHasFetchedOnce(true);
+    }).fail(function () {
+      setHasFetchedOnce(true);
+      (0,_utils_post_locking__WEBPACK_IMPORTED_MODULE_11__.unlockPostSavingByName)('acf-fetching-block');
+      setIsFetchingBlock(false);
+    });
+    setAjaxRequest(request);
+  }
+
+  /**
+   * Generates a hash of block attributes for caching
+   *
+   * @param {Object} attrs - Block attributes
+   * @param {Object} ctx - Block context
+   * @returns {string} - MD5 hash of serialized attributes
+   */
+  function generateAttributesHash(attrs, ctx) {
+    delete attrs.hasAcfError;
+    attrs._acf_context = (0,_utils_post_locking__WEBPACK_IMPORTED_MODULE_11__.sortObjectKeys)(ctx);
+    return md5__WEBPACK_IMPORTED_MODULE_0___default()(JSON.stringify((0,_utils_post_locking__WEBPACK_IMPORTED_MODULE_11__.sortObjectKeys)(attrs)));
+  }
+
+  /**
+   * Checks if block data was preloaded and returns it
+   *
+   * @param {string} hash - Attributes hash
+   * @param {string} clientId - Block client ID
+   * @param {boolean} selected - Whether block is selected
+   * @returns {Object|boolean} - Preloaded data or false
+   */
+  function checkPreloadedData(hash, clientId, selected) {
+    if (selected) return false;
+    acf.debug('Preload check', hash, clientId);
+
+    // Don't preload blocks inside Query Loop blocks
+    if (isInQueryLoop(clientId)) {
+      return false;
+    }
+    const preloadedBlocks = acf.get('preloadedBlocks');
+    if (!preloadedBlocks || !preloadedBlocks[hash]) {
+      acf.debug('Preload failed: not preloaded.');
+      return false;
+    }
+    const data = preloadedBlocks[hash];
+
+    // Replace placeholder client ID with actual client ID
+    data.html = data.html.replaceAll(hash, clientId);
+    data.form = data.form.replaceAll(hash, clientId);
+    if (data?.validation && data?.validation.errors) {
+      data.validation.errors = data.validation.errors.map(error => {
+        error.input = error.input.replaceAll(hash, clientId);
+        return error;
+      });
+    }
+    acf.debug('Preload successful', data);
+    return data;
+  }
+
+  /**
+   * Checks if block is inside a Query Loop block
+   *
+   * @param {string} clientId - Block client ID
+   * @returns {boolean} - True if inside Query Loop
+   */
+  function isInQueryLoop(clientId) {
+    const parentIds = wp.data.select('core/block-editor').getBlockParents(clientId);
+    return wp.data.select('core/block-editor').getBlocksByClientId(parentIds).filter(block => block.name === 'core/query').length > 0;
+  }
+
+  /**
+   * Handles preloaded block data
+   *
+   * @param {Object} data - Preloaded data
+   */
+  function handlePreloadedData(data) {
+    if (data.form) {
+      setBlockFormHtml(data.form);
+    }
+    if (data.html) {
+      setBlockPreviewHtml(acf.applyFilters('blocks/preview/render', data.html, true));
+    } else {
+      setBlockPreviewHtml(acf.applyFilters('blocks/preview/render', 'acf-block-preview-no-html', true));
+    }
+
+    // Handle block toolbar fields from preloaded data
+    if (data?.blockToolbarFields) {
+      setBlockToolbarFields(data.blockToolbarFields);
+    }
+
+    // Handle field info from preloaded data
+    if (data?.fields) {
+      setBlockFieldInfo(data.fields);
+    }
+    if (data?.validation && !data.validation.valid && data.validation.errors) {
+      setValidationErrors(data.validation.errors);
+    } else {
+      setValidationErrors(null);
+    }
+  }
+
+  // Initial fetch on mount and when selection changes
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+    function trackUserInteraction() {
+      setUserHasInteractedWithForm(true);
+      window.removeEventListener('click', trackUserInteraction);
+      window.removeEventListener('keydown', trackUserInteraction);
+    }
+    window.addEventListener('click', trackUserInteraction);
+    window.addEventListener('keydown', trackUserInteraction);
+    return () => {
+      window.removeEventListener('click', trackUserInteraction);
+      window.removeEventListener('keydown', trackUserInteraction);
+    };
+  }, []);
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+    if (isSelected) {
+      return;
+    }
+    setCurrentInlineEditingElementUid(null);
+    setCurrentInlineEditingElement(null);
+    setCurrentContentEditableElement(null);
+  }, [isSelected]);
+
+  // Update hasAcfError attribute based on validation errors
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+    setAttributes(validationErrors ? {
+      hasAcfError: true
+    } : {
+      hasAcfError: false
+    });
+  }, [validationErrors, setAttributes]);
+
+  // Listen for validation error events from other blocks
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+    const handleErrorEvent = event => {
+      // Only handle if this event is for this specific block
+      if (clientId === event.detail.acfBlocksWithValidationErrors) {
+        (0,_utils_post_locking__WEBPACK_IMPORTED_MODULE_11__.lockPostSaving)(clientId);
+        setShowValidationErrors(true);
+        setCurrentInlineEditingElementUid(null);
+      }
+    };
+    document.addEventListener('acf/block/has-error', handleErrorEvent);
+    return () => {
+      document.removeEventListener('acf/block/has-error', handleErrorEvent);
+    };
+  }, []);
+
+  // Cleanup: unlock post saving on unmount
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => () => {
+    (0,_utils_post_locking__WEBPACK_IMPORTED_MODULE_11__.unlockPostSaving)(props.clientId);
+  }, []);
+
+  // Handle form data changes with debouncing
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+    clearTimeout(debounceRef.current);
+    (0,_utils_post_locking__WEBPACK_IMPORTED_MODULE_11__.lockPostSavingByName)('acf-fetching-block');
+    setIsFetchingBlock(true);
+    debounceRef.current = setTimeout(() => {
+      const parsedData = JSON.parse(theSerializedAcfData);
+      if (!parsedData) {
+        return void fetchBlockData({
+          theAttributes: attributesWithoutError,
+          theClientId: clientId,
+          theContext: context,
+          isSelected: isSelected
+        });
+      }
+      if (theSerializedAcfData === JSON.stringify(attributesWithoutError.data)) {
+        return void fetchBlockData({
+          theAttributes: attributesWithoutError,
+          theClientId: clientId,
+          theContext: context,
+          isSelected: isSelected
+        });
+      }
+
+      // Use original attributes (with hasAcfError) when updating
+      const updatedAttributes = {
+        ...attributes,
+        data: {
+          ...parsedData
+        }
+      };
+      setAttributes(updatedAttributes);
+    }, 200);
+
+    // Cleanup function to unlock post saving
+    return () => {
+      clearTimeout(debounceRef.current);
+      (0,_utils_post_locking__WEBPACK_IMPORTED_MODULE_11__.unlockPostSavingByName)('acf-fetching-block');
+      setIsFetchingBlock(false);
+    };
+  }, [theSerializedAcfData, attributesWithoutError]);
+
+  // Trigger ACF actions when preview is rendered
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+    if (previewRef.current && blockPreviewHtml) {
+      const blockName = attributes.name.replace('acf/', '');
+      const $preview = $(previewRef.current);
+      acf.doAction('render_block_preview', $preview, attributes);
+      acf.doAction(`render_block_preview/type=${blockName}`, $preview, attributes);
+
+      // If there's an active inline editing element, re-initialize it after preview renders
+      if (currentInlineEditingElementUid) {
+        const inlineElement = previewRef?.current.querySelector(`[data-acf-inline-fields-uid="${currentInlineEditingElementUid}"]`);
+        setCurrentInlineEditingElement(inlineElement);
+      }
+    }
+  }, [blockPreviewHtml]);
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+    if (currentContentEditableElement && !inlineEditingToolbarHasFocus || !currentInlineEditingElement) {
+      return;
+    }
+    const toolbar = document.querySelector('.acf-inline-editing-toolbar');
+    if (toolbar?.style?.cssText) {
+      setFreezeInlineToolbarDuringReRender(toolbar.style.cssText.replaceAll(';', '!important;'));
+    }
+    setTimeout(() => {
+      setCurrentInlineEditingElement(currentInlineEditingElement);
+      setTimeout(() => {
+        setFreezeInlineToolbarDuringReRender(null);
+      }, 0);
+    }, 0);
+  }, [currentInlineEditingElement]);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(BlockEditInner, {
+    ...props,
+    validationErrors: validationErrors,
+    showValidationErrors: showValidationErrors,
+    theSerializedAcfData: theSerializedAcfData,
+    setTheSerializedAcfData: setTheSerializedAcfData,
+    acfFormRef: acfFormRef,
+    blockFormHtml: blockFormHtml,
+    blockPreviewHtml: blockPreviewHtml,
+    blockFetcher: fetchBlockData,
+    userHasInteractedWithForm: userHasInteractedWithForm,
+    setUserHasInteractedWithForm: setUserHasInteractedWithForm,
+    previewRef: previewRef,
+    hasFetchedOnce: hasFetchedOnce,
+    blockToolbarFields: blockToolbarFields,
+    blockFieldInfo: blockFieldInfo,
+    gutenbergIframeOrDocument: gutenbergIframeOrDocument,
+    setGutenbergIframeOrDocument: setGutenbergIframeOrDocument,
+    currentInlineEditingElement: currentInlineEditingElement,
+    setCurrentInlineEditingElement: setCurrentInlineEditingElement,
+    currentInlineEditingElementUid: currentInlineEditingElementUid,
+    setCurrentInlineEditingElementUid: setCurrentInlineEditingElementUid,
+    currentContentEditableElement: currentContentEditableElement,
+    setCurrentContentEditableElement: setCurrentContentEditableElement,
+    inlineEditingToolbarHasFocus: inlineEditingToolbarHasFocus,
+    setInlineEditingToolbarHasFocus: setInlineEditingToolbarHasFocus,
+    contentEditableChangeInProgress: contentEditableChangeInProgress,
+    setContentEditableChangeInProgress: setContentEditableChangeInProgress,
+    acfDynamicStylesElement: acfDynamicStylesElement,
+    setAcfDynamicStylesElement: setAcfDynamicStylesElement,
+    blockEditorInspectorSidebarOpen: blockEditorInspectorSidebarOpen,
+    freezeInlineToolbarDuringReRender: freezeInlineToolbarDuringReRender,
+    isFetchingBlock: isFetchingBlock
+  });
+};
+
+/**
+ * Inner component that handles rendering and portals
+ * Separated to manage refs and portal targets properly
+ */
+function BlockEditInner(props) {
+  const {
+    blockType,
+    $,
+    isSelected,
+    attributes,
+    context,
+    validationErrors,
+    showValidationErrors,
+    theSerializedAcfData,
+    setTheSerializedAcfData,
+    acfFormRef,
+    blockFormHtml,
+    blockPreviewHtml,
+    blockFetcher,
+    userHasInteractedWithForm,
+    setUserHasInteractedWithForm,
+    previewRef,
+    hasFetchedOnce,
+    blockToolbarFields,
+    blockFieldInfo,
+    gutenbergIframeOrDocument,
+    setGutenbergIframeOrDocument,
+    currentInlineEditingElement,
+    setCurrentInlineEditingElement,
+    currentInlineEditingElementUid,
+    setCurrentInlineEditingElementUid,
+    currentContentEditableElement,
+    setCurrentContentEditableElement,
+    inlineEditingToolbarHasFocus,
+    setInlineEditingToolbarHasFocus,
+    contentEditableChangeInProgress,
+    setContentEditableChangeInProgress,
+    acfDynamicStylesElement,
+    setAcfDynamicStylesElement,
+    blockEditorInspectorSidebarOpen,
+    freezeInlineToolbarDuringReRender,
+    isFetchingBlock
+  } = props;
+  const {
+    clientId
+  } = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockEditContext)();
+  const inspectorControlsRef = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useRef)();
+  const [blockFormModalOpen, setBlockFormModalOpen] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
+  const modalFormContainerRef = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useRef)();
+  const [currentFormContainer, setCurrentFormContainer] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)();
+  const [canRenderForm, setCanRenderForm] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
+  const [invisibleBlockFormContainer, setInvisibleBlockFormContainer] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useState)();
+
+  // Render counter for debugging
+  const renderCount = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useRef)(0);
+  renderCount.current++;
+
+  // Detect Gutenberg iframe or document
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+    const gutenbergIframe = document.querySelector('iframe[name="editor-canvas"]');
+    if (gutenbergIframe?.contentDocument) {
+      setGutenbergIframeOrDocument(gutenbergIframe.contentDocument);
+    } else {
+      setGutenbergIframeOrDocument(document);
+    }
+  }, []);
+
+  // Create/get dynamic styles element for inline field highlighting
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+    if (!gutenbergIframeOrDocument) return;
+    let styleElement = gutenbergIframeOrDocument.getElementById('acf-dynamic-styles');
+    if (!styleElement) {
+      styleElement = document.createElement('style');
+      styleElement.id = 'acf-dynamic-styles';
+      gutenbergIframeOrDocument.head.appendChild(styleElement);
+    }
+    setAcfDynamicStylesElement(styleElement);
+  }, [gutenbergIframeOrDocument]);
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+    let invisibleContainer = document.getElementById('invisible-acf-form-element');
+    if (!invisibleContainer) {
+      invisibleContainer = document.createElement('div');
+      invisibleContainer.id = 'invisible-acf-form-element';
+      invisibleContainer.style.display = 'none';
+      document.body.appendChild(invisibleContainer);
+    }
+    setInvisibleBlockFormContainer(invisibleContainer);
+  }, [blockEditorInspectorSidebarOpen]);
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+    if (blockFormModalOpen && modalFormContainerRef?.current) {
+      setCurrentFormContainer(modalFormContainerRef.current);
+      return;
+    }
+    setCurrentFormContainer(blockEditorInspectorSidebarOpen ? inspectorControlsRef.current : invisibleBlockFormContainer);
+  }, [blockFormModalOpen, modalFormContainerRef]);
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+    if (blockEditorInspectorSidebarOpen) {
+      if (!blockFormModalOpen) {
+        setCurrentFormContainer(inspectorControlsRef.current);
+      }
+      return;
+    }
+    setCurrentFormContainer(invisibleBlockFormContainer);
+  }, [blockEditorInspectorSidebarOpen, invisibleBlockFormContainer, blockFormModalOpen]);
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+    if (isSelected && inspectorControlsRef?.current) {
+      setCanRenderForm(true);
+    } else if (isSelected && !inspectorControlsRef?.current) {
+      setTimeout(() => {
+        setCanRenderForm(true);
+      }, 1);
+    }
+  }, [isSelected, inspectorControlsRef, inspectorControlsRef.current]);
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+    if (isSelected && validationErrors && showValidationErrors && blockType?.hide_fields_in_sidebar) {
+      setBlockFormModalOpen(true);
+    }
+  }, [isSelected, showValidationErrors, validationErrors, blockType]);
+
+  // Build block CSS classes
+  let blockClasses = 'acf-block-component acf-block-body';
+  blockClasses += ' acf-block-preview';
+  if (validationErrors && showValidationErrors) {
+    blockClasses += ' acf-block-has-validation-error';
+  }
+  const blockProps = {
+    ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)({
+      className: blockClasses,
+      ref: previewRef
+    })
+  };
+
+  // Update field value from contentEditable changes (matches 6.7.0.2)
+  const updateFieldValueFromContentEditable = (content, fieldSlug) => {
+    if (!acfFormRef?.current || !fieldSlug) return;
+    const fieldWrapper = acfFormRef.current.querySelector(`[data-name=${fieldSlug}]`);
+    if (!fieldWrapper) return;
+    const fieldKey = fieldWrapper.attributes.getNamedItem('data-key')?.value;
+    if (!fieldKey) return;
+    const fieldInput = acfFormRef.current.querySelector(`[name="acf-block_${clientId}[${fieldKey}]"`);
+    if (!fieldInput) return;
+
+    // Update field value and trigger serialization (debouncing happens in useEffect)
+    if (content) {
+      setUserHasInteractedWithForm(true);
+    }
+    setContentEditableChangeInProgress(false);
+    fieldInput.value = content;
+    const $form = $(acfFormRef?.current);
+    const serializedData = acf.serialize($form, `acf-block_${clientId}`);
+    if (serializedData) {
+      setTheSerializedAcfData(JSON.stringify(serializedData));
+    } else {
+      setUserHasInteractedWithForm(false);
+    }
+  };
+
+  // Watch for changes in contentEditable fields using MutationObserver
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+    if (!gutenbergIframeOrDocument || !blockPreviewHtml) return;
+    const observer = new MutationObserver(mutations => {
+      for (const mutation of mutations) {
+        // Handle text content changes
+        if (mutation.type === 'characterData') {
+          let element = mutation.target.parentNode;
+          const blockElement = element?.closest('[data-block]');
+          const blockId = blockElement?.getAttribute('data-block');
+          if (!element || !blockElement || blockId !== clientId) return;
+
+          // Find the contentEditable element
+          if (element && !element.hasAttribute('data-acf-inline-contenteditable')) {
+            element = element.closest('[data-acf-inline-contenteditable]');
+          }
+          if (element && element.hasAttribute('data-acf-inline-contenteditable')) {
+            const fieldSlug = element.attributes.getNamedItem('data-acf-inline-contenteditable-field-slug').value;
+            let content = element.innerHTML.trim();
+            if (!content) content = '';
+            updateFieldValueFromContentEditable(content, fieldSlug);
+          }
+        }
+        // Handle attribute or child list changes
+        else {
+          const element = mutation.target.closest('[data-acf-inline-contenteditable]');
+          const blockElement = element?.closest('[data-block]');
+          if (!element || !blockElement || blockElement.getAttribute('data-block') !== clientId) return;
+          if (element) {
+            const fieldSlug = element.attributes.getNamedItem('data-acf-inline-contenteditable-field-slug').value;
+            let content = element.innerHTML.trim();
+
+            // Handle empty content - remove empty BR tags
+            if (!content || element.textContent.trim().length === 0 && element.children.length === 1 && element.firstElementChild && element.firstElementChild.nodeName === 'BR') {
+              element.innerHTML = '';
+              content = '';
+            }
+            updateFieldValueFromContentEditable(content, fieldSlug);
+          }
+        }
+      }
+    });
+
+    // Observe the gutenberg iframe/document for changes
+    observer.observe(gutenbergIframeOrDocument, {
+      attributes: true,
+      childList: true,
+      subtree: true,
+      characterData: true,
+      attributeFilter: ['data-acf-inline-contenteditable']
+    });
+
+    // Cleanup
+    return () => {
+      observer.disconnect();
+    };
+  }, [blockPreviewHtml, gutenbergIframeOrDocument]);
+
+  // Callback when a new inline editing element is selected
+  const handleNewInlineEditingElementSelected = uid => {
+    setTimeout(() => {
+      setCurrentInlineEditingElementUid(uid);
+      const element = previewRef?.current.querySelector(`[data-acf-inline-fields-uid="${uid}"]`);
+      setCurrentInlineEditingElement(element);
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest'
+        });
+      }
+    }, 1);
+  };
+
+  // Callback when a new contentEditable element is selected
+  const handleNewContentEditableElementSelected = fieldSlug => {
+    if (fieldSlug) {
+      const element = previewRef?.current.querySelector(`[data-acf-inline-contenteditable-field-slug="${fieldSlug}"]`);
+      setCurrentContentEditableElement(element);
+    } else {
+      setCurrentContentEditableElement(null);
+    }
+  };
+  let portalTarget = blockEditorInspectorSidebarOpen && inspectorControlsRef?.current ? inspectorControlsRef.current : invisibleBlockFormContainer;
+  if (currentFormContainer) {
+    portalTarget = currentFormContainer;
+  }
+
+  // Determine inline editing toolbar anchor (matches 6.7.0.2 logic)
+  let inlineEditingToolbarAnchor = null;
+  if (currentInlineEditingElement && currentContentEditableElement) {
+    inlineEditingToolbarAnchor = currentInlineEditingElement;
+  } else if (currentInlineEditingElement && !currentContentEditableElement) {
+    inlineEditingToolbarAnchor = currentInlineEditingElement;
+  } else if (!currentInlineEditingElement && currentContentEditableElement) {
+    inlineEditingToolbarAnchor = currentContentEditableElement;
+  }
+  // Ensure anchor is connected to DOM
+  if (inlineEditingToolbarAnchor && !inlineEditingToolbarAnchor.isConnected) {
+    inlineEditingToolbarAnchor = null;
+  }
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_block_toolbar_fields__WEBPACK_IMPORTED_MODULE_8__.BlockToolbarFields, {
+      blockToolbarFields: blockToolbarFields,
+      blockFieldInfo: blockFieldInfo,
+      setCurrentBlockFormContainer: setCurrentFormContainer,
+      gutenbergIframeOrDocument: gutenbergIframeOrDocument,
+      setBlockFormModalOpen: setBlockFormModalOpen,
+      blockFormModalOpen: blockFormModalOpen,
+      invisibleBlockFormContainer: invisibleBlockFormContainer,
+      currentInlineEditingElement: currentInlineEditingElement,
+      setCurrentInlineEditingElement: setCurrentInlineEditingElement,
+      currentInlineEditingElementUid: currentInlineEditingElementUid,
+      hideExpandedEditorBtnInToolbar: blockType?.expanded_editor_buttons === false || Array.isArray(blockType?.expanded_editor_buttons) && !blockType?.expanded_editor_buttons.includes('toolbar') || !blockFieldInfo || blockFieldInfo?.length === 0,
+      onNewInlineEditingElementSelected: handleNewInlineEditingElementSelected
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, {
+      children: [blockFieldInfo?.length > 0 && (blockType?.expanded_editor_buttons === true || Array.isArray(blockType?.expanded_editor_buttons) && blockType?.expanded_editor_buttons.includes('sidebar')) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Button, {
+          className: "acf-blocks-open-expanded-editor-btn",
+          variant: "secondary",
+          onClick: () => {
+            setBlockFormModalOpen(true);
+          },
+          icon: "edit",
+          children: blockType?.expanded_editor_button_text || acf.__('Open Expanded Editor')
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(InspectorBlockFormContainer, {
+        inspectorBlockFormRef: inspectorControlsRef,
+        setCurrentBlockFormContainer: setCurrentFormContainer
+      })]
+    }), portalTarget && canRenderForm && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createPortal)(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.Fragment, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_block_form__WEBPACK_IMPORTED_MODULE_5__.BlockForm, {
+        $: $,
+        clientId: clientId,
+        blockFormHtml: blockFormHtml,
+        onChange: function ($form) {
+          const serializedData = acf.serialize($form, `acf-block_${clientId}`);
+          if (serializedData) {
+            setTheSerializedAcfData(JSON.stringify(serializedData));
+          }
+        },
+        validationErrors: validationErrors,
+        showValidationErrors: showValidationErrors,
+        acfFormRef: acfFormRef,
+        userHasInteractedWithForm: userHasInteractedWithForm,
+        attributes: attributes,
+        hideFieldsInSidebar: blockType?.auto_inline_editing && blockType?.hide_fields_in_sidebar === undefined && inspectorControlsRef.current === currentFormContainer || blockType?.hide_fields_in_sidebar && inspectorControlsRef.current === currentFormContainer
+      }), freezeInlineToolbarDuringReRender && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("style", {
+        children: `.acf-inline-editing-toolbar{${freezeInlineToolbarDuringReRender}}`
+      })]
+    }), portalTarget), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.Fragment, {
+      children: blockFormModalOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Modal, {
+        className: "acf-block-form-modal",
+        overlayClassName: acf.applyFilters('blocks/expanded_editor_overlay_class', 'acf-expanded-editor-panel-overlay'),
+        isFullScreen: true,
+        title: blockType.title,
+        onRequestClose: () => {
+          if (!isFetchingBlock || validationErrors) {
+            setBlockFormModalOpen(false);
+          }
+        },
+        shouldCloseOnEsc: !isFetchingBlock || validationErrors,
+        isDismissible: false,
+        headerActions: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Button, {
+          variant: "primary",
+          disabled: isFetchingBlock && !validationErrors,
+          isBusy: isFetchingBlock,
+          onClick: () => {
+            setCurrentFormContainer(null);
+            setBlockFormModalOpen(false);
+          },
+          children: acf.__('Done')
+        }, "done")],
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("div", {
+          className: "acf-modal-block-form-container",
+          ref: modalFormContainerRef
+        })
+      })
+    }), inlineEditingToolbarAnchor && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_popover_wrapper__WEBPACK_IMPORTED_MODULE_10__.PopoverWrapper, {
+      focusOnMount: (() => {
+        const activeElement = document.activeElement;
+        return activeElement && activeElement.isContentEditable, false;
+      })(),
+      variant: "unstyled",
+      anchor: inlineEditingToolbarAnchor,
+      className: "acf-inline-editing-toolbar block-editor-block-list__block-popover",
+      placement: "top-start",
+      onClose: event => {
+        // Don't close if clicking toolbar button
+        if (event.key !== 'Escape' && event.target.closest('.acf-toolbar-button')) {
+          return false;
+        }
+
+        // Handle Escape key
+        if (event.key === 'Escape') {
+          return !document.querySelector('.acf-inline-fields-popover-inner') && !currentContentEditableElement && (currentInlineEditingElement && currentInlineEditingElement.focus(), setCurrentInlineEditingElementUid(null), setCurrentContentEditableElement(null), true);
+        }
+
+        // Don't close if clicking on contenteditable element
+        if (event.target.getAttribute('data-acf-inline-contenteditable')) {
+          return false;
+        }
+
+        // Don't close if clicking inside popover or modal
+        const inlineFieldsPopover = event.target.closest('.acf-inline-fields-popover-inner');
+        const modal = event.target.closest('.components-modal__content');
+        return inlineFieldsPopover || modal || (setCurrentInlineEditingElementUid(null), setCurrentContentEditableElement(null)), true;
+      },
+      gutenbergIframeOrDocument: gutenbergIframeOrDocument,
+      hidePrimaryBlockToolbar: true,
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_inline_editing_toolbar__WEBPACK_IMPORTED_MODULE_9__.InlineEditingToolbar, {
+        blockIcon: blockType.icon,
+        blockFieldInfo: blockFieldInfo,
+        acfFormRef: acfFormRef,
+        setInlineEditingToolbarHasFocus: setInlineEditingToolbarHasFocus,
+        currentContentEditableElement: currentContentEditableElement,
+        currentInlineEditingElement: currentInlineEditingElement,
+        currentInlineEditingElementUid: currentInlineEditingElementUid,
+        gutenbergIframeOrDocument: gutenbergIframeOrDocument,
+        setCurrentBlockFormContainer: setCurrentFormContainer,
+        contentEditableChangeInProgress: contentEditableChangeInProgress
+      }, currentInlineEditingElementUid)
+    }, currentContentEditableElement), currentInlineEditingElementUid && acfDynamicStylesElement && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createPortal)(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)("style", {
+      children: `
+				[data-acf-inline-fields-uid="${currentInlineEditingElementUid}"]{
+					outline: 2px solid var( --wp-admin-theme-color );
+					outline-offset: 2px;
+				}
+			`
+    }), acfDynamicStylesElement), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.Fragment, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_block_preview__WEBPACK_IMPORTED_MODULE_6__.BlockPreview, {
+        blockPreviewHtml: blockPreviewHtml,
+        blockProps: blockProps,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxs)(_error_boundary__WEBPACK_IMPORTED_MODULE_7__.ErrorBoundary, {
+          fallbackRender: ({
+            error
+          }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_error_boundary__WEBPACK_IMPORTED_MODULE_7__.BlockPreviewErrorFallback, {
+            blockLabel: blockType?.title || acf.__('ACF Block'),
+            setBlockFormModalOpen: setBlockFormModalOpen,
+            error: error
+          }),
+          children: [blockPreviewHtml === 'acf-block-preview-no-html' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_block_placeholder__WEBPACK_IMPORTED_MODULE_4__.BlockPlaceholder, {
+            setBlockFormModalOpen: setBlockFormModalOpen,
+            blockLabel: blockType.title
+          }) : null, blockPreviewHtml === 'acf-block-preview-loading' && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Placeholder, {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Spinner, {})
+          }), blockPreviewHtml !== 'acf-block-preview-loading' && blockPreviewHtml !== 'acf-block-preview-no-html' && blockPreviewHtml && acf.parseJSX(blockPreviewHtml, handleNewInlineEditingElementSelected, updateFieldValueFromContentEditable, handleNewContentEditableElementSelected, blockFieldInfo, $)]
+        })
+      })
+    })]
+  });
+}
+
+/***/ }),
+
+/***/ "./assets/src/js/pro/blocks-v3/components/block-form.js":
+/*!**************************************************************!*\
+  !*** ./assets/src/js/pro/blocks-v3/components/block-form.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   BlockForm: () => (/* binding */ BlockForm)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _utils_post_locking__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/post-locking */ "./assets/src/js/pro/blocks-v3/utils/post-locking.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
+/**
+ * BlockForm Component
+ * Renders the ACF fields form inside a block and handles form changes, validation, and remounting
+ */
+
+
+
+
+/**
+ * BlockForm component
+ * Manages ACF field forms within Gutenberg blocks, including validation and change detection
+ *
+ * @param {Object} props - Component props
+ * @param {jQuery} props.$ - jQuery instance
+ * @param {string} props.clientId - Block client ID
+ * @param {string} props.blockFormHtml - HTML markup for the ACF form
+ * @param {Function} props.onMount - Callback when the form mounts
+ * @param {Function} props.onChange - Callback when form data changes
+ * @param {Array} props.validationErrors - Array of validation error objects
+ * @param {boolean} props.showValidationErrors - Whether to display validation errors
+ * @param {React.RefObject} props.acfFormRef - Ref to the form container element
+ * @param {boolean} props.userHasInteractedWithForm - Whether user has interacted with the form
+ * @param {Object} props.attributes - Block attributes
+ * @returns {JSX.Element} - Rendered form component
+ */
+
+const BlockForm = ({
+  $,
+  clientId,
+  blockFormHtml,
+  onMount,
+  onChange,
+  validationErrors,
+  showValidationErrors,
+  acfFormRef,
+  userHasInteractedWithForm,
+  attributes,
+  hideFieldsInSidebar
+}) => {
+  const [formHtml, setFormHtml] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(blockFormHtml);
+  const [pendingChange, setPendingChange] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const debounceTimer = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  const [userInteracted, setUserInteracted] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [hasRemounted, setHasRemounted] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+
+  // Trigger onChange when there's a pending change
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    if (pendingChange && (userHasInteractedWithForm || userInteracted)) {
+      onChange(pendingChange);
+      setPendingChange(false);
+    }
+  }, [pendingChange, userHasInteractedWithForm, userInteracted, setPendingChange, onChange]);
+
+  // Update form HTML when blockFormHtml prop changes
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    if (!formHtml && blockFormHtml) {
+      setFormHtml(blockFormHtml);
+    }
+  }, [blockFormHtml]);
+
+  // Handle validation errors
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    if (!acfFormRef?.current) return;
+    const validator = acf.getBlockFormValidator($(acfFormRef.current).find('.acf-block-fields'));
+    validator.clearErrors();
+    validator.set('notice', null);
+    acf.doAction('blocks/validation/pre_apply', validationErrors);
+    if (validationErrors) {
+      if (showValidationErrors) {
+        (0,_utils_post_locking__WEBPACK_IMPORTED_MODULE_1__.lockPostSaving)(clientId);
+        validator.$el.find('.acf-notice').remove();
+        validator.addErrors(validationErrors);
+        validator.showErrors('after');
+      }
+    } else {
+      // Handle successful validation
+      if (validator.$el.find('.acf-notice').length > 0 && showValidationErrors) {
+        validator.$el.find('.acf-notice').remove();
+        validator.addErrors([{
+          message: acf.__('Validation successful')
+        }]);
+        validator.showErrors('after');
+        validator.get('notice').update({
+          type: 'success',
+          text: acf.__('Validation successful'),
+          timeout: 1000
+        });
+        validator.set('notice', null);
+        setTimeout(() => {
+          validator.$el.find('.acf-notice').remove();
+        }, 1001);
+        const noticeDispatch = wp.data.dispatch('core/notices');
+
+        /**
+         * Recursively checks for ACF errors in blocks
+         * @param {Array} blocks - Array of block objects
+         * @returns {Promise<boolean>} - True if error found
+         */
+        function checkForErrors(blocks) {
+          return new Promise(function (resolve) {
+            blocks.forEach(block => {
+              if (block.innerBlocks.length > 0) {
+                checkForErrors(block.innerBlocks).then(hasError => {
+                  if (hasError) return resolve(true);
+                });
+              }
+              if (block.attributes.hasAcfError && block.clientId !== clientId) {
+                return resolve(true);
+              }
+            });
+            return resolve(false);
+          });
+        }
+        checkForErrors(wp.data.select('core/block-editor').getBlocks()).then(hasError => {
+          if (hasError) {
+            noticeDispatch.createErrorNotice(acf.__('An ACF Block on this page requires attention before you can save.'), {
+              id: 'acf-blocks-validation',
+              isDismissible: true
+            });
+          } else {
+            noticeDispatch.removeNotice('acf-blocks-validation');
+          }
+        });
+      }
+      (0,_utils_post_locking__WEBPACK_IMPORTED_MODULE_1__.unlockPostSaving)(clientId);
+    }
+    acf.doAction('blocks/validation/post_apply', validationErrors);
+  }, [validationErrors, clientId, showValidationErrors]);
+
+  // Handle form remounting and change detection
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    if (!acfFormRef?.current || !formHtml) return;
+    acf.debug('Remounting ACF Form');
+    const formElement = acfFormRef.current;
+    const $form = $(formElement);
+    let isActive = true;
+    if (!hasRemounted) {
+      acf.debug('Remounting ACF Form');
+      acf.doAction('remount', $form);
+      onMount?.($form);
+      setHasRemounted(true);
+    }
+    const handleChange = () => {
+      onChange($form);
+    };
+    const scheduleChange = () => {
+      if (!isActive) return;
+      const inputs = formElement.querySelectorAll('input, textarea');
+      const selects = formElement.querySelectorAll('select');
+      inputs.forEach(input => {
+        input.removeEventListener('input', handleChange);
+        input.addEventListener('input', handleChange);
+        input.removeEventListener('change', handleChange);
+        input.addEventListener('change', handleChange);
+      });
+      selects.forEach(select => {
+        select.removeEventListener('change', handleChange);
+        select.addEventListener('change', handleChange);
+      });
+      clearTimeout(debounceTimer.current);
+      debounceTimer.current = setTimeout(() => {
+        if (isActive) {
+          setPendingChange($form);
+        }
+      }, 300);
+    };
+
+    // Observe DOM changes to detect field additions/removals
+    const domObserver = new MutationObserver(scheduleChange);
+
+    // Observe iframe content changes (for WYSIWYG editors)
+    const iframeObserver = new MutationObserver(() => {
+      if (isActive) {
+        setUserInteracted(true);
+        scheduleChange();
+      }
+    });
+    const observerConfig = {
+      attributes: true,
+      childList: true,
+      subtree: true,
+      characterData: true
+    };
+    domObserver.observe(formElement, observerConfig);
+
+    // Watch for changes in iframes (WYSIWYG fields)
+    [...formElement.querySelectorAll('iframe')].forEach(iframe => {
+      if (iframe && iframe.contentDocument) {
+        const iframeBody = iframe.contentDocument.body;
+        if (iframeBody) {
+          iframeObserver.observe(iframeBody, observerConfig);
+        }
+      }
+    });
+
+    // Attach event listeners to form inputs
+    formElement.querySelectorAll('input, textarea').forEach(input => {
+      input.addEventListener('input', handleChange);
+      input.addEventListener('change', handleChange);
+    });
+    formElement.querySelectorAll('select').forEach(select => {
+      select.addEventListener('change', handleChange);
+    });
+    if (userHasInteractedWithForm) {
+      clearTimeout(debounceTimer.current);
+      debounceTimer.current = setTimeout(() => {
+        if (isActive) {
+          setPendingChange($form);
+        }
+      }, 300);
+    }
+
+    // Cleanup function
+    return () => {
+      isActive = false;
+      domObserver.disconnect();
+      iframeObserver.disconnect();
+      clearTimeout(debounceTimer.current);
+      if (formElement) {
+        formElement.querySelectorAll('input, textarea').forEach(input => {
+          input.removeEventListener('input', handleChange);
+          input.removeEventListener('change', handleChange);
+        });
+        formElement.querySelectorAll('select').forEach(select => {
+          select.removeEventListener('change', handleChange);
+        });
+      }
+    };
+  }, [acfFormRef, attributes, formHtml, onMount, userHasInteractedWithForm]);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+    ref: acfFormRef,
+    className: "acf-block-component acf-block-panel",
+    style: {
+      display: hideFieldsInSidebar ? 'none' : null
+    },
+    dangerouslySetInnerHTML: {
+      __html: acf.applyFilters('blocks/form/render', formHtml, true)
+    }
+  });
+};
+
+/***/ }),
+
+/***/ "./assets/src/js/pro/blocks-v3/components/block-placeholder.js":
+/*!*********************************************************************!*\
+  !*** ./assets/src/js/pro/blocks-v3/components/block-placeholder.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   BlockPlaceholder: () => (/* binding */ BlockPlaceholder)
+/* harmony export */ });
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__);
+/**
+ * BlockPlaceholder Component
+ * Displays a placeholder UI when block has no preview HTML
+ */
+
+
+/**
+ * SVG icon for the block placeholder
+ * Represents a generic block/form icon
+ */
+
+const blockIcon = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  viewBox: "0 0 24 24",
+  width: "24",
+  height: "24",
+  "aria-hidden": "true",
+  focusable: "false",
+  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
+    d: "M19 8h-1V6h-5v2h-2V6H6v2H5c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2zm.5 10c0 .3-.2.5-.5.5H5c-.3 0-.5-.2-.5-.5v-8c0-.3.2-.5.5-.5h14c.3 0 .5.2.5.5v8z"
+  })
+});
+
+/**
+ * BlockPlaceholder component
+ * Shows when a block has no preview HTML available
+ * Prompts user to open the block form to edit fields
+ *
+ * @param {Object} props - Component props
+ * @param {Function} props.setBlockFormModalOpen - Function to open the block form modal
+ * @param {string} props.blockLabel - The block's title/label
+ * @returns {JSX.Element} - Rendered placeholder
+ */
+const BlockPlaceholder = ({
+  setBlockFormModalOpen,
+  blockLabel,
+  instructions
+}) => {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.Placeholder, {
+    icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.Icon, {
+      icon: blockIcon
+    }),
+    label: blockLabel,
+    instructions: instructions,
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_0__.Button, {
+      variant: "primary",
+      onClick: () => {
+        setBlockFormModalOpen(true);
+      },
+      children: acf.__('Edit Block')
+    })
+  });
+};
+
+/***/ }),
+
+/***/ "./assets/src/js/pro/blocks-v3/components/block-preview.js":
+/*!*****************************************************************!*\
+  !*** ./assets/src/js/pro/blocks-v3/components/block-preview.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   BlockPreview: () => (/* binding */ BlockPreview)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+
+/**
+ * BlockPreview Component
+ * Simple wrapper component that renders block preview HTML with block props
+ */
+
+/**
+ * BlockPreview component
+ * Wraps block preview content with the appropriate block props from useBlockProps
+ *
+ * @param {Object} props - Component props
+ * @param {React.ReactNode} props.children - Child elements to render
+ * @param {Object} props.blockProps - Block props from useBlockProps hook
+ * @returns {JSX.Element} - Rendered preview wrapper
+ */
+const BlockPreview = ({
+  children,
+  blockProps
+}) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+  ...blockProps,
+  children: children
+});
+
+/***/ }),
+
+/***/ "./assets/src/js/pro/blocks-v3/components/block-toolbar-fields.js":
+/*!************************************************************************!*\
+  !*** ./assets/src/js/pro/blocks-v3/components/block-toolbar-fields.js ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   BlockToolbarFields: () => (/* binding */ BlockToolbarFields)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_blockEditor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/blockEditor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_blockEditor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blockEditor__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _popover_wrapper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./popover-wrapper */ "./assets/src/js/pro/blocks-v3/components/popover-wrapper.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
+/**
+ * BlockToolbarFields Component
+ * Renders field buttons in the WordPress block toolbar (top toolbar)
+ * Allows quick access to edit specific fields from the block toolbar
+ */
+
+/* global acf */
+
+
+
+
+
+
+/**
+ * BlockToolbarFields component
+ * Displays field editing buttons in the WordPress block toolbar
+ *
+ * @param {Object}                     props                                - Component props
+ * @param {Array}                      props.blockToolbarFields             - Array of field names or field config objects to show in toolbar
+ * @param {Array}                      props.blockFieldInfo                 - Array of all field information
+ * @param {Function}                   props.setCurrentBlockFormContainer   - Setter for form container ref
+ * @param {Document|HTMLIFrameElement} props.gutenbergIframeOrDocument      - Document or iframe reference
+ * @param {Function}                   props.setBlockFormModalOpen          - Setter for block form modal state
+ * @param {boolean}                    props.blockFormModalOpen             - Whether block form modal is open
+ * @param {boolean}                    props.hideExpandedEditorBtnInToolbar - Whether to hide the expanded editor button in the toolbar
+ * @return {JSX.Element} - Rendered toolbar controls
+ */
+
+const BlockToolbarFields = ({
+  blockToolbarFields,
+  blockFieldInfo,
+  setCurrentBlockFormContainer,
+  gutenbergIframeOrDocument,
+  setBlockFormModalOpen,
+  blockFormModalOpen,
+  hideExpandedEditorBtnInToolbar
+}) => {
+  const [selectedFieldKey, setSelectedFieldKey] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+  const [selectedFieldButtonRef, setSelectedFieldButtonRef] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)();
+  const [usePopover, setUsePopover] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
+  const fieldPopoverContainerRef = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useRef)();
+
+  /**
+   * Get field type class name from field name
+   *
+   * @param {string} fieldName Field name.
+   * @return {string} Field type class name.
+   */
+  const getFieldTypeClassName = fieldName => {
+    if (!fieldName || !blockFieldInfo) {
+      return '';
+    }
+    const field = blockFieldInfo.find(f => f.name === fieldName);
+    return field?.type ? field.type.replace(/_/g, '-') : '';
+  };
+
+  /**
+   * Get field info object from field name
+   *
+   * @param {string} fieldName Field name.
+   * @return {Object|null} Field info object.
+   */
+  const getFieldInfo = fieldName => {
+    return fieldName && blockFieldInfo ? blockFieldInfo.find(f => f.name === fieldName) : null;
+  };
+
+  /**
+   * Get field label from field name
+   *
+   * @param {string} fieldName Field name.
+   * @return {string} Field label.
+   */
+  const getFieldLabel = fieldName => {
+    if (!fieldName || !blockFieldInfo) {
+      return fieldName || '';
+    }
+    const field = blockFieldInfo.find(f => f.name === fieldName);
+    // Fallback to fieldName when label not found to ensure toolbar shows a title
+    return field?.label || fieldName || '';
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_blockEditor__WEBPACK_IMPORTED_MODULE_1__.BlockControls, {
+    children: [!hideExpandedEditorBtnInToolbar && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToolbarGroup, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToolbarButton, {
+        className: "components-icon-button components-toolbar__control",
+        label: acf.__('Edit Block'),
+        icon: "edit",
+        onClick: () => {
+          setBlockFormModalOpen(true);
+        },
+        isPressed: blockFormModalOpen
+      })
+    }), blockToolbarFields.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToolbarGroup, {
+      children: [(() => {
+        const styleContent = `[data-name="${selectedFieldKey}"]{ display: block!important; }`;
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("style", {
+          children: styleContent
+        });
+      })(), blockToolbarFields && blockToolbarFields.map(field => {
+        let fieldName = '';
+        let fieldIconSvg = null;
+        let fieldLabel = null;
+
+        // Handle field config object or simple string
+        if (typeof field === 'object') {
+          fieldName = field.fieldName ? field.fieldName : field.index;
+          fieldIconSvg = field.fieldIcon ? window.atob(field.fieldIcon) : null;
+          fieldLabel = field.fieldLabel ? field.fieldLabel : fieldName;
+        } else {
+          fieldName = field;
+        }
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToolbarButton, {
+          icon: fieldIconSvg ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("i", {
+            dangerouslySetInnerHTML: {
+              __html: fieldIconSvg
+            }
+          }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("i", {
+            className: `field-type-icon field-type-icon-${getFieldTypeClassName(fieldName)}`
+          }),
+          label: fieldLabel || getFieldLabel(fieldName),
+          isPressed: fieldName === selectedFieldKey,
+          ref: fieldName === selectedFieldKey ? setSelectedFieldButtonRef : null,
+          onMouseDown: () => {
+            if (selectedFieldKey === fieldName) {
+              setSelectedFieldKey(null);
+            } else {
+              setSelectedFieldKey(null);
+              setTimeout(() => {
+                const fieldInfo = getFieldInfo(fieldName);
+                // Use modal for complex field types
+                if (fieldInfo?.type === 'flexible_content' || fieldInfo?.type === 'repeater') {
+                  setUsePopover(false);
+                } else {
+                  setUsePopover(true);
+                }
+                setSelectedFieldKey(fieldName);
+              });
+            }
+          }
+        }, fieldName);
+      }), selectedFieldKey && selectedFieldButtonRef && usePopover && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_popover_wrapper__WEBPACK_IMPORTED_MODULE_3__.PopoverWrapper, {
+        focusOnMount: false,
+        className: "acf-inline-fields-popover",
+        anchor: selectedFieldButtonRef,
+        animate: true,
+        onClose: event => {
+          // Don't close on certain events
+          if (event.key !== 'Escape' && (event?.target.closest('.media-modal') || event?.target.closest('.acf-tooltip') || event?.target && fieldPopoverContainerRef?.current && fieldPopoverContainerRef?.current.contains(event.target) || selectedFieldButtonRef?.current && selectedFieldButtonRef?.current.contains(event?.target))) {
+            return false;
+          }
+          setSelectedFieldKey(null);
+          return true;
+        },
+        variant: "unstyled",
+        gutenbergIframeOrDocument: gutenbergIframeOrDocument,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          ref: fieldPopoverContainerRef,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            className: "acf-inline-fields-popover-inner",
+            style: {
+              minWidth: '300px'
+            },
+            ref: setCurrentBlockFormContainer
+          })
+        })
+      }), selectedFieldKey && selectedFieldButtonRef && !usePopover && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Modal, {
+        className: "acf-block-form-modal",
+        isFullScreen: true,
+        title: getFieldInfo(selectedFieldKey)?.label,
+        onRequestClose: () => {
+          setSelectedFieldKey(null);
+        },
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          ref: fieldPopoverContainerRef,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            className: "acf-inline-fields-popover-inner",
+            style: {
+              minWidth: '300px'
+            },
+            ref: setCurrentBlockFormContainer
+          })
+        })
+      })]
+    })]
+  });
+};
+
+/***/ }),
+
+/***/ "./assets/src/js/pro/blocks-v3/components/error-boundary.js":
+/*!******************************************************************!*\
+  !*** ./assets/src/js/pro/blocks-v3/components/error-boundary.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   BlockPreviewErrorFallback: () => (/* binding */ BlockPreviewErrorFallback),
+/* harmony export */   ErrorBoundary: () => (/* binding */ ErrorBoundary),
+/* harmony export */   ErrorBoundaryContext: () => (/* binding */ ErrorBoundaryContext)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _block_placeholder__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./block-placeholder */ "./assets/src/js/pro/blocks-v3/components/block-placeholder.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+// Create context outside the class
+
+const ErrorBoundaryContext = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createContext)(null);
+
+// Initial state constant
+const initialState = {
+  didCatch: false,
+  error: null
+};
+
+// Error Boundary Component
+class ErrorBoundary extends _wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Component {
+  constructor(props) {
+    super(props);
+    this.resetErrorBoundary = this.resetErrorBoundary.bind(this);
+    this.state = initialState;
+  }
+  static getDerivedStateFromError(error) {
+    return {
+      didCatch: true,
+      error: error
+    };
+  }
+  resetErrorBoundary() {
+    const {
+      error
+    } = this.state;
+    if (error !== null) {
+      // Collect all arguments passed to reset
+      const args = Array.from(arguments);
+
+      // Call optional onReset callback with context
+      if (this.props.onReset) {
+        this.props.onReset({
+          args: args,
+          reason: 'imperative-api'
+        });
+      }
+      this.setState(initialState);
+    }
+  }
+  componentDidCatch(error, errorInfo) {
+    if (this.props.onError) {
+      this.props.onError(error, errorInfo);
+    }
+  }
+  componentDidUpdate(prevProps, prevState) {
+    const {
+      didCatch
+    } = this.state;
+    const {
+      resetKeys
+    } = this.props;
+
+    // Auto-reset if resetKeys prop changed
+    if (didCatch && prevState.error !== null && hasResetKeysChanged(prevProps.resetKeys, resetKeys)) {
+      if (this.props.onReset) {
+        this.props.onReset({
+          next: resetKeys,
+          prev: prevProps.resetKeys,
+          reason: 'keys'
+        });
+      }
+      this.setState(initialState);
+    }
+  }
+  render() {
+    const {
+      children,
+      fallbackRender,
+      FallbackComponent,
+      fallback
+    } = this.props;
+    const {
+      didCatch,
+      error
+    } = this.state;
+    let content = children;
+    if (didCatch) {
+      const errorProps = {
+        error: error,
+        resetErrorBoundary: this.resetErrorBoundary
+      };
+      if (typeof fallbackRender === 'function') {
+        content = fallbackRender(errorProps);
+      } else if (FallbackComponent) {
+        content = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(FallbackComponent, {
+          ...errorProps
+        });
+      } else if (fallback !== undefined) {
+        content = fallback;
+      } else {
+        throw error;
+      }
+    }
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(ErrorBoundaryContext.Provider, {
+      value: {
+        didCatch,
+        error,
+        resetErrorBoundary: this.resetErrorBoundary
+      },
+      children: content
+    });
+  }
+}
+
+// Helper function to check if reset keys changed
+function hasResetKeysChanged(prevKeys = [], nextKeys = []) {
+  return prevKeys.length !== nextKeys.length || prevKeys.some((key, index) => !Object.is(key, nextKeys[index]));
+}
+const BlockPreviewErrorFallback = ({
+  setBlockFormModalOpen,
+  blockLabel,
+  error
+}) => {
+  let errorMessage = null;
+  if (error) {
+    acf.debug('Block preview error:', error);
+    errorMessage = acf.__('Error previewing block v3');
+  }
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_block_placeholder__WEBPACK_IMPORTED_MODULE_1__.BlockPlaceholder, {
+    setBlockFormModalOpen: setBlockFormModalOpen,
+    blockLabel: blockLabel,
+    instructions: errorMessage
+  });
+};
+
+/***/ }),
+
+/***/ "./assets/src/js/pro/blocks-v3/components/inline-editing-toolbar.js":
+/*!**************************************************************************!*\
+  !*** ./assets/src/js/pro/blocks-v3/components/inline-editing-toolbar.js ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   InlineEditingToolbar: () => (/* binding */ InlineEditingToolbar)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _popover_wrapper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./popover-wrapper */ "./assets/src/js/pro/blocks-v3/components/popover-wrapper.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
+/**
+ * InlineEditingToolbar Component
+ * Main inline editing toolbar for ACF blocks
+ * Handles field selection and editing for inline editable elements
+ */
+
+
+
+
+
+/**
+ * InlineEditingToolbar component
+ * Displays a toolbar with field buttons for inline editing
+ *
+ * @param {Object} props - Component props
+ * @param {Object} props.blockIcon - Block icon configuration
+ * @param {Array} props.blockFieldInfo - Array of field information
+ * @param {Function} props.setInlineEditingToolbarHasFocus - Setter for toolbar focus state
+ * @param {Element|null} props.currentContentEditableElement - Current content editable element
+ * @param {Element|null} props.currentInlineEditingElement - Current inline editing element
+ * @param {string|null} props.currentInlineEditingElementUid - Current element UID
+ * @param {Document|HTMLIFrameElement} props.gutenbergIframeOrDocument - Document or iframe reference
+ * @param {Function} props.setCurrentBlockFormContainer - Setter for form container
+ * @param {boolean} props.contentEditableChangeInProgress - Whether content change is in progress
+ * @returns {JSX.Element|null} - Rendered toolbar or null
+ */
+
+const InlineEditingToolbar = ({
+  blockIcon,
+  blockFieldInfo,
+  setInlineEditingToolbarHasFocus,
+  currentContentEditableElement,
+  currentInlineEditingElement,
+  currentInlineEditingElementUid,
+  gutenbergIframeOrDocument,
+  setCurrentBlockFormContainer,
+  contentEditableChangeInProgress
+}) => {
+  const [selectedFieldKey, setSelectedFieldKey] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+  const [selectedFieldConfig, setSelectedFieldConfig] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)();
+  const [selectedFieldButtonRef, setSelectedFieldButtonRef] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)();
+  const [usePopover, setUsePopover] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
+  const fieldPopoverContainerRef = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useRef)();
+
+  // Get inline fields from data attribute
+  const inlineFieldsAttr = currentInlineEditingElement ? currentInlineEditingElement.getAttribute('data-acf-inline-fields') : null;
+  let inlineFields = [];
+  try {
+    inlineFields = JSON.parse(inlineFieldsAttr);
+  } catch (e) {
+    acf.debug('Inline fields were not a properly formatted JSON array', inlineFieldsAttr);
+  }
+
+  /**
+   * Get field type class name from field name
+   */
+  function getFieldTypeClassName(fieldName) {
+    if (!fieldName || !blockFieldInfo) return '';
+    const field = blockFieldInfo.find(f => f.name === fieldName);
+    return field?.type ? field.type.replace(/_/g, '-') : '';
+  }
+
+  /**
+   * Get field label from field name
+   */
+  function getFieldLabel(fieldName) {
+    if (!fieldName || !blockFieldInfo) return '';
+    const field = blockFieldInfo.find(f => f.name === fieldName);
+    return field ? field.label : '';
+  }
+
+  // Clear selected field when content editable changes
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    setSelectedFieldKey(null);
+  }, [contentEditableChangeInProgress]);
+
+  // Generate toolbar icon
+  const toolbarIcon = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useMemo)(() => {
+    let icon = currentContentEditableElement && !currentInlineEditingElement ? currentContentEditableElement.getAttribute('data-acf-toolbar-icon') : null;
+    if (!icon && currentInlineEditingElement) {
+      icon = currentInlineEditingElement ? currentInlineEditingElement.getAttribute('data-acf-toolbar-icon') : null;
+    }
+    if (icon) {
+      icon = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("i", {
+        dangerouslySetInnerHTML: {
+          __html: icon
+        }
+      });
+    }
+    if (!icon && currentContentEditableElement && !currentInlineEditingElement) {
+      const fieldSlug = currentContentEditableElement.getAttribute('data-acf-inline-contenteditable-field-slug');
+      icon = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("i", {
+        className: `field-type-icon field-type-icon-${getFieldTypeClassName(fieldSlug)}`
+      });
+    }
+    if (!icon) {
+      icon = React.isValidElement(blockIcon) ? blockIcon : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+        className: `dashicon dashicons dashicons-${blockIcon}`
+      });
+    }
+    return icon;
+  }, [blockFieldInfo, currentContentEditableElement, currentInlineEditingElement]);
+
+  // Generate toolbar title
+  const toolbarTitle = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useMemo)(() => {
+    let fieldName;
+    if (currentContentEditableElement && !currentInlineEditingElement) {
+      const title = currentContentEditableElement.getAttribute('data-acf-toolbar-title');
+      if (title) return title;
+      fieldName = currentContentEditableElement.getAttribute('data-acf-inline-contenteditable-field-slug');
+    } else if (currentInlineEditingElement) {
+      const title = currentInlineEditingElement.getAttribute('data-acf-toolbar-title');
+      if (title) return title;
+      if (inlineFields.length > 1) {
+        const elementTypeLabels = {
+          A: 'Link',
+          DIV: 'Division',
+          P: 'Paragraph',
+          SPAN: 'Span',
+          INPUT: 'Input',
+          BUTTON: 'Button',
+          IMG: 'Image',
+          UL: 'Unordered List',
+          OL: 'Ordered List',
+          LI: 'List Item',
+          H1: 'Heading 1',
+          H2: 'Heading 2',
+          H3: 'Heading 3',
+          H4: 'Heading 4',
+          H5: 'Heading 5',
+          H6: 'Heading 6',
+          TABLE: 'Table',
+          TR: 'Table Row',
+          TD: 'Table Cell',
+          TH: 'Table Header',
+          FORM: 'Form',
+          TEXTAREA: 'Text Area',
+          SELECT: 'Select',
+          OPTION: 'Option'
+        };
+        return elementTypeLabels[currentInlineEditingElement.tagName];
+      }
+      fieldName = typeof inlineFields[0] === 'object' ? inlineFields[0].fieldName : inlineFields[0];
+    }
+    return getFieldLabel(fieldName);
+  }, [currentInlineEditingElement, currentContentEditableElement, blockFieldInfo]);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
+    children: [selectedFieldKey && selectedFieldButtonRef && usePopover && currentInlineEditingElementUid && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_popover_wrapper__WEBPACK_IMPORTED_MODULE_2__.PopoverWrapper, {
+      focusOnMount: false,
+      className: "acf-inline-fields-popover",
+      anchor: selectedFieldButtonRef,
+      onClose: event => {
+        if (event.key === 'Escape') {
+          setSelectedFieldKey(null);
+          return true;
+        }
+        // Don't close if clicking inside the popover or anchor
+        if (event?.target && fieldPopoverContainerRef?.current && fieldPopoverContainerRef?.current.contains(event.target) || selectedFieldButtonRef?.current && selectedFieldButtonRef?.current.contains(event?.target)) {
+          return false;
+        }
+        return undefined;
+      },
+      variant: usePopover ? 'toolbar' : 'unstyled',
+      gutenbergIframeOrDocument: gutenbergIframeOrDocument,
+      hidePrimaryBlockToolbar: true,
+      animate: true,
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        ref: fieldPopoverContainerRef,
+        onClick: () => {
+          setInlineEditingToolbarHasFocus(true);
+        },
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          className: "acf-inline-fields-popover-inner",
+          style: {
+            minWidth: selectedFieldConfig?.popoverMinWidth ? selectedFieldConfig?.popoverMinWidth : '300px'
+          },
+          ref: setCurrentBlockFormContainer
+        })
+      })
+    }), selectedFieldKey && selectedFieldButtonRef && !usePopover && currentInlineEditingElementUid && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Modal, {
+      className: "acf-block-form-modal",
+      isFullScreen: true,
+      title: blockFieldInfo && selectedFieldKey ? blockFieldInfo.find(f => f.name === selectedFieldKey)?.label : '',
+      onRequestClose: () => {
+        setSelectedFieldKey(null);
+      },
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        ref: fieldPopoverContainerRef,
+        onClick: () => {
+          setInlineEditingToolbarHasFocus(true);
+        },
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          className: "acf-inline-fields-popover-inner",
+          style: {
+            minWidth: selectedFieldConfig?.popoverMinWidth ? selectedFieldConfig?.popoverMinWidth : '300px'
+          },
+          ref: setCurrentBlockFormContainer
+        })
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Toolbar, {
+      orientation: "horizontal",
+      className: "components-accessible-toolbar block-editor-block-contextual-toolbar",
+      style: {
+        width: 'max-content'
+      },
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        className: "block-editor-block-toolbar",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.ToolbarGroup, {
+          style: {
+            alignItems: 'center'
+          },
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+            className: "acf-blocks-toolbar-icon components-toolbar-group block-editor-block-toolbar__block-controls",
+            label: toolbarTitle,
+            children: [toolbarIcon, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+              children: toolbarTitle
+            })]
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.ToolbarGroup, {
+          children: (() => {
+            if (!inlineFields || inlineFields.length === 0) {
+              return null;
+            }
+            const buttons = inlineFields.map((field, index) => {
+              let fieldName = '';
+              let fieldIconSvg = null;
+              let fieldLabel = null;
+              if (typeof field === 'object') {
+                fieldName = field.fieldName ? field.fieldName : index;
+                fieldIconSvg = field.fieldIcon ? window.atob(field.fieldIcon) : null;
+                fieldLabel = field.fieldLabel ? field.fieldLabel : fieldName;
+              } else {
+                fieldName = field;
+              }
+
+              // Use 'edit' icon if field has useExpandedEditor flag
+              if (!fieldIconSvg && field?.useExpandedEditor) {
+                fieldIconSvg = 'edit';
+              }
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.ToolbarButton, {
+                disabled: contentEditableChangeInProgress,
+                className: "acf-toolbar-button",
+                icon: fieldIconSvg ? typeof fieldIconSvg === 'string' && fieldIconSvg === 'edit' ? 'edit' : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("i", {
+                  dangerouslySetInnerHTML: {
+                    __html: fieldIconSvg
+                  }
+                }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("i", {
+                  className: `field-type-icon field-type-icon-${getFieldTypeClassName(fieldName)}`
+                }),
+                label: fieldLabel || getFieldLabel(fieldName),
+                isPressed: fieldName === selectedFieldKey,
+                ref: fieldName === selectedFieldKey ? setSelectedFieldButtonRef : null,
+                onClick: () => {
+                  setInlineEditingToolbarHasFocus(true);
+                  if (selectedFieldKey === fieldName) {
+                    setSelectedFieldKey(null);
+                  } else {
+                    // Determine if we should use modal or popover
+                    setUsePopover(!field?.useExpandedEditor);
+                    setSelectedFieldKey(fieldName);
+                    setSelectedFieldConfig(field);
+                  }
+                }
+              }, fieldName);
+            });
+            return buttons;
+          })()
+        })]
+      })
+    }), (() => {
+      const styleContent = `[data-name="${selectedFieldKey}"]{ display: block!important; }`;
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("style", {
+        children: styleContent
+      });
+    })()]
+  });
+};
+
+/***/ }),
+
+/***/ "./assets/src/js/pro/blocks-v3/components/jsx-parser.js":
+/*!**************************************************************!*\
+  !*** ./assets/src/js/pro/blocks-v3/components/jsx-parser.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   parseJSX: () => (/* binding */ parseJSX)
+/* harmony export */ });
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "jquery");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
+/**
+ * JSX Parser for ACF Blocks - Based on 6.7.0.2
+ * Converts HTML strings to React/JSX elements for rendering in the block editor
+ */
+
+/* global acf, React, Text */
+
+// eslint-disable-next-line import/no-unresolved -- WordPress provides jquery as an external script dependency.
+
+
+const useInnerBlocksProps = wp.blockEditor.__experimentalUseInnerBlocksProps || wp.blockEditor.useInnerBlocksProps;
+
+/**
+ * Gets the JSX-compatible name for an HTML attribute
+ *
+ * @param {string} attrName Attribute name.
+ * @return {string} JSX-compatible attribute name.
+ */
+function getJSXNameReplacement(attrName) {
+  return acf.isget(acf, 'jsxNameReplacements', attrName) || attrName;
+}
+
+/**
+ * ACF InnerBlocks wrapper component
+ *
+ * @param {Object} props Component props.
+ * @return {JSX.Element} InnerBlocks wrapper element.
+ */
+function ACFInnerBlocksComponent(props) {
+  const {
+    className = 'acf-innerblocks-container'
+  } = props;
+  const innerBlocksProps = useInnerBlocksProps({
+    className
+  }, props);
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)('div', {
+    ...innerBlocksProps,
+    children: innerBlocksProps.children
+  });
+}
+
+/**
+ * Script component for handling <script> tags
+ */
+class ScriptComponent extends React.Component {
+  render() {
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)('div', {
+      ref: element => this.el = element
+    });
+  }
+  setHTML(scriptContent) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this.el).html(`<script>${scriptContent}</script>`);
+  }
+  componentDidUpdate() {
+    this.setHTML(this.props.children);
+  }
+  componentDidMount() {
+    this.setHTML(this.props.children);
+  }
+}
+
+/**
+ * Helper function to parse style attribute string into object
+ *
+ * @param {string} styleString Style attribute value.
+ * @return {Object} Parsed style object.
+ */
+function parseStyleAttribute(styleString) {
+  const styleObj = {};
+  if (!styleString) {
+    return styleObj;
+  }
+  styleString.split(';').forEach(rule => {
+    const colonIndex = rule.indexOf(':');
+    if (colonIndex > 0) {
+      let property = rule.substr(0, colonIndex).trim();
+      const value = rule.substr(colonIndex + 1).trim();
+
+      // Convert to camelCase
+      if (property.charAt(0) !== '-') {
+        property = acf.strCamelCase(property);
+      }
+      styleObj[property] = value;
+    }
+  });
+  return styleObj;
+}
+
+/**
+ * Parses and transforms a DOM attribute to React props format
+ * Based on 6.7.0.2's implementation
+ *
+ * @param {Attr} attribute DOM attribute.
+ * @return {Object} React prop name and value.
+ */
+function parseAttribute(attribute) {
+  let attrName = attribute.name;
+  let attrValue = attribute.value;
+
+  // Allow custom filtering
+  const customParsed = acf.applyFilters('acf_blocks_parse_node_attr', false, attribute);
+  if (customParsed) {
+    return customParsed;
+  }
+  switch (attrName) {
+    case 'class':
+      attrName = 'className';
+      break;
+    case 'style':
+      const styleObj = {};
+      attrValue.split(';').forEach(rule => {
+        const colonIndex = rule.indexOf(':');
+        if (colonIndex > 0) {
+          let property = rule.substr(0, colonIndex).trim();
+          const value = rule.substr(colonIndex + 1).trim();
+          if (property.charAt(0) !== '-') {
+            property = acf.strCamelCase(property);
+          }
+          styleObj[property] = value;
+        }
+      });
+      attrValue = styleObj;
+      break;
+    default:
+      // Skip data- attributes processing, keep them as-is
+      if (attrName.indexOf('data-') === 0) {
+        break;
+      }
+      attrName = getJSXNameReplacement(attrName);
+      const firstChar = attrValue.charAt(0);
+      if (firstChar === '[' || firstChar === '{') {
+        attrValue = JSON.parse(attrValue);
+      }
+      if (attrValue === 'true' || attrValue === 'false') {
+        attrValue = attrValue === 'true';
+      }
+  }
+  return {
+    name: attrName,
+    value: attrValue
+  };
+}
+
+/**
+ * Main parseNodeToJSX function - Based on 6.7.0.2's function `O`
+ * Recursively converts DOM nodes to React/JSX elements
+ *
+ * @param {Node}   node  DOM node.
+ * @param {number} depth Recursion depth.
+ * @return {JSX.Element|null} Parsed JSX element.
+ */
+function parseNodeToJSX(node, depth = 0, callbacks = {}) {
+  const {
+    onNewInlineEditingElementSelected,
+    onNewContentEditableElementSelected,
+    blockFieldInfo
+  } = callbacks;
+  const selectInlineEditingElement = (uid, element = null) => {
+    if (onNewInlineEditingElementSelected) {
+      onNewInlineEditingElementSelected(uid);
+      return;
+    }
+    if (acf.blockEdit?.setCurrentInlineEditingElementUid) {
+      acf.blockEdit.setCurrentInlineEditingElementUid(uid);
+    }
+    if (acf.blockEdit?.setCurrentInlineEditingElement) {
+      acf.blockEdit.setCurrentInlineEditingElement(element);
+    }
+  };
+  const selectContentEditableElement = (fieldSlug, element = null) => {
+    if (onNewContentEditableElementSelected) {
+      onNewContentEditableElementSelected(fieldSlug);
+      return;
+    }
+    if (acf.blockEdit?.setCurrentContentEditableElement) {
+      acf.blockEdit.setCurrentContentEditableElement(element);
+    }
+  };
+
+  // Determine component type
+  const nodeName = node.nodeName.toLowerCase();
+  let componentType;
+  switch (nodeName) {
+    case 'innerblocks':
+      componentType = 'ACFInnerBlocks';
+      break;
+    case 'script':
+      componentType = ScriptComponent;
+      break;
+    case '#comment':
+      return null;
+    default:
+      componentType = getJSXNameReplacement(nodeName);
+  }
+  if (!componentType) {
+    return null;
+  }
+  const props = {};
+
+  // Add ref to first-level elements (except ACFInnerBlocks)
+  if (depth === 1 && componentType !== 'ACFInnerBlocks') {
+    props.ref = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createRef)();
+  }
+
+  // Parse attributes
+  acf.arrayArgs(node.attributes).map(parseAttribute).forEach(({
+    name,
+    value
+  }) => {
+    props[name] = value;
+  });
+
+  // Handle data-acf-inline-fields attributes
+  if (node.hasAttribute('data-acf-inline-fields')) {
+    props.style = {
+      ...parseStyleAttribute(node.getAttribute('style') || ''),
+      pointerEvents: 'all'
+    };
+    props.role = 'button';
+    props.tabIndex = 0;
+    props.onFocus = event => {
+      event.stopPropagation();
+      const uid = node.attributes.getNamedItem('data-acf-inline-fields-uid').value;
+      selectInlineEditingElement(uid, event.currentTarget);
+    };
+    props.onMouseDown = event => event.stopPropagation();
+    props.onClick = event => {
+      event.stopPropagation();
+      const link = event.target.closest('a');
+      if (link && link.tagName === 'A') {
+        event.preventDefault();
+        acf.debug(`Navigation prevented for ${link.href}`);
+      }
+      if (!event.target.hasAttribute('data-acf-inline-contenteditable')) {
+        const uid = node.attributes.getNamedItem('data-acf-inline-fields-uid').value;
+        selectInlineEditingElement(uid, event.currentTarget);
+      }
+    };
+    props.onKeyDown = event => {
+      if (event.key === 'Tab' && event.shiftKey) {
+        event.preventDefault();
+        const toolbar = document.querySelector('.acf-inline-editing-toolbar');
+        const button = toolbar?.querySelector('button');
+        if (button) {
+          button.focus();
+          const uid = node.attributes.getNamedItem('data-acf-inline-fields-uid').value;
+          selectInlineEditingElement(uid, event.currentTarget);
+        }
+      }
+      if (event.key === 'Enter') {
+        event.stopPropagation();
+        const link = event.target.closest('a');
+        if (link && link.tagName === 'A') {
+          event.preventDefault();
+          acf.debug(`Navigation prevented for ${link.href}`);
+        }
+        const uid = node.attributes.getNamedItem('data-acf-inline-fields-uid').value;
+        selectInlineEditingElement(uid, event.currentTarget);
+      }
+    };
+  }
+
+  // Handle data-acf-inline-contenteditable attributes
+  if (node.hasAttribute('data-acf-inline-contenteditable')) {
+    const fieldSlug = node.attributes.getNamedItem('data-acf-inline-contenteditable-field-slug').value;
+    const fieldInfo = blockFieldInfo || acf.blockEdit?.getBlockFieldInfo?.();
+    const editableFields = fieldInfo ? fieldInfo.filter(field => field.name === fieldSlug && (field.type === 'text' || field.type === 'textarea')) : [];
+    if (editableFields.length > 0) {
+      props.contentEditable = true;
+      props.suppressContentEditableWarning = true;
+      props.role = 'input';
+      props.tabIndex = 0;
+      props.onFocus = event => {
+        const link = event.target.closest('a');
+        if (link && link.tagName === 'A') {
+          event.preventDefault();
+          acf.debug(`Navigation prevented for ${link.href}`);
+        }
+        event.stopPropagation();
+        selectContentEditableElement(fieldSlug, event.currentTarget);
+        if (node.hasAttribute('data-acf-inline-fields')) {
+          const uid = node.attributes.getNamedItem('data-acf-inline-fields-uid').value;
+          selectInlineEditingElement(uid, event.currentTarget);
+        } else {
+          selectInlineEditingElement(null);
+        }
+      };
+      props.onPaste = event => {
+        event.preventDefault();
+        const text = event.clipboardData.getData('text/plain');
+        event.currentTarget.textContent = event.currentTarget.textContent + text;
+      };
+    } else {
+      // Remove invalid contentEditable attributes
+      delete props['data-acf-inline-contenteditable-field-slug'];
+      delete props['data-acf-inline-contenteditable'];
+    }
+  }
+
+  // Add click handler to clear selection if clicking outside inline fields
+  if (!node.hasAttribute('data-acf-inline-fields') && !node.hasAttribute('data-acf-inline-contenteditable')) {
+    props.onClick = event => {
+      if (event.target === event.currentTarget) {
+        selectInlineEditingElement(null);
+        selectContentEditableElement(null);
+      }
+    };
+  }
+
+  // Handle ACFInnerBlocks component
+  if (componentType === 'ACFInnerBlocks') {
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(ACFInnerBlocksComponent, {
+      ...props
+    });
+  }
+
+  // Build element with children
+  const elementArgs = [componentType, props];
+  acf.arrayArgs(node.childNodes).forEach(childNode => {
+    if (childNode instanceof Text) {
+      const textContent = childNode.textContent;
+      if (textContent) {
+        elementArgs.push(textContent);
+      }
+    } else {
+      elementArgs.push(parseNodeToJSX(childNode, depth + 1, callbacks));
+    }
+  });
+  const element = _wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement.apply(this, elementArgs);
+  return element;
+}
+
+// Preserve the legacy parser for v1/v2 blocks, which pass the block version
+// as the second argument.
+const legacyParseJSX = acf.parseJSX;
+
+/**
+ * Main parseJSX function exposed on the acf global object
+ * Matches 6.7.0.2's implementation exactly
+ *
+ * @param {string}   htmlString                         HTML string.
+ * @param {Function} onNewInlineEditingElementSelected  Inline element selection callback or jQuery parser.
+ * @param {Function} onContentEditableChange            ContentEditable change callback.
+ * @param {Function} onNewContentEditableElementSelected ContentEditable selection callback.
+ * @param {Array}    blockFieldInfo                     Field metadata.
+ * @param {Function} $                                  jQuery-compatible parser.
+ * @return {JSX.Element|Array} Parsed JSX children.
+ */
+function parseJSX(htmlString, onNewInlineEditingElementSelected = (jquery__WEBPACK_IMPORTED_MODULE_0___default()), onContentEditableChange = null, onNewContentEditableElementSelected = null, blockFieldInfo = null, $ = null) {
+  if (typeof onNewInlineEditingElementSelected === 'number' && typeof legacyParseJSX === 'function') {
+    return legacyParseJSX(htmlString, onNewInlineEditingElementSelected);
+  }
+  const isJQueryParser = typeof onNewInlineEditingElementSelected === 'function' && (arguments.length === 2 || onNewInlineEditingElementSelected.fn && onNewInlineEditingElementSelected.fn.jquery);
+  const parser = isJQueryParser ? onNewInlineEditingElementSelected : $ || (jquery__WEBPACK_IMPORTED_MODULE_0___default());
+  const callbacks = isJQueryParser ? {} : {
+    onNewInlineEditingElementSelected,
+    onContentEditableChange,
+    onNewContentEditableElementSelected,
+    blockFieldInfo
+  };
+
+  // Wrap in div to ensure valid HTML structure
+  htmlString = '<div>' + htmlString + '</div>';
+
+  // Handle self-closing InnerBlocks tags
+  htmlString = htmlString.replace(/<InnerBlocks([^>]+)?\/>/, '<InnerBlocks$1></InnerBlocks>');
+
+  // Parse with jQuery, convert to React, and extract children from wrapper div
+  const parsedElement = parseNodeToJSX(parser(htmlString)[0], 0, callbacks);
+  return parsedElement.props.children;
+}
+acf.parseJSXV3 = parseJSX;
+acf.parseJSX = parseJSX;
+
+/***/ }),
+
+/***/ "./assets/src/js/pro/blocks-v3/components/popover-wrapper.js":
+/*!*******************************************************************!*\
+  !*** ./assets/src/js/pro/blocks-v3/components/popover-wrapper.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   PopoverWrapper: () => (/* binding */ PopoverWrapper)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
+/**
+ * PopoverWrapper Component
+ * Custom Popover wrapper that handles inline editing toolbar behavior
+ * - Escape key to close
+ * - Click outside to close
+ * - Focus management
+ * - Hiding primary block toolbar when active
+ */
+
+
+
+
+/**
+ * PopoverWrapper component
+ * Wraps the WordPress Popover component with custom event handlers
+ *
+ * @param {Object} props - Component props
+ * @param {React.ReactNode} props.children - Child elements to render inside popover
+ * @param {string} props.className - CSS class for the popover
+ * @param {Element|null} props.anchor - Anchor element for positioning
+ * @param {string} props.placement - Placement relative to anchor (e.g., 'top-start')
+ * @param {Function} props.onClose - Callback when popover should close
+ * @param {boolean|string} props.focusOnMount - Whether to focus on mount
+ * @param {string} props.variant - Popover variant (e.g., 'unstyled')
+ * @param {boolean} props.animate - Whether to animate popover
+ * @param {Document|HTMLIFrameElement} props.gutenbergIframeOrDocument - Document or iframe reference
+ * @param {boolean} props.hidePrimaryBlockToolbar - Whether to hide the primary block toolbar
+ * @returns {JSX.Element} - Wrapped Popover component
+ */
+
+const PopoverWrapper = ({
+  children,
+  className,
+  anchor,
+  placement,
+  onClose,
+  focusOnMount,
+  variant,
+  animate = false,
+  gutenbergIframeOrDocument,
+  hidePrimaryBlockToolbar = false
+}) => {
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    const doc = gutenbergIframeOrDocument?.contentDocument ? gutenbergIframeOrDocument.contentDocument : gutenbergIframeOrDocument || document;
+    const handleEscapeKey = event => {
+      if (event.key === 'Escape') {
+        onClose?.(event);
+      }
+    };
+    const handleClickOutside = event => {
+      if (event?.key) {
+        return;
+      }
+      const popoverSelector = className ? `.${className.split(' ').filter(Boolean).join('.')}` : null;
+      const popoverElement = popoverSelector ? event.target.closest(popoverSelector) : null;
+      if (!popoverElement) {
+        onClose?.(event);
+      }
+    };
+    doc.addEventListener('keydown', handleEscapeKey, true);
+    doc.addEventListener('mousedown', handleClickOutside, true);
+    if (hidePrimaryBlockToolbar) {
+      const toolbar = doc.querySelector('.block-editor-block-list__block.is-selected > .block-editor-block-contextual-toolbar');
+      if (toolbar) {
+        toolbar.style.display = 'none';
+      }
+    }
+    return () => {
+      doc.removeEventListener('keydown', handleEscapeKey, true);
+      doc.removeEventListener('mousedown', handleClickOutside, true);
+      if (hidePrimaryBlockToolbar) {
+        const toolbar = doc.querySelector('.block-editor-block-list__block.is-selected > .block-editor-block-contextual-toolbar');
+        if (toolbar) {
+          toolbar.style.display = '';
+        }
+      }
+    };
+  }, [gutenbergIframeOrDocument, onClose, className, hidePrimaryBlockToolbar]);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Popover, {
+    focusOnMount: focusOnMount,
+    variant: variant,
+    anchor: anchor,
+    className: className,
+    placement: placement,
+    animate: animate,
+    children: [hidePrimaryBlockToolbar && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("style", {
+      children: `
+					.components-popover.block-editor-block-popover.block-editor-block-list__block-popover{
+						display: none!important;
+					}
+				`
+    }), children]
+  });
+};
+
+/***/ }),
+
+/***/ "./assets/src/js/pro/blocks-v3/high-order-components/with-align-content.js":
+/*!*********************************************************************************!*\
+  !*** ./assets/src/js/pro/blocks-v3/high-order-components/with-align-content.js ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   withAlignContent: () => (/* binding */ withAlignContent)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+
+/**
+ * withAlignContent Higher-Order Component
+ * Adds content alignment toolbar controls to ACF blocks
+ * Supports both vertical alignment and matrix alignment (horizontal + vertical)
+ */
+
+const {
+  Fragment,
+  Component
+} = wp.element;
+const {
+  BlockControls,
+  BlockVerticalAlignmentToolbar
+} = wp.blockEditor;
+
+// Matrix alignment control (experimental)
+const BlockAlignmentMatrixControl = wp.blockEditor.__experimentalBlockAlignmentMatrixControl || wp.blockEditor.BlockAlignmentMatrixControl;
+const BlockAlignmentMatrixToolbar = wp.blockEditor.__experimentalBlockAlignmentMatrixToolbar || wp.blockEditor.BlockAlignmentMatrixToolbar;
+
+/**
+ * Normalizes vertical alignment value
+ *
+ * @param {string} alignment - Alignment value
+ * @returns {string} - Normalized alignment (top, center, or bottom)
+ */
+const normalizeVerticalAlignment = alignment => {
+  return ['top', 'center', 'bottom'].includes(alignment) ? alignment : 'top';
+};
+
+/**
+ * Gets the default horizontal alignment based on RTL setting
+ *
+ * @param {string} alignment - Current alignment value
+ * @returns {string} - Normalized alignment value (left, center, or right)
+ */
+const getDefaultHorizontalAlignment = alignment => {
+  const defaultAlign = acf.get('rtl') ? 'right' : 'left';
+  return ['left', 'center', 'right'].includes(alignment) ? alignment : defaultAlign;
+};
+
+/**
+ * Normalizes matrix alignment value (vertical + horizontal)
+ * Format: "top left", "center center", etc.
+ *
+ * @param {string} alignment - Alignment value
+ * @returns {string} - Normalized matrix alignment
+ */
+const normalizeMatrixAlignment = alignment => {
+  if (alignment) {
+    const [vertical, horizontal] = alignment.split(' ');
+    return `${normalizeVerticalAlignment(vertical)} ${getDefaultHorizontalAlignment(horizontal)}`;
+  }
+  return 'center center';
+};
+
+/**
+ * Higher-order component that adds content alignment controls
+ * Supports either vertical-only or matrix (2D) alignment based on block config
+ *
+ * @param {React.Component} BlockComponent - The component to wrap
+ * @param {Object} blockConfig - ACF block configuration
+ * @returns {React.Component} - Enhanced component with content alignment controls
+ */
+const withAlignContent = (BlockComponent, blockConfig) => {
+  let AlignmentControl;
+  let normalizeAlignment;
+
+  // Determine which alignment control to use based on block supports
+  if (blockConfig.supports.align_content === 'matrix' || blockConfig.supports.alignContent === 'matrix') {
+    // Use matrix control (horizontal + vertical)
+    AlignmentControl = BlockAlignmentMatrixControl || BlockAlignmentMatrixToolbar;
+    normalizeAlignment = normalizeMatrixAlignment;
+  } else {
+    // Use vertical-only control
+    AlignmentControl = BlockVerticalAlignmentToolbar;
+    normalizeAlignment = normalizeVerticalAlignment;
+  }
+
+  // If alignment control is not available, return original component
+  if (AlignmentControl === undefined) {
+    return BlockComponent;
+  }
+
+  // Set default alignment on block config
+  blockConfig.alignContent = normalizeAlignment(blockConfig.alignContent);
+  return class extends Component {
+    render() {
+      const {
+        attributes,
+        setAttributes
+      } = this.props;
+      const {
+        alignContent
+      } = attributes;
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Fragment, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(BlockControls, {
+          group: "block",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(AlignmentControl, {
+            label: acf.__('Change content alignment'),
+            value: normalizeAlignment(alignContent),
+            onChange: function (newAlignment) {
+              setAttributes({
+                alignContent: normalizeAlignment(newAlignment)
+              });
+            }
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(BlockComponent, {
+          ...this.props
+        })]
+      });
+    }
+  };
+};
+
+/***/ }),
+
+/***/ "./assets/src/js/pro/blocks-v3/high-order-components/with-align-text.js":
+/*!******************************************************************************!*\
+  !*** ./assets/src/js/pro/blocks-v3/high-order-components/with-align-text.js ***!
+  \******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   withAlignText: () => (/* binding */ withAlignText)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+
+/**
+ * withAlignText Higher-Order Component
+ * Adds text alignment toolbar controls to ACF blocks
+ */
+
+const {
+  Fragment,
+  Component
+} = wp.element;
+const {
+  BlockControls,
+  AlignmentToolbar
+} = wp.blockEditor;
+
+/**
+ * Gets the default text alignment based on RTL setting
+ *
+ * @param {string} alignment - Current alignment value
+ * @returns {string} - Normalized alignment value (left, center, or right)
+ */
+const getDefaultAlignment = alignment => {
+  const defaultAlign = acf.get('rtl') ? 'right' : 'left';
+  return ['left', 'center', 'right'].includes(alignment) ? alignment : defaultAlign;
+};
+
+/**
+ * Higher-order component that adds text alignment controls
+ * Wraps a block component and adds AlignmentToolbar to BlockControls
+ *
+ * @param {React.Component} BlockComponent - The component to wrap
+ * @param {Object} blockConfig - ACF block configuration
+ * @returns {React.Component} - Enhanced component with text alignment controls
+ */
+const withAlignText = (BlockComponent, blockConfig) => {
+  const normalizeAlignment = getDefaultAlignment;
+
+  // Set default alignment on block config
+  blockConfig.alignText = normalizeAlignment(blockConfig.alignText);
+  return class extends Component {
+    render() {
+      const {
+        attributes,
+        setAttributes
+      } = this.props;
+      const {
+        alignText
+      } = attributes;
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Fragment, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(BlockControls, {
+          group: "block",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(AlignmentToolbar, {
+            value: normalizeAlignment(alignText),
+            onChange: function (newAlignment) {
+              setAttributes({
+                alignText: normalizeAlignment(newAlignment)
+              });
+            }
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(BlockComponent, {
+          ...this.props
+        })]
+      });
+    }
+  };
+};
+
+/***/ }),
+
+/***/ "./assets/src/js/pro/blocks-v3/high-order-components/with-full-height.js":
+/*!*******************************************************************************!*\
+  !*** ./assets/src/js/pro/blocks-v3/high-order-components/with-full-height.js ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   withFullHeight: () => (/* binding */ withFullHeight)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+
+/**
+ * withFullHeight Higher-Order Component
+ * Adds full height toggle control to ACF blocks
+ */
+
+const {
+  Fragment,
+  Component
+} = wp.element;
+const {
+  BlockControls
+} = wp.blockEditor;
+
+// Full height control (experimental)
+const BlockFullHeightAlignmentControl = wp.blockEditor.__experimentalBlockFullHeightAligmentControl || wp.blockEditor.__experimentalBlockFullHeightAlignmentControl || wp.blockEditor.BlockFullHeightAlignmentControl;
+
+/**
+ * Higher-order component that adds full height toggle controls
+ * Allows blocks to expand to full available height
+ *
+ * @param {React.Component} BlockComponent - The component to wrap
+ * @returns {React.Component} - Enhanced component with full height controls
+ */
+const withFullHeight = BlockComponent => {
+  // If control is not available, return original component
+  if (!BlockFullHeightAlignmentControl) {
+    return BlockComponent;
+  }
+  return class extends Component {
+    render() {
+      const {
+        attributes,
+        setAttributes
+      } = this.props;
+      const {
+        fullHeight
+      } = attributes;
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Fragment, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(BlockControls, {
+          group: "block",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(BlockFullHeightAlignmentControl, {
+            isActive: fullHeight,
+            onToggle: function (newValue) {
+              setAttributes({
+                fullHeight: newValue
+              });
+            }
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(BlockComponent, {
+          ...this.props
+        })]
+      });
+    }
+  };
+};
+
+/***/ }),
+
+/***/ "./assets/src/js/pro/blocks-v3/register-block-type-v3.js":
+/*!***************************************************************!*\
+  !*** ./assets/src/js/pro/blocks-v3/register-block-type-v3.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   getRegisteredBlock: () => (/* binding */ getRegisteredBlock),
+/* harmony export */   registerACFBlockType: () => (/* binding */ registerACFBlockType)
+/* harmony export */ });
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "jquery");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_block_edit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/block-edit */ "./assets/src/js/pro/blocks-v3/components/block-edit.js");
+/* harmony import */ var _high_order_components_with_align_text__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./high-order-components/with-align-text */ "./assets/src/js/pro/blocks-v3/high-order-components/with-align-text.js");
+/* harmony import */ var _high_order_components_with_align_content__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./high-order-components/with-align-content */ "./assets/src/js/pro/blocks-v3/high-order-components/with-align-content.js");
+/* harmony import */ var _high_order_components_with_full_height__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./high-order-components/with-full-height */ "./assets/src/js/pro/blocks-v3/high-order-components/with-full-height.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
+/**
+ * ACF Block Type Registration - Version 3
+ * Handles registration of ACF blocks (version 3) with WordPress Gutenberg
+ * Includes attribute setup, higher-order component composition, and block filtering
+ */
+
+
+
+
+
+
+
+const {
+  InnerBlocks
+} = wp.blockEditor;
+const {
+  Component
+} = wp.element;
+const {
+  createHigherOrderComponent
+} = wp.compose;
+
+// Registry to store registered block configurations
+const registeredBlocks = {};
+
+/**
+ * Adds an attribute to the block configuration
+ *
+ * @param {Object} attributes - Existing attributes object
+ * @param {string} attributeName - Name of the attribute to add
+ * @param {string} attributeType - Type of the attribute (string, boolean, etc.)
+ * @returns {Object} - Updated attributes object
+ */
+const addAttribute = (attributes, attributeName, attributeType) => {
+  attributes[attributeName] = {
+    type: attributeType
+  };
+  return attributes;
+};
+
+/**
+ * Checks if block should be registered for current post type
+ *
+ * @param {Object} blockConfig - Block configuration
+ * @returns {boolean} - True if block should be registered
+ */
+function shouldRegisterBlock(blockConfig) {
+  const allowedPostTypes = blockConfig.post_types || [];
+  if (allowedPostTypes.length) {
+    // Always allow in reusable blocks
+    allowedPostTypes.push('wp_block');
+    const currentPostType = acf.get('postType');
+    if (!allowedPostTypes.includes(currentPostType)) {
+      return false;
+    }
+  }
+  return true;
+}
+
+/**
+ * Processes and normalizes block icon
+ *
+ * @param {Object} blockConfig - Block configuration
+ */
+function processBlockIcon(blockConfig) {
+  // Convert SVG string to JSX element
+  if (typeof blockConfig.icon === 'string' && blockConfig.icon.substr(0, 4) === '<svg') {
+    const iconSvg = blockConfig.icon;
+    blockConfig.icon = /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      dangerouslySetInnerHTML: {
+        __html: iconSvg
+      }
+    });
+  }
+
+  // Remove icon if empty/invalid
+  if (!blockConfig.icon) {
+    delete blockConfig.icon;
+  }
+}
+
+/**
+ * Validates and normalizes block category
+ * Falls back to 'common' if category doesn't exist
+ *
+ * @param {Object} blockConfig - Block configuration
+ */
+function validateBlockCategory(blockConfig) {
+  const categoryExists = wp.blocks.getCategories().filter(({
+    slug
+  }) => slug === blockConfig.category).pop();
+  if (!categoryExists) {
+    blockConfig.category = 'common';
+  }
+}
+
+/**
+ * Sets default values for block configuration
+ *
+ * @param {Object} blockConfig - Block configuration
+ * @returns {Object} - Block configuration with defaults applied
+ */
+function applyBlockDefaults(blockConfig) {
+  return acf.parseArgs(blockConfig, {
+    title: '',
+    name: '',
+    category: '',
+    api_version: 2,
+    acf_block_version: 3,
+    attributes: {},
+    supports: {}
+  });
+}
+
+/**
+ * Cleans up block attributes
+ * Removes empty default values
+ *
+ * @param {Object} blockConfig - Block configuration
+ */
+function cleanBlockAttributes(blockConfig) {
+  for (const attributeName in blockConfig.attributes) {
+    if ('default' in blockConfig.attributes[attributeName] && blockConfig.attributes[attributeName].default.length === 0) {
+      delete blockConfig.attributes[attributeName].default;
+    }
+  }
+}
+
+/**
+ * Configures anchor support if enabled
+ *
+ * @param {Object} blockConfig - Block configuration
+ */
+function configureAnchorSupport(blockConfig) {
+  if (blockConfig.supports && blockConfig.supports.anchor) {
+    blockConfig.attributes.anchor = {
+      type: 'string'
+    };
+  }
+}
+
+/**
+ * Applies higher-order components based on block supports
+ *
+ * @param {React.Component} EditComponent - Base edit component
+ * @param {Object} blockConfig - Block configuration
+ * @returns {React.Component} - Enhanced edit component
+ */
+function applyHigherOrderComponents(EditComponent, blockConfig) {
+  let enhancedComponent = EditComponent;
+
+  // Add text alignment support
+  if (blockConfig.supports.alignText || blockConfig.supports.align_text) {
+    blockConfig.attributes = addAttribute(blockConfig.attributes, 'align_text', 'string');
+    enhancedComponent = (0,_high_order_components_with_align_text__WEBPACK_IMPORTED_MODULE_2__.withAlignText)(enhancedComponent, blockConfig);
+  }
+
+  // Add content alignment support
+  if (blockConfig.supports.alignContent || blockConfig.supports.align_content) {
+    blockConfig.attributes = addAttribute(blockConfig.attributes, 'align_content', 'string');
+    enhancedComponent = (0,_high_order_components_with_align_content__WEBPACK_IMPORTED_MODULE_3__.withAlignContent)(enhancedComponent, blockConfig);
+  }
+
+  // Add full height support
+  if (blockConfig.supports.fullHeight || blockConfig.supports.full_height) {
+    blockConfig.attributes = addAttribute(blockConfig.attributes, 'full_height', 'boolean');
+    enhancedComponent = (0,_high_order_components_with_full_height__WEBPACK_IMPORTED_MODULE_4__.withFullHeight)(enhancedComponent);
+  }
+  return enhancedComponent;
+}
+
+/**
+ * Registers an ACF block type (version 3) with WordPress
+ *
+ * @param {Object} blockConfig - ACF block configuration object
+ * @returns {Object|boolean} - Registered block type or false if not registered
+ */
+function registerACFBlockType(blockConfig) {
+  // Check if block should be registered for current post type
+  if (!shouldRegisterBlock(blockConfig)) {
+    return false;
+  }
+
+  // Process icon
+  processBlockIcon(blockConfig);
+
+  // Validate category
+  validateBlockCategory(blockConfig);
+
+  // Apply default values
+  blockConfig = applyBlockDefaults(blockConfig);
+
+  // Clean up attributes
+  cleanBlockAttributes(blockConfig);
+
+  // Configure anchor support
+  configureAnchorSupport(blockConfig);
+
+  // Start with base BlockEdit component
+  let EditComponent = _components_block_edit__WEBPACK_IMPORTED_MODULE_1__.BlockEdit;
+
+  // Apply higher-order components based on supports
+  EditComponent = applyHigherOrderComponents(EditComponent, blockConfig);
+
+  // Create edit function that passes blockConfig and jQuery
+  blockConfig.edit = function (props) {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(EditComponent, {
+      ...props,
+      blockType: blockConfig,
+      $: (jquery__WEBPACK_IMPORTED_MODULE_0___default())
+    });
+  };
+
+  // Create save function (ACF blocks save to post content as HTML comments)
+  blockConfig.save = () => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(InnerBlocks.Content, {});
+
+  // Store in registry
+  registeredBlocks[blockConfig.name] = blockConfig;
+
+  // Register with WordPress
+  const registeredBlockType = wp.blocks.registerBlockType(blockConfig.name, blockConfig);
+
+  // Ensure anchor attribute is properly configured
+  if (registeredBlockType && registeredBlockType.attributes && registeredBlockType.attributes.anchor) {
+    registeredBlockType.attributes.anchor = {
+      type: 'string'
+    };
+  }
+  return registeredBlockType;
+}
+
+/**
+ * Retrieves a registered block configuration by name
+ *
+ * @param {string} blockName - Name of the block
+ * @returns {Object|boolean} - Block configuration or false
+ */
+function getRegisteredBlock(blockName) {
+  return registeredBlocks[blockName] || false;
+}
+
+/**
+ * Higher-order component to migrate legacy attribute names to new format
+ * Handles backward compatibility for align_text -> alignText, etc.
+ */
+const withDefaultAttributes = createHigherOrderComponent(BlockListBlock => class extends Component {
+  constructor(props) {
+    super(props);
+    const {
+      name,
+      attributes
+    } = this.props;
+    const blockConfig = getRegisteredBlock(name);
+    if (!blockConfig) return;
+
+    // Remove empty string attributes
+    Object.keys(attributes).forEach(key => {
+      if (attributes[key] === '') {
+        delete attributes[key];
+      }
+    });
+
+    // Map old attribute names to new camelCase names
+    const attributeMap = {
+      full_height: 'fullHeight',
+      align_content: 'alignContent',
+      align_text: 'alignText'
+    };
+    Object.keys(attributeMap).forEach(oldKey => {
+      const newKey = attributeMap[oldKey];
+      if (attributes[oldKey] !== undefined) {
+        // Migrate old key to new key
+        attributes[newKey] = attributes[oldKey];
+      } else if (attributes[newKey] === undefined && blockConfig[oldKey] !== undefined) {
+        // Set default from block config if not present
+        attributes[newKey] = blockConfig[oldKey];
+      }
+
+      // Clean up old attribute names
+      delete blockConfig[oldKey];
+      delete attributes[oldKey];
+    });
+
+    // Apply default values from block config for missing attributes
+    for (let key in blockConfig.attributes) {
+      if (attributes[key] === undefined && blockConfig[key] !== undefined) {
+        attributes[key] = blockConfig[key];
+      }
+    }
+  }
+  render() {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(BlockListBlock, {
+      ...this.props
+    });
+  }
+}, 'withDefaultAttributes');
+
+/**
+ * Initialize ACF blocks on the 'prepare' action
+ * Registers all ACF blocks with version 3 or higher
+ */
+acf.addAction('prepare', function () {
+  // Ensure wp.blockEditor exists (backward compatibility)
+  if (!wp.blockEditor) {
+    wp.blockEditor = wp.editor;
+  }
+  const blockTypes = acf.get('blockTypes');
+  if (blockTypes) {
+    blockTypes.forEach(blockType => {
+      // Only register blocks with version 3 or higher
+      if (parseInt(blockType.acf_block_version) >= 3) {
+        registerACFBlockType(blockType);
+      }
+    });
+  }
+});
+
+/**
+ * Register WordPress filter for attribute migration
+ * Ensures backward compatibility with legacy attribute names
+ */
+wp.hooks.addFilter('editor.BlockListBlock', 'acf/with-default-attributes', withDefaultAttributes);
+
+// Export for testing/external use
+
+
+/***/ }),
+
+/***/ "./assets/src/js/pro/blocks-v3/utils/post-locking.js":
+/*!***********************************************************!*\
+  !*** ./assets/src/js/pro/blocks-v3/utils/post-locking.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   isPostSavingLocked: () => (/* binding */ isPostSavingLocked),
+/* harmony export */   lockPostSaving: () => (/* binding */ lockPostSaving),
+/* harmony export */   lockPostSavingByName: () => (/* binding */ lockPostSavingByName),
+/* harmony export */   sortObjectKeys: () => (/* binding */ sortObjectKeys),
+/* harmony export */   unlockPostSaving: () => (/* binding */ unlockPostSaving),
+/* harmony export */   unlockPostSavingByName: () => (/* binding */ unlockPostSavingByName)
+/* harmony export */ });
+/**
+ * WordPress post locking utilities for ACF blocks
+ * Handles locking/unlocking post saving during block operations
+ */
+
+/**
+ * Locks post saving in the WordPress editor for a specific block
+ * Used when block operations are in progress for a specific block instance
+ *
+ * @param {string} clientId - The block's client ID
+ */
+const lockPostSaving = clientId => {
+  const dispatch = wp.data.dispatch('core/editor');
+  if (dispatch) {
+    dispatch.lockPostSaving('acf/block/' + clientId);
+  }
+};
+
+/**
+ * Unlocks post saving in the WordPress editor for a specific block
+ * Called when block operations are complete for a specific block instance
+ *
+ * @param {string} clientId - The block's client ID
+ */
+const unlockPostSaving = clientId => {
+  const dispatch = wp.data.dispatch('core/editor');
+  if (dispatch) {
+    dispatch.unlockPostSaving('acf/block/' + clientId);
+  }
+};
+
+/**
+ * Checks if post saving is currently locked for a specific block
+ *
+ * @param {string} clientId - The block's client ID
+ * @returns {boolean} - True if post saving is locked for this block
+ */
+const isPostSavingLocked = clientId => {
+  const dispatch = wp.data.dispatch('core/editor');
+  if (!dispatch) {
+    return false;
+  }
+  return wp.data.select('core/editor').isPostSavingLocked(`acf/block/${clientId}`);
+};
+
+/**
+ * Locks post saving with a custom lock name
+ * Used for global operations that aren't tied to a specific block
+ *
+ * @param {string} lockName - The name of the lock
+ */
+const lockPostSavingByName = lockName => {
+  const dispatch = wp.data.dispatch('core/editor');
+  if (dispatch) {
+    dispatch.lockPostSaving('acf/block/' + lockName);
+  }
+};
+
+/**
+ * Unlocks post saving with a custom lock name
+ * Used for global operations that aren't tied to a specific block
+ *
+ * @param {string} lockName - The name of the lock
+ */
+const unlockPostSavingByName = lockName => {
+  const dispatch = wp.data.dispatch('core/editor');
+  if (dispatch) {
+    dispatch.unlockPostSaving('acf/block/' + lockName);
+  }
+};
+
+/**
+ * Sorts an object's keys alphabetically and returns a new object
+ * Used for consistent object serialization and comparison
+ * Ensures that objects with same properties in different order produce same hash
+ *
+ * @param {Object} obj - Object to sort
+ * @returns {Object} - New object with sorted keys in alphabetical order
+ */
+const sortObjectKeys = obj => {
+  return Object.keys(obj).sort().reduce((sortedObj, key) => {
+    sortedObj[key] = obj[key];
+    return sortedObj;
+  }, {});
+};
+
+/***/ }),
+
+/***/ "./node_modules/charenc/charenc.js":
+/*!*****************************************!*\
+  !*** ./node_modules/charenc/charenc.js ***!
+  \*****************************************/
+/***/ ((module) => {
+
+var charenc = {
+  // UTF-8 encoding
+  utf8: {
+    // Convert a string to a byte array
+    stringToBytes: function(str) {
+      return charenc.bin.stringToBytes(unescape(encodeURIComponent(str)));
+    },
+
+    // Convert a byte array to a string
+    bytesToString: function(bytes) {
+      return decodeURIComponent(escape(charenc.bin.bytesToString(bytes)));
+    }
+  },
+
+  // Binary encoding
+  bin: {
+    // Convert a string to a byte array
+    stringToBytes: function(str) {
+      for (var bytes = [], i = 0; i < str.length; i++)
+        bytes.push(str.charCodeAt(i) & 0xFF);
+      return bytes;
+    },
+
+    // Convert a byte array to a string
+    bytesToString: function(bytes) {
+      for (var str = [], i = 0; i < bytes.length; i++)
+        str.push(String.fromCharCode(bytes[i]));
+      return str.join('');
+    }
+  }
+};
+
+module.exports = charenc;
+
+
+/***/ }),
+
+/***/ "./node_modules/crypt/crypt.js":
+/*!*************************************!*\
+  !*** ./node_modules/crypt/crypt.js ***!
+  \*************************************/
+/***/ ((module) => {
+
+(function() {
+  var base64map
+      = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/',
+
+  crypt = {
+    // Bit-wise rotation left
+    rotl: function(n, b) {
+      return (n << b) | (n >>> (32 - b));
+    },
+
+    // Bit-wise rotation right
+    rotr: function(n, b) {
+      return (n << (32 - b)) | (n >>> b);
+    },
+
+    // Swap big-endian to little-endian and vice versa
+    endian: function(n) {
+      // If number given, swap endian
+      if (n.constructor == Number) {
+        return crypt.rotl(n, 8) & 0x00FF00FF | crypt.rotl(n, 24) & 0xFF00FF00;
+      }
+
+      // Else, assume array and swap all items
+      for (var i = 0; i < n.length; i++)
+        n[i] = crypt.endian(n[i]);
+      return n;
+    },
+
+    // Generate an array of any length of random bytes
+    randomBytes: function(n) {
+      for (var bytes = []; n > 0; n--)
+        bytes.push(Math.floor(Math.random() * 256));
+      return bytes;
+    },
+
+    // Convert a byte array to big-endian 32-bit words
+    bytesToWords: function(bytes) {
+      for (var words = [], i = 0, b = 0; i < bytes.length; i++, b += 8)
+        words[b >>> 5] |= bytes[i] << (24 - b % 32);
+      return words;
+    },
+
+    // Convert big-endian 32-bit words to a byte array
+    wordsToBytes: function(words) {
+      for (var bytes = [], b = 0; b < words.length * 32; b += 8)
+        bytes.push((words[b >>> 5] >>> (24 - b % 32)) & 0xFF);
+      return bytes;
+    },
+
+    // Convert a byte array to a hex string
+    bytesToHex: function(bytes) {
+      for (var hex = [], i = 0; i < bytes.length; i++) {
+        hex.push((bytes[i] >>> 4).toString(16));
+        hex.push((bytes[i] & 0xF).toString(16));
+      }
+      return hex.join('');
+    },
+
+    // Convert a hex string to a byte array
+    hexToBytes: function(hex) {
+      for (var bytes = [], c = 0; c < hex.length; c += 2)
+        bytes.push(parseInt(hex.substr(c, 2), 16));
+      return bytes;
+    },
+
+    // Convert a byte array to a base-64 string
+    bytesToBase64: function(bytes) {
+      for (var base64 = [], i = 0; i < bytes.length; i += 3) {
+        var triplet = (bytes[i] << 16) | (bytes[i + 1] << 8) | bytes[i + 2];
+        for (var j = 0; j < 4; j++)
+          if (i * 8 + j * 6 <= bytes.length * 8)
+            base64.push(base64map.charAt((triplet >>> 6 * (3 - j)) & 0x3F));
+          else
+            base64.push('=');
+      }
+      return base64.join('');
+    },
+
+    // Convert a base-64 string to a byte array
+    base64ToBytes: function(base64) {
+      // Remove non-base-64 characters
+      base64 = base64.replace(/[^A-Z0-9+\/]/ig, '');
+
+      for (var bytes = [], i = 0, imod4 = 0; i < base64.length;
+          imod4 = ++i % 4) {
+        if (imod4 == 0) continue;
+        bytes.push(((base64map.indexOf(base64.charAt(i - 1))
+            & (Math.pow(2, -2 * imod4 + 8) - 1)) << (imod4 * 2))
+            | (base64map.indexOf(base64.charAt(i)) >>> (6 - imod4 * 2)));
+      }
+      return bytes;
+    }
+  };
+
+  module.exports = crypt;
+})();
+
+
+/***/ }),
+
+/***/ "./node_modules/is-buffer/index.js":
+/*!*****************************************!*\
+  !*** ./node_modules/is-buffer/index.js ***!
+  \*****************************************/
+/***/ ((module) => {
+
+/*!
+ * Determine if an object is a Buffer
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+
+// The _isBuffer check is for Safari 5-7 support, because it's missing
+// Object.prototype.constructor. Remove this eventually
+module.exports = function (obj) {
+  return obj != null && (isBuffer(obj) || isSlowBuffer(obj) || !!obj._isBuffer)
+}
+
+function isBuffer (obj) {
+  return !!obj.constructor && typeof obj.constructor.isBuffer === 'function' && obj.constructor.isBuffer(obj)
+}
+
+// For Node v0.10 support. Remove this eventually.
+function isSlowBuffer (obj) {
+  return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0))
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/md5/md5.js":
+/*!*********************************!*\
+  !*** ./node_modules/md5/md5.js ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+(function(){
+  var crypt = __webpack_require__(/*! crypt */ "./node_modules/crypt/crypt.js"),
+      utf8 = (__webpack_require__(/*! charenc */ "./node_modules/charenc/charenc.js").utf8),
+      isBuffer = __webpack_require__(/*! is-buffer */ "./node_modules/is-buffer/index.js"),
+      bin = (__webpack_require__(/*! charenc */ "./node_modules/charenc/charenc.js").bin),
+
+  // The core
+  md5 = function (message, options) {
+    // Convert to byte array
+    if (message.constructor == String)
+      if (options && options.encoding === 'binary')
+        message = bin.stringToBytes(message);
+      else
+        message = utf8.stringToBytes(message);
+    else if (isBuffer(message))
+      message = Array.prototype.slice.call(message, 0);
+    else if (!Array.isArray(message) && message.constructor !== Uint8Array)
+      message = message.toString();
+    // else, assume byte array already
+
+    var m = crypt.bytesToWords(message),
+        l = message.length * 8,
+        a =  1732584193,
+        b = -271733879,
+        c = -1732584194,
+        d =  271733878;
+
+    // Swap endian
+    for (var i = 0; i < m.length; i++) {
+      m[i] = ((m[i] <<  8) | (m[i] >>> 24)) & 0x00FF00FF |
+             ((m[i] << 24) | (m[i] >>>  8)) & 0xFF00FF00;
+    }
+
+    // Padding
+    m[l >>> 5] |= 0x80 << (l % 32);
+    m[(((l + 64) >>> 9) << 4) + 14] = l;
+
+    // Method shortcuts
+    var FF = md5._ff,
+        GG = md5._gg,
+        HH = md5._hh,
+        II = md5._ii;
+
+    for (var i = 0; i < m.length; i += 16) {
+
+      var aa = a,
+          bb = b,
+          cc = c,
+          dd = d;
+
+      a = FF(a, b, c, d, m[i+ 0],  7, -680876936);
+      d = FF(d, a, b, c, m[i+ 1], 12, -389564586);
+      c = FF(c, d, a, b, m[i+ 2], 17,  606105819);
+      b = FF(b, c, d, a, m[i+ 3], 22, -1044525330);
+      a = FF(a, b, c, d, m[i+ 4],  7, -176418897);
+      d = FF(d, a, b, c, m[i+ 5], 12,  1200080426);
+      c = FF(c, d, a, b, m[i+ 6], 17, -1473231341);
+      b = FF(b, c, d, a, m[i+ 7], 22, -45705983);
+      a = FF(a, b, c, d, m[i+ 8],  7,  1770035416);
+      d = FF(d, a, b, c, m[i+ 9], 12, -1958414417);
+      c = FF(c, d, a, b, m[i+10], 17, -42063);
+      b = FF(b, c, d, a, m[i+11], 22, -1990404162);
+      a = FF(a, b, c, d, m[i+12],  7,  1804603682);
+      d = FF(d, a, b, c, m[i+13], 12, -40341101);
+      c = FF(c, d, a, b, m[i+14], 17, -1502002290);
+      b = FF(b, c, d, a, m[i+15], 22,  1236535329);
+
+      a = GG(a, b, c, d, m[i+ 1],  5, -165796510);
+      d = GG(d, a, b, c, m[i+ 6],  9, -1069501632);
+      c = GG(c, d, a, b, m[i+11], 14,  643717713);
+      b = GG(b, c, d, a, m[i+ 0], 20, -373897302);
+      a = GG(a, b, c, d, m[i+ 5],  5, -701558691);
+      d = GG(d, a, b, c, m[i+10],  9,  38016083);
+      c = GG(c, d, a, b, m[i+15], 14, -660478335);
+      b = GG(b, c, d, a, m[i+ 4], 20, -405537848);
+      a = GG(a, b, c, d, m[i+ 9],  5,  568446438);
+      d = GG(d, a, b, c, m[i+14],  9, -1019803690);
+      c = GG(c, d, a, b, m[i+ 3], 14, -187363961);
+      b = GG(b, c, d, a, m[i+ 8], 20,  1163531501);
+      a = GG(a, b, c, d, m[i+13],  5, -1444681467);
+      d = GG(d, a, b, c, m[i+ 2],  9, -51403784);
+      c = GG(c, d, a, b, m[i+ 7], 14,  1735328473);
+      b = GG(b, c, d, a, m[i+12], 20, -1926607734);
+
+      a = HH(a, b, c, d, m[i+ 5],  4, -378558);
+      d = HH(d, a, b, c, m[i+ 8], 11, -2022574463);
+      c = HH(c, d, a, b, m[i+11], 16,  1839030562);
+      b = HH(b, c, d, a, m[i+14], 23, -35309556);
+      a = HH(a, b, c, d, m[i+ 1],  4, -1530992060);
+      d = HH(d, a, b, c, m[i+ 4], 11,  1272893353);
+      c = HH(c, d, a, b, m[i+ 7], 16, -155497632);
+      b = HH(b, c, d, a, m[i+10], 23, -1094730640);
+      a = HH(a, b, c, d, m[i+13],  4,  681279174);
+      d = HH(d, a, b, c, m[i+ 0], 11, -358537222);
+      c = HH(c, d, a, b, m[i+ 3], 16, -722521979);
+      b = HH(b, c, d, a, m[i+ 6], 23,  76029189);
+      a = HH(a, b, c, d, m[i+ 9],  4, -640364487);
+      d = HH(d, a, b, c, m[i+12], 11, -421815835);
+      c = HH(c, d, a, b, m[i+15], 16,  530742520);
+      b = HH(b, c, d, a, m[i+ 2], 23, -995338651);
+
+      a = II(a, b, c, d, m[i+ 0],  6, -198630844);
+      d = II(d, a, b, c, m[i+ 7], 10,  1126891415);
+      c = II(c, d, a, b, m[i+14], 15, -1416354905);
+      b = II(b, c, d, a, m[i+ 5], 21, -57434055);
+      a = II(a, b, c, d, m[i+12],  6,  1700485571);
+      d = II(d, a, b, c, m[i+ 3], 10, -1894986606);
+      c = II(c, d, a, b, m[i+10], 15, -1051523);
+      b = II(b, c, d, a, m[i+ 1], 21, -2054922799);
+      a = II(a, b, c, d, m[i+ 8],  6,  1873313359);
+      d = II(d, a, b, c, m[i+15], 10, -30611744);
+      c = II(c, d, a, b, m[i+ 6], 15, -1560198380);
+      b = II(b, c, d, a, m[i+13], 21,  1309151649);
+      a = II(a, b, c, d, m[i+ 4],  6, -145523070);
+      d = II(d, a, b, c, m[i+11], 10, -1120210379);
+      c = II(c, d, a, b, m[i+ 2], 15,  718787259);
+      b = II(b, c, d, a, m[i+ 9], 21, -343485551);
+
+      a = (a + aa) >>> 0;
+      b = (b + bb) >>> 0;
+      c = (c + cc) >>> 0;
+      d = (d + dd) >>> 0;
+    }
+
+    return crypt.endian([a, b, c, d]);
+  };
+
+  // Auxiliary functions
+  md5._ff  = function (a, b, c, d, x, s, t) {
+    var n = a + (b & c | ~b & d) + (x >>> 0) + t;
+    return ((n << s) | (n >>> (32 - s))) + b;
+  };
+  md5._gg  = function (a, b, c, d, x, s, t) {
+    var n = a + (b & d | c & ~d) + (x >>> 0) + t;
+    return ((n << s) | (n >>> (32 - s))) + b;
+  };
+  md5._hh  = function (a, b, c, d, x, s, t) {
+    var n = a + (b ^ c ^ d) + (x >>> 0) + t;
+    return ((n << s) | (n >>> (32 - s))) + b;
+  };
+  md5._ii  = function (a, b, c, d, x, s, t) {
+    var n = a + (c ^ (b | ~d)) + (x >>> 0) + t;
+    return ((n << s) | (n >>> (32 - s))) + b;
+  };
+
+  // Package private blocksize
+  md5._blocksize = 16;
+  md5._digestsize = 16;
+
+  module.exports = function (message, options) {
+    if (message === undefined || message === null)
+      throw new Error('Illegal argument ' + message);
+
+    var digestbytes = crypt.wordsToBytes(md5(message, options));
+    return options && options.asBytes ? digestbytes :
+        options && options.asString ? bin.bytesToString(digestbytes) :
+        crypt.bytesToHex(digestbytes);
+  };
+
+})();
+
+
+/***/ }),
+
+/***/ "@wordpress/block-editor":
+/*!*************************************!*\
+  !*** external ["wp","blockEditor"] ***!
+  \*************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = window["wp"]["blockEditor"];
+
+/***/ }),
+
+/***/ "@wordpress/components":
+/*!************************************!*\
+  !*** external ["wp","components"] ***!
+  \************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = window["wp"]["components"];
+
+/***/ }),
+
+/***/ "@wordpress/element":
+/*!*********************************!*\
+  !*** external ["wp","element"] ***!
+  \*********************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = window["wp"]["element"];
+
+/***/ }),
+
+/***/ "jquery":
+/*!*************************!*\
+  !*** external "jQuery" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = window["jQuery"];
+
+/***/ }),
+
+/***/ "react/jsx-runtime":
+/*!**********************************!*\
+  !*** external "ReactJSXRuntime" ***!
+  \**********************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = window["ReactJSXRuntime"];
+
 /***/ })
 
 /******/ 	});
@@ -3505,9 +5931,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _acf_jsx_names_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_acf-jsx-names.js */ "./assets/src/js/pro/_acf-jsx-names.js");
 /* harmony import */ var _acf_jsx_names_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_acf_jsx_names_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _acf_blocks_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_acf-blocks.js */ "./assets/src/js/pro/_acf-blocks.js");
-/* harmony import */ var _acf_blocks_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_acf_blocks_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _acf_blocks_v3_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_acf-blocks-v3.js */ "./assets/src/js/pro/_acf-blocks-v3.js");
-/* harmony import */ var _acf_blocks_v3_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_acf_blocks_v3_js__WEBPACK_IMPORTED_MODULE_2__);
 
 
 

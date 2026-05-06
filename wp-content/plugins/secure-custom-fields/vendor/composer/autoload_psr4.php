@@ -6,9 +6,12 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'SCF\\Site_Health\\' => array($baseDir . '/src/Site_Health'),
     'SCF\\Meta\\' => array($baseDir . '/includes/Meta'),
     'SCF\\Forms\\' => array($baseDir . '/includes/forms'),
     'SCF\\Fields\\FlexibleContent\\' => array($baseDir . '/includes/fields/FlexibleContent'),
+    'SCF\\CLI\\' => array($baseDir . '/src/CLI'),
+    'SCF\\Blocks\\' => array($baseDir . '/includes/Blocks'),
+    'SCF\\AI\\' => array($baseDir . '/src/AI'),
     'JsonSchema\\' => array($vendorDir . '/justinrainbow/json-schema/src/JsonSchema'),
-    'ACF\\Blocks\\' => array($baseDir . '/includes/Blocks'),
 );

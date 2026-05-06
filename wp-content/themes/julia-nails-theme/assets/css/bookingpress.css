@@ -79,3 +79,8 @@ font-weight: 500 !important;
         flex-direction: column !important;
     }
 }
+
+/* Remove images in service cards */
+.bpa-front-module--service-item .bpa-front-si-card .bpa-front-si-card__left .bpa-front-si__default-img {
+    display: none !important;
+}

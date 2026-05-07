@@ -19,7 +19,7 @@
         <input type="checkbox" id="nav-toggle" class="nav-toggle"
         aria-label="Toggle navigation menu"
                aria-controls="main-menu">
-        <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <label for="nav-toggle" class="nav-toggle-label">
             <span></span>
         </label>
 
@@ -34,7 +34,7 @@
             <a href="/booking" class="btn-book mobile-cta" aria-label="Book an appointment">BOOK NOW</a>
         </nav>
 
-        <div class="header-cta desktop-only" aria-hidden="true">
+        <div class="header-cta desktop-only">
             <a href="/booking" class="btn-book">BOOK NOW</a>
         </div>
     </div>

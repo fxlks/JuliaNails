@@ -12,7 +12,7 @@
     <div class="container navbar-flex">
         <div class="site-logo">
             <a href="<?php echo esc_url( home_url( 'Home' ) ); ?>" aria-label="Julia Nails - Go to homepage">
-                <img src="http://julianails.local/wp-content/uploads/2026/04/ChatGPT-Image-Apr-20-2026-09_56_21-PM.png" alt="Logo">
+                <img src="http://julianails.local/wp-content/uploads/2026/04/ChatGPT-Image-Apr-20-2026-09_56_21-PM.png" alt="Junails Studio Logo">
             </a>
         </div>
 

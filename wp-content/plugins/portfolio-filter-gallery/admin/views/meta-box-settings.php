@@ -54,6 +54,11 @@ if (class_exists('PFG_Templates')) {
                 <span class="dashicons dashicons-admin-tools"></span>
                 <?php esc_html_e('Advanced', 'portfolio-filter-gallery'); ?>
             </button>
+            <button type="button" class="pfg-tab" data-tab="pfg-tab-woocommerce">
+                <span class="dashicons dashicons-cart"></span>
+                <?php esc_html_e('WooCommerce', 'portfolio-filter-gallery'); ?>
+                <span class="pfg-tab-pro-badge">PRO</span>
+            </button>
 
         </div>
 
@@ -435,7 +440,18 @@ if (class_exists('PFG_Templates')) {
 
 
             </div><!-- End Filter Settings Group (pfg-conditional) -->
+			
+			<!-- Multi-Filter -->
+            <h4 class="pfg-form-section-title" style="margin-top: 0;">
+                <span class="dashicons dashicons-filter" style="margin-right: 5px;"></span>
+                <?php esc_html_e( 'Multi-Filter', 'portfolio-filter-gallery' ); ?>
+            </h4>
 
+            <div class="pfg-upsell-banner pfg-upsell-inline">
+                <span><?php esc_html_e( 'Select multiple filter in same time with "AND"/"OR" Logic', 'portfolio-filter-gallery' ); ?></span>
+                <a href="https://awplife.com/wordpress-plugins/portfolio-filter-gallery-wordpress-plugin/" target="_blank" class="pfg-upsell-link"><?php esc_html_e( 'Upgrade to Pro', 'portfolio-filter-gallery' ); ?> →</a>
+            </div>
+			
             <!-- Search Section -->
             <h4 class="pfg-form-section-title" style="margin-top: 20px;">
                 <span class="dashicons dashicons-search" style="margin-right: 5px;"></span>
@@ -641,6 +657,19 @@ if (class_exists('PFG_Templates')) {
 
         <!-- Advanced Tab -->
         <div id="pfg-tab-advanced" class="pfg-tab-content">
+		
+			<!-- Pagination Section -->
+            <h4 class="pfg-form-section-title" style="margin-top: 0;">
+                <span class="dashicons dashicons-editor-ol" style="margin-right: 5px;"></span>
+                <?php esc_html_e( 'Pagination & Load More', 'portfolio-filter-gallery' ); ?>
+                
+            </h4>
+			
+			<div class="pfg-upsell-banner pfg-upsell-inline">
+                <span><?php esc_html_e( 'Pagination features are available in the Premium version.', 'portfolio-filter-gallery' ); ?></span>
+                <a href="https://awplife.com/wordpress-plugins/portfolio-filter-gallery-wordpress-plugin/" target="_blank" class="pfg-upsell-link"><?php esc_html_e( 'Buy pro', 'portfolio-filter-gallery' ); ?> →</a>
+            </div>
+		
             <!-- Display & Behavior Section -->
             <h4 class="pfg-form-section-title" style="margin-top: 0;">
                 <span class="dashicons dashicons-visibility" style="margin-right: 5px;"></span>
@@ -758,6 +787,18 @@ if (class_exists('PFG_Templates')) {
                     </option>
                 </select>
             </div>
+			
+			<!-- Watermarking -->
+            <h4 class="pfg-form-section-title" style="margin-top: 0;">
+                <span class="dashicons dashicons-shield" style="margin-right: 5px;"></span>
+                <?php esc_html_e( 'Watermarking (Text/Image)', 'portfolio-filter-gallery' ); ?>
+                
+            </h4>
+			
+			<div class="pfg-upsell-banner pfg-upsell-inline">
+                <span><?php esc_html_e( 'Watermarking features are available in the Premium version.', 'portfolio-filter-gallery' ); ?></span>
+                <a href="https://awplife.com/wordpress-plugins/portfolio-filter-gallery-wordpress-plugin/" target="_blank" class="pfg-upsell-link"><?php esc_html_e( 'Buy pro', 'portfolio-filter-gallery' ); ?> →</a>
+            </div>
 
             <!-- Performance Section -->
             <h4 class="pfg-form-section-title" style="margin-top: 20px;">
@@ -791,6 +832,45 @@ if (class_exists('PFG_Templates')) {
 
 
 
+        </div>
+
+        <!-- WooCommerce Tab -->
+        <div id="pfg-tab-woocommerce" class="pfg-tab-content">
+            <!-- WooCommerce Integration -->
+            <h4 class="pfg-form-section-title" style="margin-top: 0;">
+                <span class="dashicons dashicons-cart" style="margin-right: 5px;"></span>
+                <?php esc_html_e( 'WooCommerce Integration', 'portfolio-filter-gallery' ); ?>
+            </h4>
+
+            <div class="pfg-upsell-banner pfg-upsell-inline">
+                <span><?php esc_html_e( 'WooCommerce integration is available in the Premium version.', 'portfolio-filter-gallery' ); ?></span>
+                <a href="https://awplife.com/wordpress-plugins/portfolio-filter-gallery-wordpress-plugin/" target="_blank" class="pfg-upsell-link"><?php esc_html_e( 'Upgrade to Pro', 'portfolio-filter-gallery' ); ?> →</a>
+            </div>
+
+            <div class="pfg-feature-showcase" style="margin-top: 30px;">
+                <div class="pfg-form-row">
+                    <label class="pfg-form-label">
+                        <?php esc_html_e( 'Enable WooCommerce', 'portfolio-filter-gallery' ); ?>
+                        <small><?php esc_html_e( 'Link your gallery items directly to products', 'portfolio-filter-gallery' ); ?></small>
+                    </label>
+                </div>
+
+                <div class="pfg-form-row">
+                    <label class="pfg-form-label">
+                        <?php esc_html_e( 'Show "Add to Cart"', 'portfolio-filter-gallery' ); ?>
+                        <small><?php esc_html_e( 'Display purchase buttons on gallery items', 'portfolio-filter-gallery' ); ?></small>
+                    </label>
+                    
+                </div>
+
+                <div class="pfg-form-row">
+                    <label class="pfg-form-label">
+                        <?php esc_html_e( 'Show Product Price', 'portfolio-filter-gallery' ); ?>
+                        <small><?php esc_html_e( 'Automatically pull prices from your store', 'portfolio-filter-gallery' ); ?></small>
+                    </label>
+                    
+                </div>
+            </div>
         </div>
 
         <!-- Pro Banner (Desktop Grid) -->

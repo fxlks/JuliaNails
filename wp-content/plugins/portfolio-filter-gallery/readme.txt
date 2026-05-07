@@ -1,19 +1,19 @@
-=== Portfolio Filter Gallery ===
+=== Portfolio Filter Gallery - Photo Gallery ===
 Contributors: awordpresslife, razipathhan, hanif0991, muhammadshahid, fkfaisalkhan007, sharikkhan007, zishlife, FARAZFRANK
 Donate link: https://paypal.me/awplife
 Tags: portfolio, gallery, portfolio gallery, photo gallery, video gallery
 Requires at least: 5.8
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 2.1.5
+Stable tag: 2.1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A WordPress plugin designed for creating filterable portfolio galleries. Supports images and videos with masonry routing.
+Create a filterable photo gallery and portfolio. Supports images and videos with masonry layouts.
 
 == Description ==
 
-**Portfolio Filter Gallery** is a WordPress plugin built to help you organize and display your creative work. It provides a structured way to present images and videos, allowing visitors to filter content by category.
+**Portfolio Filter Gallery** is a top-rated **photo gallery** plugin that helps you show your work. It lets you sort images and videos into categories. Users can click buttons to filter and find what they need.
 
 
 = Demo Links =
@@ -29,9 +29,9 @@ A WordPress plugin designed for creating filterable portfolio galleries. Support
 
 = What This Plugin Does =
 
-The core function of Portfolio Filter Gallery is to let you build galleries where users can click filter buttons to view specific categories of work. Instead of scrolling through an entire page of images, a visitor can select "Web Design" or "Photography" and see only those items.
+This plugin lets you build galleries with filters. Users click a button to see one category. For example, they can pick "Web Design" to only see that work. This saves them from scrolling through many images.
 
-The plugin includes a dedicated page for managing filter categories. You create your filters once, then assign them to individual images or videos as you build your gallery. This separation keeps your workflow clean and organized.
+You manage filters on one easy page. Create a filter once and use it on any image or video. This keeps your gallery neat and easy to manage.
 
 = Use Cases =
 
@@ -108,9 +108,9 @@ The shortcode follows this format:
 
 Replace "123" with your gallery's ID.
 
-= Masonry Layout =
+= Photo Gallery Masonry Layout =
 
-The masonry layout arranges images in a Pinterest-style grid. Images of different sizes fit together naturally without requiring uniform dimensions. This layout includes:
+The masonry layout puts images in a Pinterest-style grid. Images of different sizes fit together well. They do not need to be the same size. This layout has:
 
 * Automatic adjustment to image proportions
 * CSS3 animation effects
@@ -118,7 +118,7 @@ The masonry layout arranges images in a Pinterest-style grid. Images of differen
 
 = Linking Portfolio Items =
 
-You can attach custom URLs to individual gallery items. This allows you to:
+Add custom links to any gallery item. This lets you:
 
 * Link images to project detail pages
 * Direct users to external client websites
@@ -178,7 +178,7 @@ For questions or troubleshooting, visit the [Support Forum](https://wordpress.or
 
 = Is Portfolio Filter Gallery free? =
 
-Yes. The free version includes all core features: filterable galleries, masonry layout, and video embedding. A [premium version](https://awplife.com/wordpress-plugins/portfolio-filter-gallery-wordpress-plugin/) is available with additional hover effects and advanced functionality.
+Yes. The free version includes all core features: filterable galleries, masonry layout, and video embedding. A [premium version](https://awplife.com/wordpress-plugins/portfolio-filter-gallery-wordpress-plugin/) is available. Upgrading gives you more hover effects and advanced **photo gallery** tools.
 
 = How do I create filters? =
 
@@ -222,6 +222,11 @@ Yes. The plugin is translation-ready and works with WPML and other translation p
 Visit the [Support Forum](https://wordpress.org/support/plugin/portfolio-filter-gallery/) for assistance. For premium support, visit the [developer website](https://awplife.com/wordpress-plugins/portfolio-filter-gallery-wordpress-plugin/).
 
 == Changelog ==
+
+= 2.1.6 =
+* Added: Bulk selection capability using "Shift + Click" for faster image management.
+* Improved: Image gallery loading sequence to prevent layout shifts.
+* Optimized: Filter button responsiveness on mobile devices.
 
 = 2.1.5 =
 * Added: Dual action overlay buttons (Link + Lightbox view) for gallery items.

@@ -2627,15 +2627,18 @@ jQuery(document).ready(function($) {
         }
     }
     
-    // Update selected count
-    function updateSelectedCount() {
+    // Update selection count and show/hide bulk actions
+    function updateSelectionUI() {
         var count = $('.pfg-image-select:checked').length;
         $('#pfg-selected-num').text(count);
         
         if (count > 0) {
             $('.pfg-delete-selected').show();
+            $('.pfg-bulk-filters-dropdown').show();
         } else {
             $('.pfg-delete-selected').hide();
+            $('.pfg-bulk-filters-dropdown').hide();
+            $('.pfg-bulk-filters-menu').hide();
         }
         
         // Update select all checkbox state
@@ -2643,23 +2646,6 @@ jQuery(document).ready(function($) {
         $('#pfg-select-all').prop('checked', count === totalImages && totalImages > 0);
         $('#pfg-select-all').prop('indeterminate', count > 0 && count < totalImages);
     }
-    
-    // Individual image checkbox change
-    $(document).on('change', '.pfg-image-select', function() {
-        var $item = $(this).closest('.pfg-image-item');
-        if ($(this).is(':checked')) {
-            $item.addClass('selected');
-        } else {
-            $item.removeClass('selected');
-        }
-        updateSelectedCount();
-    });
-    
-    // Select All checkbox
-    $(document).on('change', '#pfg-select-all', function() {
-        var isChecked = $(this).is(':checked');
-        $('.pfg-image-select').prop('checked', isChecked).trigger('change');
-    });
     
     // Delete Selected button
     $(document).on('click', '.pfg-delete-selected', function(e) {
@@ -2685,7 +2671,7 @@ jQuery(document).ready(function($) {
             });
             
             reindexImages();
-            updateSelectedCount();
+            updateSelectionUI();
             updateBulkActionsBar();
             markStructurallyModified(); // Bulk delete is a structural change
             
@@ -2702,86 +2688,73 @@ jQuery(document).ready(function($) {
             }
         }
     });
-    // Initialize bulk actions bar on page load
-    updateBulkActionsBar();
-});
 
-/* Extracted from meta-box-images.php */
-jQuery(document).ready(function($) {
-    // Handle collapse toggle clicks for filter groups (both old and new styles)
-    // Use mousedown instead of click to prevent label checkbox toggle interference
+    // Handle Shift + Click for bulk selection
+    var lastChecked = null;
+    $(document).on('click', '.pfg-image-select', function(e) {
+        if (!lastChecked) {
+            lastChecked = this;
+        }
+
+        if (e.shiftKey) {
+            var $checkboxes = $('.pfg-image-select');
+            var start = $checkboxes.index(this);
+            var end = $checkboxes.index(lastChecked);
+            
+            var isChecked = this.checked;
+
+            $checkboxes.slice(Math.min(start, end), Math.max(start, end) + 1)
+                .prop('checked', isChecked)
+                .trigger('change');
+        }
+
+        lastChecked = this;
+    });
+
+    // Individual image checkbox change
+    $(document).on('change', '.pfg-image-select', function() {
+        var $item = $(this).closest('.pfg-image-item');
+        if ($(this).is(':checked')) {
+            $item.addClass('selected');
+        } else {
+            $item.removeClass('selected');
+        }
+        updateSelectionUI();
+    });
+    
+    // Select All checkbox
+    $(document).on('change', '#pfg-select-all', function() {
+        var isChecked = $(this).is(':checked');
+        $('.pfg-image-select').prop('checked', isChecked).trigger('change');
+    });
+    
+    // Toggle bulk filters menu
+    $(document).on('click', '.pfg-bulk-filters-btn', function(e) {
+        e.stopPropagation();
+        $('.pfg-bulk-filters-menu').toggle();
+    });
+    
+    // Close menu when clicking outside
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('.pfg-bulk-filters-dropdown').length) {
+            $('.pfg-bulk-filters-menu').hide();
+        }
+    });
+    
+    // Cancel button
+    $(document).on('click', '.pfg-cancel-bulk-filters', function() {
+        $('.pfg-bulk-filters-menu').hide();
+        $('.pfg-bulk-filter-checkbox').prop('checked', false);
+    });
+    
+    // Handle filter group collapses in bulk menu
     $(document).on('mousedown', '.pfg-collapse-toggle, .pfg-tree-toggle', function(e) {
         e.preventDefault();
         e.stopPropagation();
         
         var $group = $(this).closest('.pfg-filter-collapsible-group');
         var isExpanded = $group.attr('data-expanded') === 'true';
-        
-        // Toggle state
         $group.attr('data-expanded', isExpanded ? 'false' : 'true');
-    });
-    
-    // Bulk selection functionality
-    var $bulkActions = $('#pfg-bulk-actions');
-    var $imageGrid = $('#pfg-image-grid');
-    var $selectAllCheckbox = $('#pfg-select-all');
-    var $selectedCount = $('#pfg-selected-num');
-    var $deleteBtn = $('.pfg-delete-selected');
-    var $bulkFiltersDropdown = $('.pfg-bulk-filters-dropdown');
-    var $bulkFiltersMenu = $('.pfg-bulk-filters-menu');
-    
-    // Update selection count and show/hide bulk actions
-    function updateSelectionUI() {
-        var $selected = $imageGrid.find('.pfg-image-select:checked');
-        var count = $selected.length;
-        
-        $selectedCount.text(count);
-        
-        // Keep bar visible, only show/hide action buttons
-        if (count > 0) {
-            $deleteBtn.show();
-            $bulkFiltersDropdown.show();
-        } else {
-            $deleteBtn.hide();
-            $bulkFiltersDropdown.hide();
-            $bulkFiltersMenu.hide();
-        }
-        
-        // Update select all checkbox state
-        var totalCheckboxes = $imageGrid.find('.pfg-image-select').length;
-        $selectAllCheckbox.prop('checked', count > 0 && count === totalCheckboxes);
-    }
-    
-    // Image checkbox change
-    $(document).on('change', '.pfg-image-select', function() {
-        updateSelectionUI();
-    });
-    
-    // Select all checkbox
-    $selectAllCheckbox.on('change', function() {
-        var isChecked = $(this).prop('checked');
-        $imageGrid.find('.pfg-image-select').prop('checked', isChecked);
-        updateSelectionUI();
-    });
-    
-    // Toggle bulk filters menu
-    $(document).on('click', '.pfg-bulk-filters-btn', function(e) {
-        e.stopPropagation();
-        $bulkFiltersMenu.toggle();
-    });
-    
-    // Close menu when clicking outside
-    $(document).on('click', function(e) {
-        if (!$(e.target).closest('.pfg-bulk-filters-dropdown').length) {
-            $bulkFiltersMenu.hide();
-        }
-    });
-    
-    // Cancel button
-    $(document).on('click', '.pfg-cancel-bulk-filters', function() {
-        $bulkFiltersMenu.hide();
-        // Reset checkboxes
-        $('.pfg-bulk-filter-checkbox').prop('checked', false);
     });
     
     // Apply bulk filters
@@ -2798,7 +2771,7 @@ jQuery(document).ready(function($) {
             return;
         }
         
-        var $selectedItems = $imageGrid.find('.pfg-image-select:checked').closest('.pfg-image-item');
+        var $selectedItems = $('.pfg-image-select:checked').closest('.pfg-image-item');
         var appliedCount = 0;
         
         $selectedItems.each(function() {
@@ -2810,15 +2783,12 @@ jQuery(document).ready(function($) {
                 var filterArray = currentFilters ? currentFilters.split(',').filter(function(f) { return f; }) : [];
                 
                 if (mode === 'replace') {
-                    // Replace all filters
                     filterArray = selectedFilters.slice();
                 } else if (mode === 'remove') {
-                    // Remove selected filters
                     filterArray = filterArray.filter(function(f) {
                         return selectedFilters.indexOf(f) === -1;
                     });
                 } else {
-                    // Add mode (default) - add new filters
                     selectedFilters.forEach(function(f) {
                         if (filterArray.indexOf(f) === -1) {
                             filterArray.push(f);
@@ -2831,14 +2801,13 @@ jQuery(document).ready(function($) {
                 
                 // Update visual filter tags
                 var $filterTagsContainer = $item.find('.pfg-image-filters');
-                $filterTagsContainer.empty(); // Clear existing tags
+                $filterTagsContainer.empty();
                 
                 if (filterArray.length > 0) {
                     if ($filterTagsContainer.length === 0) {
                         $item.find('.pfg-image-info').append('<div class="pfg-image-filters"></div>');
                         $filterTagsContainer = $item.find('.pfg-image-filters');
                     }
-                    // Note: Would need filter names lookup for accurate tags, using IDs for now
                     filterArray.forEach(function(filterId) {
                         var $checkbox = $('.pfg-bulk-filter-checkbox[value="' + filterId + '"]');
                         var filterName = $checkbox.closest('label').find('span:last').text() || filterId;
@@ -2848,20 +2817,16 @@ jQuery(document).ready(function($) {
             }
         });
         
-        // Close menu and reset filter checkboxes (keep image selection)
-        $bulkFiltersMenu.hide();
+        $('.pfg-bulk-filters-menu').hide();
         $('.pfg-bulk-filter-checkbox').prop('checked', false);
         
-        // Mark images as modified for chunked save
         if (typeof window.pfgMarkImagesModified === 'function') {
             window.pfgMarkImagesModified();
         }
         
-        // Show success message
         var modeText = mode === 'replace' ? 'Filters replaced on' :
                        mode === 'remove' ? 'Filters removed from' :
                        'Filters added to';
         alert(modeText + ' ' + appliedCount + ' images!');
     });
-});
-
+    });

@@ -6,7 +6,7 @@
       
       <!-- Contact -->
       <div style="font-family: 'Montserrat', sans-serif;">
-        <h3 class="text text-[#D9BBA9] text-2xl font-semibold mb-6">Contact</h3>
+        <h2 class="text text-[#D9BBA9] text-2xl font-semibold mb-6">Contact</h2>
         <address class="not-italic text-[#D9BBA9] space-y-2 text-lg leading-relaxed">
           <p>Frodesgade 181, 6700<br>Esbjerg, Denmark</p>
           <p>Tlf: +45 22 26 13 32</p>
@@ -15,7 +15,7 @@
 
       <!-- Working Hours -->
       <diV style="font-family: 'Montserrat', sans-serif;">  
-        <h3 class="text text-[#D9BBA9] text-2xl font-bold mb-6">Working hours</h3>
+        <h2 class="text text-[#D9BBA9] text-2xl font-bold mb-6">Working hours</h2>
         <ul class="text-[#D9BBA9] text-lg">
           <li>Monday - Friday: 9.00 - 18.00</li>
           <li>Saturday: 9.00 - 15.00</li>
@@ -25,7 +25,7 @@
 
       <!-- Quick Links -->
       <div class="text-[#D9BBA9]" style="font-family: 'Montserrat', sans-serif;">
-        <h3 class="text text-2xl font-semibold mb-6">Quick Links</h3>
+        <h2 class="text text-2xl font-semibold mb-6">Quick Links</h2>
         <ul class="text-lg">
           <li><a href="/" class="text-[#D9BBA9] transition-colors duration-200 hover:text-[#ffffff]">Home</a></li>
           <li><a href="/about" class="text-[#D9BBA9] transition-colors duration-200 hover:text-[#ffffff]">About us</a></li>
@@ -36,7 +36,7 @@
 
 <!-- Social Media -->
 <div class="text-center" style="font-family: 'Montserrat', sans-serif;">
-  <h3 class="text-[#D9BBA9] text-2xl font-semibold mb-6">Social Media</h3>
+  <h2 class="text-[#D9BBA9] text-2xl font-semibold mb-6">Social Media</h2>
   <div class="flex flex-col gap-2 items-center">
     <a href="https://www.instagram.com/junails__studio/" target="_blank" rel="noopener noreferrer"
       class="flex items-center justify-center opacity-100 transition-all duration-200 group">

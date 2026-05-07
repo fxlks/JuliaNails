@@ -171,14 +171,8 @@ body {
     opacity: 1 !important;
 }
 
-/* Kadence Advanced Gallery slider dots */
-.kt-blocks-carousel .slick-dots li button:before {
-    font-size: 16px !important; /* default is usually around 6-8px */
-    width: 25px;
-    height: 25px;
-}
-
-/* Optional: increase spacing */
-.kt-blocks-carousel .slick-dots li {
-    margin: 0 6px;
+.kb-splide .splide__pagination li {
+    width: 24px;
+    height: 24px;
+    padding-top: 10px;
 }

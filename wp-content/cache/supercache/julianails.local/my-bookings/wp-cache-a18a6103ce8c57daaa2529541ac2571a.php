@@ -102,7 +102,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=bookingpress_front_css-inline-css */
 </style>
 <link rel='stylesheet' id='bookingpress_tel_input-css' href='http://julianails.local/wp-content/plugins/bookingpress-appointment-booking/css/bookingpress_tel_input.css?ver=1.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='bookingpress_front_custom_css-css' href='http://julianails.local/wp-content/uploads/bookingpress/bookingpress_front_custom_69eb2b3503c88.css?ver=1.5.3_1778232118' type='text/css' media='all' />
+<link rel='stylesheet' id='bookingpress_front_custom_css-css' href='http://julianails.local/wp-content/uploads/bookingpress/bookingpress_front_custom_69eb2b3503c88.css?ver=1.5.3_1778235232' type='text/css' media='all' />
 <link rel='stylesheet' id='bookingpress_front_font_css_Montserrat-css' href='https://fonts.googleapis.com/css2?family=Montserrat&#038;display=swap&#038;ver=1.5.3' type='text/css' media='all' />
 <link rel='stylesheet' id='bookingpress_front_mybookings_custom_css-css' href='http://julianails.local/wp-content/uploads/bookingpress/bookingpress_front_mybookings_custom_69eb2b3503c88.css?ver=1.5.3' type='text/css' media='all' />
 <style id="kadence_blocks_palette_css">:root .has-kb-palette-1-color{color:#d9bba9}:root .has-kb-palette-1-background-color{background-color:#d9bba9}:root .has-kb-palette-12-color{color:#161413}:root .has-kb-palette-12-background-color{background-color:#161413}:root .has-kb-palette-2-color{color:#f2f2f2}:root .has-kb-palette-2-background-color{background-color:#f2f2f2}:root .has-kb-palette-2-color{color:#888888}:root .has-kb-palette-2-background-color{background-color:#888888}:root .has-kb-palette-4-color{color:#311b0f}:root .has-kb-palette-4-background-color{background-color:#311b0f}:root .has-kb-palette-4-color{color:#888888}:root .has-kb-palette-4-background-color{background-color:#888888}</style><script type="text/javascript" src="http://julianails.local/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
@@ -159,7 +159,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     </div>
 </header>
 
-<main id="main" role="main"><el-main class="bpa-frontend-main-container" :class="bookingpress_myappointment_header_dynamic_class" id="bookingpress_booking_form_69fdab3700346">
+<main id="main" role="main"><el-main class="bpa-frontend-main-container" :class="bookingpress_myappointment_header_dynamic_class" id="bookingpress_booking_form_69fdb760e579a">
     <div class="bpa-front-loader-container" v-if="is_front_appointment_empty_loader == '1'">
 		<div class="bpa-front-loader">
 			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" width="256" height="256" viewBox="0 0 256 256" style="width:100%;height:100%">
@@ -913,7 +913,7 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
                                             var lang = ELEMENT.lang.en;
             ELEMENT.locale(lang);
                                             app = new Vue({
-                                    el: '#bookingpress_booking_form_69fdab3700346',
+                                    el: '#bookingpress_booking_form_69fdb760e579a',
                                     directives: {  },
                                     components: {  },
                                 data() {
@@ -921,11 +921,11 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
                                     bookingpress_return_data['is_display_loader'] = '0';
                                     bookingpress_return_data['is_cancel_appointment_popover'] = false;
                                     bookingpress_return_data['popper_options'] = {};
-                                    bookingpress_return_data['bookingpress_uniq_id'] = '69fdab3700346';
+                                    bookingpress_return_data['bookingpress_uniq_id'] = '69fdb760e579a';
                                     bookingpress_return_data["jsCurrentDate"] = new Date();
                                     bookingpress_return_data["jsCurrentDateFormatted"] = new Date ();
                                     if( "Invalid Date" == bookingpress_return_data["jsCurrentDateFormatted"] ){
-                                        bookingpress_return_data["jsCurrentDateFormatted"] = new Date( "2026-05-08T09:21:59+00:00" );
+                                        bookingpress_return_data["jsCurrentDateFormatted"] = new Date( "2026-05-08T10:13:52+00:00" );
                                     }
                                     bookingpress_return_data['pickerOptions'] = 
                                     {
@@ -1917,5 +1917,5 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
 		</body>
 </html>
 
-<!-- Dynamic page generated in 0.966 seconds. -->
-<!-- Cached page generated by WP-Super-Cache on 2026-05-08 09:21:59 -->
+<!-- Dynamic page generated in 1.175 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2026-05-08 10:13:53 -->

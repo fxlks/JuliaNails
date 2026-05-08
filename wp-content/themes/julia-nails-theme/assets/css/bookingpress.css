@@ -84,3 +84,30 @@ font-weight: 500 !important;
 .bpa-front-module--service-item .bpa-front-si-card .bpa-front-si-card__left .bpa-front-si__default-img {
     display: none !important;
 }
+
+/*Appoointment Cancelled Message*/
+.bpa-front-cancel-module-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 330px;
+    border: 1px solid #D9BBA9 !important;
+
+    /* Center content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bpa-front-cancel-module-container .bpa-front-cmc__title {
+    color: #D9BBA9 !important;
+   
+}
+
+.bpa-front-cancel-module-container .bpa-front-cmc__desc {
+    color: #fff !important;
+    
+}

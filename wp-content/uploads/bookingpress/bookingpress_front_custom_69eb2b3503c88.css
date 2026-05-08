@@ -34,7 +34,7 @@
                             .bpa-front-toast-notification.--bpa-error,
                             .bpa-front-toast-notification.--bpa-success,
                             .bpa-front-thankyou-module-container .bpa-front-cc__error-toast-notification{
-                                background-color:  !important;
+                                background-color: #211F1C !important;
                             } 
                             .bpa-front-loader-cl-primary,
                             .bpa-front-data-empty-view .bpa-front-dev__primary-bg,
@@ -48,7 +48,7 @@
                             .bpa-front-thankyou-module-container .bpa-front-tmc__head .bpa-front-tmc__vector--confirmation .bpa-front-vc__bg,
                             .bpa-front-data-empty-view .bpa-front-dev__panel-bg,
                             .bpa-front__no-timeslots-body svg .bpa-front-dev__panel-bg{
-                                fill:  !important;
+                                fill: #211F1C !important;
                             }
                             .bpa-front-module--atc-wrapper .bpa-front-btn:hover {
                                 border-color: #F2F2F2 !important;
@@ -110,9 +110,11 @@
                             .bpa-front--dt__time-slots .bpa-front--dt__ts-body .bpa-front--dt__ts-body--row .bpa-front--dt__ts-body--items .bpa-front--dt__ts-body--item.__bpa-is-selected  {
                                 border-color: #D9BBA9 !important;
                             }
+                            .bpa-frontend-vue3 .bpa-front--dt__calendar .vc-day .vc-day-content.is-disabled,
                             .bpa-front--dt__calendar .vc-day .vc-day-content.is-disabled{
                                 background-color:rgba(217,187,169,0.1) !important;
                             }
+                            
                             .bpa-front--dt__time-slots .bpa-front--dt__ts-body .bpa-front--dt__ts-body--row .bpa-front--dt__ts-body--items .bpa-front--dt__ts-body--item.__bpa-is-disabled{    
                                 background-color:rgba(217,187,169,0.1) !important;
                             }

@@ -19,10 +19,10 @@
                         .bpa-front-ma--pagination-wrapper.__bpa-is-sticky,
                         .el-year-table td.disabled .cell,
                         .el-month-table td.disabled .cell{
-                            background-color:  !important;
+                            background-color: #211F1C !important;
                         }
                         .bpa-front-data-empty-view--my-bookings .bpa-front-dev__panel-bg{
-                            fill:  !important;
+                            fill: #211F1C !important;
                         }
                         .bpa-front-cp-top-navbar,
                         .bpa-front-cp-card,

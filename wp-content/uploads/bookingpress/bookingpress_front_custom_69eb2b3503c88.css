@@ -4,7 +4,7 @@
                                 --bpa-pt-main-green-alpha-12: #D9BBA91F !important;
                                 --bpa-pt-border-color: #D9BBA9 !important;
                                 --bpa-pt-background-color: #211F1C !important;
-                                --bpa-pt-price-button-text-color: #0D0D0D !important;
+                                --bpa-pt-price-button-text-color: #311B0F !important;
                             }
                             .bpa-front-tabs .bpa-front-tab-menu,
                             .bpa-front-tabs .bpa-front-default-card,
@@ -242,10 +242,10 @@
                             .bpa-front-module--service-item .bpa-front-si-card .bpa-front-si__card-body .bpa-front-si-cb__specs .bpa-front-si-cb__specs-item p strong.--is-service-price,
                             .bpa-front-tabs .bpa-front--dt__calendar .vc-day.is-today .vc-highlights + .bpa_day-select .vc-day-content,
                             .bpa-front-tabs .bpa-front--dt__calendar .vc-day .vc-highlights + .vc-day-content{
-                                color: #0D0D0D !important;
+                                color: #311B0F !important;
                             }
                             .bpa-front-tabs--foot .bpa-front-btn--primary svg{
-                                fill: #0D0D0D !important;
+                                fill: #311B0F !important;
                             }
                             .bpa-front--dt__ts-body--item.__bpa-is-selected {
                                 background-color: #D9BBA91F !important;

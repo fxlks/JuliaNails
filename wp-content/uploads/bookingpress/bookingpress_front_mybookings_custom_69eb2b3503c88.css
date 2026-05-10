@@ -135,7 +135,7 @@
                         .el-date-table td.current:not(.disabled) span,
                         .bpa-front-cp-delete-account-wrapper .bpa-front-dcw__body-btn-group .bpa-front-btn--danger,
                         .bpa-front-cp-delete-account-wrapper .bpa-front-dcw__body-btn-group .bpa-front-btn--danger span{  
-                            color:#0D0D0D !important;
+                            color:#311B0F !important;
                         }
                         .bpa-front-module-heading,
                         .bpa-cp-pd__title,
@@ -347,6 +347,6 @@
                             }
                             .bpa-front-ma--pagination-wrapper .btn-next:hover:after,
                             .bpa-front-ma--pagination-wrapper .btn-prev:hover:before {
-                                background-color: #0D0D0D !important;
+                                background-color: #311B0F !important;
                             }
                         }

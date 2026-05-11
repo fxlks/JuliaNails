@@ -1,0 +1,788 @@
+0000.001 (0) Opened log file at time: Mon, 11 May 2026 10:34:20 +0000 on http://julianails.local
+0000.037 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.26.4 WP: 6.9.4 PHP: 8.2.29 (fpm-fcgi, Darwin Ivans-MacBook-Air.local 24.6.0 Darwin Kernel Version 24.6.0: Mon Jan 19 22:01:13 PST 2026; root:xnu-11417.140.69.708.3~1/RELEASE_ARM64_T8122 arm64) MySQL: 8.4.8-8 (max packet size=104857600) WPLANG: en_US Server: nginx/1.26.1 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 11.4M | 12M) multisite: N openssl: OpenSSL 3.5.1 1 Jul 2025 mcrypt: N LANG:  WP Proxy: disabled ZipArchive::addFile: Y
+0000.048 (0) Free space on disk containing Updraft's temporary directory: 32509.2 MB
+0000.090 (0) Tasks: Backup files: 1 (schedule: manual) Backup DB: 1 (schedule: manual)
+0000.115 (0) Semaphore (fd, wp_options) being initialised
+0000.174 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.218 (0) Set semaphore last lock (fd) time to 2026-05-11 10:34:20
+0000.231 (0) Semaphore lock (fd) complete
+0000.291 (0) Backup run: resumption=0, nonce=babfa16efbae, file_nonce=babfa16efbae begun at=1778495660 (0s ago), job type=backup
+0000.314 (0) Scheduling a resumption (1) after 300 seconds (1778495960) in case this run gets aborted
+0000.358 (0) Checking if we have a zip executable available
+0000.369 (0) Testing: /usr/bin/zip
+0000.401 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.412 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.423 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.435 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.446 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.470 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.482 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.495 (0) Working binary zip found: /usr/bin/zip
+0000.522 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.533 (0) Creation of backups of directories: beginning
+0000.573 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.757 (0) Total entities for the zip file: 1107 directories, 6046 files (0 skipped as non-modified), 106.9 MB
+0000.768 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.780 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.794 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.804 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.817 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.828 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 600 files added (on-disk size: 0 KB)
+0000.839 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 700 files added (on-disk size: 0 KB)
+0000.854 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 800 files added (on-disk size: 0 KB)
+0000.866 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 900 files added (on-disk size: 0 KB)
+0000.878 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0000.888 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (17.5 MB, 6046 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0001.326 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: size is now: 6.10 MB
+0001.352 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 1100 files added (on-disk size: 6250.6 KB)
+0001.364 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 1200 files added (on-disk size: 6250.6 KB)
+0001.375 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 1300 files added (on-disk size: 6250.6 KB)
+0001.388 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 1400 files added (on-disk size: 6250.6 KB)
+0001.399 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 1500 files added (on-disk size: 6250.6 KB)
+0001.412 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 1600 files added (on-disk size: 6250.6 KB)
+0001.425 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 1700 files added (on-disk size: 6250.6 KB)
+0001.436 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 1800 files added (on-disk size: 6250.6 KB)
+0001.450 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 1900 files added (on-disk size: 6250.6 KB)
+0001.464 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 2000 files added (on-disk size: 6250.6 KB)
+0001.473 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (10.5 MB, 6046 files batched, 1001 (2002) added so far); re-opening (prior size: 6250.6 KB)
+0001.797 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: size is now: 9.00 MB
+0001.823 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 2100 files added (on-disk size: 9225.3 KB)
+0001.834 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 2200 files added (on-disk size: 9225.3 KB)
+0001.846 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 2300 files added (on-disk size: 9225.3 KB)
+0001.859 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 2400 files added (on-disk size: 9225.3 KB)
+0001.869 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 2500 files added (on-disk size: 9225.3 KB)
+0001.883 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 2600 files added (on-disk size: 9225.3 KB)
+0001.895 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 MB added on this batch (25.1 MB, 6046 files batched, 658 (2660) added so far); re-opening (prior size: 9225.3 KB)
+0002.497 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: size is now: 15.90 MB
+0002.524 (0) A useful amount of data was added after this amount of zip processing: 1.6 s (normalised: 1.6 s, rate: 16352.9 KB/s)
+0002.546 (0) Performance is good - will increase the amount of data we attempt to batch (time=1.5729539394379, normalised_time=1.5654707403943, max_time=2.5339350700378, data points known=1, old_max_bytes=26214400, new_max_bytes=100472270)
+0002.575 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 2700 files added (on-disk size: 16255.3 KB)
+0002.587 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 2800 files added (on-disk size: 16255.3 KB)
+0002.601 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 2900 files added (on-disk size: 16255.3 KB)
+0002.615 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 3000 files added (on-disk size: 16255.3 KB)
+0002.628 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 3100 files added (on-disk size: 16255.3 KB)
+0002.642 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 3200 files added (on-disk size: 16255.3 KB)
+0002.656 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 3300 files added (on-disk size: 16255.3 KB)
+0002.671 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 3400 files added (on-disk size: 16255.3 KB)
+0002.683 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 3500 files added (on-disk size: 16255.3 KB)
+0002.697 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 3600 files added (on-disk size: 16255.3 KB)
+0002.711 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (10.4 MB, 6046 files batched, 1001 (3661) added so far); re-opening (prior size: 16255.3 KB)
+0003.105 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 3700 files added (on-disk size: 19449.2 KB)
+0003.122 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 3800 files added (on-disk size: 19449.2 KB)
+0003.139 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 3900 files added (on-disk size: 19449.2 KB)
+0003.151 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 4000 files added (on-disk size: 19449.2 KB)
+0003.163 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 4100 files added (on-disk size: 19449.2 KB)
+0003.176 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 4200 files added (on-disk size: 19449.2 KB)
+0003.198 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 4300 files added (on-disk size: 19449.2 KB)
+0003.210 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 4400 files added (on-disk size: 19449.2 KB)
+0003.222 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 4500 files added (on-disk size: 19449.2 KB)
+0003.237 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 4600 files added (on-disk size: 19449.2 KB)
+0003.249 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (25.9 MB, 6046 files batched, 1001 (4662) added so far); re-opening (prior size: 19449.2 KB)
+0003.859 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: size is now: 25.40 MB
+0003.885 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 4700 files added (on-disk size: 25964.1 KB)
+0003.896 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 4800 files added (on-disk size: 25964.1 KB)
+0003.908 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 4900 files added (on-disk size: 25964.1 KB)
+0003.920 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 5000 files added (on-disk size: 25964.1 KB)
+0003.931 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 5100 files added (on-disk size: 25964.1 KB)
+0003.944 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 5200 files added (on-disk size: 25964.1 KB)
+0003.959 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 5300 files added (on-disk size: 25964.1 KB)
+0003.974 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 5400 files added (on-disk size: 25964.1 KB)
+0003.987 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 5500 files added (on-disk size: 25964.1 KB)
+0003.999 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 5600 files added (on-disk size: 25964.1 KB)
+0004.011 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (15.3 MB, 6046 files batched, 1001 (5663) added so far); re-opening (prior size: 25964.1 KB)
+0004.482 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 5700 files added (on-disk size: 31117.2 KB)
+0004.498 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 5800 files added (on-disk size: 31117.2 KB)
+0004.509 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 5900 files added (on-disk size: 31117.2 KB)
+0004.520 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.tmp: 6000 files added (on-disk size: 31117.2 KB)
+0004.701 (0) Creating zip file manifest (backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.list-temp.tmp)
+0004.719 (0) Successfully created zip file manifest (size: 577665)
+0004.958 (0) Created plugins zip (0) - 31799.5 KB in 4.4 s (7293.5 KB/s) (sha1: b8548ebb5e2ecb45481c345574d487a937f32ca4, sha256: 4a3d22ab7f141c9f24af46261139890c9998e6c1982b0e11fefb2f51cedfba16)
+0005.000 (0) Cloud backup selection (1/1): dropbox with instance (1/1) (last)
+0005.031 (0) Beginning dispatch of backup to remote (dropbox) (instance identifier s-a75bdee162bab21a650ef2c874914cc2)
+0005.046 (0) Dropbox: begin cloud upload (using API version 2 with OAuth v2 token)
+0005.062 (0) Dropbox: access gained; setting chunk size to: 1024 KB
+0005.411 (0) Dropbox: quota usage: used=0 MB, total=2048 MB, available=2048 MB
+0005.422 (0) Dropbox: Attempt to upload: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip to: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip
+0007.542 (0) Dropbox chunked upload: 3.2 % uploaded (pid_upload_session:ABIKmoUtEuB9tNX63fMzH-cG6RjQEvZHSCv24KnWnSIUfiPMhw, 1048576, 2560 KB)
+0009.191 (0) Dropbox chunked upload: 11.3 % uploaded (pid_upload_session:ABIKmoUtEuB9tNX63fMzH-cG6RjQEvZHSCv24KnWnSIUfiPMhw, 3670016, 8192 KB)
+0010.382 (0) Dropbox chunked upload: 37 % uploaded (pid_upload_session:ABIKmoUtEuB9tNX63fMzH-cG6RjQEvZHSCv24KnWnSIUfiPMhw, 12058624, 10240 KB)
+0012.900 (0) Dropbox chunked upload: 69.2 % uploaded (pid_upload_session:ABIKmoUtEuB9tNX63fMzH-cG6RjQEvZHSCv24KnWnSIUfiPMhw, 22544384, 10240 KB)
+0015.644 (0) Dropbox chunked upload: 100 % uploaded (pid_upload_session:ABIKmoUtEuB9tNX63fMzH-cG6RjQEvZHSCv24KnWnSIUfiPMhw, 32562645, 10240 KB)
+0016.944 (0) Recording as successfully uploaded: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip
+0016.973 (0) Deleting local file: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip: OK
+0016.985 (0) Dropbox: File upload success (backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip): 31799 KB in 11s (2750 KB/s)
+0017.067 (0) Beginning creation of dump of themes (split every: 400 MB)
+0017.123 (0) Total entities for the zip file: 51 directories, 409 files (0 skipped as non-modified), 13.7 MB
+0017.136 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0017.150 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0017.162 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0017.175 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0017.494 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-themes.zip.tmp: size is now: 12.60 MB
+0017.518 (0) Creating zip file manifest (backup_2026-05-11-1034_Julia_Nails_babfa16efbae-themes.zip.list-temp.tmp)
+0017.530 (0) Successfully created zip file manifest (size: 28839)
+0017.657 (0) Created themes zip (0) - 12932.8 KB in 0.6 s (22869.9 KB/s) (sha1: 6fbff168bb9616f801208c4505978b6dec07bdea, sha256: 8c4f164bec3676d5733101fd4a5084a9f0881c408e5b61473c2688e6afb59e24)
+0017.690 (0) Cloud backup selection (1/1): dropbox with instance (1/1) (last)
+0017.704 (0) Beginning dispatch of backup to remote (dropbox) (instance identifier s-a75bdee162bab21a650ef2c874914cc2)
+0017.717 (0) Dropbox: begin cloud upload (using API version 2 with OAuth v2 token)
+0017.729 (0) Dropbox: access gained; setting chunk size to: 10240 KB
+0018.092 (0) Dropbox: quota usage: used=31.1 MB, total=2048 MB, available=2016.9 MB
+0018.107 (0) Dropbox: Attempt to upload: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-themes.zip to: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-themes.zip
+0019.529 (0) Dropbox chunked upload: 79.2 % uploaded (pid_upload_session:ABIKmvUia3xJfvcKCA8I7nqcqPkZOPhYQa-rctHS5kDvCU53cQ, 10485760, 10240 KB)
+0021.768 (0) Dropbox chunked upload: 100 % uploaded (pid_upload_session:ABIKmvUia3xJfvcKCA8I7nqcqPkZOPhYQa-rctHS5kDvCU53cQ, 13243213, 10240 KB)
+0022.791 (0) Recording as successfully uploaded: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-themes.zip
+0022.821 (0) Deleting local file: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-themes.zip: OK
+0022.832 (0) Dropbox: File upload success (backup_2026-05-11-1034_Julia_Nails_babfa16efbae-themes.zip): 12932 KB in 4s (2736 KB/s)
+0022.894 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots,wp-staging
+0022.904 (0) Looking for candidates to backup in: /Users/ivankirev/Local Sites/julianails/app/public/wp-content/uploads
+0022.917 (0) finding files: bookingpress: adding to list (1)
+0022.928 (0) finding files: bookingpress_export_records: adding to list (2)
+0022.940 (0) finding files: bookingpress_import_records: adding to list (3)
+0022.954 (0) finding files: kadence_blocks_library: adding to list (4)
+0022.967 (0) finding files: rank-math: adding to list (5)
+0022.979 (0) finding files: 2026: adding to list (6)
+0022.990 (0) finding files: ssa: adding to list (7)
+0023.005 (0) finding files: pfg-backups: skipping: excluded by options (glob)
+0023.016 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0023.066 (0) Total entities for the zip file: 11 directories, 283 files (0 skipped as non-modified), 38 MB
+0023.081 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0023.095 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0023.439 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-uploads.zip.tmp: size is now: 25.10 MB
+0023.463 (0) Creating zip file manifest (backup_2026-05-11-1034_Julia_Nails_babfa16efbae-uploads.zip.list-temp.tmp)
+0023.476 (0) Successfully created zip file manifest (size: 22767)
+0023.708 (0) Created uploads zip (0) - 25740.3 KB in 0.7 s (38648.8 KB/s) (sha1: 092c9475ed09a1d09f6c4c84f20e1f158ccc1d81, sha256: 2692e411ed783996e0660acc0de2019f37dd09d975dfaeb5f0d7b0087546d9e5)
+0023.745 (0) Cloud backup selection (1/1): dropbox with instance (1/1) (last)
+0023.758 (0) Beginning dispatch of backup to remote (dropbox) (instance identifier s-a75bdee162bab21a650ef2c874914cc2)
+0023.769 (0) Dropbox: begin cloud upload (using API version 2 with OAuth v2 token)
+0023.781 (0) Dropbox: access gained; setting chunk size to: 10240 KB
+0024.133 (0) Dropbox: quota usage: used=43.7 MB, total=2048 MB, available=2004.3 MB
+0024.144 (0) Dropbox: Attempt to upload: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-uploads.zip to: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-uploads.zip
+0026.609 (0) Dropbox chunked upload: 39.8 % uploaded (pid_upload_session:ABIKmjoLT31Rl0ZdXcmf6ecIxXcD5hflss_bT_fT2jA4NWD3Iw, 10485760, 10240 KB)
+0029.430 (0) Dropbox chunked upload: 79.6 % uploaded (pid_upload_session:ABIKmjoLT31Rl0ZdXcmf6ecIxXcD5hflss_bT_fT2jA4NWD3Iw, 20971520, 10240 KB)
+0031.915 (0) Dropbox chunked upload: 100 % uploaded (pid_upload_session:ABIKmjoLT31Rl0ZdXcmf6ecIxXcD5hflss_bT_fT2jA4NWD3Iw, 26358111, 10240 KB)
+0033.022 (0) Recording as successfully uploaded: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-uploads.zip
+0033.050 (0) Deleting local file: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-uploads.zip: OK
+0033.061 (0) Dropbox: File upload success (backup_2026-05-11-1034_Julia_Nails_babfa16efbae-uploads.zip): 25740 KB in 8s (2886 KB/s)
+0033.120 (0) No backup of mu-plugins: excluded by user's options
+0033.142 (0) Beginning backup of other directories found in the content directory (index: 0)
+0033.153 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0033.166 (0) Looking for candidates to backup in: /Users/ivankirev/Local Sites/julianails/app/public/wp-content
+0033.178 (0) finding files: upgrade: skipping: excluded by options
+0033.192 (0) finding files: index.php: adding to list (1)
+0033.203 (0) finding files: upgrade-temp-backup: adding to list (2)
+0033.215 (0) finding files: plugins: skipping: this is the plugins directory
+0033.227 (0) finding files: uploads: skipping: this is the uploads directory
+0033.238 (0) finding files: updraft: skipping: this is the updraft directory
+0033.250 (0) finding files: languages: adding to list (3)
+0033.262 (0) finding files: themes: skipping: this is the themes directory
+0033.299 (0) Total entities for the zip file: 3 directories, 214 files (0 skipped as non-modified), 11.7 MB
+0033.311 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-others.zip.tmp: 100 files added (on-disk size: 0 KB)
+0033.324 (0) Zip: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-others.zip.tmp: 200 files added (on-disk size: 0 KB)
+0033.644 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-others.zip.tmp: size is now: 3.00 MB
+0033.672 (0) Creating zip file manifest (backup_2026-05-11-1034_Julia_Nails_babfa16efbae-others.zip.list-temp.tmp)
+0033.685 (0) Successfully created zip file manifest (size: 12627)
+0033.758 (0) Created others zip (0) - 3028.1 KB in 0.5 s (6468.3 KB/s) (sha1: 8c8a25045f52d13fe012295c57df3dde4dcd6c48, sha256: 6372437ba5550a02eccaed008e409e693c5bc6c629d55d2ddde187e4cb72f1e0)
+0033.796 (0) Cloud backup selection (1/1): dropbox with instance (1/1) (last)
+0033.807 (0) Beginning dispatch of backup to remote (dropbox) (instance identifier s-a75bdee162bab21a650ef2c874914cc2)
+0033.819 (0) Dropbox: begin cloud upload (using API version 2 with OAuth v2 token)
+0033.833 (0) Dropbox: access gained; setting chunk size to: 10240 KB
+0034.191 (0) Dropbox: quota usage: used=68.8 MB, total=2048 MB, available=1979.2 MB
+0034.204 (0) Dropbox: Attempt to upload: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-others.zip to: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-others.zip
+0035.993 (0) Dropbox chunked upload: 100 % uploaded (pid_upload_session:ABIKmiZWi5rfnnmU9aRfYQH15wSWIvReHKMSB_jtI4W-ThAPDA, 3100755, 10240 KB)
+0036.996 (0) Recording as successfully uploaded: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-others.zip
+0037.019 (0) Deleting local file: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-others.zip: OK
+0037.030 (0) Dropbox: File upload success (backup_2026-05-11-1034_Julia_Nails_babfa16efbae-others.zip): 3028 KB in 2s (1071 KB/s)
+0037.116 (0) Saving backup status to database (elements: 8)
+0037.162 (0) Beginning creation of database dump (WordPress DB)
+0037.197 (0) SQL compatibility mode is: NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0037.364 (0) Table wp_options: Total expected rows (via COUNT): 754
+0037.612 (0) Table wp_options: Rows added in this batch (next record: 8260): 750 (uncompressed bytes in this segment=1628658) in 0.31 seconds
+0037.659 (0) Table wp_options: finishing file(s) (2, 328.3 KB)
+0037.731 (0) Table wp_users: Total expected rows (via COUNT): 1
+0037.743 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0037.793 (0) Table wp_users: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1402) in 0.10 seconds
+0037.828 (0) Table wp_users: finishing file(s) (2, 0.6 KB)
+0037.919 (0) Table wp_usermeta: Total expected rows (via COUNT): 45
+0037.930 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0037.977 (0) Table wp_usermeta: Rows added in this batch (next record: 46): 45 (uncompressed bytes in this segment=6248) in 0.12 seconds
+0038.028 (0) Table wp_usermeta: finishing file(s) (2, 2.3 KB)
+0038.121 (0) Table wp_actionscheduler_actions: Total expected rows (via COUNT): 162
+0038.133 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0038.184 (0) Table wp_actionscheduler_actions: Rows added in this batch (next record: 205): 162 (uncompressed bytes in this segment=76036) in 0.12 seconds
+0038.232 (0) Table wp_actionscheduler_actions: finishing file(s) (2, 4.7 KB)
+0038.307 (0) Table wp_actionscheduler_claims: Total expected rows (via COUNT): 0
+0038.349 (0) Table wp_actionscheduler_claims: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=622) in 0.08 seconds
+0038.387 (0) Table wp_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0038.457 (0) Table wp_actionscheduler_groups: Total expected rows (via COUNT): 4
+0038.469 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0038.516 (0) Table wp_actionscheduler_groups: Rows added in this batch (next record: 4): 4 (uncompressed bytes in this segment=744) in 0.09 seconds
+0038.556 (0) Table wp_actionscheduler_groups: finishing file(s) (2, 0.4 KB)
+0038.630 (0) Table wp_actionscheduler_logs: Total expected rows (via COUNT): 472
+0038.641 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0038.697 (0) Table wp_actionscheduler_logs: Rows added in this batch (next record: 478): 472 (uncompressed bytes in this segment=51009) in 0.11 seconds
+0038.735 (0) Table wp_actionscheduler_logs: finishing file(s) (2, 4.7 KB)
+0038.854 (0) Table wp_commentmeta: Total expected rows (via COUNT): 0
+0038.891 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=677) in 0.11 seconds
+0038.949 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0039.037 (0) Table wp_comments: Total expected rows (via COUNT): 1
+0039.051 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0039.107 (0) Table wp_comments: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=2118) in 0.11 seconds
+0039.163 (0) Table wp_comments: finishing file(s) (2, 0.7 KB)
+0039.228 (0) Table wp_kb_optimizer: Total expected rows (approximate): 0
+0039.278 (0) Table wp_kb_optimizer: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=807) in 0.08 seconds
+0039.324 (0) Table wp_kb_optimizer: finishing file(s) (2, 0.5 KB)
+0039.395 (0) Table wp_kb_optimizer_viewport_hashes: Total expected rows (approximate): 0
+0039.435 (0) Table wp_kb_optimizer_viewport_hashes: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=917) in 0.07 seconds
+0039.506 (0) Table wp_kb_optimizer_viewport_hashes: finishing file(s) (2, 0.5 KB)
+0039.581 (0) Table wp_links: Total expected rows (via COUNT): 0
+0039.604 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1298) in 0.06 seconds
+0039.643 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0039.733 (0) Table wp_postmeta: Total expected rows (via COUNT): 755
+0039.744 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0039.897 (0) Table wp_postmeta: Rows added in this batch (next record: 1804): 755 (uncompressed bytes in this segment=138483) in 0.22 seconds
+0039.952 (0) Table wp_postmeta: finishing file(s) (2, 16.9 KB)
+0040.537 (0) Table wp_posts: Total expected rows (via COUNT): 832
+0047.242 (0) Table wp_posts: Rows added in this batch (next record: 1206): 832 (uncompressed bytes in this segment=25330034) in 7.25 seconds
+0047.298 (0) Table wp_posts: finishing file(s) (2, 2131 KB)
+0047.376 (0) Table wp_term_relationships: Total expected rows (approximate): 17
+0047.454 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 70 (uncompressed bytes in this segment=1614) in 0.11 seconds
+0047.494 (0) Table wp_term_relationships: finishing file(s) (2, 0.6 KB)
+0047.594 (0) Table wp_term_taxonomy: Total expected rows (via COUNT): 14
+0047.611 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0047.671 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 16): 14 (uncompressed bytes in this segment=1693) in 0.14 seconds
+0047.727 (0) Table wp_term_taxonomy: finishing file(s) (2, 0.7 KB)
+0048.142 (0) Table wp_termmeta: Total expected rows (via COUNT): 0
+0048.176 (0) Table wp_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=650) in 0.10 seconds
+0048.270 (0) Table wp_termmeta: finishing file(s) (2, 0.4 KB)
+0048.350 (0) Table wp_terms: Total expected rows (via COUNT): 14
+0048.362 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0048.409 (0) Table wp_terms: Rows added in this batch (next record: 16): 14 (uncompressed bytes in this segment=1262) in 0.10 seconds
+0048.450 (0) Table wp_terms: finishing file(s) (2, 0.6 KB)
+0048.567 (0) Table wp_bookignpress_double_bookings: Total expected rows (via COUNT): 0
+0048.606 (0) Table wp_bookignpress_double_bookings: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1958) in 0.12 seconds
+0048.658 (0) Table wp_bookignpress_double_bookings: finishing file(s) (2, 0.6 KB)
+0048.763 (0) Table wp_bookingpress_appointment_bookings: Total expected rows (via COUNT): 6
+0048.776 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0048.847 (0) Table wp_bookingpress_appointment_bookings: Rows added in this batch (next record: 10): 6 (uncompressed bytes in this segment=5684) in 0.15 seconds
+0049.028 (0) Table wp_bookingpress_appointment_bookings: finishing file(s) (2, 1.2 KB)
+0049.129 (0) Table wp_bookingpress_categories: Total expected rows (via COUNT): 3
+0049.140 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0049.182 (0) Table wp_bookingpress_categories: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=952) in 0.11 seconds
+0049.225 (0) Table wp_bookingpress_categories: finishing file(s) (2, 0.5 KB)
+0049.313 (0) Table wp_bookingpress_customers: Total expected rows (via COUNT): 2
+0049.326 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0049.359 (0) Table wp_bookingpress_customers: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=2286) in 0.10 seconds
+0049.397 (0) Table wp_bookingpress_customers: finishing file(s) (2, 0.7 KB)
+0049.484 (0) Table wp_bookingpress_customers_meta: Total expected rows (via COUNT): 4
+0049.495 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0049.531 (0) Table wp_bookingpress_customers_meta: Rows added in this batch (next record: 4): 4 (uncompressed bytes in this segment=1261) in 0.10 seconds
+0049.567 (0) Table wp_bookingpress_customers_meta: finishing file(s) (2, 0.5 KB)
+0049.655 (0) Table wp_bookingpress_customize_settings: Total expected rows (via COUNT): 103
+0049.667 (0) Table is relatively small; fetch_rows will thus be: 200 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0049.722 (0) Table wp_bookingpress_customize_settings: Rows added in this batch (next record: 103): 103 (uncompressed bytes in this segment=40409) in 0.12 seconds
+0049.765 (0) Table wp_bookingpress_customize_settings: finishing file(s) (2, 13.8 KB)
+0049.852 (0) Table wp_bookingpress_debug_payment_log: Total expected rows (via COUNT): 0
+0049.889 (0) Table wp_bookingpress_debug_payment_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1143) in 0.09 seconds
+0049.943 (0) Table wp_bookingpress_debug_payment_log: finishing file(s) (2, 0.4 KB)
+0050.026 (0) Table wp_bookingpress_default_daysoff: Total expected rows (via COUNT): 0
+0050.049 (0) Table wp_bookingpress_default_daysoff: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=905) in 0.07 seconds
+0050.092 (0) Table wp_bookingpress_default_daysoff: finishing file(s) (2, 0.4 KB)
+0050.179 (0) Table wp_bookingpress_default_workhours: Total expected rows (via COUNT): 7
+0050.190 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0050.233 (0) Table wp_bookingpress_default_workhours: Rows added in this batch (next record: 7): 7 (uncompressed bytes in this segment=1393) in 0.10 seconds
+0050.282 (0) Table wp_bookingpress_default_workhours: finishing file(s) (2, 0.5 KB)
+0050.372 (0) Table wp_bookingpress_entries: Total expected rows (via COUNT): 10
+0050.387 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0050.421 (0) Table wp_bookingpress_entries: Rows added in this batch (next record: 10): 10 (uncompressed bytes in this segment=5986) in 0.10 seconds
+0050.457 (0) Table wp_bookingpress_entries: finishing file(s) (2, 1.1 KB)
+0050.572 (0) Table wp_bookingpress_entries_meta: Total expected rows (via COUNT): 0
+0050.614 (0) Table wp_bookingpress_entries_meta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=815) in 0.12 seconds
+0050.665 (0) Table wp_bookingpress_entries_meta: finishing file(s) (2, 0.4 KB)
+0050.749 (0) Table wp_bookingpress_export_data_log: Total expected rows (via COUNT): 0
+0050.788 (0) Table wp_bookingpress_export_data_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=667) in 0.09 seconds
+0050.827 (0) Table wp_bookingpress_export_data_log: finishing file(s) (2, 0.4 KB)
+0050.920 (0) Table wp_bookingpress_export_log_detail: Total expected rows (via COUNT): 0
+0050.942 (0) Table wp_bookingpress_export_log_detail: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=995) in 0.08 seconds
+0050.985 (0) Table wp_bookingpress_export_log_detail: finishing file(s) (2, 0.4 KB)
+0051.072 (0) Table wp_bookingpress_form_fields: Total expected rows (via COUNT): 8
+0051.083 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0051.134 (0) Table wp_bookingpress_form_fields: Rows added in this batch (next record: 8): 8 (uncompressed bytes in this segment=2281) in 0.11 seconds
+0051.171 (0) Table wp_bookingpress_form_fields: finishing file(s) (2, 0.8 KB)
+0051.468 (0) Table wp_bookingpress_import_data_log: Total expected rows (via COUNT): 0
+0051.499 (0) Table wp_bookingpress_import_data_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=949) in 0.29 seconds
+0051.533 (0) Table wp_bookingpress_import_data_log: finishing file(s) (2, 0.4 KB)
+0051.614 (0) Table wp_bookingpress_import_detail_log: Total expected rows (via COUNT): 0
+0051.637 (0) Table wp_bookingpress_import_detail_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1192) in 0.07 seconds
+0051.676 (0) Table wp_bookingpress_import_detail_log: finishing file(s) (2, 0.5 KB)
+0051.766 (0) Table wp_bookingpress_import_images: Total expected rows (via COUNT): 0
+0051.791 (0) Table wp_bookingpress_import_images: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1063) in 0.07 seconds
+0051.833 (0) Table wp_bookingpress_import_images: finishing file(s) (2, 0.4 KB)
+0051.938 (0) Table wp_bookingpress_import_record_rel: Total expected rows (via COUNT): 0
+0051.961 (0) Table wp_bookingpress_import_record_rel: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=925) in 0.08 seconds
+0051.996 (0) Table wp_bookingpress_import_record_rel: finishing file(s) (2, 0.4 KB)
+0052.085 (0) Table wp_bookingpress_notifications: Total expected rows (via COUNT): 10
+0052.096 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0052.143 (0) Table wp_bookingpress_notifications: Rows added in this batch (next record: 10): 10 (uncompressed bytes in this segment=4810) in 0.11 seconds
+0052.180 (0) Table wp_bookingpress_notifications: finishing file(s) (2, 1 KB)
+0052.265 (0) Table wp_bookingpress_other_debug_logs: Total expected rows (via COUNT): 0
+0052.306 (0) Table wp_bookingpress_other_debug_logs: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1040) in 0.09 seconds
+0052.342 (0) Table wp_bookingpress_other_debug_logs: finishing file(s) (2, 0.4 KB)
+0052.426 (0) Table wp_bookingpress_payment_transactions: Total expected rows (via COUNT): 6
+0052.438 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0052.486 (0) Table wp_bookingpress_payment_transactions: Rows added in this batch (next record: 10): 6 (uncompressed bytes in this segment=5333) in 0.11 seconds
+0052.528 (0) Table wp_bookingpress_payment_transactions: finishing file(s) (2, 1.1 KB)
+0052.617 (0) Table wp_bookingpress_services: Total expected rows (via COUNT): 18
+0052.630 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0052.673 (0) Table wp_bookingpress_services: Rows added in this batch (next record: 21): 18 (uncompressed bytes in this segment=3389) in 0.11 seconds
+0052.718 (0) Table wp_bookingpress_services: finishing file(s) (2, 1 KB)
+0052.816 (0) Table wp_bookingpress_servicesmeta: Total expected rows (via COUNT): 10
+0052.827 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0052.872 (0) Table wp_bookingpress_servicesmeta: Rows added in this batch (next record: 12): 10 (uncompressed bytes in this segment=1581) in 0.11 seconds
+0052.917 (0) Table wp_bookingpress_servicesmeta: finishing file(s) (2, 0.6 KB)
+0053.001 (0) Table wp_bookingpress_settings: Total expected rows (via COUNT): 72
+0053.012 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0053.057 (0) Table wp_bookingpress_settings: Rows added in this batch (next record: 72): 72 (uncompressed bytes in this segment=7654) in 0.10 seconds
+0053.094 (0) Table wp_bookingpress_settings: finishing file(s) (2, 1.8 KB)
+0053.206 (0) Table wp_bookingpress_transient: Total expected rows (via COUNT): 62
+0053.218 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0053.292 (0) Table wp_bookingpress_transient: Rows added in this batch (next record: 107): 62 (uncompressed bytes in this segment=157247) in 0.16 seconds
+0053.344 (0) Table wp_bookingpress_transient: finishing file(s) (2, 3.9 KB)
+0053.420 (0) Table wp_bookly_appointments: Total expected rows (via COUNT): 1
+0053.432 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0053.481 (0) Table wp_bookly_appointments: Rows added in this batch (next record: 11): 1 (uncompressed bytes in this segment=2577) in 0.10 seconds
+0053.519 (0) Table wp_bookly_appointments: finishing file(s) (2, 0.8 KB)
+0053.588 (0) Table wp_bookly_auths: Total expected rows (via COUNT): 0
+0053.622 (0) Table wp_bookly_auths: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=765) in 0.07 seconds
+0053.664 (0) Table wp_bookly_auths: finishing file(s) (2, 0.4 KB)
+0053.737 (0) Table wp_bookly_categories: Total expected rows (via COUNT): 2
+0053.748 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0053.795 (0) Table wp_bookly_categories: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=766) in 0.10 seconds
+0053.838 (0) Table wp_bookly_categories: finishing file(s) (2, 0.4 KB)
+0053.909 (0) Table wp_bookly_customer_appointments: Total expected rows (via COUNT): 1
+0053.931 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0053.968 (0) Table wp_bookly_customer_appointments: Rows added in this batch (next record: 11): 1 (uncompressed bytes in this segment=3234) in 0.10 seconds
+0054.012 (0) Table wp_bookly_customer_appointments: finishing file(s) (2, 0.9 KB)
+0054.092 (0) Table wp_bookly_customers: Total expected rows (via COUNT): 10
+0054.104 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0054.140 (0) Table wp_bookly_customers: Rows added in this batch (next record: 10): 10 (uncompressed bytes in this segment=3933) in 0.08 seconds
+0054.175 (0) Table wp_bookly_customers: finishing file(s) (2, 0.8 KB)
+0054.253 (0) Table wp_bookly_form_sessions: Total expected rows (via COUNT): 2
+0054.264 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0054.305 (0) Table wp_bookly_form_sessions: Rows added in this batch (next record: 235): 2 (uncompressed bytes in this segment=3655) in 0.10 seconds
+0054.348 (0) Table wp_bookly_form_sessions: finishing file(s) (2, 1.1 KB)
+0054.421 (0) Table wp_bookly_holidays: Total expected rows (via COUNT): 0
+0054.459 (0) Table wp_bookly_holidays: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=762) in 0.07 seconds
+0054.506 (0) Table wp_bookly_holidays: finishing file(s) (2, 0.4 KB)
+0054.585 (0) Table wp_bookly_log: Total expected rows (via COUNT): 77
+0054.597 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0054.671 (0) Table wp_bookly_log: Rows added in this batch (next record: 77): 77 (uncompressed bytes in this segment=61605) in 0.13 seconds
+0054.717 (0) Table wp_bookly_log: finishing file(s) (2, 4.8 KB)
+0054.791 (0) Table wp_bookly_mailing_campaigns: Total expected rows (via COUNT): 0
+0054.830 (0) Table wp_bookly_mailing_campaigns: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1051) in 0.08 seconds
+0054.873 (0) Table wp_bookly_mailing_campaigns: finishing file(s) (2, 0.5 KB)
+0054.956 (0) Table wp_bookly_mailing_list_recipients: Total expected rows (via COUNT): 0
+0054.981 (0) Table wp_bookly_mailing_list_recipients: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=953) in 0.07 seconds
+0055.022 (0) Table wp_bookly_mailing_list_recipients: finishing file(s) (2, 0.4 KB)
+0055.102 (0) Table wp_bookly_mailing_lists: Total expected rows (via COUNT): 0
+0055.134 (0) Table wp_bookly_mailing_lists: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=534) in 0.07 seconds
+0055.173 (0) Table wp_bookly_mailing_lists: finishing file(s) (2, 0.3 KB)
+0055.248 (0) Table wp_bookly_mailing_queue: Total expected rows (via COUNT): 0
+0055.272 (0) Table wp_bookly_mailing_queue: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=753) in 0.07 seconds
+0055.313 (0) Table wp_bookly_mailing_queue: finishing file(s) (2, 0.4 KB)
+0055.396 (0) Table wp_bookly_news: Total expected rows (via COUNT): 60
+0055.411 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0055.473 (0) Table wp_bookly_news: Rows added in this batch (next record: 60): 60 (uncompressed bytes in this segment=50567) in 0.13 seconds
+0055.512 (0) Table wp_bookly_news: finishing file(s) (2, 11.3 KB)
+0055.593 (0) Table wp_bookly_notifications: Total expected rows (via COUNT): 20
+0055.605 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0055.656 (0) Table wp_bookly_notifications: Rows added in this batch (next record: 20): 20 (uncompressed bytes in this segment=11986) in 0.10 seconds
+0055.700 (0) Table wp_bookly_notifications: finishing file(s) (2, 1.7 KB)
+0055.811 (0) Table wp_bookly_notifications_queue: Total expected rows (via COUNT): 0
+0055.850 (0) Table wp_bookly_notifications_queue: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=684) in 0.11 seconds
+0055.905 (0) Table wp_bookly_notifications_queue: finishing file(s) (2, 0.4 KB)
+0055.985 (0) Table wp_bookly_orders: Total expected rows (via COUNT): 11
+0055.997 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0056.044 (0) Table wp_bookly_orders: Rows added in this batch (next record: 11): 11 (uncompressed bytes in this segment=1014) in 0.10 seconds
+0056.085 (0) Table wp_bookly_orders: finishing file(s) (2, 0.6 KB)
+0056.166 (0) Table wp_bookly_payments: Total expected rows (via COUNT): 11
+0056.179 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0056.224 (0) Table wp_bookly_payments: Rows added in this batch (next record: 11): 11 (uncompressed bytes in this segment=12007) in 0.10 seconds
+0056.268 (0) Table wp_bookly_payments: finishing file(s) (2, 1.9 KB)
+0056.348 (0) Table wp_bookly_schedule_item_breaks: Total expected rows (via COUNT): 0
+0056.388 (0) Table wp_bookly_schedule_item_breaks: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=864) in 0.08 seconds
+0056.425 (0) Table wp_bookly_schedule_item_breaks: finishing file(s) (2, 0.4 KB)
+0056.505 (0) Table wp_bookly_sent_notifications: Total expected rows (via COUNT): 0
+0056.528 (0) Table wp_bookly_sent_notifications: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=848) in 0.06 seconds
+0056.570 (0) Table wp_bookly_sent_notifications: finishing file(s) (2, 0.4 KB)
+0056.650 (0) Table wp_bookly_series: Total expected rows (via COUNT): 0
+0056.673 (0) Table wp_bookly_series: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=558) in 0.07 seconds
+0056.714 (0) Table wp_bookly_series: finishing file(s) (2, 0.3 KB)
+0056.802 (0) Table wp_bookly_services: Total expected rows (via COUNT): 5
+0056.815 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0056.867 (0) Table wp_bookly_services: Rows added in this batch (next record: 6): 5 (uncompressed bytes in this segment=5519) in 0.11 seconds
+0056.912 (0) Table wp_bookly_services: finishing file(s) (2, 1.4 KB)
+0056.993 (0) Table wp_bookly_sessions: Total expected rows (via COUNT): 0
+0057.031 (0) Table wp_bookly_sessions: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=697) in 0.08 seconds
+0057.073 (0) Table wp_bookly_sessions: finishing file(s) (2, 0.4 KB)
+0057.158 (0) Table wp_bookly_shop: Total expected rows (via COUNT): 48
+0057.169 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0057.237 (0) Table wp_bookly_shop: Rows added in this batch (next record: 48): 48 (uncompressed bytes in this segment=41432) in 0.13 seconds
+0057.275 (0) Table wp_bookly_shop: finishing file(s) (2, 10.4 KB)
+0057.354 (0) Table wp_bookly_sms_log: Total expected rows (via COUNT): 0
+0057.387 (0) Table wp_bookly_sms_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=775) in 0.08 seconds
+0057.431 (0) Table wp_bookly_sms_log: finishing file(s) (2, 0.4 KB)
+0057.516 (0) Table wp_bookly_staff: Total expected rows (via COUNT): 1
+0057.529 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0057.585 (0) Table wp_bookly_staff: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=2017) in 0.12 seconds
+0057.623 (0) Table wp_bookly_staff: finishing file(s) (2, 0.7 KB)
+0057.704 (0) Table wp_bookly_staff_schedule_items: Total expected rows (via COUNT): 7
+0057.718 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0057.768 (0) Table wp_bookly_staff_schedule_items: Rows added in this batch (next record: 7): 7 (uncompressed bytes in this segment=1263) in 0.10 seconds
+0057.825 (0) Table wp_bookly_staff_schedule_items: finishing file(s) (2, 0.5 KB)
+0057.899 (0) Table wp_bookly_staff_services: Total expected rows (via COUNT): 5
+0057.912 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0057.953 (0) Table wp_bookly_staff_services: Rows added in this batch (next record: 5): 5 (uncompressed bytes in this segment=1480) in 0.09 seconds
+0057.993 (0) Table wp_bookly_staff_services: finishing file(s) (2, 0.6 KB)
+0058.063 (0) Table wp_bookly_stats: Total expected rows (via COUNT): 0
+0058.106 (0) Table wp_bookly_stats: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=563) in 0.08 seconds
+0058.147 (0) Table wp_bookly_stats: finishing file(s) (2, 0.4 KB)
+0058.217 (0) Table wp_bookly_sub_services: Total expected rows (via COUNT): 0
+0058.241 (0) Table wp_bookly_sub_services: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1093) in 0.06 seconds
+0058.280 (0) Table wp_bookly_sub_services: finishing file(s) (2, 0.5 KB)
+0058.382 (0) Table wp_ea_appointments: Total expected rows (via COUNT): 0
+0058.406 (0) Table wp_ea_appointments: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1788) in 0.09 seconds
+0058.443 (0) Table wp_ea_appointments: finishing file(s) (2, 0.6 KB)
+0058.527 (0) Table wp_ea_connections: Total expected rows (via COUNT): 8
+0058.539 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0058.587 (0) Table wp_ea_connections: Rows added in this batch (next record: 8): 8 (uncompressed bytes in this segment=2580) in 0.11 seconds
+0058.628 (0) Table wp_ea_connections: finishing file(s) (2, 0.7 KB)
+0058.704 (0) Table wp_ea_customers: Total expected rows (via COUNT): 0
+0058.743 (0) Table wp_ea_customers: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=771) in 0.08 seconds
+0058.790 (0) Table wp_ea_customers: finishing file(s) (2, 0.4 KB)
+0058.893 (0) Table wp_ea_error_logs: Total expected rows (via COUNT): 0
+0058.919 (0) Table wp_ea_error_logs: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=589) in 0.09 seconds
+0058.967 (0) Table wp_ea_error_logs: finishing file(s) (2, 0.3 KB)
+0059.052 (0) Table wp_ea_fields: Total expected rows (via COUNT): 0
+0059.080 (0) Table wp_ea_fields: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=512) in 0.08 seconds
+0059.118 (0) Table wp_ea_fields: finishing file(s) (2, 0.3 KB)
+0059.211 (0) Table wp_ea_locations: Total expected rows (via COUNT): 1
+0059.226 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0059.281 (0) Table wp_ea_locations: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=785) in 0.13 seconds
+0059.325 (0) Table wp_ea_locations: finishing file(s) (2, 0.4 KB)
+0059.409 (0) Table wp_ea_meta_fields: Total expected rows (via COUNT): 4
+0059.425 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0059.460 (0) Table wp_ea_meta_fields: Rows added in this batch (next record: 4): 4 (uncompressed bytes in this segment=1212) in 0.10 seconds
+0059.501 (0) Table wp_ea_meta_fields: finishing file(s) (2, 0.5 KB)
+0059.589 (0) Table wp_ea_options: Total expected rows (via COUNT): 111
+0059.601 (0) Table is relatively small; fetch_rows will thus be: 200 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0059.659 (0) Table wp_ea_options: Rows added in this batch (next record: 111): 111 (uncompressed bytes in this segment=6622) in 0.12 seconds
+0059.694 (0) Table wp_ea_options: finishing file(s) (2, 1.8 KB)
+0059.792 (0) Table wp_ea_services: Total expected rows (via COUNT): 8
+0059.804 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0059.854 (0) Table wp_ea_services: Rows added in this batch (next record: 8): 8 (uncompressed bytes in this segment=1486) in 0.12 seconds
+0059.897 (0) Table wp_ea_services: finishing file(s) (2, 0.7 KB)
+0059.982 (0) Table wp_ea_staff: Total expected rows (via COUNT): 1
+0059.993 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0060.029 (0) Table wp_ea_staff: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=760) in 0.10 seconds
+0060.069 (0) Table wp_ea_staff: finishing file(s) (2, 0.4 KB)
+0060.164 (0) Table wp_fcal_booking_activity: Total expected rows (via COUNT): 0
+0060.207 (0) Table wp_fcal_booking_activity: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1043) in 0.10 seconds
+0060.266 (0) Table wp_fcal_booking_activity: finishing file(s) (2, 0.5 KB)
+0060.349 (0) Table wp_fcal_booking_hosts: Total expected rows (via COUNT): 0
+0060.373 (0) Table wp_fcal_booking_hosts: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=824) in 0.07 seconds
+0060.411 (0) Table wp_fcal_booking_hosts: finishing file(s) (2, 0.4 KB)
+0060.526 (0) Table wp_fcal_booking_meta: Total expected rows (via COUNT): 0
+0060.563 (0) Table wp_fcal_booking_meta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=790) in 0.12 seconds
+0060.619 (0) Table wp_fcal_booking_meta: finishing file(s) (2, 0.4 KB)
+0060.725 (0) Table wp_fcal_bookings: Total expected rows (via COUNT): 0
+0060.763 (0) Table wp_fcal_bookings: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=3196) in 0.11 seconds
+0060.819 (0) Table wp_fcal_bookings: finishing file(s) (2, 0.8 KB)
+0060.941 (0) Table wp_fcal_calendar_events: Total expected rows (via COUNT): 0
+0060.964 (0) Table wp_fcal_calendar_events: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1968) in 0.10 seconds
+0061.033 (0) Table wp_fcal_calendar_events: finishing file(s) (2, 0.6 KB)
+0061.151 (0) Table wp_fcal_calendars: Total expected rows (via COUNT): 0
+0061.176 (0) Table wp_fcal_calendars: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1754) in 0.10 seconds
+0061.247 (0) Table wp_fcal_calendars: finishing file(s) (2, 0.6 KB)
+0061.344 (0) Table wp_fcal_meta: Total expected rows (via COUNT): 0
+0061.378 (0) Table wp_fcal_meta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=839) in 0.10 seconds
+0061.437 (0) Table wp_fcal_meta: finishing file(s) (2, 0.4 KB)
+0061.515 (0) Table wp_rank_math_internal_links: Total expected rows (via COUNT): 4
+0061.526 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0061.581 (0) Table wp_rank_math_internal_links: Rows added in this batch (next record: 167): 4 (uncompressed bytes in this segment=1172) in 0.10 seconds
+0061.618 (0) Table wp_rank_math_internal_links: finishing file(s) (2, 0.5 KB)
+0061.707 (0) Table wp_rank_math_internal_meta: Total expected rows (via COUNT): 24
+0061.718 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0061.766 (0) Table wp_rank_math_internal_meta: Rows added in this batch (next record: 839): 24 (uncompressed bytes in this segment=1130) in 0.10 seconds
+0061.805 (0) Table wp_rank_math_internal_meta: finishing file(s) (2, 0.4 KB)
+0061.884 (0) Table wp_ssa_appointment_meta: Total expected rows (via COUNT): 0
+0061.931 (0) Table wp_ssa_appointment_meta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=776) in 0.09 seconds
+0061.971 (0) Table wp_ssa_appointment_meta: finishing file(s) (2, 0.4 KB)
+0062.056 (0) Table wp_ssa_appointment_type_labels: Total expected rows (via COUNT): 1
+0062.067 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0062.122 (0) Table wp_ssa_appointment_type_labels: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=820) in 0.12 seconds
+0062.163 (0) Table wp_ssa_appointment_type_labels: finishing file(s) (2, 0.5 KB)
+0062.233 (0) Table wp_ssa_appointment_types: Total expected rows (via COUNT): 2
+0062.245 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0062.282 (0) Table wp_ssa_appointment_types: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=6708) in 0.09 seconds
+0062.321 (0) Table wp_ssa_appointment_types: finishing file(s) (2, 1.4 KB)
+0062.403 (0) Table wp_ssa_appointments: Total expected rows (via COUNT): 0
+0062.439 (0) Table wp_ssa_appointments: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=2210) in 0.08 seconds
+0062.481 (0) Table wp_ssa_appointments: finishing file(s) (2, 0.7 KB)
+0062.559 (0) Table wp_ssa_async_actions: Total expected rows (via COUNT): 0
+0062.592 (0) Table wp_ssa_async_actions: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1560) in 0.07 seconds
+0062.642 (0) Table wp_ssa_async_actions: finishing file(s) (2, 0.6 KB)
+0062.718 (0) Table wp_ssa_availability: Total expected rows (via COUNT): 160
+0062.730 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0062.781 (0) Table wp_ssa_availability: Rows added in this batch (next record: 536): 160 (uncompressed bytes in this segment=34640) in 0.10 seconds
+0062.827 (0) Table wp_ssa_availability: finishing file(s) (2, 2.3 KB)
+0062.905 (0) Table wp_ssa_availability_external: Total expected rows (via COUNT): 0
+0062.947 (0) Table wp_ssa_availability_external: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1887) in 0.08 seconds
+0062.998 (0) Table wp_ssa_availability_external: finishing file(s) (2, 0.6 KB)
+0063.073 (0) Table wp_ssa_revision_meta: Total expected rows (via COUNT): 100
+0063.089 (0) Table is relatively small; fetch_rows will thus be: 200 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0063.222 (0) Table wp_ssa_revision_meta: Rows added in this batch (next record: 100): 100 (uncompressed bytes in this segment=229809) in 0.19 seconds
+0063.259 (0) Table wp_ssa_revision_meta: finishing file(s) (2, 4 KB)
+0063.335 (0) Table wp_ssa_revisions: Total expected rows (via COUNT): 50
+0063.347 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0063.429 (0) Table wp_ssa_revisions: Rows added in this batch (next record: 50): 50 (uncompressed bytes in this segment=130444) in 0.13 seconds
+0063.467 (0) Table wp_ssa_revisions: finishing file(s) (2, 3.3 KB)
+0063.502 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_options.table.tmpr8261.gz (1/100/fopen): adding to final database dump
+0063.522 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_options.table.gz (2/100/fopen): adding to final database dump
+0063.537 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_users.table.tmpr2.gz (3/100/fopen): adding to final database dump
+0063.554 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_users.table.gz (4/100/fopen): adding to final database dump
+0063.565 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_usermeta.table.tmpr47.gz (5/100/fopen): adding to final database dump
+0063.575 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_usermeta.table.gz (6/100/fopen): adding to final database dump
+0063.590 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_actionscheduler_actions.table.tmpr206.gz (7/100/fopen): adding to final database dump
+0063.601 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_actionscheduler_actions.table.gz (8/100/fopen): adding to final database dump
+0063.612 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_actionscheduler_claims.table.tmpr0.gz (9/100/fopen): adding to final database dump
+0063.624 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_actionscheduler_claims.table.gz (10/100/fopen): adding to final database dump
+0063.633 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_actionscheduler_groups.table.tmpr5.gz (11/100/fopen): adding to final database dump
+0063.653 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_actionscheduler_groups.table.gz (12/100/fopen): adding to final database dump
+0063.665 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_actionscheduler_logs.table.tmpr479.gz (13/100/fopen): adding to final database dump
+0063.679 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_actionscheduler_logs.table.gz (14/100/fopen): adding to final database dump
+0063.691 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_commentmeta.table.tmpr0.gz (15/100/fopen): adding to final database dump
+0063.706 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_commentmeta.table.gz (16/100/fopen): adding to final database dump
+0063.716 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_comments.table.tmpr2.gz (17/100/fopen): adding to final database dump
+0063.729 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_comments.table.gz (18/100/fopen): adding to final database dump
+0063.739 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_kb_optimizer.table.tmpr1.gz (19/100/fopen): adding to final database dump
+0063.752 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_kb_optimizer.table.gz (20/100/fopen): adding to final database dump
+0063.763 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_kb_optimizer_viewport_hashes.table.tmpr1.gz (21/100/fopen): adding to final database dump
+0063.775 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_kb_optimizer_viewport_hashes.table.gz (22/100/fopen): adding to final database dump
+0063.786 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_links.table.tmpr0.gz (23/100/fopen): adding to final database dump
+0063.798 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_links.table.gz (24/100/fopen): adding to final database dump
+0063.815 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_postmeta.table.tmpr1805.gz (25/100/fopen): adding to final database dump
+0063.826 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_postmeta.table.gz (26/100/fopen): adding to final database dump
+0063.837 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_posts.table.tmpr1207.gz (27/100/fopen): adding to final database dump
+0063.880 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_posts.table.gz (28/100/fopen): adding to final database dump
+0063.892 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_term_relationships.table.tmpr100001.gz (29/100/fopen): adding to final database dump
+0063.903 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_term_relationships.table.gz (30/100/fopen): adding to final database dump
+0063.915 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_term_taxonomy.table.tmpr17.gz (31/100/fopen): adding to final database dump
+0063.932 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_term_taxonomy.table.gz (32/100/fopen): adding to final database dump
+0063.942 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_termmeta.table.tmpr0.gz (33/100/fopen): adding to final database dump
+0063.954 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_termmeta.table.gz (34/100/fopen): adding to final database dump
+0063.966 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_terms.table.tmpr17.gz (35/100/fopen): adding to final database dump
+0063.978 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_terms.table.gz (36/100/fopen): adding to final database dump
+0063.991 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookignpress_double_bookings.table.tmpr0.gz (37/100/fopen): adding to final database dump
+0064.005 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookignpress_double_bookings.table.gz (38/100/fopen): adding to final database dump
+0064.015 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_appointment_bookings.table.tmpr11.gz (39/100/fopen): adding to final database dump
+0064.035 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_appointment_bookings.table.gz (40/100/fopen): adding to final database dump
+0064.048 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_categories.table.tmpr4.gz (41/100/fopen): adding to final database dump
+0064.060 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_categories.table.gz (42/100/fopen): adding to final database dump
+0064.073 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_customers.table.tmpr3.gz (43/100/fopen): adding to final database dump
+0064.085 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_customers.table.gz (44/100/fopen): adding to final database dump
+0064.096 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_customers_meta.table.tmpr5.gz (45/100/fopen): adding to final database dump
+0064.107 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_customers_meta.table.gz (46/100/fopen): adding to final database dump
+0064.118 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_customize_settings.table.tmpr104.gz (47/100/fopen): adding to final database dump
+0064.132 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_customize_settings.table.gz (48/100/fopen): adding to final database dump
+0064.143 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_debug_payment_log.table.tmpr0.gz (49/100/fopen): adding to final database dump
+0064.157 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_debug_payment_log.table.gz (50/100/fopen): adding to final database dump
+0064.169 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_default_daysoff.table.tmpr0.gz (51/100/fopen): adding to final database dump
+0064.181 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_default_daysoff.table.gz (52/100/fopen): adding to final database dump
+0064.190 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_default_workhours.table.tmpr8.gz (53/100/fopen): adding to final database dump
+0064.202 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_default_workhours.table.gz (54/100/fopen): adding to final database dump
+0064.215 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_entries.table.tmpr11.gz (55/100/fopen): adding to final database dump
+0064.226 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_entries.table.gz (56/100/fopen): adding to final database dump
+0064.237 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_entries_meta.table.tmpr0.gz (57/100/fopen): adding to final database dump
+0064.247 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_entries_meta.table.gz (58/100/fopen): adding to final database dump
+0064.261 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_export_data_log.table.tmpr0.gz (59/100/fopen): adding to final database dump
+0064.273 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_export_data_log.table.gz (60/100/fopen): adding to final database dump
+0064.286 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_export_log_detail.table.tmpr0.gz (61/100/fopen): adding to final database dump
+0064.298 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_export_log_detail.table.gz (62/100/fopen): adding to final database dump
+0064.309 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_form_fields.table.tmpr9.gz (63/100/fopen): adding to final database dump
+0064.322 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_form_fields.table.gz (64/100/fopen): adding to final database dump
+0064.334 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_import_data_log.table.tmpr0.gz (65/100/fopen): adding to final database dump
+0064.347 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_import_data_log.table.gz (66/100/fopen): adding to final database dump
+0064.359 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_import_detail_log.table.tmpr0.gz (67/100/fopen): adding to final database dump
+0064.370 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_import_detail_log.table.gz (68/100/fopen): adding to final database dump
+0064.382 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_import_images.table.tmpr0.gz (69/100/fopen): adding to final database dump
+0064.394 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_import_images.table.gz (70/100/fopen): adding to final database dump
+0064.405 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_import_record_rel.table.tmpr0.gz (71/100/fopen): adding to final database dump
+0064.418 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_import_record_rel.table.gz (72/100/fopen): adding to final database dump
+0064.429 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_notifications.table.tmpr11.gz (73/100/fopen): adding to final database dump
+0064.443 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_notifications.table.gz (74/100/fopen): adding to final database dump
+0064.456 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_other_debug_logs.table.tmpr0.gz (75/100/fopen): adding to final database dump
+0064.468 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_other_debug_logs.table.gz (76/100/fopen): adding to final database dump
+0064.479 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_payment_transactions.table.tmpr11.gz (77/100/fopen): adding to final database dump
+0064.494 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_payment_transactions.table.gz (78/100/fopen): adding to final database dump
+0064.505 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_services.table.tmpr22.gz (79/100/fopen): adding to final database dump
+0064.517 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_services.table.gz (80/100/fopen): adding to final database dump
+0064.528 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_servicesmeta.table.tmpr13.gz (81/100/fopen): adding to final database dump
+0064.538 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_servicesmeta.table.gz (82/100/fopen): adding to final database dump
+0064.549 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_settings.table.tmpr73.gz (83/100/fopen): adding to final database dump
+0064.562 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_settings.table.gz (84/100/fopen): adding to final database dump
+0064.573 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_transient.table.tmpr108.gz (85/100/fopen): adding to final database dump
+0064.584 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookingpress_transient.table.gz (86/100/fopen): adding to final database dump
+0064.594 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_appointments.table.tmpr12.gz (87/100/fopen): adding to final database dump
+0064.607 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_appointments.table.gz (88/100/fopen): adding to final database dump
+0064.618 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_auths.table.tmpr0.gz (89/100/fopen): adding to final database dump
+0064.632 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_auths.table.gz (90/100/fopen): adding to final database dump
+0064.643 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_categories.table.tmpr3.gz (91/100/fopen): adding to final database dump
+0064.653 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_categories.table.gz (92/100/fopen): adding to final database dump
+0064.663 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_customer_appointments.table.tmpr12.gz (93/100/fopen): adding to final database dump
+0064.675 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_customer_appointments.table.gz (94/100/fopen): adding to final database dump
+0064.686 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_customers.table.tmpr11.gz (95/100/fopen): adding to final database dump
+0064.698 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_customers.table.gz (96/100/fopen): adding to final database dump
+0064.710 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_form_sessions.table.tmpr236.gz (97/100/fopen): adding to final database dump
+0064.722 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_form_sessions.table.gz (98/100/fopen): adding to final database dump
+0064.733 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_holidays.table.tmpr0.gz (99/100/fopen): adding to final database dump
+0064.757 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_holidays.table.gz (100/100/fopen): adding to final database dump
+0064.769 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_log.table.tmpr78.gz (101/100/fopen): adding to final database dump
+0064.781 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_log.table.gz (102/100/fopen): adding to final database dump
+0064.792 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_mailing_campaigns.table.tmpr0.gz (103/100/fopen): adding to final database dump
+0064.804 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_mailing_campaigns.table.gz (104/100/fopen): adding to final database dump
+0064.815 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_mailing_list_recipients.table.tmpr0.gz (105/100/fopen): adding to final database dump
+0064.829 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_mailing_list_recipients.table.gz (106/100/fopen): adding to final database dump
+0064.841 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_mailing_lists.table.tmpr0.gz (107/100/fopen): adding to final database dump
+0064.853 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_mailing_lists.table.gz (108/100/fopen): adding to final database dump
+0064.868 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_mailing_queue.table.tmpr0.gz (109/100/fopen): adding to final database dump
+0064.880 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_mailing_queue.table.gz (110/100/fopen): adding to final database dump
+0064.890 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_news.table.tmpr61.gz (111/100/fopen): adding to final database dump
+0064.902 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_news.table.gz (112/100/fopen): adding to final database dump
+0064.913 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_notifications.table.tmpr21.gz (113/100/fopen): adding to final database dump
+0064.928 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_notifications.table.gz (114/100/fopen): adding to final database dump
+0064.938 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_notifications_queue.table.tmpr0.gz (115/100/fopen): adding to final database dump
+0064.949 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_notifications_queue.table.gz (116/100/fopen): adding to final database dump
+0064.960 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_orders.table.tmpr12.gz (117/100/fopen): adding to final database dump
+0064.970 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_orders.table.gz (118/100/fopen): adding to final database dump
+0064.984 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_payments.table.tmpr12.gz (119/100/fopen): adding to final database dump
+0064.999 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_payments.table.gz (120/100/fopen): adding to final database dump
+0065.008 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_schedule_item_breaks.table.tmpr0.gz (121/100/fopen): adding to final database dump
+0065.019 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_schedule_item_breaks.table.gz (122/100/fopen): adding to final database dump
+0065.030 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_sent_notifications.table.tmpr0.gz (123/100/fopen): adding to final database dump
+0065.043 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_sent_notifications.table.gz (124/100/fopen): adding to final database dump
+0065.054 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_series.table.tmpr0.gz (125/100/fopen): adding to final database dump
+0065.066 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_series.table.gz (126/100/fopen): adding to final database dump
+0065.077 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_services.table.tmpr7.gz (127/100/fopen): adding to final database dump
+0065.097 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_services.table.gz (128/100/fopen): adding to final database dump
+0065.107 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_sessions.table.tmpr0.gz (129/100/fopen): adding to final database dump
+0065.118 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_sessions.table.gz (130/100/fopen): adding to final database dump
+0065.128 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_shop.table.tmpr49.gz (131/100/fopen): adding to final database dump
+0065.139 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_shop.table.gz (132/100/fopen): adding to final database dump
+0065.153 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_sms_log.table.tmpr0.gz (133/100/fopen): adding to final database dump
+0065.165 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_sms_log.table.gz (134/100/fopen): adding to final database dump
+0065.178 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_staff.table.tmpr2.gz (135/100/fopen): adding to final database dump
+0065.188 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_staff.table.gz (136/100/fopen): adding to final database dump
+0065.206 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_staff_schedule_items.table.tmpr8.gz (137/100/fopen): adding to final database dump
+0065.218 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_staff_schedule_items.table.gz (138/100/fopen): adding to final database dump
+0065.231 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_staff_services.table.tmpr6.gz (139/100/fopen): adding to final database dump
+0065.242 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_staff_services.table.gz (140/100/fopen): adding to final database dump
+0065.257 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_stats.table.tmpr0.gz (141/100/fopen): adding to final database dump
+0065.269 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_stats.table.gz (142/100/fopen): adding to final database dump
+0065.280 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_sub_services.table.tmpr0.gz (143/100/fopen): adding to final database dump
+0065.292 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_bookly_sub_services.table.gz (144/100/fopen): adding to final database dump
+0065.308 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ea_appointments.table.tmpr0.gz (145/100/fopen): adding to final database dump
+0065.330 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ea_appointments.table.gz (146/100/fopen): adding to final database dump
+0065.342 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ea_connections.table.tmpr9.gz (147/100/fopen): adding to final database dump
+0065.353 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ea_connections.table.gz (148/100/fopen): adding to final database dump
+0065.369 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ea_customers.table.tmpr0.gz (149/100/fopen): adding to final database dump
+0065.380 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ea_customers.table.gz (150/100/fopen): adding to final database dump
+0065.393 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ea_error_logs.table.tmpr0.gz (151/100/fopen): adding to final database dump
+0065.407 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ea_error_logs.table.gz (152/100/fopen): adding to final database dump
+0065.422 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ea_fields.table.tmpr0.gz (153/100/fopen): adding to final database dump
+0065.439 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ea_fields.table.gz (154/100/fopen): adding to final database dump
+0065.452 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ea_locations.table.tmpr2.gz (155/100/fopen): adding to final database dump
+0065.465 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ea_locations.table.gz (156/100/fopen): adding to final database dump
+0065.475 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ea_meta_fields.table.tmpr5.gz (157/100/fopen): adding to final database dump
+0065.486 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ea_meta_fields.table.gz (158/100/fopen): adding to final database dump
+0065.500 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ea_options.table.tmpr112.gz (159/100/fopen): adding to final database dump
+0065.512 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ea_options.table.gz (160/100/fopen): adding to final database dump
+0065.524 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ea_services.table.tmpr9.gz (161/100/fopen): adding to final database dump
+0065.536 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ea_services.table.gz (162/100/fopen): adding to final database dump
+0065.547 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ea_staff.table.tmpr2.gz (163/100/fopen): adding to final database dump
+0065.562 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ea_staff.table.gz (164/100/fopen): adding to final database dump
+0065.573 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_fcal_booking_activity.table.tmpr0.gz (165/100/fopen): adding to final database dump
+0065.585 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_fcal_booking_activity.table.gz (166/100/fopen): adding to final database dump
+0065.598 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_fcal_booking_hosts.table.tmpr0.gz (167/100/fopen): adding to final database dump
+0065.615 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_fcal_booking_hosts.table.gz (168/100/fopen): adding to final database dump
+0065.627 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_fcal_booking_meta.table.tmpr0.gz (169/100/fopen): adding to final database dump
+0065.638 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_fcal_booking_meta.table.gz (170/100/fopen): adding to final database dump
+0065.649 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_fcal_bookings.table.tmpr0.gz (171/100/fopen): adding to final database dump
+0065.661 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_fcal_bookings.table.gz (172/100/fopen): adding to final database dump
+0065.681 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_fcal_calendar_events.table.tmpr0.gz (173/100/fopen): adding to final database dump
+0065.693 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_fcal_calendar_events.table.gz (174/100/fopen): adding to final database dump
+0065.708 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_fcal_calendars.table.tmpr0.gz (175/100/fopen): adding to final database dump
+0065.720 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_fcal_calendars.table.gz (176/100/fopen): adding to final database dump
+0065.732 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_fcal_meta.table.tmpr0.gz (177/100/fopen): adding to final database dump
+0065.743 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_fcal_meta.table.gz (178/100/fopen): adding to final database dump
+0065.760 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_rank_math_internal_links.table.tmpr168.gz (179/100/fopen): adding to final database dump
+0065.771 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_rank_math_internal_links.table.gz (180/100/fopen): adding to final database dump
+0065.787 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_rank_math_internal_meta.table.tmpr840.gz (181/100/fopen): adding to final database dump
+0065.801 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_rank_math_internal_meta.table.gz (182/100/fopen): adding to final database dump
+0065.812 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ssa_appointment_meta.table.tmpr0.gz (183/100/fopen): adding to final database dump
+0065.823 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ssa_appointment_meta.table.gz (184/100/fopen): adding to final database dump
+0065.836 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ssa_appointment_type_labels.table.tmpr2.gz (185/100/fopen): adding to final database dump
+0065.847 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ssa_appointment_type_labels.table.gz (186/100/fopen): adding to final database dump
+0065.861 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ssa_appointment_types.table.tmpr3.gz (187/100/fopen): adding to final database dump
+0065.874 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ssa_appointment_types.table.gz (188/100/fopen): adding to final database dump
+0065.886 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ssa_appointments.table.tmpr0.gz (189/100/fopen): adding to final database dump
+0065.899 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ssa_appointments.table.gz (190/100/fopen): adding to final database dump
+0065.909 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ssa_async_actions.table.tmpr0.gz (191/100/fopen): adding to final database dump
+0065.921 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ssa_async_actions.table.gz (192/100/fopen): adding to final database dump
+0065.932 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ssa_availability.table.tmpr537.gz (193/100/fopen): adding to final database dump
+0065.951 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ssa_availability.table.gz (194/100/fopen): adding to final database dump
+0065.964 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ssa_availability_external.table.tmpr0.gz (195/100/fopen): adding to final database dump
+0065.976 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ssa_availability_external.table.gz (196/100/fopen): adding to final database dump
+0065.988 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ssa_revision_meta.table.tmpr101.gz (197/100/fopen): adding to final database dump
+0066.001 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ssa_revision_meta.table.gz (198/100/fopen): adding to final database dump
+0066.013 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ssa_revisions.table.tmpr51.gz (199/100/fopen): adding to final database dump
+0066.038 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db-table-wp_ssa_revisions.table.gz (200/100/fopen): adding to final database dump
+0066.090 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db.gz: finished writing out complete database file (2594.2 KB)
+0066.188 (0) Total database tables backed up: 100 (backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db.gz, size: 2656598, sha1: df399ada68eeedc039680613401c3a51de5b1d76, sha256: 0e41d251ba6a9fd8afd7583aca4bf0e747d659e7104c1e22c6b2938301ebf6ee)
+0066.301 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip: plugins: This file has already been successfully uploaded
+0066.312 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-themes.zip: themes: This file has already been successfully uploaded
+0066.321 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-uploads.zip: uploads: This file has already been successfully uploaded
+0066.333 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-others.zip: others: This file has already been successfully uploaded
+0066.347 (0) backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db.gz: db: This file has not yet been successfully uploaded: will queue
+0066.359 (0) Saving backup history. Total backup size: 74.3 MB
+0066.409 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0066.478 (0) Cloud backup selection (1/1): dropbox with instance (1/1) (last)
+0066.490 (0) Beginning dispatch of backup to remote (dropbox) (instance identifier s-a75bdee162bab21a650ef2c874914cc2)
+0066.503 (0) Dropbox: begin cloud upload (using API version 2 with OAuth v2 token)
+0066.515 (0) Dropbox: access gained; setting chunk size to: 10240 KB
+0066.920 (0) Dropbox: quota usage: used=71.8 MB, total=2048 MB, available=1976.2 MB
+0066.931 (0) Dropbox: Attempt to upload: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db.gz to: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db.gz
+0069.183 (0) Dropbox chunked upload: 100 % uploaded (pid_upload_session:ABIKmkO1WfMkEVhe4_4ofQ3qhY7OTIqxGkRbr82MB16RL4d6bw, 2656598, 10240 KB)
+0070.642 (0) Recording as successfully uploaded: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db.gz
+0070.670 (0) Deleting local file: backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db.gz: OK
+0070.681 (0) Dropbox: File upload success (backup_2026-05-11-1034_Julia_Nails_babfa16efbae-db.gz): 2594 KB in 3s (691 KB/s)
+0070.744 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0070.771 (0) Number of backup sets in history: 1; groups (db): 1
+0070.783 (0) Examining (for databases) backup set with group_id=0, nonce=babfa16efbae, datestamp=1778495660 (May 11 2026 10:34:20)
+0070.794 (0) This backup set is the backup set just made, so will not be deleted.
+0070.794 (0) Number of backup sets in history: 1; groups (files): 1
+0070.806 (0) Examining (for files) backup set with nonce=babfa16efbae, datestamp=1778495660 (May 11 2026 10:34:20)
+0070.806 (0) This backup set is the backup set just made, so will not be deleted.
+0070.817 (0) This backup set is the backup set just made, so will not be deleted.
+0070.817 (0) This backup set is the backup set just made, so will not be deleted.
+0070.818 (0) This backup set is the backup set just made, so will not be deleted.
+0070.818 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0070.831 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0070.875 (0) Resume backup (babfa16efbae, 0): finish run
+0070.907 (0) Decremented the semaphore (fd) by 1
+0070.929 (0) Semaphore (fd) unlocked
+0070.946 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0070.978 (0) Deleting zip manifest (backup_2026-05-11-1034_Julia_Nails_babfa16efbae-plugins.zip.list.tmp)
+0070.989 (0) Deleting zip manifest (backup_2026-05-11-1034_Julia_Nails_babfa16efbae-themes.zip.list.tmp)
+0071.002 (0) Deleting zip manifest (backup_2026-05-11-1034_Julia_Nails_babfa16efbae-uploads.zip.list.tmp)
+0071.014 (0) Deleting zip manifest (backup_2026-05-11-1034_Julia_Nails_babfa16efbae-others.zip.list.tmp)
+0071.025 (0) No email will/can be sent - the user has not configured an email address.
+0071.038 (0) The backup succeeded and is now complete

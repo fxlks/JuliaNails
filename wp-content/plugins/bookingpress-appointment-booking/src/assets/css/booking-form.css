@@ -424,7 +424,7 @@
     align-items: center;
     padding: 10px 16px !important;
     background-color: transparent !important;
-    border: 1px solid var(--bpa-gt-gray-400, #cfd6e5) !important;
+    border: 1px solid var(--bpa-gt-gray-400, #cfd6e5);
     border-radius: var(--bpa-radius-4px, 4px) !important;
     box-shadow: none !important;
     transition: box-shadow .2s ease;
@@ -435,7 +435,7 @@
 .bpa-frontend-main-container.bpa-frontend-vue3
     .bpa-front-module--bd-form .bp-input__wrapper:hover {
     box-shadow: none !important;
-    border-color: var(--bpa-gt-gray-400, #cfd6e5) !important;
+    border-color: var(--bpa-gt-gray-400, #cfd6e5);
 }
 
 .bpa-frontend-main-container.bpa-frontend-vue3
@@ -444,8 +444,8 @@
     .bpa-front-module--bd-form .bp-input__wrapper.is-focus,
 .bpa-frontend-main-container.bpa-frontend-vue3
     .bpa-front-module--bd-form .bp-input__wrapper:focus-within {
-    border-color: var(--bpa-gt-gray-400, #cfd6e5) !important;
-    box-shadow: 0 0 0 3px rgba(207, 214, 229, .24) !important;
+    border-color: var(--bpa-gt-gray-400, #cfd6e5);
+    box-shadow: 0 0 0 3px rgba(207, 214, 229, .24);
     outline: 0 !important;
 }
 
@@ -463,7 +463,7 @@
     font-size: 14px !important;
     line-height: 18px !important;
     font-weight: 400 !important;
-    color: var(--bpa-dt-black-400, #374151) !important;
+    color: var(--bpa-dt-black-400, #374151);
     font-family: var(--bpa-primary-font, inherit) !important;
     box-sizing: border-box;
 }
@@ -496,9 +496,9 @@
     font-size: 14px !important;
     line-height: 18px !important;
     font-weight: 400 !important;
-    color: var(--bpa-dt-black-400, #374151) !important;
+    color: var(--bpa-dt-black-400, #374151);
     background-color: transparent !important;
-    border: 1px solid var(--bpa-gt-gray-400, #cfd6e5) !important;
+    border: 1px solid var(--bpa-gt-gray-400, #cfd6e5);
     border-radius: var(--bpa-radius-4px, 4px) !important;
     width: 100%;
     max-width: 100% !important;
@@ -510,9 +510,9 @@
 
 .bpa-frontend-main-container.bpa-frontend-vue3
     .bpa-front-module--bd-form .bp-textarea__inner:focus {
-    border-color: var(--bpa-gt-gray-400, #cfd6e5) !important;
+    border-color: var(--bpa-gt-gray-400, #cfd6e5) ;
     background-color: transparent !important;
-    box-shadow: 0 0 0 3px rgba(207, 214, 229, .24) !important;
+    box-shadow: 0 0 0 3px rgba(207, 214, 229, .24) ;
     outline: 0;
 }
 
@@ -541,7 +541,7 @@
     .bpa-front-module--bd-form .bp-ui-tel-input .vue-tel-input {
     display: flex;
     align-items: stretch;
-    border: 1px solid var(--bpa-gt-gray-400, #cfd6e5) !important;
+    border: 1px solid var(--bpa-gt-gray-400, #cfd6e5);
     border-radius: var(--bpa-radius-4px, 4px);
     background: transparent;
     width: 100%;
@@ -636,7 +636,7 @@
     height: auto !important;
     font-size: 14px !important;
     line-height: 18px !important;
-    color: var(--bpa-dt-black-400, #374151) !important;
+    color: var(--bpa-dt-black-400, #374151);
     background: transparent !important;
     width: 100%;
 }

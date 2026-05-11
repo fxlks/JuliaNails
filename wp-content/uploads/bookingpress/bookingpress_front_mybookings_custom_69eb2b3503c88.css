@@ -54,7 +54,7 @@
                         .bpa-front-form-control input::placeholder,
                         .bpa-front-form-control .el-textarea__inner::placeholder,
                         .el-date-picker__time-header .el-input .el-input__inner::placeholder {
-                            color:rgba(255,255,255,0.75) !important;
+                            color:rgba(242,242,242,0.75) !important;
                         }.bpa-front-btn--primary,
                         .bpa-front-ma--pagination-wrapper .el-pager li.active,
                         .bpa-ma-vac--action-btn-group .bpa-front-btn:hover,
@@ -75,7 +75,7 @@
                             border-color:var(--bpa-sc-danger) !important;
                         }
                         .el-button--bpa-front-btn:hover {
-                            border-color:#FFFFFF !important;
+                            border-color:#F2F2F2 !important;
                         }.bpa-tn__dropdown-menu .bpa-tn__dropdown-item a.bpa-tm__item.__bpa-is-active,
                         .bpa-tn__dropdown-menu .bpa-tn__dropdown-item a.bpa-tm__item.__bpa-is-active span,
                         .bpa-front-ma--pagination-wrapper .el-pager li:hover,
@@ -108,10 +108,10 @@
                         .bpa-tn__dropdown-menu .bpa-tn__dropdown-item svg,
                         .bpa-front-ma-table-actions-wrap .bpa-front-ma-taw__card .bpa-front-btn--icon-without-box span svg,
                         .bpa-tn__dropdown-head .bpa-cp-avatar__default-img svg {
-                            fill:#FFFFFF !important;
+                            fill:#F2F2F2 !important;
                         }
                         .bpa-ma-vac--action-btn-group .bpa-front-btn span svg {
-                            fill:#FFFFFF !important;    
+                            fill:#F2F2F2 !important;    
                         }
                         .bpa-ma-vac--action-btn-group .bpa-front-btn:hover span svg,
                         .bpa-front-ma-table-actions-wrap .bpa-front-ma-taw__card .bpa-front-btn--icon-without-box:hover span svg {
@@ -135,7 +135,7 @@
                         .el-date-table td.current:not(.disabled) span,
                         .bpa-front-cp-delete-account-wrapper .bpa-front-dcw__body-btn-group .bpa-front-btn--danger,
                         .bpa-front-cp-delete-account-wrapper .bpa-front-dcw__body-btn-group .bpa-front-btn--danger span{  
-                            color:#311B0F !important;
+                            color:#211F1C !important;
                         }
                         .bpa-front-module-heading,
                         .bpa-cp-pd__title,
@@ -206,10 +206,10 @@
                         .bpa-cp-ma-table.el-table .el-table__expand-icon .el-icon-arrow-right::before,
                         .bpa-front-data-empty-view--my-bookings .bpa-front-dev__title
                         {
-                            color: #FFFFFF !important;
+                            color: #F2F2F2 !important;
                         } 
                         .bpa-tn__dropdown-head svg {
-                            fill: #FFFFFF !important;
+                            fill: #F2F2F2 !important;
                         }
                         .el-picker-panel .el-icon-arrow-left::before,
                         .el-picker-panel .el-icon-arrow-right::before,
@@ -220,7 +220,7 @@
                         .bpa-front-cp--fw__col.__bpa-is-search-icon .bpa-front-form-control .el-input__prefix .el-icon-search:before,
                         .bpa-front-ma--pagination-wrapper .btn-prev::before, 
                         .bpa-front-ma--pagination-wrapper .btn-next::after {
-                            background-color: #FFFFFF !important;
+                            background-color: #F2F2F2 !important;
                         }
                         .bpa-tn__dropdown-menu .bpa-tn__dropdown-item a.bpa-tm__item,
                         .bpa-cp-ma-table.el-table td.el-table__cell .cell,
@@ -247,12 +247,12 @@
                         .el-popconfirm .el-popconfirm__main,
                         .el-popconfirm .el-popconfirm__action .el-button--bpa-front-btn:not(.bpa-front-btn--danger) 
                         {
-                            color: #FFFFFF !important;
+                            color: #F2F2F2 !important;
                         }
                         .btn-prev .el-icon-arrow-left::before,
                         .btn-next .el-icon-arrow-right::before
                         {
-                            background-color: #FFFFFF !important;
+                            background-color: #F2F2F2 !important;
                         }               
                         @media (min-width: 1200px){    
                             .bpa-front-module-heading
@@ -347,6 +347,6 @@
                             }
                             .bpa-front-ma--pagination-wrapper .btn-next:hover:after,
                             .bpa-front-ma--pagination-wrapper .btn-prev:hover:before {
-                                background-color: #311B0F !important;
+                                background-color: #211F1C !important;
                             }
                         }

@@ -13,12 +13,75 @@ font-weight: 500 !important;
 
 .bpa-front-form-label {
     font-size: 16px !important;
+    color: #fff !important;
 }
 
 .bpa-frontend-main-container.bpa-frontend-vue3 .bpa-front-module--bd-form .bp-input__wrapper,
 .bpa-frontend-main-container.bpa-frontend-vue3 .bpa-front-module--bd-form .bp-input__inner {
-    border: solid 10px #D9BBA9 !important;
+    border: solid 1px #D9BBA9 !important;
+    color: #f2f2f2 !important;
+    transition: none !important;
 }
+
+.bpa-frontend-main-container.bpa-frontend-vue3
+    .bpa-front-module--bd-form .bp-input__wrapper:hover {
+    box-shadow: none !important;
+    border-color: #D9BBA9 !important;
+}
+
+.bpa-frontend-main-container.bpa-frontend-vue3
+    .bpa-front-module--bd-form .bp-input__inner {
+        color: #f2f2f2 !important;
+    }
+
+.bpa-frontend-main-container.bpa-frontend-vue3
+    .bpa-front-module--bd-form .bp-input.is-focus .bp-input__wrapper,
+.bpa-frontend-main-container.bpa-frontend-vue3
+    .bpa-front-module--bd-form .bp-input__wrapper.is-focus,
+.bpa-frontend-main-container.bpa-frontend-vue3
+    .bpa-front-module--bd-form .bp-input__wrapper:focus-within {
+    border-color: #D9BBA9 !important;
+    box-shadow: none !important;
+    outline: 0 !important;
+}
+
+.bpa-frontend-main-container.bpa-frontend-vue3
+    .bpa-front-module--bd-form .bp-ui-tel-input .vti__input,
+.bpa-frontend-main-container.bpa-frontend-vue3
+    .bpa-front-module--bd-form .bp-ui-tel-input input.vti__phone {
+        color: #f2f2f2 !important;
+    }
+
+
+.bpa-frontend-main-container.bpa-frontend-vue3 .bpa-front-module--bd-form .bp-ui-tel-input .vti__input, .bpa-frontend-main-container.bpa-frontend-vue3 .bpa-front-module--bd-form .bp-ui-tel-input input.vti__phone:hover {
+        box-shadow: none !important;
+        border-color: #D9BBA9 !important;
+    }
+
+    .bpa-frontend-main-container.bpa-frontend-vue3
+    .bpa-front-module--bd-form .bp-ui-tel-input .vue-tel-input {
+    border: 1px solid #D9BBA9 !important;
+    }
+
+      .bpa-frontend-main-container.bpa-frontend-vue3
+    .bpa-front-module--bd-form .bp-ui-tel-input .vue-tel-input:hover {
+          box-shadow: none !important;
+    border-color: #D9BBA9 !important;
+    }
+
+    .bpa-frontend-main-container.bpa-frontend-vue3
+    .bpa-front-module--bd-form .bp-textarea__inner {
+        color: #f2f2f2 !important;
+        border: 1px solid #D9BBA9 !important;
+    }
+
+    
+    .bpa-frontend-main-container.bpa-frontend-vue3
+    .bpa-front-module--bd-form .bp-textarea__inner:focus {
+        border-color: #D9BBA9 !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+    }
 
 /* BookingPress — Next/Continue button */
 .el-button.bpa-front-btn.bpa-front-btn__medium.bpa-front-btn--primary.bpa_focusable.el-button--default {
@@ -139,3 +202,13 @@ font-weight: 500 !important;
 .bpa-front-cp-card {
     margin-bottom: 50px !important;
 }
+
+
+.bpa-frontend-main-container.bpa-frontend-vue3 .bpa-front-module--date-and-time .bpa-front--dt__ts-sm-back-btn .bpa-front-btn {
+        color : #f2f2f2 !important;
+        border: 1px solid #D9BBA9 !important;
+    }
+
+    .bpa-frontend-main-container.bpa-frontend-vue3 .bpa-front-module--date-and-time .bpa-front--dt__ts-sm-back-btn .bpa-front-btn span svg {
+        fill: #f2f2f2 !important;
+    }

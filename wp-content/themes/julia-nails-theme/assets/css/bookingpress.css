@@ -134,3 +134,8 @@ font-weight: 500 !important;
     text-align: center;
     border: 2px solid #D9BBA9 !important;
 }
+
+/* My bookings panel */
+.bpa-front-cp-card {
+    margin-bottom: 50px !important;
+}

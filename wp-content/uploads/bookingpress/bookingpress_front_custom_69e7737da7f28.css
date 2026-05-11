@@ -318,7 +318,7 @@
                                 .bpa-front-tabs--foot .bpa-front-btn,
                                 .bpa-front__no-timeslots-body .bpa-front-ntb__val,
                                 .bpa-front-thankyou-module-container .bpa-front-cc__error-toast-notification,
-                                .bpa-front-form-control--checkbox .el-checkbox__label, {
+                                .bpa-front-form-control--checkbox .el-checkbox__label {
                                     font-size: 14px !important;
                                 }
                                 .--bpa-top.bpa-front-tabs--vertical-left .bpa-front-tab-menu a,
@@ -326,6 +326,7 @@
                                     font-size: 15px !important;
                                 }
                             }
+                            
                             @media (max-width: 1024px){                      
                                 .bpa-front-tabs .bpa-front-module-heading,    
                                 .bpa-front-tabs .bpa-front--dt__calendar .vc-title,

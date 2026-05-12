@@ -176,3 +176,14 @@ body {
     height: 24px;
     padding-top: 10px;
 }
+
+@media (max-width: 768px) {
+    .kb-splide .splide__pagination li {
+        padding-top: 29px;
+    }
+}
+@media (max-width: 768px) {
+    .kb-splide .splide__slide {
+		margin-bottom: 20px;
+   }
+}

@@ -55,7 +55,7 @@
 
     <!-- Divider -->
     <div class="mt-20  text-center" style="font-family: 'Montserrat', sans-serif;">
-      <p class="text-[#D9BBA9] text-lg">©2026 Junails Salon. All rights reserved</p>
+      <p class="text-[#D9BBA9] text-lg">©2026 EXAM PROJECT SEA MMD24</p>
     </div>
 
   </div>
